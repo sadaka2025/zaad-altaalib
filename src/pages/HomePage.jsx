@@ -2,8 +2,11 @@ import React from "react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
+
+
 export default function HomePage() {
   return (
+    
     <div className="min-h-screen bg-white text-gray-800">
       {/* 🔷 Navbar */}
       <header className="bg-[#1e3a8a] text-white py-4 shadow">
@@ -106,6 +109,16 @@ export default function HomePage() {
           </Button>
         </div>
       </footer>
+      <div>
+  <h1>Bienvenue</h1>
+  <p>Page d'accueil de Zaad at-Taalib</p>
+
+  {/* 🔽 Ce bouton mène à la page /problemes */}
+  <Link href="/problemes">
+    <button style={{ marginTop: '20px' }}>Accéder aux Problèmes</button>
+  </Link>
+</div>
+
     </div>
   );
 }
