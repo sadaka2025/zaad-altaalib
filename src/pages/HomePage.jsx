@@ -101,23 +101,16 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="mt-6">
-          <Button
-            className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2"
-            asChild
-          >
-            <Link to="/problemes">📥 شاركنا اقتراحك أو مشكلتك</Link>
-          </Button>
+          <Link
+  to="/problemes"
+  className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2 inline-block rounded"
+>
+  📥 شاركنا اقتراحك أو مشكلتك
+</Link>
+
         </div>
       </footer>
-      <div>
-  <h1>Bienvenue</h1>
-  <p>Page d'accueil de Zaad at-Taalib</p>
-
-  {/* 🔽 Ce bouton mène à la page /problemes */}
-  <Link href="/problemes">
-    <button style={{ marginTop: '20px' }}>Accéder aux Problèmes</button>
-  </Link>
-</div>
+     
 
     </div>
   );
