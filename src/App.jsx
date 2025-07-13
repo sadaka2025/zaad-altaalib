@@ -1,7 +1,14 @@
+// src/App.jsx
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import Formations from './pages/Formations';
+
 export default function App() {
   return (
-    <div className="text-center mt-10 text-2xl text-blue-600">
-      مرحبًا بك في زاد الطالب
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/formations" element={<Formations />} />
+    </Routes>
+  );
 }
