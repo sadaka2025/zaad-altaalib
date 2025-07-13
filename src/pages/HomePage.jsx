@@ -1,5 +1,5 @@
+// src/pages/HomePage.jsx
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 
 export default function HomePage() {
@@ -46,9 +46,11 @@ export default function HomePage() {
             افتتحت المشيخة سنة 2023 / 2024 نظام التعليم عن بعد، لمن لا يستطيع الحضور إلى قاعات الدرس من الراغبين في العلم الشرعي من داخل تونس وخارجها...<br />
             مدة الدراسة: 5 سنوات | بث أسبوعي | اختبارات عن بعد | لقاءات مباشرة شهرية.
           </p>
-          <Button className="bg-blue-600 text-white px-6 py-2 text-lg rounded hover:bg-blue-700" asChild>
-            <Link to="/formations">📚 استعرض الدورات التكوينية</Link>
-          </Button>
+          <Link to="/formations">
+            <button className="bg-blue-600 text-white px-6 py-2 text-lg rounded hover:bg-blue-700">
+              📚 استعرض الدورات التكوينية
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -98,9 +100,13 @@ export default function HomePage() {
           </Link>
         </div>
         <div className="mt-6">
-          <Button
-            className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2"
-            asChild
-          >
-            <Link to="/problemes">📥 شاركنا اقتراحك أو مشكلتك</Link>
-          </Button>
+          <Link to="/problemes">
+            <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2">
+              📥 شاركنا اقتراحك أو مشكلتك
+            </button>
+          </Link>
+        </div>
+      </footer>
+    </div>
+  );
+}
