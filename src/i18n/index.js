@@ -4,6 +4,7 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 
 import fr from './fr.json';
 import ar from './ar.json';
+import en from './en.json'; // ✅ ajout de l'anglais
 
 i18n
   .use(LanguageDetector)
@@ -11,7 +12,8 @@ i18n
   .init({
     resources: {
       fr: { translation: fr },
-      ar: { translation: ar }
+      ar: { translation: ar },
+      en: { translation: en } // ✅ ajouté ici
     },
     fallbackLng: 'fr',
     interpolation: {

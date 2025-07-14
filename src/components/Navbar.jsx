@@ -1,21 +1,13 @@
 import React from "react";
 import { Link, useParams, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher"; // ✅ ici
 
 export default function Navbar() {
   const { lang } = useParams();
-  const { t, i18n } = useTranslation();
-  const location = useLocation();
+  const { t } = useTranslation();
 
   const link = (path) => `/${lang}${path.startsWith("/") ? path : "/" + path}`;
-
-  const changeLanguage = (lng) => {
-    if (lng !== i18n.language) {
-      const newPath = location.pathname.replace(/^\/(ar|fr)/, `/${lng}`);
-      i18n.changeLanguage(lng);
-      window.location.href = newPath;
-    }
-  };
 
   return (
     <header className="bg-[#1e3a8a] text-white py-4 shadow">
@@ -36,9 +28,9 @@ export default function Navbar() {
           </Link>
         </nav>
 
+        {/* ✅ Langue ici */}
         <div className="ml-4">
-          <button onClick={() => changeLanguage("fr")} className="bg-gray-200 text-black px-3 py-1 mr-2 rounded">Fr</button>
-          <button onClick={() => changeLanguage("ar")} className="bg-gray-200 text-black px-3 py-1 rounded">ع</button>
+          <LanguageSwitcher />
         </div>
       </div>
     </header>

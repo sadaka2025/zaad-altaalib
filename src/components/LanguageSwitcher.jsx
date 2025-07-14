@@ -10,8 +10,8 @@ export default function LanguageSwitcher() {
     const pathSegments = location.pathname.split("/").filter(Boolean);
     const currentLang = pathSegments[0];
 
-    // Si le premier segment est une langue connue, on le remplace
-    if (["fr", "ar"].includes(currentLang)) {
+    // ✅ الآن نأخذ en ضمن اللغات المدعومة
+    if (["fr", "ar", "en"].includes(currentLang)) {
       pathSegments[0] = lang;
     } else {
       pathSegments.unshift(lang);
@@ -35,6 +35,12 @@ export default function LanguageSwitcher() {
         className={`px-3 py-1 rounded ${i18n.language === "ar" ? "bg-blue-700 text-white" : "bg-gray-200 text-blue-700"}`}
       >
         AR
+      </button>
+      <button
+        onClick={() => switchLang("en")}
+        className={`px-3 py-1 rounded ${i18n.language === "en" ? "bg-blue-700 text-white" : "bg-gray-200 text-blue-700"}`}
+      >
+        EN
       </button>
     </div>
   );

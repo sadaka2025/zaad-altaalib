@@ -18,13 +18,15 @@ import Niveau4 from "./pages/Niveau4";
 import NiveauAvance from "./pages/NiveauAvance";
 import i18n from "./i18n";
 
-// ✅ Ce composant interne doit être dans un contexte de Route
 function LangRoutesWrapper() {
   const { lang } = useParams();
 
   useEffect(() => {
-    if (["fr", "ar"].includes(lang)) {
+    const supportedLangs = ["fr", "ar", "en"];
+    if (supportedLangs.includes(lang)) {
       i18n.changeLanguage(lang);
+    } else {
+      i18n.changeLanguage("fr"); // fallback
     }
   }, [lang]);
 
@@ -47,10 +49,10 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        {/* Redirection vers /fr si aucune langue n’est donnée */}
+        {/* 🔁 Redirection vers une langue par défaut */}
         <Route path="/" element={<Navigate to="/fr" replace />} />
 
-        {/* ✅ Langue dynamique */}
+        {/* ✅ Route avec langue dynamique */}
         <Route path="/:lang/*" element={<LangRoutesWrapper />} />
       </Routes>
     </Router>
