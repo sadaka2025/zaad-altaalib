@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {},
+    container: {
+      center: true,     // ✅ لتوسيط الحاوية تلقائيًا
+      padding: "1rem",  // ✅ لإعطاء هامش داخلي جيد
+    },
   },
   plugins: [],
-}
+};

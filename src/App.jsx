@@ -17,17 +17,22 @@ import NiveauMoyen from "./pages/NiveauMoyen";
 import Niveau4 from "./pages/Niveau4";
 import NiveauAvance from "./pages/NiveauAvance";
 import i18n from "./i18n";
+import "./i18n";
 
 function LangRoutesWrapper() {
   const { lang } = useParams();
 
   useEffect(() => {
     const supportedLangs = ["fr", "ar", "en"];
-    if (supportedLangs.includes(lang)) {
-      i18n.changeLanguage(lang);
-    } else {
-      i18n.changeLanguage("fr"); // fallback
-    }
+    const isValidLang = supportedLangs.includes(lang);
+    const selectedLang = isValidLang ? lang : "fr";
+
+    i18n.changeLanguage(selectedLang);
+
+    // ✅ Appliquer dynamiquement sur <html>
+    const dir = selectedLang === "ar" ? "rtl" : "ltr";
+    document.documentElement.setAttribute("lang", selectedLang);
+    document.documentElement.setAttribute("dir", dir);
   }, [lang]);
 
   return (
