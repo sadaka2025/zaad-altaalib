@@ -30,5 +30,49 @@
   "level4_title": "Level 4: Advanced Study",
   "level4_desc": "Analysis and study of primary sources.",
   "level5_title": "Level 5: Expert",
-  "level5_desc": "Specialization in religious sciences."
+  "level5_desc": "Specialization in religious sciences.",
+  "our_instructors": "Our Instructors",
+  "instructor1_name": "Dr. Youssef",
+  "instructor1_bio": "Fiqh Specialist",
+  "instructor2_name": "Ms. Nadia",
+  "instructor2_bio": "Arabic Language Teacher",
+  "instructor3_name": "Sheikh Ahmed",
+  "instructor3_bio": "Tafsir Expert",
+  "instructor4_name": "Ustadh Sami",
+  "instructor4_bio": "Aqeedah and Theology",
+  "instructor5_name": "Mr. Walid",
+  "instructor5_bio": "Arabic Grammar Instructor",
+  "instructor6_name": "Ms. Rim",
+  "instructor6_bio": "Islamic Education",
+  "instructor7_name": "Dr. Tarek",
+  "instructor7_bio": "Logic and Critical Thinking",
+  "instructor8_name": "Sheikh Abdullah",
+  "instructor8_bio": "Sunnah Studies",
+  "instructor9_name": "Ms. Salma",
+  "instructor9_bio": "Tajweed Expert",
+  "instructor10_name": "Dr. Khaled",
+  "instructor10_bio": "Islamic History",
+  "benefits": {
+    "title": "🌿 Benefits of Religious Knowledge",
+    "description": "It purifies the soul, enlightens the heart, brings one closer to God, gives meaning to life, and structures the believer's thinking.",
+    "imageAlt": "Religious knowledge"
+  },
+  "testimonials": {
+  "title": "What our students say",
+  "description": "Genuine feedback on their learning journey.",
+  "items": [
+    {
+      "name": "Amina Ben Yahia",
+      "comment": "Before joining this platform, I was lost and unmotivated. But every course here brought me back to learning...",
+      "image": "/images/student1.jpg"
+    },
+    {
+      "name": "Mohamed Kacem",
+      "comment": "I'll never forget the day I listened to the first lesson. It was like a light in my heart...",
+      "image": "/images/student2.jpg"
+    }
+  ]
 }
+
+}
+

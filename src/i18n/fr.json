@@ -30,5 +30,48 @@
   "level4_title": "Niveau 4 : Approfondissement",
   "level4_desc": "Analyse et étude des sources.",
   "level5_title": "Niveau 5 : Avancé",
-  "level5_desc": "Pour se spécialiser en sciences religieuses."
+  "level5_desc": "Pour se spécialiser en sciences religieuses.",
+  "our_instructors": "Nos formateurs",
+  "instructor1_name": "Dr. Youssef",
+  "instructor1_bio": "Expert en Fiqh",
+  "instructor2_name": "Mme. Nadia",
+  "instructor2_bio": "Langue arabe",
+  "instructor3_name": "Cheikh Ahmed",
+  "instructor3_bio": "Tafsir",
+  "instructor4_name": "Oustadh Sami",
+  "instructor4_bio": "Aqida",
+  "instructor5_name": "M. Walid",
+  "instructor5_bio": "Grammaire",
+  "instructor6_name": "Mme. Rim",
+  "instructor6_bio": "Éducation islamique",
+  "instructor7_name": "Dr. Tarek",
+  "instructor7_bio": "Logique",
+  "instructor8_name": "Cheikh Abdallah",
+  "instructor8_bio": "Sunnah",
+  "instructor9_name": "Mme. Salma",
+  "instructor9_bio": "Tajwid",
+  "instructor10_name": "Dr. Khaled",
+  "instructor10_bio": "Histoire islamique",
+  "benefits": {
+    "title": "Bienfaits de la science religieuse",
+    "description": "Elle purifie l'âme, éclaire le cœur, rapproche de Dieu, donne du sens à la vie et structure la pensée du croyant.",
+    "imageAlt": "Science religieuse"
+  },
+  "testimonials": {
+  "title": "Ce que disent nos étudiants",
+  "description": "Des retours authentiques sur leur expérience d’apprentissage.",
+  "items": [
+    {
+      "name": "Amina Ben Yahia",
+      "comment": "Avant de rejoindre cette plateforme, j’étais perdue, sans motivation réelle. Mais chaque cours ici m’a réconciliée avec l’apprentissage...",
+      "image": "/images/student1.jpg"
+    },
+    {
+      "name": "Mohamed Kacem",
+      "comment": "Je n’oublierai jamais le jour où j’ai écouté la première leçon. C’était comme une lumière dans mon cœur...",
+      "image": "/images/student2.jpg"
+    }
+  ]}
 }
+
+
