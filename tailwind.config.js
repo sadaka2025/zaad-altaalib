@@ -5,10 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
     container: {
-      center: true,     // ✅ لتوسيط الحاوية تلقائيًا
-      padding: "1rem",  // ✅ لإعطاء هامش داخلي جيد
+      center: true,
+      padding: "1rem",
+    },
+    extend: {
+      fontFamily: {
+        arabic: ['"Cairo"', 'sans-serif'],
+      },
     },
   },
   plugins: [],

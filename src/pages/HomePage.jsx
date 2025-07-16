@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 
-// ✅ المسارات الصحيحة بعد حذف مجلد ui
 import HeroSection from "../components/HeroSection";
 import BenefitsSection from "../components/BenefitsSection";
 import InstructorsSection from "../components/InstructorsSection";
@@ -16,8 +15,14 @@ export default function HomePage() {
   const { lang } = useParams();
   const isRTL = i18n.language === "ar";
 
+  // ✅ لضمان تغيير الاتجاه في <html> أيضًا
+  useEffect(() => {
+    document.documentElement.dir = isRTL ? "rtl" : "ltr";
+  }, [isRTL]);
+
   return (
-    <div className="min-h-screen bg-white text-gray-800" dir={isRTL ? "rtl" : "ltr"}>
+    <div className={`min-h-screen bg-white text-gray-800 ${isRTL ? "font-arabic" : ""}`}>
+
       <Helmet>
         <html lang={i18n.language} />
         <title>{t("seo_home_title")}</title>
@@ -28,7 +33,7 @@ export default function HomePage() {
       <BenefitsSection />
       <InstructorsSection />
       <TestimonialsSection />
-            <ScrollToTopButton />
+      <ScrollToTopButton />
       <ScrollDownButton />
     </div>
   );

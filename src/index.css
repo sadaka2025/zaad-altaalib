@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+.typewriter {
+  overflow: hidden;
+  border-right: 2px solid white;
+  white-space: pre-wrap;
+  animation: typing 6s steps(60, end), blink 1s infinite step-end alternate;
+  direction: rtl;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}

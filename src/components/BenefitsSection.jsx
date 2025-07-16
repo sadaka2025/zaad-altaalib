@@ -2,26 +2,32 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 export default function BenefitsSection() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const isRTL = i18n.language === "ar";
 
   return (
-    <section className="py-20 bg-white benefits-section" id="benefits-section">
-      <div className="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center gap-8">
-        <div className="w-full md:w-1/2">
-          <img
-            src="/images/science-benefits.jpg"
-            alt={t("benefits.imageAlt")}
-            className="rounded-lg shadow-lg"
-          />
-        </div>
-        <div className="w-full md:w-1/2">
-          <h2 className="text-3xl font-bold mb-4 text-[#1e293b]">
-            🌿 {t("benefits.title")}
-          </h2>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            {t("benefits.description")}
-          </p>
-        </div>
+    <section className="relative h-[80vh] overflow-hidden flex items-center justify-center text-white text-center px-4">
+      {/* فيديو الخلفية */}
+      <video
+        src="/videos/knowledge-bg.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute top-0 left-0 w-full h-full object-cover z-0"
+      />
+
+      {/* تغطية لونية */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
+
+      {/* محتوى النص */}
+      <div className="relative z-20 max-w-4xl">
+        <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          🌿 {t("benefits.title")}
+        </h2>
+        <p className={`text-lg md:text-xl leading-relaxed ${isRTL ? "rtl" : "ltr"}`}>
+          {t("benefits.description")}
+        </p>
       </div>
     </section>
   );
