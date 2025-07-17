@@ -1,128 +1,53 @@
 {
-  "welcome": "Welcome to Zaad At-Taalib",
+  "welcome": "Welcome to Zad Et-Talib",
   "niveau": "Level",
   "home": "Home",
   "courses": "Courses",
-  "dashboard": "Student Space",
-  "contact": "Contact",
-  "hero_title": "Welcome to the Zaad At-Taalib platform",
-  "hero_description": "In 2023/2024, the Mashyakha launched distance learning for those who cannot attend in person... 5 years of study, weekly lessons, online exams, monthly meetings.",
-  "explore_courses": "Explore courses",
-  "feature1_title": "Structured courses",
-  "feature1_desc": "A clear progression from basics to advanced levels.",
-  "feature2_title": "Simplified content",
-  "feature2_desc": "Summaries, MCQs, quizzes... to make revision easier.",
-  "feature3_title": "Interaction",
-  "feature3_desc": "Discussion groups, mutual help, and student feedback.",
+  "dashboard": "Student Dashboard",
+  "contact": "Contact Us",
+  "hero_title": "Welcome to Zad Et-Talib Platform",
+  "hero_description": "The Zaytouna mosque launched in 2023/2024 a remote education system for those who can't attend in person. Study duration: 5 years | Weekly streams | Online tests | Live sessions.",
+  "explore_courses": "📚 Browse Training Courses",
+  "feature1_title": "Structured Courses",
+  "feature1_desc": "A thoughtful progression from foundations to mastery.",
+  "feature2_title": "Simplified Content",
+  "feature2_desc": "Summaries, quizzes, questions & answers — to ease review and understanding.",
+  "feature3_title": "Peer Interaction",
+  "feature3_desc": "Community notes and collaborative feedback.",
   "rights_reserved": "All rights reserved",
-  "report_issue": "Report a problem or suggestion",
-  "formations_title": "Courses",
-  "formations_description": "Here is the list of available courses...",
-  "view_content": "View content",
-  "choose_level": "Choose your level to start.",
-  "back_to_home": "Back to homepage",
+  "report_issue": "📥 Share feedback or report a problem",
+  "formations_title": "Training Courses",
+  "formations_description": "A list of our proposed courses...",
+  "view_content": "View Content",
+  "choose_level": "Choose your level and start your learning journey with Zad Et-Talib.",
+  "back_to_home": "Back to Home",
   "level1_title": "Level 1: Beginner",
-  "level1_desc": "Ideal for those just starting out and who have never studied.",
-  "level2_title": "Level 2: Language Fundamentals",
-  "level2_desc": "Mastering Arabic before going deeper.",
+  "level1_desc": "For those who are new to learning and haven't studied before.",
+  "level2_title": "Level 2: Language Foundations",
+  "level2_desc": "Focus on Arabic proficiency before diving deeper.",
   "level3_title": "Level 3: Intermediate",
-  "level3_desc": "For those who want to go deeper after the basics.",
-  "level4_title": "Level 4: Advanced Study",
-  "level4_desc": "Analysis and study of primary sources.",
-  "level5_title": "Level 5: Expert",
-  "level5_desc": "Specialization in religious sciences.",
-  "our_instructors": "Top Instructors",
+  "level3_desc": "For students with basics who want to expand their knowledge.",
+  "level4_title": "Level 4: Deep Understanding",
+  "level4_desc": "Focus on analysis, commentary, and advanced source reading.",
+  "level5_title": "Level 5: Advanced",
+  "level5_desc": "For students aiming for scholarly or preaching specialization.",
+  "our_instructors": "Our Teachers",
   "view_cv": "View CV",
-  "instructors": [
-    {
-      "name": "Sheikh Maher Thamlawi",
-      "bio": "Grammar and Morphology",
-      "image": "/images/instructor5.jpg",
-      "cv": "Academic qualifications:\n• Bachelor in Islamic Studies from Al-Jinan University – Tripoli, Lebanon, with Good grade (2005).\n• Bachelor in Islamic and Arabic Sciences from Al-Fath Institute, Damascus – Syria, with Excellent grade (1999).\n• Specialization in Hadith and related sciences from Al-Azhar University, Damascus (2003).\n• Teaching certificate from Al-Fath Institute.\n• Experience in editing classical Islamic manuscripts at Dar Al-Risala, Damascus."
-    },
-    {
-      "name": "Sheikh Abdel Fattah Hussein",
-      "bio": "Fiqh (Islamic Jurisprudence)",
-      "image": "/images/instructor3.jpg",
-      "cv": "Academic qualifications:\n2023: PhD candidate at Zitouna University.\n2022: Master's degree in Islamic Sciences, specialization in Fiqh and Sharia Politics (Zitouna University).\n2017: Higher License in Islamic Sharia (Al-Azhar University).\n2012: Al-Azhar secondary school diploma.\n\nCertificates and licenses:\nLicense in Al-Arba’in Al-Nawawiya\n2017: General license in Tajweed\n2017: License in Shama’il by Imam Al-Tirmidhi\n2011: License in Quranic recitation according to Qalun\n2008: Memorization certificate of the Quran"
-    },
-    {
-      "name": "Sheikh Abdel Rahman Al-Alawi",
-      "bio": "Comparative Fiqh",
-      "image": "/images/instructor8.jpg",
-      "cv": "PhD in Islamic Sharia with highest honors (2021).\nDissertation: Fundamental differences between jurists’ schools and Mu‘tazilites.\nMaster’s thesis: Usul rules according to Al-Fandali and their Fiqh applications.\nPublished scientific research in Dar Al-‘Ulum Journal – Cairo University."
-    },
-    {
-      "name": "Sheikh Wahid Ben Othman",
-      "bio": "Aqeedah (Islamic Creed)",
-      "image": "/images/instructor6.jpg",
-      "cv": "Professor of Aqeedah, specialist in Usul al-Fiqh at Zitouna University and Al-Azhar University."
-    },
-    {
-      "name": "Sheikh Ali Bouchlaghem",
-      "bio": "Tajweed",
-      "image": "/images/instructor7.jpg",
-      "cv": "Specialist in Tajweed rules."
-    },
-    {
-      "name": "Sheikh Mohamed Ali Dou",
-      "bio": "Hadith",
-      "image": "/images/instructor1.jpg",
-      "cv": ""
-    },
-    {
-      "name": "Sheikh Mohamed Ben Jomaa Ayad",
-      "bio": "Islamic Ethics",
-      "image": "/images/instructor2.jpg",
-      "cv": ""
-    },
-    {
-      "name": "Sheikh Shamseddine Zawiya",
-      "bio": "Arabic Grammar",
-      "image": "/images/instructor4.jpg",
-      "cv": ""
-    },
-    {
-      "name": "Sheikh Sami Al-Rassa‘",
-      "bio": "Quranic Tafsir",
-      "image": "/images/instructor9.jpg",
-      "cv": ""
-    },
-    {
-      "name": "Sheikh Marwan Hammouda",
-      "bio": "Prophetic Biography",
-      "image": "/images/instructor10.jpg",
-      "cv": ""
-    }
-  ],
-  "testimonials": {
-    "title": "What our students say",
-    "description": "Genuine feedback on their learning journey.",
-    "items": [
-      {
-        "name": "Dr. Bachir Hameurlain",
-        "comment": "My evaluation of the platform:\n\nThis experience has been outstanding on all fronts, with seriousness, discipline, and method. It feels like an authentic scientific project drawing from the Salaf, combining tradition and modern tools.\n\nScientific impact:\n\nI noticed real progress in understanding, mastering terms, and absorbing texts, especially in Aqeedah and Fiqh. This platform reordered my priorities and connected me to a comprehensive methodology, far from dispersion.\n\nMain benefits:\n• Carefully selected content based on trusted sources, with clear explanations.\n• Adapted teaching method with logical progression.\n• Outstanding teacher support, more like mentors than just professors. Interaction, guidance, and care are obvious.\n\nMay Allah bless these efforts and make this platform a beacon of guidance and success.",
-        "image": "/images/student1.jpg"
-      },
-      {
-        "name": "Youssef Boutaba",
-        "comment": "I still remember my first lesson on this distance learning platform… It was not just a beginning, but a true transformation in understanding knowledge, its high status, and the beauty of its scholars.\nThe teacher’s words were like keys of light opening not only minds but hearts too, with kindness and care, like a compassionate father or a sincere brother…\nThanks to them for what they planted in us, without asking for anything in return. May Allah reward them abundantly.",
-        "image": "/images/student2.jpg"
-      }
-    ]
-  },
+
+  "dashboard_title": "1st Year - Zaytouni Remote Education",
+  "semester1": "Semester 1",
+  "semester2": "Semester 2",
+  "fiqh": "Fiqh",
+  "aqida": "Creed",
+  "tajwid": "Tajwid",
+  "nahw": "Grammar",
+  "sirah": "Prophetic Biography",
+  "hadith": "Hadith",
+  "akhlaq": "Ethics",
+
   "benefits": {
     "title": "🌿 Benefits of Religious Knowledge",
-    "description": "Seeking religious knowledge is a path of light and guidance, a means to correctly understand religion, enlighten hearts, calm souls, overcome doubts and desires, an act of worship bringing the servant closer to his Lord, a weapon against ignorance and turmoil, and a trust delivering good to people. Blessed is the one who devotes time to memorizing Allah's Book, understanding the Prophet's Sunnah, and following the path of scholars. Angels spread their wings for the seeker of knowledge in approval, and those in heaven and earth pray for him.",
-    "imageAlt": "Religious knowledge"
-  },
-  "diploma": {
-  "title1": "Diploma of Qualification",
-  "desc1": "The Qualification Diploma is one of the fundamental certificates awarded by Zitouna educational institutions, representing an advanced stage in the Zitouna educational ladder. The student receives this diploma after completing an intensive study program focusing on Sharia sciences, Arabic language, and auxiliary sciences such as logic and rhetoric. This diploma demonstrates the student's mastery of the essential courses enabling progression to higher Zitouna study levels. The curricula include in-depth studies of Fiqh, Tafsir, Hadith, and Grammar, reflecting Zitouna's commitment to producing students with a solid understanding of Islamic principles.",
-  "title2": "Diploma of Achievement",
-  "desc2": "The Diploma of Achievement is the next step in the Zitouna educational path, awarded to students who demonstrate advanced comprehension of Sharia and literary sciences and mastery of research and analytical skills. It qualifies the student to undertake teaching or religious guidance roles and serves as official recognition of their academic competence and ability to contribute to both academic and dawah fields. This stage emphasizes specialization in comparative Fiqh, Usul al-Fiqh, Hadith sciences, and enhances the student's ability to interpret Sharia texts according to contemporary developments.",
-  "motivational": "✨ Be among the pioneers of knowledge, and start your journey with these blessed sciences ✨",
-  "heading": "Required subjects for obtaining diplomas",
-  "close": "Close"
-}
+    "description": "Seeking Islamic knowledge is a path of light and guidance. It leads to proper understanding of God’s religion, opens hearts to truth, and brings peace to the soul. It is an act of worship, a defense against ignorance, and a duty to spread good to others.",
+    "imageAlt": "Religious Knowledge"
+  }
 }
