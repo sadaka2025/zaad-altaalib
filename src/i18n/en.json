@@ -31,48 +31,98 @@
   "level4_desc": "Analysis and study of primary sources.",
   "level5_title": "Level 5: Expert",
   "level5_desc": "Specialization in religious sciences.",
-  "our_instructors": "Top Instructor",
-  "instructor1_name": "Dr. Youssef",
-  "instructor1_bio": "Fiqh Specialist",
-  "instructor2_name": "Ms. Nadia",
-  "instructor2_bio": "Arabic Language Teacher",
-  "instructor3_name": "Sheikh Ahmed",
-  "instructor3_bio": "Tafsir Expert",
-  "instructor4_name": "Ustadh Sami",
-  "instructor4_bio": "Aqeedah and Theology",
-  "instructor5_name": "Mr. Walid",
-  "instructor5_bio": "Arabic Grammar Instructor",
-  "instructor6_name": "Ms. Rim",
-  "instructor6_bio": "Islamic Education",
-  "instructor7_name": "Dr. Tarek",
-  "instructor7_bio": "Logic and Critical Thinking",
-  "instructor8_name": "Sheikh Abdullah",
-  "instructor8_bio": "Sunnah Studies",
-  "instructor9_name": "Ms. Salma",
-  "instructor9_bio": "Tajweed Expert",
-  "instructor10_name": "Dr. Khaled",
-  "instructor10_bio": "Islamic History",
-  "benefits": {
-    "title": "🌿 Benefits of Religious Knowledge",
-    "description": "It purifies the soul, enlightens the heart, brings one closer to God, gives meaning to life, and structures the believer's thinking.",
-    "imageAlt": "Religious knowledge"
-  },
-  "testimonials": {
-  "title": "What our students say",
-  "description": "Genuine feedback on their learning journey.",
-  "items": [
+  "our_instructors": "Top Instructors",
+  "view_cv": "View CV",
+  "instructors": [
     {
-      "name": "Amina Ben Yahia",
-      "comment": "Before joining this platform, I was lost and unmotivated. But every course here brought me back to learning...",
-      "image": "/images/student1.jpg"
+      "name": "Sheikh Maher Thamlawi",
+      "bio": "Grammar and Morphology",
+      "image": "/images/instructor5.jpg",
+      "cv": "Academic qualifications:\n• Bachelor in Islamic Studies from Al-Jinan University – Tripoli, Lebanon, with Good grade (2005).\n• Bachelor in Islamic and Arabic Sciences from Al-Fath Institute, Damascus – Syria, with Excellent grade (1999).\n• Specialization in Hadith and related sciences from Al-Azhar University, Damascus (2003).\n• Teaching certificate from Al-Fath Institute.\n• Experience in editing classical Islamic manuscripts at Dar Al-Risala, Damascus."
     },
     {
-      "name": "Mohamed Kacem",
-      "comment": "I'll never forget the day I listened to the first lesson. It was like a light in my heart...",
-      "image": "/images/student2.jpg"
+      "name": "Sheikh Abdel Fattah Hussein",
+      "bio": "Fiqh (Islamic Jurisprudence)",
+      "image": "/images/instructor3.jpg",
+      "cv": "Academic qualifications:\n2023: PhD candidate at Zitouna University.\n2022: Master's degree in Islamic Sciences, specialization in Fiqh and Sharia Politics (Zitouna University).\n2017: Higher License in Islamic Sharia (Al-Azhar University).\n2012: Al-Azhar secondary school diploma.\n\nCertificates and licenses:\nLicense in Al-Arba’in Al-Nawawiya\n2017: General license in Tajweed\n2017: License in Shama’il by Imam Al-Tirmidhi\n2011: License in Quranic recitation according to Qalun\n2008: Memorization certificate of the Quran"
+    },
+    {
+      "name": "Sheikh Abdel Rahman Al-Alawi",
+      "bio": "Comparative Fiqh",
+      "image": "/images/instructor8.jpg",
+      "cv": "PhD in Islamic Sharia with highest honors (2021).\nDissertation: Fundamental differences between jurists’ schools and Mu‘tazilites.\nMaster’s thesis: Usul rules according to Al-Fandali and their Fiqh applications.\nPublished scientific research in Dar Al-‘Ulum Journal – Cairo University."
+    },
+    {
+      "name": "Sheikh Wahid Ben Othman",
+      "bio": "Aqeedah (Islamic Creed)",
+      "image": "/images/instructor6.jpg",
+      "cv": "Professor of Aqeedah, specialist in Usul al-Fiqh at Zitouna University and Al-Azhar University."
+    },
+    {
+      "name": "Sheikh Ali Bouchlaghem",
+      "bio": "Tajweed",
+      "image": "/images/instructor7.jpg",
+      "cv": "Specialist in Tajweed rules."
+    },
+    {
+      "name": "Sheikh Mohamed Ali Dou",
+      "bio": "Hadith",
+      "image": "/images/instructor1.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Sheikh Mohamed Ben Jomaa Ayad",
+      "bio": "Islamic Ethics",
+      "image": "/images/instructor2.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Sheikh Shamseddine Zawiya",
+      "bio": "Arabic Grammar",
+      "image": "/images/instructor4.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Sheikh Sami Al-Rassa‘",
+      "bio": "Quranic Tafsir",
+      "image": "/images/instructor9.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Sheikh Marwan Hammouda",
+      "bio": "Prophetic Biography",
+      "image": "/images/instructor10.jpg",
+      "cv": ""
     }
-  ]
+  ],
+  "testimonials": {
+    "title": "What our students say",
+    "description": "Genuine feedback on their learning journey.",
+    "items": [
+      {
+        "name": "Dr. Bachir Hameurlain",
+        "comment": "My evaluation of the platform:\n\nThis experience has been outstanding on all fronts, with seriousness, discipline, and method. It feels like an authentic scientific project drawing from the Salaf, combining tradition and modern tools.\n\nScientific impact:\n\nI noticed real progress in understanding, mastering terms, and absorbing texts, especially in Aqeedah and Fiqh. This platform reordered my priorities and connected me to a comprehensive methodology, far from dispersion.\n\nMain benefits:\n• Carefully selected content based on trusted sources, with clear explanations.\n• Adapted teaching method with logical progression.\n• Outstanding teacher support, more like mentors than just professors. Interaction, guidance, and care are obvious.\n\nMay Allah bless these efforts and make this platform a beacon of guidance and success.",
+        "image": "/images/student1.jpg"
+      },
+      {
+        "name": "Youssef Boutaba",
+        "comment": "I still remember my first lesson on this distance learning platform… It was not just a beginning, but a true transformation in understanding knowledge, its high status, and the beauty of its scholars.\nThe teacher’s words were like keys of light opening not only minds but hearts too, with kindness and care, like a compassionate father or a sincere brother…\nThanks to them for what they planted in us, without asking for anything in return. May Allah reward them abundantly.",
+        "image": "/images/student2.jpg"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "🌿 Benefits of Religious Knowledge",
+    "description": "Seeking religious knowledge is a path of light and guidance, a means to correctly understand religion, enlighten hearts, calm souls, overcome doubts and desires, an act of worship bringing the servant closer to his Lord, a weapon against ignorance and turmoil, and a trust delivering good to people. Blessed is the one who devotes time to memorizing Allah's Book, understanding the Prophet's Sunnah, and following the path of scholars. Angels spread their wings for the seeker of knowledge in approval, and those in heaven and earth pray for him.",
+    "imageAlt": "Religious knowledge"
+  },
+  "diploma": {
+  "title1": "Diploma of Qualification",
+  "desc1": "The Qualification Diploma is one of the fundamental certificates awarded by Zitouna educational institutions, representing an advanced stage in the Zitouna educational ladder. The student receives this diploma after completing an intensive study program focusing on Sharia sciences, Arabic language, and auxiliary sciences such as logic and rhetoric. This diploma demonstrates the student's mastery of the essential courses enabling progression to higher Zitouna study levels. The curricula include in-depth studies of Fiqh, Tafsir, Hadith, and Grammar, reflecting Zitouna's commitment to producing students with a solid understanding of Islamic principles.",
+  "title2": "Diploma of Achievement",
+  "desc2": "The Diploma of Achievement is the next step in the Zitouna educational path, awarded to students who demonstrate advanced comprehension of Sharia and literary sciences and mastery of research and analytical skills. It qualifies the student to undertake teaching or religious guidance roles and serves as official recognition of their academic competence and ability to contribute to both academic and dawah fields. This stage emphasizes specialization in comparative Fiqh, Usul al-Fiqh, Hadith sciences, and enhances the student's ability to interpret Sharia texts according to contemporary developments.",
+  "motivational": "✨ Be among the pioneers of knowledge, and start your journey with these blessed sciences ✨",
+  "heading": "Required subjects for obtaining diplomas",
+  "close": "Close"
 }
-
 }
-

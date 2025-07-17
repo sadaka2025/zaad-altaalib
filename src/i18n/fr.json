@@ -18,7 +18,7 @@
   "report_issue": "Signaler un problème ou une suggestion",
   "formations_title": "Formations",
   "formations_description": "Voici la liste des cours proposés...",
-    "view_content": "Voir le contenu",
+  "view_content": "Voir le contenu",
   "choose_level": "Choisissez votre niveau pour commencer.",
   "back_to_home": "Retour à la page d'accueil",
   "level1_title": "Niveau 1 : Débutant",
@@ -32,46 +32,98 @@
   "level5_title": "Niveau 5 : Avancé",
   "level5_desc": "Pour se spécialiser en sciences religieuses.",
   "our_instructors": "Nos Meilleurs Instructeurs",
-  "instructor1_name": "Dr. Youssef",
-  "instructor1_bio": "Expert en Fiqh",
-  "instructor2_name": "Mme. Nadia",
-  "instructor2_bio": "Langue arabe",
-  "instructor3_name": "Cheikh Ahmed",
-  "instructor3_bio": "Tafsir",
-  "instructor4_name": "Oustadh Sami",
-  "instructor4_bio": "Aqida",
-  "instructor5_name": "M. Walid",
-  "instructor5_bio": "Grammaire",
-  "instructor6_name": "Mme. Rim",
-  "instructor6_bio": "Éducation islamique",
-  "instructor7_name": "Dr. Tarek",
-  "instructor7_bio": "Logique",
-  "instructor8_name": "Cheikh Abdallah",
-  "instructor8_bio": "Sunnah",
-  "instructor9_name": "Mme. Salma",
-  "instructor9_bio": "Tajwid",
-  "instructor10_name": "Dr. Khaled",
-  "instructor10_bio": "Histoire islamique",
-  "benefits": {
-    "title": "Bienfaits de la science religieuse",
-    "description": "Elle purifie l'âme, éclaire le cœur, rapproche de Dieu, donne du sens à la vie et structure la pensée du croyant.",
-    "imageAlt": "Science religieuse"
-  },
-  "testimonials": {
-  "title": "Ce que disent nos étudiants",
-  "description": "Des retours authentiques sur leur expérience d’apprentissage.",
-  "items": [
+  "view_cv": "Voir le CV",
+  "instructors": [
     {
-      "name": "Amina Ben Yahia",
-      "comment": "Avant de rejoindre cette plateforme, j’étais perdue, sans motivation réelle. Mais chaque cours ici m’a réconciliée avec l’apprentissage...",
-      "image": "/images/student1.jpg"
+      "name": "Cheikh Maher Thamlawi",
+      "bio": "Grammaire et Morphologie",
+      "image": "/images/instructor5.jpg",
+      "cv": "Diplômes universitaires\n• Licence en études islamiques de l’Université Al-Jinan – Tripoli, Liban, mention Bien (2005).\n• Licence en sciences islamiques et arabes de l’Institut Al-Fath à Damas – Syrie, mention Excellent (1999).\n• Spécialisation en Hadith et sciences connexes de l’Université Al-Azhar, Damas (2003).\n• Certificat d’aptitude à l’enseignement de l’Institut Al-Fath.\n• Expérience en édition critique d’ouvrages islamiques chez Dar Al-Risala, Damas."
     },
     {
-      "name": "Mohamed Kacem",
-      "comment": "Je n’oublierai jamais le jour où j’ai écouté la première leçon. C’était comme une lumière dans mon cœur...",
-      "image": "/images/student2.jpg"
+      "name": "Cheikh Abdel Fattah Hussein",
+      "bio": "Droit islamique (Fiqh)",
+      "image": "/images/instructor3.jpg",
+      "cv": "Qualifications académiques :\n2023 : Doctorant à l’Université de Zitouna.\n2022 : Master en sciences islamiques, spécialité fiqh et politique juridique (Université de Zitouna).\n2017 : Licence supérieure en Shari’a islamique (Université Al-Azhar).\n2012 : Baccalauréat Al-Azharien.\n\nCertificats et licences :\nLicence en Al-Arba’in Al-Nawawiya.\n2017 : Licence générale en Tajweed.\n2017 : Licence en Shama’il d’Imam Al-Tirmidhi.\n2011 : Licence en lecture coranique selon la narration de Qalun.\n2008 : Certificat de mémorisation du Coran."
+    },
+    {
+      "name": "Cheikh Abdel Rahman Al-Alawi",
+      "bio": "Fiqh comparé",
+      "image": "/images/instructor8.jpg",
+      "cv": "Doctorat en Shari’a islamique avec mention très honorable (2021).\nThèse : Les différences fondamentales entre les écoles des juristes et les Mu‘tazilites.\nMémoire de master : Les règles fondamentales selon Al-Fandali et leurs applications en fiqh.\nPublications dans la revue Dar Al-‘Ulum – Université du Caire."
+    },
+    {
+      "name": "Cheikh Wahid Ben Othman",
+      "bio": "Aqida (Doctrine)",
+      "image": "/images/instructor6.jpg",
+      "cv": "Professeur d’aqida, spécialiste en principes du fiqh à l’Université de Zitouna et à l’Université Al-Azhar."
+    },
+    {
+      "name": "Cheikh Ali Bouchlaghem",
+      "bio": "Tajwid",
+      "image": "/images/instructor7.jpg",
+      "cv": "Spécialiste en règles de tajwid."
+    },
+    {
+      "name": "Cheikh Mohamed Ali Dou",
+      "bio": "Hadith",
+      "image": "/images/instructor1.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Mohamed Ben Jomaa Ayad",
+      "bio": "Éthique islamique",
+      "image": "/images/instructor2.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Shamseddine Zawiya",
+      "bio": "Grammaire arabe",
+      "image": "/images/instructor4.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Sami Al-Rassa‘",
+      "bio": "Tafsir (exégèse coranique)",
+      "image": "/images/instructor9.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Marwan Hammouda",
+      "bio": "Sira (biographie du Prophète)",
+      "image": "/images/instructor10.jpg",
+      "cv": ""
     }
-  ]}
+  ],
+  "testimonials": {
+    "title": "Ce que disent nos étudiants",
+    "description": "Des retours authentiques sur leur expérience d’apprentissage.",
+    "items": [
+      {
+        "name": "Dr. Bachir Hameurlain",
+        "comment": "Mon évaluation de la plateforme :\n\nCette expérience a été remarquable sur tous les plans, avec rigueur, discipline et méthode. On sent un projet scientifique authentique, puisant à la source des anciens, mêlant tradition et outils modernes.\n\nImpact scientifique :\n\nJ’ai constaté une vraie progression dans la compréhension, la maîtrise des termes et l’assimilation des textes, notamment en aqida et fiqh. Cette plateforme a réordonné mes priorités en science et m’a connecté à une méthodologie complète, loin de la dispersion.\n\nPrincipaux avantages :\n• Contenu choisi avec soin, basé sur des sources fiables, avec des explications claires.\n• Méthode pédagogique adaptée, avec une progression logique.\n• Accompagnement des enseignants remarquable, plus que des professeurs, de vrais mentors. L’interaction, le suivi et l’attention au participant sont évidents.\n\nQu’Allah bénisse ces efforts et fasse de cette plateforme une source de lumière et de réussite.",
+        "image": "/images/student1.jpg"
+      },
+      {
+        "name": "Youssef Boutaba",
+        "comment": "Je me souviens encore de ma première leçon sur cette plateforme d’enseignement à distance… Ce n’était pas juste un début de parcours, mais une vraie transformation dans ma compréhension de la science, son rang élevé et la beauté de ses savants.\nLes mots du professeur étaient comme des clés lumineuses ouvrant non seulement l’esprit, mais aussi le cœur, avec douceur et sollicitude, comme un père ou un frère bienveillant…\nMerci pour ce qu’ils ont semé en nous, sans rien attendre en retour. Qu’Allah les récompense abondamment.",
+        "image": "/images/student2.jpg"
+      }
+    ]
+  },
+  "benefits": {
+    "title": "🌿 Bienfaits de la science religieuse",
+    "description": "La quête du savoir religieux est un chemin de lumière et de guidance, un moyen de comprendre correctement la religion, d’éclairer les cœurs, d’apaiser les âmes, de dépasser les doutes et les désirs, une adoration rapprochant le serviteur de son Seigneur, une arme contre l’ignorance et les troubles, un dépôt transmettant le bien aux gens. Heureux celui qui consacre du temps à mémoriser le Livre d’Allah, comprendre la Sunna du Prophète et suivre la voie des savants. Les anges étendent leurs ailes au chercheur de savoir en signe d’agrément, et ceux du ciel et de la terre invoquent pour lui.",
+    "imageAlt": "Science religieuse"
+  },
+  
+  "diploma": {
+    "title1": "Diplôme d'Aptitude",
+    "desc1": "Le Diplôme d'Aptitude est l'un des certificats fondamentaux délivrés par les institutions éducatives de Zitouna, représentant une étape avancée dans le cursus éducatif. L'étudiant obtient ce diplôme après avoir suivi un programme intensif axé sur les sciences religieuses, la langue arabe et les sciences auxiliaires telles que la logique et la rhétorique. Ce diplôme atteste la maîtrise des matières essentielles permettant de passer aux niveaux supérieurs d'étude à Zitouna. Le programme comprend des études approfondies en fiqh, tafsir, hadith et grammaire, reflétant l'engagement de Zitouna à former des étudiants bien informés sur les principes islamiques.",
+    "title2": "Diplôme de Réussite",
+    "desc2": "Le Diplôme de Réussite est l'étape suivante dans le parcours éducatif de Zitouna, accordé à l'étudiant démontrant une compréhension avancée des sciences religieuses et littéraires ainsi qu'une maîtrise des compétences de recherche et d'analyse. Ce diplôme qualifie l'étudiant à exercer des fonctions d'enseignement ou de guidage religieux, constituant une reconnaissance officielle de sa compétence académique et de sa capacité à contribuer aux domaines académiques et de la da‘wa. Cette phase met l'accent sur la spécialisation en fiqh comparé, usul al-fiqh, sciences du hadith, tout en renforçant la capacité d'interprétation des textes religieux en fonction des évolutions contemporaines.",
+    "motivational": "✨ Soyez parmi les pionniers du savoir, commencez votre parcours avec ces sciences bénies ✨",
+    "heading": "Matières requises pour obtenir les diplômes",
+    "close": "Fermer"
+  }
 }
-
-
