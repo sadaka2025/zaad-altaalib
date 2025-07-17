@@ -10,55 +10,26 @@ export default function TestimonialsSection() {
   const [swiperKey, setSwiperKey] = useState(0);
   const swiperRef = useRef(null);
 
-  useEffect(() => {
-    setSwiperKey((prev) => prev + 1);
-  }, [i18n.language]);
+  useEffect(() => setSwiperKey(k => k + 1), [i18n.language]);
 
   const testimonials = t("testimonials.items", { returnObjects: true });
 
   return (
-    <section
-      className="relative py-16 text-white overflow-hidden"
-      dir={i18n.language === "ar" ? "rtl" : "ltr"}
-    >
-      {/* 🎥 Vidéo d'arrière-plan */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-       <source src="https://res.cloudinary.com/dlik6kdpg/video/upload/v1752714356/background-video_egt9l5.mp4" />
-
-        Your browser does not support the video tag.
+    <section className="relative py-16 text-white overflow-hidden" dir={i18n.language === "ar" ? "rtl" : "ltr"}>
+      <video autoPlay loop muted playsInline className="absolute inset-0 w-full h-full object-cover z-0">
+        <source src="https://res.cloudinary.com/dlik6kdpg/video/upload/v1752714356/background-video_egt9l5.mp4" />
       </video>
-
-      {/* 🧊 Overlay foncé pour lisibilité */}
       <div className="absolute inset-0 bg-black/60 z-0" />
-
-      {/* 🎯 Contenu par-dessus la vidéo */}
       <div className="relative z-10 container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-8 items-center">
-          {/* Témoignages */}
           <div className="bg-white bg-opacity-10 backdrop-blur p-6 rounded-2xl shadow-xl border border-white/20">
-            <Swiper
-              key={swiperKey}
-              modules={[Navigation, Autoplay]}
-              spaceBetween={20}
-              slidesPerView={1}
-              loop={true}
-              autoplay={{ delay: 5000 }}
-              onBeforeInit={(swiper) => (swiperRef.current = swiper)}
-            >
+            <Swiper key={swiperKey} modules={[Navigation, Autoplay]} spaceBetween={20}
+              slidesPerView={1} loop autoplay={{ delay:5000 }} onBeforeInit={s => swiperRef.current = s}>
               {testimonials.map((testi, index) => (
                 <SwiperSlide key={index}>
                   <div className="text-center px-4">
-                    <img
-                      src={testi.image}
-                      alt={testi.name}
-                      className="w-20 h-20 mx-auto rounded-full object-cover mb-4 border-4 border-white"
-                    />
+                    <img src={testi.image} alt={testi.name}
+                      className="w-20 h-20 mx-auto rounded-full object-cover mb-4 border-4 border-white" />
                     <p className="text-white/90 italic mb-4">“{testi.comment}”</p>
                     <h4 className="text-lg font-semibold text-white">{testi.name}</h4>
                   </div>
@@ -66,26 +37,12 @@ export default function TestimonialsSection() {
               ))}
             </Swiper>
           </div>
-
-          {/* Texte + boutons */}
           <div className="text-center md:text-left">
-            <h2 className="text-3xl font-bold text-white mb-4">
-              🗣️ {t("testimonials.title")}
-            </h2>
+            <h2 className="text-3xl font-bold text-white mb-4">🗣️ {t("testimonials.title")}</h2>
             <p className="text-white/80 mb-6">{t("testimonials.description")}</p>
             <div className="flex justify-center md:justify-start gap-4">
-              <button
-                onClick={() => swiperRef.current?.slidePrev()}
-                className="w-10 h-10 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-blue-600 transition"
-              >
-                ←
-              </button>
-              <button
-                onClick={() => swiperRef.current?.slideNext()}
-                className="w-10 h-10 flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-blue-600 transition"
-              >
-                →
-              </button>
+              <button onClick={() => swiperRef.current?.slidePrev()} className="w-10 h-10 ...">←</button>
+              <button onClick={() => swiperRef.current?.slideNext()} className="w-10 h-10 ...">→</button>
             </div>
           </div>
         </div>
