@@ -9,7 +9,7 @@ i18n
   .use(LanguageDetector) // ✅ auto-détection navigateur + localStorage
   .use(initReactI18next)
   .init({
-    fallbackLng: "fr",
+    fallbackLng: "ar",
     debug: true,
     interpolation: { escapeValue: false },
     backend: {

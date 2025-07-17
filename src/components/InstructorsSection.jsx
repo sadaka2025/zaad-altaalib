@@ -17,10 +17,17 @@ export default function InstructorsSection() {
   }, [i18n.language]);
 
   const instructors = t("instructors", { returnObjects: true });
+  const [isClient, setIsClient] = useState(false);
+
+useEffect(() => {
+  setIsClient(true);
+}, []);
+
 
   const closeModal = () => {
     setSelectedInstructor(null);
   };
+if (!isClient) return null;
 
   return (
     <section

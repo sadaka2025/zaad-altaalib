@@ -25,7 +25,8 @@ function LangRoutesWrapper() {
   useEffect(() => {
     const supportedLangs = ["fr", "ar", "en"];
     const isValidLang = supportedLangs.includes(lang);
-    const selectedLang = isValidLang ? lang : "fr";
+    const selectedLang = isValidLang ? lang : "ar";
+
 
     i18n.changeLanguage(selectedLang);
 
@@ -55,7 +56,8 @@ export default function App() {
     <Router>
       <Routes>
         {/* 🔁 Redirection vers une langue par défaut */}
-        <Route path="/" element={<Navigate to="/fr" replace />} />
+        <Route path="/" element={<Navigate to="/ar" replace />} />
+
 
         {/* ✅ Route avec langue dynamique */}
         <Route path="/:lang/*" element={<LangRoutesWrapper />} />
