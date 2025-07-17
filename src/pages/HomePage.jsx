@@ -9,6 +9,8 @@ import InstructorsSection from "../components/InstructorsSection";
 import TestimonialsSection from "../components/TestimonialsSection";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import ScrollDownButton from "../components/ScrollDownButton";
+import DiplomaSection from "../components/DiplomaSection";
+
 
 export default function HomePage() {
   const { t, i18n } = useTranslation();
@@ -21,7 +23,7 @@ export default function HomePage() {
   }, [isRTL]);
 
   return (
-    <div className={`min-h-screen bg-white text-gray-800 ${isRTL ? "font-arabic" : ""}`}>
+   <div className={`min-h-screen bg-gray-100 text-gray-800 ${isRTL ? "font-arabic" : ""}`}>
 
       <Helmet>
         <html lang={i18n.language} />
@@ -31,10 +33,12 @@ export default function HomePage() {
 
       <HeroSection />
       <BenefitsSection />
+      <DiplomaSection /> {/* 🔥 Ajout ici */}
       <InstructorsSection />
       <TestimonialsSection />
       <ScrollToTopButton />
       <ScrollDownButton />
+
     </div>
   );
 }
