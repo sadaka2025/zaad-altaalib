@@ -8,14 +8,14 @@ export default function BenefitsSection() {
   return (
     <section className="relative h-[80vh] overflow-hidden flex items-center justify-center text-white text-center px-4">
       {/* فيديو الخلفية */}
-      <video
-        src="/videos/knowledge-bg.mp4"
+      <video controls> <source src="/videos/knowledge-bg.mp4"
         autoPlay
         loop
         muted
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      />
+      /> </video>
+        
 
       {/* تغطية لونية */}
       <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10" />
