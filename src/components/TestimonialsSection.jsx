@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-       <source src="/videos/background-video.mp4" type="video/mp4" />
+       <source src="https://res.cloudinary.com/dlik6kdpg/video/upload/v1752714356/background-video_egt9l5.mp4" />
 
         Your browser does not support the video tag.
       </video>
