@@ -15,7 +15,9 @@ export default function InstructorsSection() {
   useEffect(() => setSwiperKey((k) => k + 1), [i18n.language]);
 
   const instructorsRaw = t("instructors.instructors", { returnObjects: true });
-const instructors = t("instructors", { returnObjects: true });
+  const instructors = t("instructors.instructors", { returnObjects: true }) || [];
+
+
 
 
   return (
@@ -45,7 +47,8 @@ const instructors = t("instructors", { returnObjects: true });
               1024: { slidesPerView: 4 },
             }}
           >
-            {instructors.map((inst, idx) => (
+            {Array.isArray(instructors) && instructors.map((inst, idx) => (
+
               <SwiperSlide key={idx}>
                 <div className="bg-gray-100 p-6 rounded-xl shadow-md">
                   <img
