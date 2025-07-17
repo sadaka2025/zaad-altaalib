@@ -11,34 +11,45 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import ScrollDownButton from "../components/ScrollDownButton";
 import DiplomaSection from "../components/DiplomaSection";
 
-
 export default function HomePage() {
   const { t, i18n } = useTranslation();
   const { lang } = useParams();
   const isRTL = i18n.language === "ar";
 
-  // ✅ لضمان تغيير الاتجاه في <html> أيضًا
   useEffect(() => {
     document.documentElement.dir = isRTL ? "rtl" : "ltr";
   }, [isRTL]);
 
   return (
-   <div className={`min-h-screen bg-gray-100 text-gray-800 ${isRTL ? "font-arabic" : ""}`}>
-
+    <div className={`min-h-screen bg-sky-100 text-gray-800 ${isRTL ? "font-arabic" : ""}`}>
       <Helmet>
         <html lang={i18n.language} />
         <title>{t("seo_home_title")}</title>
         <meta name="description" content={t("seo_home_description")} />
       </Helmet>
 
-      <HeroSection />
-      <BenefitsSection />
-      <DiplomaSection /> {/* 🔥 Ajout ici */}
-      <InstructorsSection />
-      <TestimonialsSection />
+      <div className="mb-8">
+        <HeroSection />
+      </div>
+
+      <div className="mb-8">
+        <BenefitsSection />
+      </div>
+
+      <div className="mb-8">
+        <DiplomaSection />
+      </div>
+
+      <div className="mb-8">
+        <InstructorsSection />
+      </div>
+
+      <div className="mb-8">
+        <TestimonialsSection />
+      </div>
+
       <ScrollToTopButton />
       <ScrollDownButton />
-
     </div>
   );
 }
