@@ -6,34 +6,31 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+import useSafeTranslateArray from "../utils/useSafeTranslateArray"; // ✅ Hook sécurité
+
 export default function InstructorsSection() {
   const { t, i18n } = useTranslation();
   const isRTL = i18n.language === "ar";
   const [swiperKey, setSwiperKey] = useState(0);
   const [selectedInstructor, setSelectedInstructor] = useState(null);
+  const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
     setSwiperKey((prev) => prev + 1);
   }, [i18n.language]);
 
-  const instructors = t("instructors", { returnObjects: true });
-  const [isClient, setIsClient] = useState(false);
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
-useEffect(() => {
-  setIsClient(true);
-}, []);
+  const instructors = useSafeTranslateArray("instructors"); // ✅ Sécurisé
 
+  const closeModal = () => setSelectedInstructor(null);
 
-  const closeModal = () => {
-    setSelectedInstructor(null);
-  };
-if (!isClient) return null;
+  if (!isClient) return null;
 
   return (
-    <section
-      className="py-16 bg-white"
-      dir={isRTL ? "rtl" : "ltr"}
-    >
+    <section className="py-16 bg-white" dir={isRTL ? "rtl" : "ltr"}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">
           {t("our_instructors")}
@@ -84,7 +81,9 @@ if (!isClient) return null;
         {selectedInstructor && (
           <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
             <div className="bg-white max-w-xl w-full p-6 rounded-lg shadow-lg text-right overflow-y-auto max-h-[80vh] relative">
-              <h3 className="text-xl font-bold mb-4">{selectedInstructor.name}</h3>
+              <h3 className="text-xl font-bold mb-4">
+                {selectedInstructor.name}
+              </h3>
               <p className="whitespace-pre-wrap text-sm text-gray-700 mb-6">
                 {selectedInstructor.cv || t("no_cv_available")}
               </p>
