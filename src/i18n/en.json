@@ -49,5 +49,22 @@
     "title": "🌿 Benefits of Religious Knowledge",
     "description": "Seeking Islamic knowledge is a path of light and guidance. It leads to proper understanding of God’s religion, opens hearts to truth, and brings peace to the soul. It is an act of worship, a defense against ignorance, and a duty to spread good to others.",
     "imageAlt": "Religious Knowledge"
-  }
+  },
+  "testimonials": {
+  "title": "What our students say",
+  "description": "Some feedback from students across the globe.",
+  "items": [
+    {
+      "name": "Amina",
+      "comment": "An amazing and clear course.",
+      "image": "/path/to/photo1.jpg"
+    },
+    {
+      "name": "Zayd",
+      "comment": "It helped me study at my pace.",
+      "image": "/path/to/photo2.jpg"
+    }
+  ]
+}
+
 }

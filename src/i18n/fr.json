@@ -49,5 +49,22 @@
     "title": "🌿 Bienfaits du savoir religieux",
     "description": "L’apprentissage des sciences religieuses est un chemin de lumière et de guidance, un escalier vers la compréhension juste de la religion. Il éclaire les cœurs, rassure les âmes et élève les esprits. C’est une adoration qui rapproche du Seigneur, une arme contre l’ignorance et les tentations, et une responsabilité pour propager le bien.",
     "imageAlt": "Savoir religieux"
-  }
+  },
+  "testimonials": {
+  "title": "Ce que disent nos étudiants",
+  "description": "Voici quelques avis recueillis auprès de nos étudiants à travers le monde.",
+  "items": [
+    {
+      "name": "Amina",
+      "comment": "Une formation claire et enrichissante.",
+      "image": "/images/testimonials/amina.jpg"
+    },
+    {
+      "name": "Zayd",
+      "comment": "J’ai pu apprendre à mon rythme, merci !",
+      "image": "/images/testimonials/zayd.jpg"
+    }
+  ]
+}
+
 }
