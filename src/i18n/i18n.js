@@ -5,22 +5,14 @@ import Backend from 'i18next-http-backend';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(Backend) // charge les fichiers JSON dynamiquement
-  .use(LanguageDetector) // détecte la langue du navigateur ou de localStorage
+  .use(HttpApi)
   .use(initReactI18next)
   .init({
-    fallbackLng: 'fr', // Langue par défaut
-    debug: false,
-    interpolation: {
-      escapeValue: false // nécessaire avec React
-    },
+    fallbackLng: "ar",
+    debug: true, // active les logs détaillés
     backend: {
-      loadPath: '/locales/{{lng}}/translation.json', // dossier public/locales/fr/translation.json etc.
+      loadPath: "/locales/{{lng}}/translation.json",
     },
-    detection: {
-      order: ['localStorage', 'navigator'],
-      caches: ['localStorage'],
-    }
+    react: { useSuspense: false },
   });
 
-export default i18n;

@@ -1,132 +1,171 @@
 {
-  "en": {
-    "welcome": "Welcome to Zad Al-Talib",
-    "niveau": "Level",
-    "home": "Home",
-    "courses": "Training Courses",
-    "dashboard": "Student Dashboard",
-    "contact": "Contact Us",
-    "hero_title": "Welcome to Zad Al-Talib Platform",
-    "hero_description": "In 2023/2024, the Sheikhs launched a distance learning system for those unable to attend in person... Duration: 5 years | Weekly sessions | Remote tests | Live meetings.",
-    "explore_courses": "📚 Explore Training Courses",
-    "feature1_title": "Structured Scientific Lessons",
-    "feature1_desc": "Well-ordered subjects from foundational to advanced knowledge.",
-    "feature2_title": "Simplified Content",
-    "feature2_desc": "Summaries, Q&A, tests... for easy review and understanding.",
-    "feature3_title": "Engage with Peers",
-    "feature3_desc": "Communication links and interactive notes among students.",
-    "rights_reserved": "All rights reserved",
-    "report_issue": "📥 Share your suggestion or issue",
-    "formations_title": "Training Courses",
-    "formations_description": "List of proposed courses...",
-    "view_content": "View Content",
-    "choose_level": "Choose your academic level and start your journey with Zad Al-Talib.",
-    "back_to_home": "Back to Home Page",
-    "level1_title": "Level 1: Beginner",
-    "level1_desc": "Suitable for those starting to seek knowledge for the first time.",
-    "level2_title": "Level 2: Language Foundation",
-    "level2_desc": "Focus on mastering Arabic before delving into details.",
-    "level3_title": "Level 3: Intermediate",
-    "level3_desc": "For those who studied the basics and want to expand.",
-    "level4_title": "Level 4: Deep Understanding",
-    "level4_desc": "Analytical level with extensive use of core sources.",
-    "level5_title": "Level 5: Advanced",
-    "level5_desc": "For students aiming for academic or da’wah specialization.",
-    "our_instructors": "Our Honorable Sheikhs",
-    "view_cv": "View CV",
-    "dashboard_title": "First Year - Distance Zaytuna Education",
-    "semester1": "Semester 1",
-    "semester2": "Semester 2",
-    "fiqh": "Fiqh",
-    "aqida": "Aqeedah",
-    "tajwid": "Tajweed",
-    "nahw": "Grammar",
-    "sirah": "Seerah",
-    "hadith": "Hadith",
-    "akhlaq": "Ethics",
-    "testimonials": {
-      "title": "What Our Students Say",
-      "description": "Real opinions on their learning experience.",
-      "items": []
+  "welcome": "Bienvenue sur Zād al-Tālib",
+  "niveau": "Niveau",
+  "home": "Accueil",
+  "courses": "Formations",
+  "dashboard": "Tableau de bord de l'étudiant",
+  "contact": "Contactez-nous",
+  "hero_title": "Bienvenue sur la plateforme Zād al-Tālib",
+  "hero_description": "La Machyakha a lancé en 2023/2024 un système d'enseignement à distance pour ceux qui ne peuvent pas assister aux cours. Durée : 5 ans | Cours hebdomadaires | Examens à distance | Rencontres en direct.",
+  "explore_courses": "📚 Parcourir les formations",
+  "feature1_title": "Cours méthodiques",
+  "feature1_desc": "Organisation rigoureuse des matières, de l’initiation à la maîtrise.",
+  "feature2_title": "Contenu simplifié",
+  "feature2_desc": "Résumés, questions-réponses, tests... pour faciliter la révision et la compréhension.",
+  "feature3_title": "Interaction entre étudiants",
+  "feature3_desc": "Liens de communication et commentaires interactifs entre les étudiants.",
+  "rights_reserved": "Tous droits réservés",
+  "report_issue": "📥 Proposez une idée ou signalez un problème",
+  "formations_title": "Formations",
+  "formations_description": "Liste des formations proposées...",
+  "view_content": "Voir le contenu",
+  "choose_level": "Choisissez votre niveau et commencez votre parcours avec Zād al-Tālib.",
+  "back_to_home": "Retour à l'accueil",
+  "level1_title": "Niveau 1 : Débutant",
+  "level1_desc": "Convient à ceux qui commencent l'apprentissage religieux sans formation préalable.",
+  "level2_title": "Niveau 2 : Fondamentaux de la langue",
+  "level2_desc": "Se concentrer sur la maîtrise de la langue arabe avant d'approfondir.",
+  "level3_title": "Niveau 3 : Intermédiaire",
+  "level3_desc": "Pour ceux ayant acquis les bases et souhaitant élargir leur savoir.",
+  "level4_title": "Niveau 4 : Approfondissement",
+  "level4_desc": "Analyse, interprétation, et approfondissement des sources reconnues.",
+  "level5_title": "Niveau 5 : Avancé",
+  "level5_desc": "Pour les étudiants souhaitant se spécialiser dans les sciences et la prédication.",
+  "our_instructors": "Nos honorables enseignants",
+  "view_cv": "Voir le CV",
+  
+  "dashboard_title": "1re année – Enseignement Zaytouni à distance",
+  "semester1": "Semestre 1",
+  "semester2": "Semestre 2",
+  "fiqh": "Jurisprudence (Fiqh)",
+  "aqida": "Croyance (Aqida)",
+  "tajwid": "Tajwid",
+  "nahw": "Grammaire (Nahw)",
+  "sirah": "Biographie du Prophète (Sirah)",
+  "hadith": "Hadith",
+  "akhlaq": "Éthique (Akhlaq)",
+  "dashboard_subjects": [
+    "Jurisprudence (Fiqh)",
+    "Croyance (Aqida)",
+    "Tajwid",
+    "Grammaire (Nahw)",
+    "Biographie du Prophète (Sirah)",
+    "Hadith",
+    "Éthique (Akhlaq)"
+  ],
+
+  "instructors": [
+    {
+      "name": "Cheikh Maher Thamlawi",
+      "bio": "Grammaire et morphologie",
+      "image": "/images/instructor5.jpg",
+      "cv": "Diplômes :\n• Licence en études islamiques - Université Al-Jinan, Tripoli, Liban, mention Bien (2005).\n• Licence en sciences islamiques et arabes - Institut Al-Fath, Damas, mention Excellent (1999).\n• Spécialisation en sciences du hadith - Université Al-Azhar, Damas (2003).\n• Certificat de pédagogie - Institut Al-Fath, Damas.\n• Expérience en édition de manuscrits patrimoniaux à Dar Al-Risala, Damas."
     },
-    "benefits": {
-      "title": "🌿 Benefits of Religious Knowledge",
-      "description": "Seeking religious knowledge is the path to light and guidance...",
-      "imageAlt": "Religious Knowledge"
+    {
+      "name": "Cheikh Abdelfattah Hussein",
+      "bio": "Jurisprudence (Fiqh)",
+      "image": "/images/instructor3.jpg",
+      "cv": "Diplômes :\n2023 : Doctorant, Université Zitouna.\n2022 : Master en sciences islamiques, spécialité Fiqh et politique.\n2017 : Licence en charia, Université Al-Azhar.\n2012 : Baccalauréat religieux, Azhar.\n\nIjazat :\n• Ijaza dans les 40 hadiths Nawawi\n• Ijaza générale en Tajwid\n• Ijaza en Shamail at-Tirmidhi\n• Ijaza en Qira’at (Qalun)\n• Certificat de mémorisation du Coran (2008)"
     },
-    "diploma": {
-      "title1": "Eligibility Certificate",
-      "desc1": "This certificate marks an advanced stage in Zaytuna education...",
-      "title2": "Achievement Certificate",
-      "desc2": "This certificate proves advanced understanding of sciences...",
-      "motivational": "📜 Keep striving… every hardworking person has a share.",
-      "heading": "Required Subjects for Certificates",
-      "close": "Close"
+    {
+      "name": "Cheikh Abderrahmane Al-Alawi",
+      "bio": "Jurisprudence comparée",
+      "image": "/images/instructor8.jpg",
+      "cv": "Doctorat en charia avec mention très honorable (2021).\nThèse : Différences fondamentales entre les écoles des juristes et les mu'tazilites.\nMaster : Principes de jurisprudence chez Al-Fandalawi.\nPublications : Revue Dar Al-Ouloum, Université du Caire."
+    },
+    {
+      "name": "Cheikh Wahid Ben Othman",
+      "bio": "Croyance (Aqida)",
+      "image": "/images/instructor6.jpg",
+      "cv": "Enseignant en Aqida et spécialiste en usul al-fiqh (Université Zitouna et Al-Azhar)."
+    },
+    {
+      "name": "Cheikh Ali Bouchlaghem",
+      "bio": "Tajwid",
+      "image": "/images/instructor7.jpg",
+      "cv": "Spécialiste en règles de récitation du Coran."
+    },
+    {
+      "name": "Cheikh Mohamed Ali Dou",
+      "bio": "Hadith",
+      "image": "/images/instructor1.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Mohamed Ben Jomaa Ayad",
+      "bio": "Éthique (Akhlaq)",
+      "image": "/images/instructor2.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Chams Eddine Zawiya",
+      "bio": "Grammaire (Nahw)",
+      "image": "/images/instructor4.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Sami Ressâa",
+      "bio": "Interprétation du Coran",
+      "image": "/images/instructor9.jpg",
+      "cv": ""
+    },
+    {
+      "name": "Cheikh Marouane Hamouda",
+      "bio": "Biographie prophétique",
+      "image": "/images/instructor10.jpg",
+      "cv": ""
     }
+  ],
+  "testimonials": {
+    "title": "Témoignages de nos étudiants",
+    "description": "Avis authentiques sur leur expérience d’apprentissage.",
+    "items": [
+      {
+        "name": "Dr Bachir HAMEURLAIN",
+        "comment": "Mon évaluation :\n\nMon expérience avec cette plateforme a été exceptionnelle en tout point. J’y ai trouvé un sérieux, une rigueur et une méthodologie rarement rencontrés ailleurs. On sent un véritable projet scientifique enraciné dans la tradition, alliant authenticité et moyens modernes.\n\nImpact :\n\nSur le plan scientifique, j’ai réellement progressé en compréhension, en maîtrise des termes et des textes, notamment en Aqida et en Fiqh. Cette plateforme a réorganisé mes priorités dans la quête du savoir, m’a offert une méthode complète, loin de l’improvisation.\n\nLes points forts :\n • Contenu rigoureux basé sur les textes de référence avec des explications claires.\n • Méthode pédagogique structurée et adaptée.\n • Accompagnement des enseignants : bienveillants et présents, au-delà de simples professeurs.\n\nQu’Allah vous récompense et bénisse cette œuvre.",
+        "image": "/images/student1.jpg"
+      },
+      {
+        "name": "Youssef Boutaba",
+        "comment": "Je me souviens encore du premier cours reçu sur la plateforme... Ce n'était pas juste le début d’un parcours académique, mais d’une transformation dans ma vision du savoir. \n\nLes mots de l’enseignant étaient comme des clés de lumière, ouvrant non seulement l’esprit mais aussi le cœur, avec douceur, clarté et affection…\n\nQu’Allah récompense ceux qui ont semé en nous tant de bien sans rien attendre en retour.",
+        "image": "/images/student2.jpg"
+      }
+    ]
   },
-  "fr": {
-    "welcome": "Bienvenue sur Zad Al-Talib",
-    "niveau": "Niveau",
-    "home": "Accueil",
-    "courses": "Formations",
-    "dashboard": "Tableau de bord étudiant",
-    "contact": "Contactez-nous",
-    "hero_title": "Bienvenue sur la plateforme Zad Al-Talib",
-    "hero_description": "En 2023/2024, la direction a lancé un système d’enseignement à distance pour ceux qui ne peuvent assister en présentiel... Durée : 5 ans | Sessions hebdomadaires | Tests à distance | Rencontres en direct.",
-    "explore_courses": "📚 Explorer les formations",
-    "feature1_title": "Cours scientifiques structurés",
-    "feature1_desc": "Organisation réfléchie des matières de l’initiation à l’expertise.",
-    "feature2_title": "Contenu simplifié",
-    "feature2_desc": "Résumés, questions/réponses, tests... pour faciliter la révision.",
-    "feature3_title": "Interaction avec les collègues",
-    "feature3_desc": "Liens de communication et remarques interactives entre étudiants.",
-    "rights_reserved": "Tous droits réservés",
-    "report_issue": "📥 Partagez votre suggestion ou problème",
-    "formations_title": "Formations",
-    "formations_description": "Liste des cours proposés...",
-    "view_content": "Voir le contenu",
-    "choose_level": "Choisissez votre niveau d’étude et commencez votre parcours avec Zad Al-Talib.",
-    "back_to_home": "Retour à la page d’accueil",
-    "level1_title": "Niveau 1 : Débutant",
-    "level1_desc": "Adapté à ceux qui commencent leur apprentissage religieux.",
-    "level2_title": "Niveau 2 : Fondement linguistique",
-    "level2_desc": "Se concentrer sur la langue arabe avant d’entrer dans les détails.",
-    "level3_title": "Niveau 3 : Intermédiaire",
-    "level3_desc": "Pour ceux ayant les bases et souhaitant approfondir.",
-    "level4_title": "Niveau 4 : Approfondissement",
-    "level4_desc": "Niveau d’analyse et d’interprétation avec sources principales.",
-    "level5_title": "Niveau 5 : Avancé",
-    "level5_desc": "Pour ceux qui visent la spécialisation scientifique ou religieuse.",
-    "our_instructors": "Nos éminents enseignants",
-    "view_cv": "Voir le CV",
-    "dashboard_title": "Première année - Enseignement Zaytuna à distance",
-    "semester1": "Semestre 1",
-    "semester2": "Semestre 2",
-    "fiqh": "Fiqh",
-    "aqida": "Aqida",
-    "tajwid": "Tajwid",
-    "nahw": "Grammaire",
-    "sirah": "Sîrah",
-    "hadith": "Hadith",
-    "akhlaq": "Éthique",
-    "testimonials": {
-      "title": "Témoignages de nos étudiants",
-      "description": "Avis réels sur leur expérience d’apprentissage.",
-      "items": []
-    },
-    "benefits": {
-      "title": "🌿 Bienfaits de la science religieuse",
-      "description": "Chercher la science religieuse est un chemin de lumière...",
-      "imageAlt": "Science religieuse"
-    },
-    "diploma": {
-      "title1": "Certificat d’Aptitude",
-      "desc1": "Ce certificat marque une étape avancée dans l’enseignement zaytounien...",
-      "title2": "Certificat de Réussite",
-      "desc2": "Ce certificat reconnaît une maîtrise avancée des sciences religieuses...",
-      "motivational": "📜 Poursuivez vos efforts… chaque assidu aura sa part.",
-      "heading": "Matières requises pour les certificats",
-      "close": "Fermer"
-    }
+  "benefits": {
+    "title": "🌿 Les bienfaits de la science religieuse",
+    "description": "La science religieuse est une lumière, un moyen de comprendre la religion de Dieu, elle éclaire les cœurs, apporte la sérénité, et élève l’âme. C’est un acte d’adoration qui rapproche du Seigneur, une arme contre l’ignorance et la discorde, et une responsabilité pour transmettre le bien. Heureux celui qui consacre son temps à mémoriser le Coran, comprendre la Sunna, et suivre la voie des savants. Les anges déploient leurs ailes pour le chercheur de science, et tout être lui demande pardon.",
+    "imageAlt": "Science religieuse"
+  },
+  "diploma": {
+    "title1": "Certificat d'Aptitude",
+    "desc1": "Ce certificat représente un niveau avancé dans l’enseignement zaytouni. Il atteste de la maîtrise des disciplines fondamentales (fiqh, tafsir, hadith, grammaire...), ouvrant la voie à des études plus spécialisées.",
+    "title2": "Certificat de Maîtrise",
+    "desc2": "Il confirme un haut niveau dans les sciences islamiques et littéraires, ainsi qu’une aptitude à l’enseignement et à l’analyse. Il permet l’exercice de la prédication et de l’enseignement spécialisé.",
+    "motivational": "📜 Poursuis ton chemin... car tout effort est récompensé.",
+    "heading": "Les matières exigées pour les certificats",
+    "close": "Fermer",
+    "subjects": [
+      { "name": "Coran et Tajwid", "icon": "📖", "description": "Maîtriser le Tajwid permet de réciter correctement le Coran, et d'en comprendre les règles et sagesses." },
+      { "name": "Croyance", "icon": "🧿", "description": "Base de l’islam : unicité de Dieu, attributs divins, foi aux messagers, aux livres..." },
+      { "name": "Jurisprudence", "icon": "⚖️", "description": "Les règles pratiques de la vie quotidienne : culte, transactions, famille, etc." },
+      { "name": "Grammaire", "icon": "✍️", "description": "Permet de comprendre les textes religieux et de s’exprimer correctement en arabe." },
+      { "name": "Morphologie", "icon": "🔤", "description": "Analyse de la structure des mots arabes et de leur dérivation." },
+      { "name": "Orthographe", "icon": "📝", "description": "Règles de l’écriture correcte : ponctuation, hamzas, fautes fréquentes..." },
+      { "name": "Hadith", "icon": "🗣️", "description": "Science des paroles du Prophète ﷺ, fondement de la tradition." },
+      { "name": "Biographie", "icon": "🌟", "description": "Vie du Prophète ﷺ : ses qualités, événements majeurs, leçons tirées." },
+      { "name": "Éthique", "icon": "❤️", "description": "L’éthique est la mise en pratique du savoir religieux. Elle purifie l’âme et honore la science." },
+      { "name": "Logique", "icon": "🧠", "description": "Permet de raisonner de façon juste et d’analyser les arguments valides." },
+      { "name": "Littérature", "icon": "📚", "description": "Littérature arabe (poésie, prose) pour affiner l’expression et enrichir la langue." },
+      { "name": "Usul al-Fiqh", "icon": "📐", "description": "Les fondements de la jurisprudence et les règles de déduction juridique." },
+      { "name": "Rhétorique", "icon": "📢", "description": "Art d’exprimer les idées religieuses avec clarté et beauté." },
+      { "name": "Terminologie du Hadith", "icon": "📖", "description": "Critères de fiabilité des hadiths et méthodes de classification." },
+      { "name": "Exégèse (Tafsir)", "icon": "🔍", "description": "Compréhension du sens du Coran et interprétation des versets." },
+      { "name": "Science des successions", "icon": "📊", "description": "Règles de partage de l’héritage selon le Coran et la Sunna." },
+      { "name": "Hadiths des règles", "icon": "📜", "description": "Hadiths traitant des prescriptions légales de l’Islam." },
+      { "name": "Versets des règles", "icon": "🕋", "description": "Versets du Coran sur les obligations religieuses." },
+      { "name": "Prédication & Oratoire", "icon": "🎙️", "description": "Art de transmettre un message religieux avec impact et clarté." },
+      { "name": "Groupes islamiques", "icon": "🧭", "description": "Étude des divergences doctrinales et historiques entre les courants de l’islam." }
+    ]
   }
 }
