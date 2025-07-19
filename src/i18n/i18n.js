@@ -1,18 +1,26 @@
 // src/i18n.js
-import i18n from 'i18next';
-import { initReactI18next } from 'react-i18next';
-import Backend from 'i18next-http-backend';
-import LanguageDetector from 'i18next-browser-languagedetector';
+import i18n from "i18next";
+import { initReactI18next } from "react-i18next";
+import Backend from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
 
 i18n
-  .use(HttpApi)
+  .use(Backend)
+  .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    fallbackLng: "ar",
-    debug: true, // active les logs détaillés
+    fallbackLng: "ar",           // Langue par défaut en cas d'absence
+    debug: false,                // Désactive les logs en prod
     backend: {
-      loadPath: "/locales/{{lng}}/translation.json",
+      loadPath: "/locales/{{lng}}/translation.json", // Chemin des fichiers JSON
     },
-    react: { useSuspense: false },
+    returnObjects: true,         // Pour récupérer objets/tableaux
+    interpolation: {
+      escapeValue: false,        // React s'en charge
+    },
+    react: {
+      useSuspense: false,        // Evite le suspense, plus simple pour SSR
+    },
   });
 
+export default i18n;

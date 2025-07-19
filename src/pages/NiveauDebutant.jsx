@@ -21,7 +21,7 @@ export default function NiveauDebutant() {
 
           <div className="max-w-3xl mx-auto mb-6 shadow-lg rounded overflow-hidden">
             <video controls className="w-full rounded">
-              <source src="...mp4" type="video/mp4" />
+              <source src="https://res.cloudinary.com/dlik6kdpg/video/upload/v1752794147/%D9%83%D9%84%D9%85%D8%A9_%D8%AA%D8%B1%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9_%D9%84%D9%81%D8%B6%D9%8A%D9%84%D8%A9_%D8%A7%D9%84%D8%B4%D9%8A%D8%AE_%D8%A7%D9%84%D8%AF%D9%83%D9%80%D8%AA%D9%88%D8%B1_%D9%85%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%86%D9%8A%D8%B1_%D8%A7%D9%84%D9%80%D9%83%D9%80%D9%80%D9%85%D9%80%D9%80%D9%86%D8%AA%D8%B1_%D8%B1%D8%A6%D9%80%D9%80%D9%80%D9%80%D9%8A%D8%B3_%D9%85%D8%B4%D9%8A%D8%AE%D8%A9_%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86%D8%A9_%D8%A7%D9%84%D9%85%D8%B9%D9%85%D9%88%D8%B1_v40lhe.mp4" type="video/mp4" />
               {t("video_not_supported")}
             </video>
           </div>
