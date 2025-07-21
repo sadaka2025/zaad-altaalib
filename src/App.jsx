@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -11,7 +10,8 @@ import {
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import Formations from "./pages/Formations";
-import NiveauDebutant from "./pages/NiveauDebutant";
+import NiveauDebutant from "./pages/NiveauDebutant/niveau-debutant";
+import FiqhPage from "./pages/NiveauDebutant/semester1/fiqh/FiqhPage";
 import Niveau2 from "./pages/Niveau2";
 import NiveauMoyen from "./pages/NiveauMoyen";
 import Niveau4 from "./pages/Niveau4";
@@ -27,10 +27,8 @@ function LangRoutesWrapper() {
     const isValidLang = supportedLangs.includes(lang);
     const selectedLang = isValidLang ? lang : "ar";
 
-
     i18n.changeLanguage(selectedLang);
 
-    // ✅ Appliquer dynamiquement sur <html>
     const dir = selectedLang === "ar" ? "rtl" : "ltr";
     document.documentElement.setAttribute("lang", selectedLang);
     document.documentElement.setAttribute("dir", dir);
@@ -42,6 +40,7 @@ function LangRoutesWrapper() {
         <Route index element={<HomePage />} />
         <Route path="formations" element={<Formations />} />
         <Route path="niveau-debutant" element={<NiveauDebutant />} />
+        <Route path="niveau-debutant/semester1/fiqh" element={<FiqhPage />} />
         <Route path="niveau-2" element={<Niveau2 />} />
         <Route path="niveau-moyen" element={<NiveauMoyen />} />
         <Route path="niveau-4" element={<Niveau4 />} />
@@ -55,11 +54,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        {/* 🔁 Redirection vers une langue par défaut */}
         <Route path="/" element={<Navigate to="/ar" replace />} />
-
-
-        {/* ✅ Route avec langue dynamique */}
         <Route path="/:lang/*" element={<LangRoutesWrapper />} />
       </Routes>
     </Router>
