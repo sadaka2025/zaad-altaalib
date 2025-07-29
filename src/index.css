@@ -2,7 +2,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #bfdbfe; /* bg-blue-200 */
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #1e3a8a; /* blue-900 */
+  border-radius: 4px;
+}
+
+/* Typing effect */
 .typewriter {
   overflow: hidden;
   border-right: 2px solid white;
@@ -15,7 +28,20 @@
   from { width: 0 }
   to { width: 100% }
 }
-
 @keyframes blink {
   50% { border-color: transparent }
+}
+/* Scrollbar custom blue */
+.scrollbar-blue::-webkit-scrollbar {
+  width: 6px;
+}
+.scrollbar-blue::-webkit-scrollbar-track {
+  background: #bfdbfe; /* bg-blue-200 */
+}
+.scrollbar-blue::-webkit-scrollbar-thumb {
+  background-color: #1e3a8a; /* blue-900 */
+  border-radius: 4px;
+}
+.scrollbar-blue:hover::-webkit-scrollbar-thumb {
+  background-color: #1e40af; /* blue-800 */
 }

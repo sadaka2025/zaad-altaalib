@@ -3,18 +3,20 @@ import React, { useState, useEffect } from "react";
 export default function ScrollToTopButton() {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Affiche le bouton après scroll de 300px
   useEffect(() => {
+    const main = document.querySelector(".main-scrollable");
     const toggleVisibility = () => {
-      setIsVisible(window.scrollY > 300);
+      if (main) setIsVisible(main.scrollTop > 300);
     };
-    window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    if (main) main.addEventListener("scroll", toggleVisibility);
+    return () => {
+      if (main) main.removeEventListener("scroll", toggleVisibility);
+    };
   }, []);
 
-  // Fonction de retour en haut
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    const main = document.querySelector(".main-scrollable");
+    if (main) main.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (

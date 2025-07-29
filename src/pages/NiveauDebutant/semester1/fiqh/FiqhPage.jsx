@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import ScrollToTopButton from "../../../../components/ScrollToTopButton";
 import ScrollDownButton from "../../../../components/ScrollDownButton";
+import Modal from "../../../../components/Modal";
 
 const lessons = [
   { id: 1, title: "الدرس الاول: فضل العلم و العلماء و بعض النصائح" },
@@ -23,9 +24,11 @@ const lessons = [
 const contentLinks = {
   1: {
     video: "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
-    videoDownload: "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+    videoDownload:
+      "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
     summaryPDF: "https://drive.google.com/file/d/19hvIoHdS-6lfxLJf1XR2xBwwDLJTSfge/preview",
-    summaryDownload: "https://drive.google.com/uc?export=download&id=19hvIoHdS-6lfxLJf1XR2xBwwDLJTSfge",
+    summaryDownload:
+      "https://drive.google.com/uc?export=download&id=19hvIoHdS-6lfxLJf1XR2xBwwDLJTSfge",
     textExtraction: "https://docs.google.com/document/d/1Yg08EwjxFTEuxs6s5FkoysY7KNtNZ7sTkQysTZ72nhI",
     qna: "https://docs.google.com/document/d/1KTXCUvsbAnvVYkNrG4mVSMDHwqA7IpuqSCkWLftrYtk",
   },
@@ -42,6 +45,11 @@ const tabLabels = {
 export default function FiqhPage() {
   const [selectedLessonId, setSelectedLessonId] = useState(1);
   const [selectedTab, setSelectedTab] = useState("video");
+  const [openSubmenus, setOpenSubmenus] = useState({ 1: true }); // Par défaut, premier ouvert
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalContent, setModalContent] = useState(null);
+
   const selectedLesson = lessons.find((l) => l.id === selectedLessonId);
   const currentTabIndex = tabs.indexOf(selectedTab);
 
@@ -63,10 +71,86 @@ export default function FiqhPage() {
     return null;
   };
 
-  return (
+  const openModalWithContent = () => {
+    const content = contentLinks[selectedLessonId];
+    if (!content) return;
+
+    let modalBody = null;
+
+    switch (selectedTab) {
+      case "video":
+        modalBody = (
+          <iframe
+            src={content.video}
+            className="w-full h-[80vh] rounded"
+            allowFullScreen
+            title="Video Lesson Enlarged"
+          />
+        );
+        break;
+
+      case "summaryPDF":
+        modalBody = (
+          <iframe
+            src={content.summaryPDF}
+            className="w-full h-[80vh] rounded"
+            allowFullScreen
+            title="Summary PDF Enlarged"
+          />
+        );
+        break;
+
+      case "textExtraction":
+        modalBody = (
+          <a
+            href={content.textExtraction}
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-600 underline"
+          >
+            عرض مستند استخراج النصوص (فتح في نافذة جديدة)
+          </a>
+        );
+        break;
+
+      case "qna":
+        modalBody = (
+          <a
+            href={content.qna}
+            target="_blank"
+            rel="noreferrer"
+            className="text-blue-600 underline"
+          >
+            عرض تلخيص الأسئلة و الأجوبة (فتح في نافذة جديدة)
+          </a>
+        );
+        break;
+
+      default:
+        modalBody = null;
+    }
+
+    setModalTitle(`${selectedLesson.title} - ${tabLabels[selectedTab]}`);
+    setModalContent(modalBody);
+    setModalOpen(true);
+  };
+ const toggleSubmenu = (lessonId) => {
+    setOpenSubmenus((prev) => ({
+      ...prev,
+      [lessonId]: !prev[lessonId],
+    }));
+  };
+  const [openLessonId, setOpenLessonId] = useState(null);
+
+const toggleLesson = (id) => {
+  setOpenLessonId((prevId) => (prevId === id ? null : id));
+};
+
+
+ return (
     <div className="flex h-screen bg-blue-50">
       {/* Sidebar */}
-      <div className="w-96 bg-blue-100 p-4 border-l border-blue-400 flex flex-col overflow-y-auto">
+      <div className="w-96 bg-blue-100 p-4 border-l border-blue-400 flex flex-col overflow-y-auto scrollbar-thin scrollbar-thumb-blue-900 scrollbar-track-blue-100 hover:scrollbar-thumb-blue-700 scrollbar-thin scrollbar-thumb-blue-900 main-scrollable">
         <div className="flex flex-col gap-4">
           <div className="flex justify-between">
             <ScrollToTopButton />
@@ -84,44 +168,57 @@ export default function FiqhPage() {
 
         <ul className="mt-6 space-y-2">
           {lessons.map((lesson) => (
-            <li key={lesson.id}>
-              <button
-                onClick={() => {
-                  setSelectedLessonId(lesson.id);
-                  setSelectedTab("video");
-                }}
-                className={`w-full text-right px-2 py-2 rounded font-semibold flex justify-between items-center ${
-                  selectedLessonId === lesson.id
-                    ? "bg-blue-500 text-white"
-                    : "bg-blue-200 hover:bg-blue-300 text-blue-900"
-                }`}
-              >
-                <span className="text-sm">{lesson.title}</span>
-                <span className="text-lg">
-                  {selectedLessonId === lesson.id ? "−" : "+"}
-                </span>
-              </button>
+  <li key={lesson.id}>
+    <button
+      onClick={() => {
+        setSelectedLessonId(lesson.id);
+        setSelectedTab("video");
+      }}
+      className={`w-full text-right px-2 py-2 rounded font-semibold flex justify-between items-center ${
+        selectedLessonId === lesson.id
+          ? "bg-blue-500 text-white"
+          : "bg-blue-200 hover:bg-blue-300 text-blue-900"
+      }`}
+    >
+      <span className="text-sm">{lesson.title}</span>
+      <span
+        className="text-lg cursor-pointer"
+        onClick={(e) => {
+          e.stopPropagation();
+          toggleSubmenu(lesson.id);
+        }}
+      >
+        {openSubmenus[lesson.id] ? "−" : "+"}
+      </span>
+    </button>
 
-              {selectedLessonId === lesson.id && (
-                <ul className="pl-4 mt-2 space-y-1">
-                  {tabs.map((tab) => (
-                    <li key={tab}>
-                      <button
-                        onClick={() => setSelectedTab(tab)}
-                        className={`text-sm w-full text-right px-2 py-1 rounded hover:bg-blue-300 ${
-                          selectedTab === tab ? "bg-blue-600 text-white" : "bg-blue-100 text-blue-900"
-                        }`}
-                      >
-                        {tabLabels[tab]}
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </li>
-          ))}
+    {openSubmenus[lesson.id] && (
+      <ul className="pl-4 mt-2 space-y-1">
+        {tabs.map((tab) => (
+          <li key={tab}>
+            <button
+              onClick={() => {
+                setSelectedLessonId(lesson.id);
+                setSelectedTab(tab);
+              }}
+              className={`text-sm w-full text-right px-2 py-1 rounded hover:bg-blue-300 ${
+                selectedLessonId === lesson.id && selectedTab === tab
+                  ? "bg-blue-600 text-white"
+                  : "bg-blue-100 text-blue-900"
+              }`}
+            >
+              {tabLabels[tab]}
+            </button>
+          </li>
+        ))}
+      </ul>
+    )}
+  </li>
+))}
+
         </ul>
       </div>
+
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col overflow-y-auto relative">
@@ -161,50 +258,72 @@ export default function FiqhPage() {
           </button>
         </div>
 
-        <div className="flex-1 p-6 overflow-y-auto space-y-6">
-          <div className="bg-white shadow rounded p-4 space-y-4">
-            <h2 className="font-bold text-right text-blue-700 border-b pb-2">
-              {tabLabels[selectedTab]}
-            </h2>
-            {selectedTab === "video" && (
-              <iframe
-                src={contentLinks[selectedLessonId]?.video}
-                className="w-full h-64 rounded"
-                allowFullScreen
-                title="lesson video"
-              ></iframe>
-            )}
-            {selectedTab === "summaryPDF" && (
-              <iframe
-                src={contentLinks[selectedLessonId]?.summaryPDF}
-                className="w-full h-64 rounded"
-                allowFullScreen
-                title="lesson summary"
-              ></iframe>
-            )}
-            {selectedTab === "textExtraction" && (
-              <a
-                href={contentLinks[selectedLessonId]?.textExtraction}
-                className="text-blue-600 underline text-right block"
-                target="_blank"
-                rel="noreferrer"
-              >
-                عرض مستند استخراج النصوص
-              </a>
-            )}
-            {selectedTab === "qna" && (
-              <a
-                href={contentLinks[selectedLessonId]?.qna}
-                className="text-blue-600 underline text-right block"
-                target="_blank"
-                rel="noreferrer"
-              >
-                عرض تلخيص الأسئلة و الأجوبة
-              </a>
-            )}
-          </div>
-        </div>
+        <div className="flex-1 p-6 overflow-y-auto scrollbar-thin scrollbar-thumb-blue-700 scrollbar-track-blue-100">
+  <div className="bg-white shadow rounded p-4 space-y-4 relative">
+    <h2 className="font-bold text-right text-blue-700 border-b pb-2">{tabLabels[selectedTab]}</h2>
+
+    {/* 📺 Bouton Agrandir */}
+    <button
+      onClick={openModalWithContent}
+      className="absolute top-4 left-4 bg-blue-500 hover:bg-blue-600 text-white px-3 py-1 rounded shadow transition"
+      aria-label="Agrandir le contenu"
+    >
+      📺 Agrandir
+    </button>
+
+    {/* Affichage central, cadré pour sidebar */}
+    {selectedTab === "video" && (
+      <div className="w-full max-w-full h-[320px]">
+        <iframe
+          src={contentLinks[selectedLessonId]?.video}
+          className="w-full h-full rounded"
+          allowFullScreen
+          title="lesson video"
+        />
       </div>
+    )}
+
+    {selectedTab === "summaryPDF" && (
+      <div className="w-full max-w-full h-[320px]">
+        <iframe
+          src={contentLinks[selectedLessonId]?.summaryPDF}
+          className="w-full h-full rounded"
+          allowFullScreen
+          title="lesson summary"
+        />
+      </div>
+    )}
+
+    {selectedTab === "textExtraction" && (
+      <a
+        href={contentLinks[selectedLessonId]?.textExtraction}
+        className="text-blue-600 underline text-right block"
+        target="_blank"
+        rel="noreferrer"
+      >
+        عرض مستند استخراج النصوص
+      </a>
+    )}
+
+    {selectedTab === "qna" && (
+      <a
+        href={contentLinks[selectedLessonId]?.qna}
+        className="text-blue-600 underline text-right block"
+        target="_blank"
+        rel="noreferrer"
+      >
+        عرض تلخيص الأسئلة و الأجوبة
+      </a>
+    )}
+  </div>
+</div>
+
+      </div>
+
+      {/* Modal */}
+      <Modal isOpen={modalOpen} onClose={() => setModalOpen(false)} title={modalTitle} content={modalContent} />
     </div>
   );
 }
+
+
