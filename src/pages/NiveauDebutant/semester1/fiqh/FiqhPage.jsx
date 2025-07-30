@@ -26,11 +26,10 @@ const contentLinks = {
     video: "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
     videoDownload:
       "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
-    summaryPDF: "https://drive.google.com/file/d/19hvIoHdS-6lfxLJf1XR2xBwwDLJTSfge/preview",
-    summaryDownload:
-      "https://drive.google.com/uc?export=download&id=19hvIoHdS-6lfxLJf1XR2xBwwDLJTSfge",
-    textExtraction: "https://docs.google.com/document/d/1Yg08EwjxFTEuxs6s5FkoysY7KNtNZ7sTkQysTZ72nhI",
-    qna: "https://docs.google.com/document/d/1KTXCUvsbAnvVYkNrG4mVSMDHwqA7IpuqSCkWLftrYtk",
+    summaryPDF: "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf", // ← Lien local,
+    summaryDownload: "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf", // ← Lien local,
+         textExtraction: "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf", // ← Lien local,
+    qna: "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf", // ← Lien local,
   },
 };
 
@@ -100,31 +99,26 @@ export default function FiqhPage() {
         );
         break;
 
-      case "textExtraction":
-        modalBody = (
-          <a
-            href={content.textExtraction}
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-600 underline"
-          >
-            عرض مستند استخراج النصوص (فتح في نافذة جديدة)
-          </a>
-        );
-        break;
+     case "textExtraction":
+  modalBody = (
+    <iframe
+      src={content.textExtraction}
+      className="w-full h-[80vh] rounded border"
+      title="Extraction PDF Enlarged"
+    />
+  );
+  break;
 
       case "qna":
-        modalBody = (
-          <a
-            href={content.qna}
-            target="_blank"
-            rel="noreferrer"
-            className="text-blue-600 underline"
-          >
-            عرض تلخيص الأسئلة و الأجوبة (فتح في نافذة جديدة)
-          </a>
-        );
-        break;
+  modalBody = (
+    <iframe
+      src={content.qna}
+      className="w-full h-[80vh] rounded border"
+      title="QNA PDF Enlarged"
+    />
+  );
+  break;
+
 
       default:
         modalBody = null;
@@ -294,27 +288,27 @@ const toggleLesson = (id) => {
       </div>
     )}
 
-    {selectedTab === "textExtraction" && (
-      <a
-        href={contentLinks[selectedLessonId]?.textExtraction}
-        className="text-blue-600 underline text-right block"
-        target="_blank"
-        rel="noreferrer"
-      >
-        عرض مستند استخراج النصوص
-      </a>
-    )}
+   {selectedTab === "textExtraction" && (
+  <div className="w-full max-w-full h-[600px]">
+    <iframe
+      src={contentLinks[selectedLessonId]?.textExtraction}
+      className="w-full h-full rounded border"
+      title="Document PDF"
+    />
+  </div>
+)}
 
-    {selectedTab === "qna" && (
-      <a
-        href={contentLinks[selectedLessonId]?.qna}
-        className="text-blue-600 underline text-right block"
-        target="_blank"
-        rel="noreferrer"
-      >
-        عرض تلخيص الأسئلة و الأجوبة
-      </a>
-    )}
+
+   {selectedTab === "qna" && (
+  <div className="w-full max-w-full h-[600px]">
+    <iframe
+      src={contentLinks[selectedLessonId]?.qna}
+      className="w-full h-full rounded border"
+      title="Document QNA PDF"
+    />
+  </div>
+)}
+
   </div>
 </div>
 
