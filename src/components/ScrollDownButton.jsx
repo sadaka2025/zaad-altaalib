@@ -1,16 +1,16 @@
+// src/components/ScrollDownButton.jsx
 import React from "react";
 
 export default function ScrollDownButton() {
-  const scrollToBottom = () => {
-    const main = document.querySelector(".main-scrollable");
-    if (main) main.scrollTo({ top: main.scrollHeight, behavior: "smooth" });
+  const handleScrollDown = () => {
+    const aside = document.querySelector("aside");
+    if (aside) aside.scrollTo({ top: aside.scrollHeight, behavior: "smooth" });
   };
 
   return (
     <button
-      onClick={scrollToBottom}
-      className="fixed bottom-20 right-6 bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full shadow-lg z-50 transition transform hover:scale-110"
-      title="Descendre vers le bas"
+      onClick={handleScrollDown}
+      className="bg-blue-500 text-white px-2 py-1 rounded shadow hover:bg-blue-600"
     >
       ⬇️
     </button>
