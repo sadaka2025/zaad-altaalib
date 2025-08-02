@@ -1,18 +1,34 @@
-// src/components/ScrollDownButton.jsx
 import React from "react";
 
 export default function ScrollDownButton() {
-  const handleScrollDown = () => {
-    const aside = document.querySelector("aside");
-    if (aside) aside.scrollTo({ top: aside.scrollHeight, behavior: "smooth" });
+  const handleClick = () => {
+    const scrollContainer = findScrollContainer();
+    if (scrollContainer) {
+      scrollContainer.scrollBy({ top: 400, behavior: "smooth" });
+    }
+  };
+
+  const findScrollContainer = () => {
+    const scrollableElements = document.querySelectorAll("*");
+    for (let el of scrollableElements) {
+      const hasScrollableContent = el.scrollHeight > el.clientHeight;
+      const overflowYStyle = window.getComputedStyle(el).overflowY;
+      const isScrollable =
+        overflowYStyle !== "visible" && overflowYStyle !== "hidden";
+
+      if (hasScrollableContent && isScrollable) {
+        return el;
+      }
+    }
+    return window;
   };
 
   return (
     <button
-      onClick={handleScrollDown}
-      className="bg-blue-500 text-white px-2 py-1 rounded shadow hover:bg-blue-600"
+      onClick={handleClick}
+      className="fixed bottom-20 right-4 z-50 p-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white rounded-full shadow-xl hover:scale-110 transition-transform duration-300"
     >
-      ⬇️
+      ↓
     </button>
   );
 }

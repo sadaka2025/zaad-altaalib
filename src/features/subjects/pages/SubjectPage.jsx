@@ -1,23 +1,22 @@
-// ✅ VERSION FINALE nettoyée — intégration propre de la conclusion comme des leçons
-
 import React, { useEffect, useMemo, useState } from "react";
-import { Link, useParams, useSearchParams } from "react-router-dom";
+import {
+  Link,
+  useParams,
+  useSearchParams,
+  useNavigate,
+} from "react-router-dom";
+import { useTranslation } from "react-i18next";
+
 import ScrollToTopButton from "../../../components/ScrollToTopButton";
 import ScrollDownButton from "../../../components/ScrollDownButton";
 import Modal from "../../../components/Modal";
 import { useSubjectData } from "../hooks/useSubjectData";
 
-import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-
 export default function SubjectPage() {
   const { i18n } = useTranslation();
-  const lang = i18n.language; // exemple : "ar", "fr"
+  const lang = i18n.language;
   const navigate = useNavigate();
 
-  const handleClick = () => {
-    navigate("/${lang}/niveau-debutant");
-  };
   const { year = "1", subjectSlug = "" } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
   const sem = searchParams.get("semestre") || "1";
@@ -39,6 +38,7 @@ export default function SubjectPage() {
   };
 
   const allLessons = [...(semesterBlock.lessons || [])];
+
   if (semesterBlock.conclusion) {
     semesterBlock.conclusion.sections.forEach((section) => {
       section.items.forEach((item) => {
@@ -132,13 +132,9 @@ export default function SubjectPage() {
 
   return (
     <div className="flex h-screen bg-blue-50">
+      {/* SIDEBAR */}
       <aside className="w-96 bg-blue-100 p-4 border-l border-blue-400 flex flex-col overflow-y-auto">
         <div className="flex flex-col gap-4">
-          <div className="flex justify-between">
-            <ScrollToTopButton />
-            <ScrollDownButton />
-          </div>
-
           <h2 className="text-center font-bold text-lg">
             📚 {data.meta.title.ar} — {data.meta.title.fr}
           </h2>
@@ -224,28 +220,24 @@ export default function SubjectPage() {
             </li>
           ))}
         </ul>
-
-        <div className="flex justify-between mt-6">
-          <ScrollToTopButton />
-          <ScrollDownButton />
-        </div>
       </aside>
 
+      {/* MAIN CONTENT */}
       <main className="flex-1 flex flex-col overflow-y-auto relative">
+        {/* HEADER */}
         <div className="bg-blue-700 text-white px-6 py-3 flex justify-between items-center shadow sticky top-0 z-50">
           <h1 className="text-lg font-bold">
             {data.meta.title.ar} — {data.meta.title.fr} (Année {year}) • S{sem}
           </h1>
-          <div>
-            <Link
-              to={`/${lang}/niveau-debutant`}
-              className="bg-white text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-100"
-            >
-              🏠 الصفحة الرئيسية للمواد
-            </Link>
-          </div>
+          <Link
+            to={`/${lang}/niveau-debutant`}
+            className="bg-white text-blue-700 px-4 py-2 rounded shadow hover:bg-blue-100"
+          >
+            🏠 الصفحة الرئيسية للمواد
+          </Link>
         </div>
 
+        {/* TABS NAV */}
         <div className="flex justify-between items-center p-4 bg-white border-b sticky top-[58px] z-40">
           <button
             onClick={handleTabPrev}
@@ -275,7 +267,8 @@ export default function SubjectPage() {
           </button>
         </div>
 
-        <div className="flex-1 p-6 overflow-y-auto">
+        {/* CONTENU */}
+        <div className="flex-1 p-6 overflow-y-auto relative">
           <div className="bg-white shadow rounded p-4 space-y-4 relative">
             <h2 className="font-bold text-right text-blue-700 border-b pb-2">
               {(selectedLesson?.tabLabels || tabLabels)?.[selectedTab] ||
@@ -305,8 +298,13 @@ export default function SubjectPage() {
             </div>
           </div>
         </div>
+
+        {/* BOUTONS SCROLL */}
+        <ScrollToTopButton />
+        <ScrollDownButton />
       </main>
 
+      {/* MODAL */}
       <Modal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
