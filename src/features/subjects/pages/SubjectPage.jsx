@@ -155,18 +155,29 @@ export default function SubjectPage() {
             ))}
           </div>
 
-          <Link
-            to={`/annee/${year}`}
-            className="block w-full text-center bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
-          >
-            ← Année {year}
-          </Link>
-          <Link
-            to="/"
-            className="block w-full text-center bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
-          >
-            🏠 Accueil
-          </Link>
+          {/* Boutons alignés horizontalement */}
+          <div className="flex flex-wrap gap-2 justify-center mt-2">
+            <Link
+              to="/"
+              className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
+            >
+              🏠 Accueil
+            </Link>
+
+            <Link
+              to={`/${lang}/formations`}
+              className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
+            >
+              ← Année 1
+            </Link>
+
+            <Link
+              to={`/${lang}/intro`}
+              className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
+            >
+              🎯 أهداف السداسي {sem === "1" ? "الأول" : "الثاني"}
+            </Link>
+          </div>
         </div>
 
         <ul className="mt-6 space-y-2">

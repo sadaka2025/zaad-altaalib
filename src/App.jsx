@@ -18,6 +18,12 @@ import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
 import Formations from "./pages/Formations";
 import NiveauDebutant from "./pages/NiveauDebutant/niveau-debutant";
+import IntroFikhPage from "./pages/NiveauDebutant/IntroFikhPage";
+import AvisPage from "./pages/NiveauDebutant/AvisPage";
+
+import QRPage from "./pages/NiveauDebutant/QRPage";
+import AnnoncesPage from "./pages/NiveauDebutant/AnnoncesPage";
+import ProfAvisPage from "./pages/NiveauDebutant/ProfAvisPage";
 import Niveau2 from "./pages/Niveau2";
 import NiveauMoyen from "./pages/NiveauMoyen";
 import Niveau4 from "./pages/Niveau4";
@@ -49,12 +55,16 @@ function LangRoutesWrapper() {
         <Route index element={<HomePage />} />
         <Route path="formations" element={<Formations />} />
         <Route path="niveau-debutant" element={<NiveauDebutant />} />
-
+        <Route path="intro" element={<IntroFikhPage />} />{" "}
+        <Route path="avis" element={<QRPage />} />
+        <Route path="annonces" element={<AnnoncesPage />} />
+        <Route path="profavis" element={<ProfAvisPage />} />
+        {/* ✅ chemin relatif */}
+        <Route path="avis" element={<AvisPage />} />
         <Route path="niveau-2" element={<Niveau2 />} />
         <Route path="niveau-moyen" element={<NiveauMoyen />} />
         <Route path="niveau-4" element={<Niveau4 />} />
         <Route path="niveau-avance" element={<NiveauAvance />} />
-        {/* Redirection manuelle vers une matière */}
         <Route
           path="niveau-debutant/semester1/fiqh"
           element={
@@ -63,7 +73,7 @@ function LangRoutesWrapper() {
         />
       </Route>
 
-      {/* SubjectPage sans Layout (isolé) */}
+      {/* Page Subject isolée */}
       <Route
         path="annee/:year/matiere/:subjectSlug"
         element={<SubjectPage />}
