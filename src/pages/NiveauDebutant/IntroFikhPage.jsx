@@ -6,6 +6,9 @@ import Modal from "../../components/Modal";
 import videoBanner from "../../assets/مقدمة.png";
 
 export default function IntroFikhPage() {
+  const [modalTitle, setModalTitle] = useState("");
+  const [modalContent, setModalContent] = useState(null);
+
   const handleRating = (rating) => {
     console.log("User clicked rating:", rating); // ✅ debug temporaire
     setUserRating(rating);
@@ -40,7 +43,8 @@ export default function IntroFikhPage() {
   const [showRatingPrompt, setShowRatingPrompt] = useState(false);
 
   const [showThankYou, setShowThankYou] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isModalMabadiOpen, setIsModalMabadiOpen] = useState(false);
+  const [isModalLessonsOpen, setIsModalLessonsOpen] = useState(false);
 
   const [allRatings, setAllRatings] = useState([]); // ✅ pour afficher tous les avis
   const [userRating, setUserRating] = useState(
@@ -113,16 +117,67 @@ export default function IntroFikhPage() {
     </ul>
   );
 
+  const mabadiList = [
+    "📌 الحد (التعريف الاصطلاحي): الفقه هو العلم بأحكام الله الشرعية العملية المكتسبة من أدلتها التفصيلية.",
+    "📌 الموضوع: يبحث علم الفقه في الأحكام العملية مثل الطهارة، الصلاة، المعاملات، الزواج...",
+    "📌 الثمرة: تطبيق الشريعة في الحياة اليومية.",
+    "📌 فضله: من أعظم العلوم الشرعية.",
+    "📌 نسبه: ينتمي إلى العلوم الشرعية ويتفرع من أصول الفقه.",
+    "📌 الواضع: الإمام الشافعي أول من نظّر له نظريًا شاملاً.",
+    "📌 الاسم: يُعرف بالفقه، من الفهم والتفقه.",
+    "📌 الاستمداد: القرآن، السنة، الإجماع، القياس.",
+    "📌 حكم الشارع: فرض كفاية، وبعضه فرض عين.",
+    "📌 المسائل: الطهارة، الصلاة، المعاملات، الحدود...",
+  ];
+  const mabadiContent = (
+    <div className="text-right leading-relaxed space-y-4">
+      <p className="font-semibold text-lg text-center">
+        "من حاز المبادئ فقد ملك مفاتيح العلم!"
+      </p>
+
+      <p>
+        افتتح العلماء دراساتهم في مختلف العلوم الإسلامية بتحديد ما يُعرف بـ{" "}
+        <strong>"مبادئ العلم العشرة"</strong>، وهي الأساس المتين لفهم أي علم
+        والتدرج فيه بثبات ويقين.
+      </p>
+
+      <p>
+        وقد نظمها بعضهم شعراً فقال:
+        <br />
+        <em>
+          الحد والموضوع ثم الثمرةُ وفضلُهُ، ونسبٌ والواضعُ،
+          <br />
+          والاسمُ، الاستمدادُ، حكمُ الشارعِ، مسائلٌ، والبعضُ بالبعضِ اكتفى،
+          <br />
+          ومن درى الجميعَ حاز الشرفا.
+        </em>
+      </p>
+
+      <h3 className="font-bold text-blue-700">🧭 مبادئ علم الفقه:</h3>
+      <ul className="list-disc pr-5 space-y-1">
+        {mabadiList.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
+
+      <p className="mt-4">
+        🎯 <strong>خلاصة:</strong> هذا التمهيد يُرشدك لطريق الطاعة وينظم علاقتك
+        بالله وخلقه. هيا بنا نبدأ رحلتنا في هذا العلم المبارك.
+      </p>
+    </div>
+  );
+
   return (
     <div className="font-[Arial] max-w-6xl mx-auto p-4 space-y-6">
       {/* Navigation buttons */}
       <section className="grid md:grid-cols-5 gap-3 text-center mt-8">
         <button
-          onClick={() => setIsModalOpen(true)}
-          className="bg-blue-600 text-white p-3 rounded hover:bg-blue-700"
+          onClick={() => setIsModalLessonsOpen(true)}
+          className="text-sm bg-green-100 hover:bg-green-200 text-green-800 px-3 py-1 rounded shadow"
         >
-          📘 محتوى الدرس
+          عرض محتوى الدروس
         </button>
+
         <button
           onClick={() => navigate("/ar/avis")}
           className="bg-yellow-200 text-yellow-900 p-3 rounded hover:bg-yellow-300"
@@ -189,9 +244,18 @@ export default function IntroFikhPage() {
 
         {/* Right column content */}
         <div className="space-y-3 text-gray-800 text-justify">
-          <h2 className="text-xl font-bold">
-            📘 الفقه المالكي – السداسي الأول: من الطهارة إلى صلاة الجنازة
-          </h2>
+          <div className="flex flex-wrap items-center gap-3">
+            <h2 className="text-xl font-bold">
+              📘 الفقه المالكي – السداسي الأول: من الطهارة إلى صلاة الجنازة
+            </h2>
+            <button
+              onClick={() => setIsModalMabadiOpen(true)}
+              className="text-sm bg-blue-100 hover:bg-blue-200 text-blue-800 px-3 py-1 rounded shadow"
+            >
+              مبادئ علم الفقه
+            </button>
+          </div>
+
           <p>
             إن هذا المقرر يُعدّ مدخلًا تأسيسيًا هامًا لدراسة الفقه المالكي، وهو
             يُقدَّم خصيصًا للطلبة المبتدئين بطريقة ميسّرة وشاملة، تجمع بين
@@ -253,9 +317,18 @@ export default function IntroFikhPage() {
       </section>
 
       {/* Modal content */}
+      {/* Modal A – Modal مبادئ علم الفقه */}
       <Modal
-        isOpen={isModalOpen}
-        onClose={() => setIsModalOpen(false)}
+        isOpen={isModalMabadiOpen}
+        onClose={() => setIsModalMabadiOpen(false)}
+        title="📘 مبادئ علم الفقه"
+        content={mabadiContent}
+      />
+
+      {/* Modal B – Modal محتوى الدروس */}
+      <Modal
+        isOpen={isModalLessonsOpen}
+        onClose={() => setIsModalLessonsOpen(false)}
         title="📚 قائمة دروس الفقه المالكي للسداسي الأول"
         content={lessonContent}
       />
