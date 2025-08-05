@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AvisPage() {
   return (
-    <div className="max-w-2xl mx-auto mt-10 p-4">
+    <div className="font-[Arial] max-w-2xl mx-auto mt-10 p-4">
       <h1 className="text-2xl font-bold text-center mb-6">
         ✨ Donnez votre avis
       </h1>

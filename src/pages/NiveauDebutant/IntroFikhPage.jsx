@@ -1,31 +1,78 @@
-// ✅ IntroFikhPage.jsx avec Modal de "محتوى الدرس" et boutons vers les semestres
+// ✅ IntroFikhPage.jsx
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import Modal from "../../components/Modal";
 
 export default function IntroFikhPage() {
+  const handleRating = (rating) => {
+    console.log("User clicked rating:", rating); // ✅ debug temporaire
+    setUserRating(rating);
+    localStorage.setItem("userRating", rating);
+
+    const existing = JSON.parse(localStorage.getItem("allUserRatings") || "[]");
+    const newRating = {
+      id: Date.now(),
+      rating: rating,
+      date: new Date().toISOString(),
+    };
+    const updated = [...existing, newRating];
+    localStorage.setItem("allUserRatings", JSON.stringify(updated));
+    setAllRatings(updated);
+
+    setShowThankYou(true);
+    setShowRatingPrompt(false);
+
+    setTimeout(() => {
+      setShowThankYou(false);
+    }, 7000);
+  };
+  localStorage.removeItem("userRating");
+  localStorage.removeItem("popupShownDate");
+
   const navigate = useNavigate();
   const { lang } = useParams();
-  const [showRatingPrompt, setShowRatingPrompt] = useState(true);
-  const [userRating, setUserRating] = useState(0);
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const [hoverRating, setHoverRating] = useState(0);
+  const [showVideo, setShowVideo] = useState(false);
+  const [showRatingPrompt, setShowRatingPrompt] = useState(false);
+
+  const [showThankYou, setShowThankYou] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  useEffect(() => {
-    const lastShown = localStorage.getItem("popupShownDate");
-    const now = new Date().toISOString().split("T")[0];
-    if (lastShown === now) setShowRatingPrompt(false);
-  }, []);
+  const [allRatings, setAllRatings] = useState([]); // ✅ pour afficher tous les avis
+  const [userRating, setUserRating] = useState(
+    Number(localStorage.getItem("userRating") || 0)
+  );
 
-  const handleRating = (rating) => {
-    setUserRating(rating);
-    setShowRatingPrompt(false);
-    localStorage.setItem(
-      "popupShownDate",
-      new Date().toISOString().split("T")[0]
-    );
-    console.log("User rated:", rating);
-  };
+  useEffect(() => {
+    const now = new Date().toISOString().split("T")[0];
+    const lastShown = localStorage.getItem("popupShownDate");
+
+    // Ne pas afficher s’il a déjà été montré aujourd’hui
+    if (lastShown === now) setShowRatingPrompt(false);
+
+    // ✅ Détection sortie (Exit Intent)
+    const handleExitIntent = (e) => {
+      if (e.clientY <= 0 && userRating === 0 && lastShown !== now) {
+        setShowRatingPrompt(true);
+        localStorage.setItem("popupShownDate", now);
+      }
+    };
+
+    // ✅ Charger les anciens avis
+    const stored = JSON.parse(localStorage.getItem("allUserRatings") || "[]");
+    setAllRatings(stored);
+
+    // Ajouter l'écouteur
+    document.addEventListener("mouseleave", handleExitIntent);
+
+    // Nettoyage à la sortie
+    return () => {
+      document.removeEventListener("mouseleave", handleExitIntent);
+    };
+  }, [userRating]);
 
   const lessonList = [
     "الدرس الأول: فضل العلم والعلماء وبعض النصائح",
@@ -66,8 +113,8 @@ export default function IntroFikhPage() {
   );
 
   return (
-    <div className="max-w-6xl mx-auto p-4 space-y-6">
-      {/* Navbar */}
+    <div className="font-[Arial] max-w-6xl mx-auto p-4 space-y-6">
+      {/* Navigation buttons */}
       <section className="grid md:grid-cols-5 gap-3 text-center mt-8">
         <button
           onClick={() => setIsModalOpen(true)}
@@ -75,28 +122,24 @@ export default function IntroFikhPage() {
         >
           📘 محتوى الدرس
         </button>
-
         <button
           onClick={() => navigate("/ar/avis")}
           className="bg-yellow-200 text-yellow-900 p-3 rounded hover:bg-yellow-300"
         >
           ❓ أرسل سؤالاً
         </button>
-
         <button
           onClick={() => navigate("/ar/annonces")}
           className="bg-gray-200 hover:bg-gray-300 text-gray-800 p-3 rounded"
         >
           📢 الإعلانات
         </button>
-
         <button
           onClick={() => navigate("/ar/profavis")}
           className="bg-green-100 hover:bg-green-200 text-green-900 p-3 rounded"
         >
-          🧑‍🏫 تقييم الأستاذ
+          🧑🏫 تقييم الأستاذ
         </button>
-
         <button
           onClick={() => navigate("/ar/introfiqh-s2")}
           className="bg-purple-100 hover:bg-purple-200 text-purple-900 p-3 rounded"
@@ -105,17 +148,35 @@ export default function IntroFikhPage() {
         </button>
       </section>
 
-      {/* Video Section */}
+      {/* Video */}
       <section className="grid md:grid-cols-2 gap-4 items-start">
-        <div className="bg-gray-100 rounded-lg overflow-hidden shadow">
-          <iframe
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-            title="Intro video"
-            className="w-full h-64 md:h-96"
-            allowFullScreen
-          />
+        <div className="relative w-full max-w-3xl mx-auto">
+          {!showVideo ? (
+            <div className="bg-gray-100 rounded-lg overflow-hidden shadow relative">
+              <img
+                src="../../src/assets/مقدمة.png"
+                alt="Vidéo d’introduction"
+                className="w-full rounded-lg shadow-lg"
+              />
+              <div className="absolute inset-0 flex items-center justify-center">
+                <button
+                  onClick={() => setShowVideo(true)}
+                  className="bg-white p-3 rounded-full shadow-md hover:scale-110 transition-transform text-2xl"
+                >
+                  ▶
+                </button>
+              </div>
+            </div>
+          ) : (
+            <iframe
+              src="https://drive.google.com/file/d/1ZdMl-A722jg6YMeOhyoXsOBP7tqc-cSs/preview"
+              title="Intro video"
+              className="w-full h-64 md:h-96 rounded-lg shadow-lg"
+              allowFullScreen
+            />
+          )}
 
-          <div className="text-center mt-2">
+          <div className="text-center mt-4">
             <button
               onClick={() => navigate("/ar/annee/1/matiere/fiqh?semestre=1")}
               className="bg-blue-700 text-white hover:bg-blue-800 px-6 py-3 rounded-xl mt-2"
@@ -125,9 +186,10 @@ export default function IntroFikhPage() {
           </div>
         </div>
 
+        {/* Right column content */}
         <div className="space-y-3 text-gray-800 text-justify">
           <h2 className="text-xl font-bold">
-            📘 مقدمة المقرر: الفقه المالكي للسداسي الأول
+            📘 الفقه المالكي – السداسي الأول: من الطهارة إلى صلاة الجنازة
           </h2>
           <p>
             إن هذا المقرر يُعدّ مدخلًا تأسيسيًا هامًا لدراسة الفقه المالكي، وهو
@@ -189,7 +251,7 @@ export default function IntroFikhPage() {
         </div>
       </section>
 
-      {/* Modal for lesson list */}
+      {/* Modal content */}
       <Modal
         isOpen={isModalOpen}
         onClose={() => setIsModalOpen(false)}
@@ -197,8 +259,8 @@ export default function IntroFikhPage() {
         content={lessonContent}
       />
 
-      {/* Popup évaluation étoiles */}
-      {showRatingPrompt && (
+      {/* ✅ Popup d'évaluation étoiles */}
+      {showRatingPrompt && userRating === 0 && (
         <div className="fixed bottom-6 right-6 bg-white shadow-lg p-4 rounded-lg border w-[300px] z-50">
           <p className="text-gray-900 mb-3 font-medium text-center">
             ⭐ ما رأيك في هذا الموقع؟ قيّمنا!
@@ -208,14 +270,25 @@ export default function IntroFikhPage() {
               <span
                 key={n}
                 onClick={() => handleRating(n)}
-                className={`text-2xl cursor-pointer ${
-                  userRating >= n ? "text-yellow-400" : "text-gray-400"
+                onMouseEnter={() => setHoverRating(n)}
+                onMouseLeave={() => setHoverRating(0)}
+                className={`text-2xl cursor-pointer transition-colors duration-150 ${
+                  (hoverRating || userRating) >= n
+                    ? "text-yellow-400"
+                    : "text-gray-400"
                 }`}
               >
                 ★
               </span>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* ✅ Message de remerciement après vote */}
+      {showThankYou && (
+        <div className="fixed bottom-6 right-6 bg-green-100 text-green-900 shadow-lg p-4 rounded-lg border w-[300px] z-50 text-center text-sm">
+          ✅ شكراً على تقييمك 🙏
         </div>
       )}
     </div>
