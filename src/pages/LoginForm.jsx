@@ -1,0 +1,240 @@
+import React, { useState, useEffect, useRef } from "react";
+import axios from "axios";
+import facebookIcon from "@/assets/facebook-icon.png";
+import googleIcon from "@/assets/google-icon.png";
+import appleIcon from "@/assets/apple-icon.png";
+
+export default function LoginForm({ onLoginSuccess }) {
+  const [email, setEmail] = useState("");
+  const [pastEmails, setPastEmails] = useState([]);
+  const [message, setMessage] = useState("");
+  const [allowedEmails, setAllowedEmails] = useState([]);
+  const [step, setStep] = useState("email");
+
+  const [nom, setNom] = useState("");
+  const [prenom, setPrenom] = useState("");
+  const [profil, setProfil] = useState("student");
+  const [error, setError] = useState("");
+  const [isEmailValid, setIsEmailValid] = useState(false);
+
+  const [canSignUp, setCanSignUp] = useState(false);
+  const [canSignIn, setCanSignIn] = useState(false);
+
+  const API_KEY = "84e1421241314d25a7b82d45fc7ed2ac";
+  const debounceTimer = useRef(null);
+  const DEBUG_MODE = true;
+
+  // Charger emails sauvegardés
+  useEffect(() => {
+    const savedEmails = JSON.parse(localStorage.getItem("pastEmails") || "[]");
+    setPastEmails(savedEmails);
+  }, []);
+
+  // Charger la liste des emails autorisés
+  useEffect(() => {
+    fetch("/allowedEmails.json")
+      .then((res) => {
+        if (!res.ok) throw new Error("Fichier allowedEmails.json introuvable");
+        return res.json();
+      })
+      .then((data) => {
+        setAllowedEmails(data.map((e) => e.toLowerCase()));
+        if (DEBUG_MODE) console.log("✅ allowedEmails chargés:", data);
+      })
+      .catch((err) => {
+        if (DEBUG_MODE)
+          console.error("❌ Erreur chargement allowedEmails:", err.message);
+        setError("Impossible de charger la liste des emails autorisés");
+      });
+  }, []);
+
+  // Sauvegarder email dans historique
+  const saveEmailToHistory = (newEmail) => {
+    if (!newEmail) return;
+    const saved = JSON.parse(localStorage.getItem("pastEmails") || "[]");
+    if (!saved.includes(newEmail)) {
+      const updated = [...saved, newEmail];
+      localStorage.setItem("pastEmails", JSON.stringify(updated));
+      setPastEmails(updated);
+    }
+  };
+
+  // Vérifier format et validité email avec debounce
+  const verifyEmailFormat = async (inputEmail) => {
+    if (!inputEmail) return;
+    const lowerEmail = inputEmail.toLowerCase();
+
+    if (DEBUG_MODE) {
+      setIsEmailValid(true);
+      if (allowedEmails.includes(lowerEmail)) {
+        setCanSignIn(true);
+        setCanSignUp(false);
+        setMessage("✅ Email autorisé — connexion possible");
+      } else {
+        setCanSignIn(false);
+        setCanSignUp(true);
+        setMessage("ℹ️ Email inconnu — inscription possible");
+      }
+      return;
+    }
+  };
+
+  const handleEmailChange = (value) => {
+    setEmail(value);
+    setMessage("");
+    setCanSignIn(false);
+    setCanSignUp(false);
+    setError("");
+
+    if (debounceTimer.current) clearTimeout(debounceTimer.current);
+    debounceTimer.current = setTimeout(() => {
+      verifyEmailFormat(value);
+    }, 500);
+  };
+
+  const sendWelcomeEmail = async (toEmail) => {
+    if (DEBUG_MODE) {
+      console.log(`📧 (DEBUG) Email de bienvenue envoyé à ${toEmail}`);
+      return true;
+    }
+  };
+
+  // Soumission formulaire email
+  const handleSubmitEmail = (e) => {
+    e.preventDefault();
+    if (canSignIn) {
+      saveEmailToHistory(email.toLowerCase());
+      if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
+    } else if (canSignUp) {
+      setStep("signup");
+    }
+  };
+
+  // Soumission inscription
+  const handleSignupSubmit = async (e) => {
+    e.preventDefault();
+    if (!nom || !prenom) {
+      setError("Merci de remplir tous les champs.");
+      return;
+    }
+    saveEmailToHistory(email.toLowerCase());
+    if (DEBUG_MODE) {
+      await sendWelcomeEmail(email);
+      if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
+      return;
+    }
+  };
+
+  return (
+    <div className="w-full">
+      {step === "email" && (
+        <form
+          onSubmit={handleSubmitEmail}
+          className="flex flex-col items-center w-full"
+        >
+          {/* Boutons sociaux */}
+          <div className="flex gap-6 mb-6">
+            <button
+              type="button"
+              className="w-12 h-12 flex items-center justify-center border rounded-full hover:bg-gray-100"
+            >
+              <img src={facebookIcon} alt="Facebook" className="h-5" />
+            </button>
+            <button
+              type="button"
+              className="w-12 h-12 flex items-center justify-center border rounded-full hover:bg-gray-100"
+            >
+              <img src={googleIcon} alt="Google" className="h-5" />
+            </button>
+            <button
+              type="button"
+              className="w-12 h-12 flex items-center justify-center border rounded-full hover:bg-gray-100"
+            >
+              <img src={appleIcon} alt="Apple" className="h-5" />
+            </button>
+          </div>
+
+          <div className="w-full border-t mb-6"></div>
+
+          {/* Email */}
+          <input
+            type="email"
+            list="pastEmails"
+            placeholder="Your email address"
+            value={email}
+            onChange={(e) => handleEmailChange(e.target.value)}
+            required
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+          />
+          <datalist id="pastEmails">
+            {pastEmails.map((mail, i) => (
+              <option key={i} value={mail} />
+            ))}
+          </datalist>
+
+          {message && <p className="text-sm text-gray-600 mb-3">{message}</p>}
+
+          <button
+            type="submit"
+            disabled={!canSignIn && !canSignUp}
+            className={`w-full py-3 rounded-full font-medium ${
+              canSignIn || canSignUp
+                ? "bg-blue-600 text-white hover:bg-blue-700"
+                : "bg-gray-300 text-gray-500 cursor-not-allowed"
+            }`}
+          >
+            {canSignIn ? "Sign In" : "Sign Up"}
+          </button>
+        </form>
+      )}
+
+      {step === "signup" && (
+        <form
+          onSubmit={handleSignupSubmit}
+          className="flex flex-col items-center w-full"
+        >
+          <input
+            type="text"
+            placeholder="Your name"
+            value={nom}
+            onChange={(e) => setNom(e.target.value)}
+            required
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+          />
+          <input
+            type="text"
+            placeholder="First name"
+            value={prenom}
+            onChange={(e) => setPrenom(e.target.value)}
+            required
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+          />
+          <input
+            type="email"
+            value={email}
+            readOnly
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+          />
+          <select
+            value={profil}
+            onChange={(e) => setProfil(e.target.value)}
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+          >
+            <option value="student">Student</option>
+            <option value="enseignant">Teacher</option>
+            <option value="autre">Other</option>
+          </select>
+
+          {error && <p className="text-red-600 mb-3">{error}</p>}
+
+          <button
+            type="submit"
+            className="w-full py-3 rounded-full bg-green-600 text-white font-medium hover:bg-green-700"
+          >
+            Sign Up
+          </button>
+        </form>
+      )}
+    </div>
+  );
+}
