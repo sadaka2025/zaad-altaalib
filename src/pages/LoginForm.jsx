@@ -1,10 +1,13 @@
+// src/components/LoginForm.jsx
 import React, { useState, useEffect, useRef } from "react";
-import axios from "axios";
 import facebookIcon from "@/assets/facebook-icon.png";
 import googleIcon from "@/assets/google-icon.png";
 import appleIcon from "@/assets/apple-icon.png";
+import { useAuth } from "../context/AuthContext"; // ✅ pour login global
 
 export default function LoginForm({ onLoginSuccess }) {
+  const { login } = useAuth(); // ✅ utilisation login contexte
+
   const [email, setEmail] = useState("");
   const [pastEmails, setPastEmails] = useState([]);
   const [message, setMessage] = useState("");
@@ -20,17 +23,14 @@ export default function LoginForm({ onLoginSuccess }) {
   const [canSignUp, setCanSignUp] = useState(false);
   const [canSignIn, setCanSignIn] = useState(false);
 
-  const API_KEY = "84e1421241314d25a7b82d45fc7ed2ac";
   const debounceTimer = useRef(null);
   const DEBUG_MODE = true;
 
-  // Charger emails sauvegardés
   useEffect(() => {
     const savedEmails = JSON.parse(localStorage.getItem("pastEmails") || "[]");
     setPastEmails(savedEmails);
   }, []);
 
-  // Charger la liste des emails autorisés
   useEffect(() => {
     fetch("/allowedEmails.json")
       .then((res) => {
@@ -48,7 +48,6 @@ export default function LoginForm({ onLoginSuccess }) {
       });
   }, []);
 
-  // Sauvegarder email dans historique
   const saveEmailToHistory = (newEmail) => {
     if (!newEmail) return;
     const saved = JSON.parse(localStorage.getItem("pastEmails") || "[]");
@@ -59,10 +58,16 @@ export default function LoginForm({ onLoginSuccess }) {
     }
   };
 
-  // Vérifier format et validité email avec debounce
   const verifyEmailFormat = async (inputEmail) => {
     if (!inputEmail) return;
     const lowerEmail = inputEmail.toLowerCase();
+
+    if (!allowedEmails.length) {
+      setCanSignIn(false);
+      setCanSignUp(true);
+      setMessage("ℹ️ Email inconnu — inscription possible");
+      return;
+    }
 
     if (DEBUG_MODE) {
       setIsEmailValid(true);
@@ -75,7 +80,6 @@ export default function LoginForm({ onLoginSuccess }) {
         setCanSignUp(true);
         setMessage("ℹ️ Email inconnu — inscription possible");
       }
-      return;
     }
   };
 
@@ -92,25 +96,17 @@ export default function LoginForm({ onLoginSuccess }) {
     }, 500);
   };
 
-  const sendWelcomeEmail = async (toEmail) => {
-    if (DEBUG_MODE) {
-      console.log(`📧 (DEBUG) Email de bienvenue envoyé à ${toEmail}`);
-      return true;
-    }
-  };
-
-  // Soumission formulaire email
   const handleSubmitEmail = (e) => {
     e.preventDefault();
     if (canSignIn) {
       saveEmailToHistory(email.toLowerCase());
+      login(); // ✅ met à jour état global
       if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
     } else if (canSignUp) {
       setStep("signup");
     }
   };
 
-  // Soumission inscription
   const handleSignupSubmit = async (e) => {
     e.preventDefault();
     if (!nom || !prenom) {
@@ -119,9 +115,8 @@ export default function LoginForm({ onLoginSuccess }) {
     }
     saveEmailToHistory(email.toLowerCase());
     if (DEBUG_MODE) {
-      await sendWelcomeEmail(email);
+      login(); // ✅ connexion après inscription
       if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
-      return;
     }
   };
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import LoginForm from "./LoginForm";
+import { useAuth } from "../context/AuthContext"; // ✅ Import du contexte global
 
 export default function ModalWithLogin({
   buttonLabel = "Se connecter",
@@ -8,6 +9,7 @@ export default function ModalWithLogin({
   onClose = () => {},
 }) {
   const [isOpen, setIsOpen] = useState(forceOpen);
+  const { login } = useAuth(); // ✅ Utilisation du login global
 
   useEffect(() => {
     setIsOpen(forceOpen);
@@ -45,8 +47,10 @@ export default function ModalWithLogin({
               <LoginForm
                 onLoginSuccess={(userData) => {
                   console.log("Connexion réussie :", userData);
+                  localStorage.setItem("userEmail", userData); // 🔹 Sauvegarde email
+                  login(); // ✅ Authentification globale immédiate
                   if (onLoginSuccess) onLoginSuccess(userData);
-                  handleClose();
+                  handleClose(); // ✅ Fermer la modale
                 }}
               />
             </div>

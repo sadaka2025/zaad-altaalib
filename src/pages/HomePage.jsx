@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
+
 import { useTranslation } from "react-i18next";
 import { useParams } from "react-router-dom";
 
@@ -32,17 +33,16 @@ export default function HomePage() {
       const timer = setTimeout(() => {
         setModalOpen(true);
       }, 2000);
-
-      return () => clearTimeout(timer); // nettoyage du timer
+      return () => clearTimeout(timer);
     } else {
-      console.log("Email trouvé → modal fermée");
+      console.log("Email trouvé :", email, "→ modal fermée");
       setModalOpen(false);
     }
   }, []);
 
-  const handleLoginSuccess = () => {
+  const handleLoginSuccess = (email) => {
     console.log("Connexion réussie → fermeture modal");
-    localStorage.setItem("userEmail", "example@example.com"); // exemple stockage email
+    localStorage.setItem("userEmail", email); // 🔹 Enregistre le vrai email
     setModalOpen(false);
   };
 
