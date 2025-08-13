@@ -13,26 +13,30 @@ export default async function handler(req, res) {
   const allowed = JSON.parse(fs.readFileSync("allowedEmails.json", "utf8"));
   const blocked = JSON.parse(fs.readFileSync("blockedEmails.json", "utf8"));
 
-  // Récupérer IP du visiteur
-  const ip =
-    req.headers["x-forwarded-for"] ||
-    req.connection.remoteAddress ||
-    "IP inconnue";
-
-  // Envoi notification admin pour nouveaux visiteurs non connus
-  if (!allowed.includes(lowerEmail) && !blocked.includes(lowerEmail)) {
-    await sendEmailToAdmin({ email: lowerEmail, ip });
+  // Vérifier si l'email est bloqué
+  if (blocked.includes(lowerEmail)) {
+    return res.status(200).json({ blocked: true });
   }
 
-  // Réponse au frontend
-  if (blocked.includes(lowerEmail))
-    return res.status(200).json({ blocked: true });
-  if (allowed.includes(lowerEmail))
+  // Vérifier si l'email est autorisé
+  if (allowed.includes(lowerEmail)) {
     return res.status(200).json({ allowed: true });
+  }
+
+  // Email inconnu → notifier l'admin
+  const ip =
+    req.headers["x-forwarded-for"] ||
+    req.connection?.remoteAddress ||
+    "IP inconnue";
+  await sendEmailToAdmin({ email: lowerEmail, ip });
+
+  // Retour au frontend
   return res.status(200).json({ allowed: false, blocked: false });
 }
 
 async function sendEmailToAdmin(visitor) {
+  if (!process.env.ADMIN_EMAIL || !process.env.ADMIN_PASS) return;
+
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {

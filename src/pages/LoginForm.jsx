@@ -1,24 +1,21 @@
-// src/components/LoginForm.jsx
 import React, { useState, useEffect, useRef } from "react";
 import facebookIcon from "@/assets/facebook-icon.png";
 import googleIcon from "@/assets/google-icon.png";
 import appleIcon from "@/assets/apple-icon.png";
-import { useAuth } from "../context/AuthContext"; // ✅ pour login global
+import { useAuth } from "../context/AuthContext";
 
 export default function LoginForm({ onLoginSuccess }) {
-  const { login } = useAuth(); // ✅ utilisation login contexte
+  const { login } = useAuth();
 
   const [email, setEmail] = useState("");
   const [pastEmails, setPastEmails] = useState([]);
   const [message, setMessage] = useState("");
-  const [allowedEmails, setAllowedEmails] = useState([]);
   const [step, setStep] = useState("email");
 
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [profil, setProfil] = useState("student");
   const [error, setError] = useState("");
-  const [isEmailValid, setIsEmailValid] = useState(false);
 
   const [canSignUp, setCanSignUp] = useState(false);
   const [canSignIn, setCanSignIn] = useState(false);
@@ -29,23 +26,6 @@ export default function LoginForm({ onLoginSuccess }) {
   useEffect(() => {
     const savedEmails = JSON.parse(localStorage.getItem("pastEmails") || "[]");
     setPastEmails(savedEmails);
-  }, []);
-
-  useEffect(() => {
-    fetch("/allowedEmails.json")
-      .then((res) => {
-        if (!res.ok) throw new Error("Fichier allowedEmails.json introuvable");
-        return res.json();
-      })
-      .then((data) => {
-        setAllowedEmails(data.map((e) => e.toLowerCase()));
-        if (DEBUG_MODE) console.log("✅ allowedEmails chargés:", data);
-      })
-      .catch((err) => {
-        if (DEBUG_MODE)
-          console.error("❌ Erreur chargement allowedEmails:", err.message);
-        setError("Impossible de charger la liste des emails autorisés");
-      });
   }, []);
 
   const saveEmailToHistory = (newEmail) => {
@@ -77,7 +57,7 @@ export default function LoginForm({ onLoginSuccess }) {
       } else if (data.allowed) {
         setCanSignIn(true);
         setCanSignUp(false);
-        setMessage("✅ Email autorisé");
+        setMessage("✅ Email autorisé — connexion possible");
       } else {
         setCanSignIn(false);
         setCanSignUp(true);
@@ -106,24 +86,22 @@ export default function LoginForm({ onLoginSuccess }) {
     e.preventDefault();
     if (canSignIn) {
       saveEmailToHistory(email.toLowerCase());
-      login(); // ✅ met à jour état global
+      login();
       if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
     } else if (canSignUp) {
       setStep("signup");
     }
   };
 
-  const handleSignupSubmit = async (e) => {
+  const handleSignupSubmit = (e) => {
     e.preventDefault();
     if (!nom || !prenom) {
       setError("Merci de remplir tous les champs.");
       return;
     }
     saveEmailToHistory(email.toLowerCase());
-    if (DEBUG_MODE) {
-      login(); // ✅ connexion après inscription
-      if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
-    }
+    login();
+    if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
   };
 
   return (
@@ -133,7 +111,6 @@ export default function LoginForm({ onLoginSuccess }) {
           onSubmit={handleSubmitEmail}
           className="flex flex-col items-center w-full"
         >
-          {/* Boutons sociaux */}
           <div className="flex gap-6 mb-6">
             <button
               type="button"
@@ -157,7 +134,6 @@ export default function LoginForm({ onLoginSuccess }) {
 
           <div className="w-full border-t mb-6"></div>
 
-          {/* Email */}
           <input
             type="email"
             list="pastEmails"
@@ -186,6 +162,53 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             {canSignIn ? "Sign In" : "Sign Up"}
           </button>
+          {/* Boutons sociaux */}
+          <div className="flex items-center gap-3 mt-4">
+            {/* Facebook */}
+            <button
+              type="button"
+              className="flex-1 border p-2 rounded"
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/sharer.php?u=https://www.flaticon.com/free-icons/facebook",
+                  "facebook-share-dialog",
+                  "width=600,height=400"
+                )
+              }
+            >
+              <img src={facebookIcon} alt="Facebook" className="mx-auto h-5" />
+            </button>
+
+            {/* Google */}
+            <button
+              type="button"
+              className="flex-1 border p-2 rounded"
+              onClick={() =>
+                window.open(
+                  "https://mail.google.com/mail/?view=cm&fs=1&su=Partage&body=https://www.flaticon.com/free-icons/facebook",
+                  "gmail-share-dialog",
+                  "width=800,height=600"
+                )
+              }
+            >
+              <img src={googleIcon} alt="Google" className="mx-auto h-5" />
+            </button>
+
+            {/* Apple */}
+            <button
+              type="button"
+              className="flex-1 border p-2 rounded"
+              onClick={() =>
+                window.open(
+                  "https://www.icloud.com/mail",
+                  "apple-share-dialog",
+                  "width=800,height=600"
+                )
+              }
+            >
+              <img src={appleIcon} alt="Apple" className="mx-auto h-5" />
+            </button>
+          </div>
         </form>
       )}
 
