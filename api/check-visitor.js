@@ -19,16 +19,16 @@ export default async function handler(req, res) {
     req.connection.remoteAddress ||
     "IP inconnue";
 
-  // Envoi notification admin
-  await sendEmailToAdmin({ email: lowerEmail, ip });
+  // Envoi notification admin pour nouveaux visiteurs non connus
+  if (!allowed.includes(lowerEmail) && !blocked.includes(lowerEmail)) {
+    await sendEmailToAdmin({ email: lowerEmail, ip });
+  }
 
   // Réponse au frontend
-  if (blocked.includes(lowerEmail)) {
+  if (blocked.includes(lowerEmail))
     return res.status(200).json({ blocked: true });
-  }
-  if (allowed.includes(lowerEmail)) {
+  if (allowed.includes(lowerEmail))
     return res.status(200).json({ allowed: true });
-  }
   return res.status(200).json({ allowed: false, blocked: false });
 }
 
@@ -36,8 +36,8 @@ async function sendEmailToAdmin(visitor) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.ADMIN_EMAIL, // Configuré dans Vercel
-      pass: process.env.ADMIN_PASS, // Mot de passe d'application Gmail
+      user: process.env.ADMIN_EMAIL,
+      pass: process.env.ADMIN_PASS,
     },
   });
 
