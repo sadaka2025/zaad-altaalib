@@ -62,24 +62,30 @@ export default function LoginForm({ onLoginSuccess }) {
     if (!inputEmail) return;
     const lowerEmail = inputEmail.toLowerCase();
 
-    if (!allowedEmails.length) {
-      setCanSignIn(false);
-      setCanSignUp(true);
-      setMessage("ℹ️ Email inconnu — inscription possible");
-      return;
-    }
+    try {
+      const res = await fetch("/api/check-visitor", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: lowerEmail }),
+      });
+      const data = await res.json();
 
-    if (DEBUG_MODE) {
-      setIsEmailValid(true);
-      if (allowedEmails.includes(lowerEmail)) {
+      if (data.blocked) {
+        setCanSignIn(false);
+        setCanSignUp(false);
+        setMessage("⛔ Accès interdit");
+      } else if (data.allowed) {
         setCanSignIn(true);
         setCanSignUp(false);
-        setMessage("✅ Email autorisé — connexion possible");
+        setMessage("✅ Email autorisé");
       } else {
         setCanSignIn(false);
         setCanSignUp(true);
         setMessage("ℹ️ Email inconnu — inscription possible");
       }
+    } catch (err) {
+      console.error("Erreur vérification visiteur:", err);
+      setMessage("Erreur serveur");
     }
   };
 
