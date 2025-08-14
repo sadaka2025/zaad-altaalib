@@ -1,0 +1,455 @@
+{
+  "meta": {
+    "year": 1,
+    "slug": "fiqh",
+    "code": "FIQH101",
+    "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+    "instructors": [{ "name": "Dr. X" }],
+    "tabs": ["video", "summaryPDF", "textExtraction", "qna"],
+    "tabLabels": {
+      "video": "🎥 فيديو الدرس",
+      "summaryPDF": "📝 مختصر الدرس",
+      "textExtraction": "📄 استخراج النصوص من الفيديو",
+      "qna": "📘 تلخيص الدرس في شكل سؤال و جواب (QCM)"
+    }
+  },
+  "semesters": {
+    "1": {
+      "lessons": [
+        { "id": 1, "title": "الدرس 1: ..." },
+        { "id": 2, "title": "الدرس 2: ..." },
+        { "id": 3, "title": "الدرس 3: ..." },
+        { "id": 4, "title": "الدرس 4: ..." },
+        { "id": 5, "title": "الدرس 5: ..." },
+        { "id": 6, "title": "الدرس 6: ..." },
+        { "id": 7, "title": "الدرس 7: ..." },
+        { "id": 8, "title": "الدرس 8: ..." },
+        { "id": 9, "title": "الدرس 9: ..." },
+        { "id": 10, "title": "الدرس 10: ..." },
+        { "id": 11, "title": "الدرس 11: ..." },
+        { "id": 12, "title": "الدرس 12: ..." },
+        { "id": 13, "title": "الدرس 13: ..." },
+        { "id": 14, "title": "الدرس 14: ..." },
+        { "id": 15, "title": "الدرس 15: ..." },
+        { "id": 16, "title": "الدرس 16: ..." }
+      ],
+      "contentLinks": {
+        "1": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "2": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "3": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "4": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "5": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "6": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "7": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "8": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "9": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "10": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "11": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "12": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "13": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "14": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "15": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "16": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        }
+      },
+
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "live1",
+                "label": "الملتقى الأول",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+                  "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf"
+                }
+              },
+              {
+                "id": "live2",
+                "label": "الملتقى الثاني",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+                  "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": {
+                  "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+                }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": {
+                  "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+
+    "2": {
+      "lessons": [
+        { "id": 1, "title": "الدرس 1: ..." },
+        { "id": 2, "title": "الدرس 2: ..." },
+        { "id": 3, "title": "الدرس 3: ..." },
+        { "id": 4, "title": "الدرس 4: ..." },
+        { "id": 5, "title": "الدرس 5: ..." },
+        { "id": 6, "title": "الدرس 6: ..." },
+        { "id": 7, "title": "الدرس 7: ..." },
+        { "id": 8, "title": "الدرس 8: ..." },
+        { "id": 9, "title": "الدرس 9: ..." },
+        { "id": 10, "title": "الدرس 10: ..." },
+        { "id": 11, "title": "الدرس 11: ..." },
+        { "id": 12, "title": "الدرس 12: ..." },
+        { "id": 13, "title": "الدرس 13: ..." },
+        { "id": 14, "title": "الدرس 14: ..." },
+        { "id": 15, "title": "الدرس 15: ..." },
+        { "id": 16, "title": "الدرس 16: ..." }
+      ],
+      "contentLinks": {
+        "1": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "2": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "3": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "4": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "5": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "6": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "7": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "8": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "9": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "10": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+        "11": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "12": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "13": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "14": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "15": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        },
+
+        "16": {
+          "video": "https://drive.google.com/file/d/1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1EjwP4LRAk-taGDUn3KbHihGrcSVxUH6V",
+          "summaryPDF": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "summaryDownload": "/pdf/premiere-annee/fiqh/fiqh-lesson-2.pdf",
+          "textExtraction": "/pdf/premiere-annee/fiqh/fiqh-lesson-22.pdf",
+          "qna": "/pdf/premiere-annee/fiqh/fiqh-lesson-222.pdf"
+        }
+      },
+
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "live1",
+                "label": "الملتقى الأول",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://.../live1/preview",
+                  "summaryPDF": "/pdf/fiqh/s1/live1-summary.pdf"
+                }
+              },
+              {
+                "id": "live2",
+                "label": "الملتقى الثاني",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://.../live2/preview",
+                  "summaryPDF": "/pdf/fiqh/s1/live2-summary.pdf"
+                }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": { "qna": "/pdf/fiqh/s1/quiz-general.pdf" }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": { "qna": "/pdf/fiqh/s1/examen-final.pdf" }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}
