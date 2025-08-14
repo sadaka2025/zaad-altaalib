@@ -162,53 +162,6 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             {canSignIn ? "Sign In" : "Sign Up"}
           </button>
-          {/* Boutons sociaux */}
-          <div className="flex items-center gap-3 mt-4">
-            {/* Facebook */}
-            <button
-              type="button"
-              className="flex-1 border p-2 rounded"
-              onClick={() =>
-                window.open(
-                  "https://www.facebook.com/sharer.php?u=https://www.flaticon.com/free-icons/facebook",
-                  "facebook-share-dialog",
-                  "width=600,height=400"
-                )
-              }
-            >
-              <img src={facebookIcon} alt="Facebook" className="mx-auto h-5" />
-            </button>
-
-            {/* Google */}
-            <button
-              type="button"
-              className="flex-1 border p-2 rounded"
-              onClick={() =>
-                window.open(
-                  "https://mail.google.com/mail/?view=cm&fs=1&su=Partage&body=https://www.flaticon.com/free-icons/facebook",
-                  "gmail-share-dialog",
-                  "width=800,height=600"
-                )
-              }
-            >
-              <img src={googleIcon} alt="Google" className="mx-auto h-5" />
-            </button>
-
-            {/* Apple */}
-            <button
-              type="button"
-              className="flex-1 border p-2 rounded"
-              onClick={() =>
-                window.open(
-                  "https://www.icloud.com/mail",
-                  "apple-share-dialog",
-                  "width=800,height=600"
-                )
-              }
-            >
-              <img src={appleIcon} alt="Apple" className="mx-auto h-5" />
-            </button>
-          </div>
         </form>
       )}
 
