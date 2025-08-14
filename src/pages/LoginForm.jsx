@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import facebookIcon from "@/assets/facebook-icon.png";
-import googleIcon from "@/assets/google-icon.png";
-import appleIcon from "@/assets/apple-icon.png";
+
 import { useAuth } from "../context/AuthContext";
 
 export default function LoginForm({ onLoginSuccess }) {
@@ -43,6 +41,30 @@ export default function LoginForm({ onLoginSuccess }) {
     const lowerEmail = inputEmail.toLowerCase();
 
     try {
+      // MOCK local
+      if (import.meta.env.MODE === "development") {
+        console.log("Mock API en dev");
+        const mockData = {
+          allowed: lowerEmail.endsWith("@test.com"),
+          blocked: false,
+        };
+        if (mockData.blocked) {
+          setCanSignIn(false);
+          setCanSignUp(false);
+          setMessage("⛔ Accès interdit");
+        } else if (mockData.allowed) {
+          setCanSignIn(true);
+          setCanSignUp(false);
+          setMessage("✅ Email autorisé — connexion possible");
+        } else {
+          setCanSignIn(false);
+          setCanSignUp(true);
+          setMessage("ℹ️ Email inconnu — inscription possible");
+        }
+        return;
+      }
+
+      // Production API (Vercel)
       const res = await fetch("/api/check-visitor", {
         method: "POST",
         headers: { "Content-Type": "application/json" },

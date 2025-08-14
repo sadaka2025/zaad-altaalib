@@ -1,4 +1,11 @@
 {
   "version": 2,
-  "builds": [{ "src": "package.json", "use": "@vercel/next" }]
+  "builds": [
+    { "src": "dist/**", "use": "@vercel/static" },
+    { "src": "api/**/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/(.*)", "dest": "/api/$1.js" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
 }
