@@ -133,26 +133,7 @@ export default function LoginForm({ onLoginSuccess }) {
           onSubmit={handleSubmitEmail}
           className="flex flex-col items-center w-full"
         >
-          <div className="flex gap-6 mb-6">
-            <button
-              type="button"
-              className="w-12 h-12 flex items-center justify-center border rounded-full hover:bg-gray-100"
-            >
-              <img src={facebookIcon} alt="Facebook" className="h-5" />
-            </button>
-            <button
-              type="button"
-              className="w-12 h-12 flex items-center justify-center border rounded-full hover:bg-gray-100"
-            >
-              <img src={googleIcon} alt="Google" className="h-5" />
-            </button>
-            <button
-              type="button"
-              className="w-12 h-12 flex items-center justify-center border rounded-full hover:bg-gray-100"
-            >
-              <img src={appleIcon} alt="Apple" className="h-5" />
-            </button>
-          </div>
+          <div className="flex gap-6 mb-6"></div>
 
           <div className="w-full border-t mb-6"></div>
 
@@ -184,6 +165,65 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             {canSignIn ? "Sign In" : "Sign Up"}
           </button>
+          {/* Boutons sociaux */}
+          <div className="flex items-center gap-3 mt-4">
+            {/* Facebook */}
+            <button
+              type="button"
+              className="flex-1 border p-2 rounded"
+              onClick={() =>
+                window.open(
+                  "https://www.facebook.com/sharer.php?u=https://www.flaticon.com/free-icons/facebook",
+                  "facebook-share-dialog",
+                  "width=600,height=400"
+                )
+              }
+            >
+              <img
+                src="/images/facebook-icon.png"
+                alt="Facebook"
+                className="mx-auto h-5"
+              />
+            </button>
+
+            {/* Google */}
+            <button
+              type="button"
+              className="flex-1 border p-2 rounded"
+              onClick={() =>
+                window.open(
+                  "https://mail.google.com/mail/?view=cm&fs=1&su=Partage&body=https://www.flaticon.com/free-icons/facebook",
+                  "gmail-share-dialog",
+                  "width=800,height=600"
+                )
+              }
+            >
+              <img
+                src="/images/google-icon.png"
+                alt="Google"
+                className="mx-auto h-5"
+              />
+            </button>
+
+            {/* Apple */}
+            <button
+              type="button"
+              className="flex-1 border p-2 rounded"
+              onClick={() =>
+                window.open(
+                  "https://www.icloud.com/mail",
+                  "apple-share-dialog",
+                  "width=800,height=600"
+                )
+              }
+            >
+              <img
+                src="/images/apple-icon.png"
+                alt="Apple"
+                className="mx-auto h-5"
+              />
+            </button>
+          </div>
         </form>
       )}
 

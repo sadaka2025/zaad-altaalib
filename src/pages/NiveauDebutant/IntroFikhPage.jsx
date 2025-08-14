@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import Modal from "../../components/Modal";
-import videoBanner from "../../assets/مقدمة.png";
 
 export default function IntroFikhPage() {
   const [modalTitle, setModalTitle] = useState("");
@@ -210,7 +209,7 @@ export default function IntroFikhPage() {
           {!showVideo ? (
             <div className="bg-gray-100 rounded-lg overflow-hidden shadow relative">
               <img
-                src={videoBanner}
+                src="/images/مقدمة.png"
                 alt="Vidéo d’introduction"
                 className="w-full rounded-lg shadow-lg"
               />
