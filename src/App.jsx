@@ -7,6 +7,9 @@ import {
   Navigate,
   useParams,
 } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "./firebase";
+import Login from "./Login";
 
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
@@ -179,6 +182,11 @@ function LangRoutesWrapper() {
 }
 
 export default function App() {
+  const [user, loading] = useAuthState(auth);
+
+  if (loading) return <p>Chargement...</p>;
+
+  if (!user) return <Login />;
   return (
     <Router>
       <Routes>

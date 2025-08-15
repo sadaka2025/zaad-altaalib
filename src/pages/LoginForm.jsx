@@ -61,8 +61,19 @@ export default function LoginForm({ onLoginSuccess }) {
 
   const verifyEmailFormat = (inputEmail) => {
     if (!inputEmail) return;
+
     const lowerEmail = inputEmail.toLowerCase();
 
+    // Vérification du format email avec regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(lowerEmail)) {
+      setCanSignIn(false);
+      setCanSignUp(false);
+      setMessage("❌ Format email invalide");
+      return;
+    }
+
+    // Vérification dans les listes
     if (blockedList.includes(lowerEmail)) {
       setCanSignIn(false);
       setCanSignUp(false);
@@ -113,16 +124,79 @@ export default function LoginForm({ onLoginSuccess }) {
     if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
   };
   return (
-    <div className="w-full">
+    <div className="flex flex-col min-h-screen">
+      <style>{`
+    .buttonEffect {
+      position: relative;
+      display: inline-block;
+      padding: 1rem 2.5rem;
+      border: none;
+      border-radius: 5px;
+      overflow: hidden;
+      background: radial-gradient(ellipse farthest-corner at right bottom, #4f83cc 0%, #3b6db1 8%, #2f5990 30%, #274a78 40%, transparent 80%),
+                  radial-gradient(ellipse farthest-corner at left top, #d0e4ff 0%, #a4c7ff 8%, #6b96d6 25%, #274a78 62.5%, #274a78 100%);
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .buttonEffect::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -100%;
+      display: inline-block;
+      width: 10%;
+      height: 120%;
+      transform: skewX(30deg);
+      background-color: #fff;
+      box-shadow: 10px 0px 10px rgba(255,255,255,0.5);
+      transition: left 1s ease;
+    }
+    .buttonEffect:hover::before {
+      left: 150%;
+    }
+    .buttonEffect:disabled {
+      background: #ccc;
+      color: #777;
+      cursor: not-allowed;
+    }
+  `}</style>
+
+      {/* DIV D'ACCUEIL EN HAUT PLEINE LARGEUR */}
+      <div className="w-full bg-cover bg-center flex justify-center items-center h-64">
+        <div className="bg-blue-800/80 backdrop-blur-md p-6 rounded-2xl shadow-lg text-center animate-fadeIn">
+          <h1
+            className="text-3xl font-bold text-white mb-3 animate-pulse"
+            style={{ fontFamily: "Arial, sans-serif" }}
+          >
+            مرحبا بكم بيننا 🌸
+          </h1>
+          <p
+            className="text-lg text-white mb-1"
+            style={{ fontFamily: "Arial, sans-serif" }}
+          >
+            بسم الله الرحمن الرحيم عليه توكلت و إليه أنيب
+          </p>
+          <p
+            className="text-lg text-white mb-4"
+            style={{ fontFamily: "Arial, sans-serif" }}
+          >
+            صلوا على رسول الله ﷺ
+          </p>
+        </div>
+      </div>
+
       {step === "email" && (
         <form
           onSubmit={handleSubmitEmail}
           className="flex flex-col items-center w-full"
         >
           <div className="flex gap-6 mb-6"></div>
-
           <div className="w-full border-t mb-6"></div>
 
+          <div className="flex-1 flex flex-col items-center mt-8 w-full"></div>
           <input
             type="email"
             list="pastEmails"
@@ -143,17 +217,13 @@ export default function LoginForm({ onLoginSuccess }) {
           <button
             type="submit"
             disabled={!canSignIn && !canSignUp}
-            className={`w-full py-3 rounded-full font-medium ${
-              canSignIn || canSignUp
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-gray-300 text-gray-500 cursor-not-allowed"
-            }`}
+            className={`w-full py-3 rounded-full font-medium buttonEffect`}
           >
             {canSignIn ? "Sign In" : "Sign Up"}
           </button>
+
           {/* Boutons sociaux */}
           <div className="flex items-center gap-3 mt-4">
-            {/* Facebook */}
             <button
               type="button"
               className="flex-1 border p-2 rounded"
@@ -168,7 +238,6 @@ export default function LoginForm({ onLoginSuccess }) {
               <img src={facebookIcon} alt="Facebook" className="mx-auto h-5" />
             </button>
 
-            {/* Google */}
             <button
               type="button"
               className="flex-1 border p-2 rounded"
@@ -183,7 +252,6 @@ export default function LoginForm({ onLoginSuccess }) {
               <img src={googleIcon} alt="Google" className="mx-auto h-5" />
             </button>
 
-            {/* Apple */}
             <button
               type="button"
               className="flex-1 border p-2 rounded"
@@ -242,7 +310,7 @@ export default function LoginForm({ onLoginSuccess }) {
 
           <button
             type="submit"
-            className="w-full py-3 rounded-full bg-green-600 text-white font-medium hover:bg-green-700"
+            className="w-full py-3 rounded-full buttonEffect"
           >
             Sign Up
           </button>
