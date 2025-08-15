@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import bgImage from "../../assets/OIP.jpeg"; // ton image locale
 
 export default function QRPage() {
   const [title, setTitle] = useState("");
@@ -40,7 +39,7 @@ export default function QRPage() {
           className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
           dir="rtl"
           style={{
-            backgroundImage: `url(${bgImage})`,
+            backgroundImage: `url(/images/OIP.jpeg)`,
             backgroundSize: "cover", // optionnel : pour que l’image couvre tout
             backgroundPosition: "center", // optionnel : pour centrer l’image
           }}
@@ -52,7 +51,7 @@ export default function QRPage() {
             className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
             dir="rtl"
             style={{
-              backgroundImage: `url(${bgImage})`,
+              backgroundImage: `url(/images/OIP.jpeg)`,
               backgroundSize: "cover", // optionnel : pour que l’image couvre tout
               backgroundPosition: "center", // optionnel : pour centrer l’image
             }}

@@ -3,6 +3,9 @@ import React, { useState, useEffect, useRef } from "react";
 import { useAuth } from "../context/AuthContext";
 
 export default function LoginForm({ onLoginSuccess }) {
+  const facebookIcon = "/images/facebook-icon.png";
+  const googleIcon = "/images/google-icon.png";
+  const appleIcon = "/images/apple-icon.png";
   const { login } = useAuth();
 
   const [email, setEmail] = useState("");
@@ -18,12 +21,32 @@ export default function LoginForm({ onLoginSuccess }) {
   const [canSignUp, setCanSignUp] = useState(false);
   const [canSignIn, setCanSignIn] = useState(false);
 
+  const [allowedList, setAllowedList] = useState([]);
+  const [blockedList, setBlockedList] = useState([]);
+
   const debounceTimer = useRef(null);
   const DEBUG_MODE = true;
 
   useEffect(() => {
     const savedEmails = JSON.parse(localStorage.getItem("pastEmails") || "[]");
     setPastEmails(savedEmails);
+
+    // Charger les fichiers JSON depuis /public/dataemail
+    const loadEmailLists = async () => {
+      try {
+        const allowed = await fetch("/dataemail/allowedEmails.json").then(
+          (res) => res.json()
+        );
+        const blocked = await fetch("/dataemail/blockedEmails.json").then(
+          (res) => res.json()
+        );
+        setAllowedList(allowed);
+        setBlockedList(blocked);
+      } catch (err) {
+        console.error("Erreur chargement listes emails:", err);
+      }
+    };
+    loadEmailLists();
   }, []);
 
   const saveEmailToHistory = (newEmail) => {
@@ -36,58 +59,22 @@ export default function LoginForm({ onLoginSuccess }) {
     }
   };
 
-  const verifyEmailFormat = async (inputEmail) => {
+  const verifyEmailFormat = (inputEmail) => {
     if (!inputEmail) return;
     const lowerEmail = inputEmail.toLowerCase();
 
-    try {
-      // MOCK local
-      if (import.meta.env.MODE === "development") {
-        console.log("Mock API en dev");
-        const mockData = {
-          allowed: lowerEmail.endsWith("@test.com"),
-          blocked: false,
-        };
-        if (mockData.blocked) {
-          setCanSignIn(false);
-          setCanSignUp(false);
-          setMessage("⛔ Accès interdit");
-        } else if (mockData.allowed) {
-          setCanSignIn(true);
-          setCanSignUp(false);
-          setMessage("✅ Email autorisé — connexion possible");
-        } else {
-          setCanSignIn(false);
-          setCanSignUp(true);
-          setMessage("ℹ️ Email inconnu — inscription possible");
-        }
-        return;
-      }
-
-      // Production API (Vercel)
-      const res = await fetch("/api/check-visitor", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email: lowerEmail }),
-      });
-      const data = await res.json();
-
-      if (data.blocked) {
-        setCanSignIn(false);
-        setCanSignUp(false);
-        setMessage("⛔ Accès interdit");
-      } else if (data.allowed) {
-        setCanSignIn(true);
-        setCanSignUp(false);
-        setMessage("✅ Email autorisé — connexion possible");
-      } else {
-        setCanSignIn(false);
-        setCanSignUp(true);
-        setMessage("ℹ️ Email inconnu — inscription possible");
-      }
-    } catch (err) {
-      console.error("Erreur vérification visiteur:", err);
-      setMessage("Erreur serveur");
+    if (blockedList.includes(lowerEmail)) {
+      setCanSignIn(false);
+      setCanSignUp(false);
+      setMessage("⛔ Accès interdit");
+    } else if (allowedList.includes(lowerEmail)) {
+      setCanSignIn(true);
+      setCanSignUp(false);
+      setMessage("✅ Email autorisé — connexion possible");
+    } else {
+      setCanSignIn(false);
+      setCanSignUp(true);
+      setMessage("ℹ️ Email inconnu — inscription possible");
     }
   };
 
@@ -125,7 +112,6 @@ export default function LoginForm({ onLoginSuccess }) {
     login();
     if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
   };
-
   return (
     <div className="w-full">
       {step === "email" && (
@@ -179,11 +165,7 @@ export default function LoginForm({ onLoginSuccess }) {
                 )
               }
             >
-              <img
-                src="/images/facebook-icon.png"
-                alt="Facebook"
-                className="mx-auto h-5"
-              />
+              <img src={facebookIcon} alt="Facebook" className="mx-auto h-5" />
             </button>
 
             {/* Google */}
@@ -198,11 +180,7 @@ export default function LoginForm({ onLoginSuccess }) {
                 )
               }
             >
-              <img
-                src="/images/google-icon.png"
-                alt="Google"
-                className="mx-auto h-5"
-              />
+              <img src={googleIcon} alt="Google" className="mx-auto h-5" />
             </button>
 
             {/* Apple */}
@@ -217,11 +195,7 @@ export default function LoginForm({ onLoginSuccess }) {
                 )
               }
             >
-              <img
-                src="/images/apple-icon.png"
-                alt="Apple"
-                className="mx-auto h-5"
-              />
+              <img src={appleIcon} alt="Apple" className="mx-auto h-5" />
             </button>
           </div>
         </form>

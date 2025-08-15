@@ -10,7 +10,6 @@ export default function LanguageSwitcher() {
     const pathSegments = location.pathname.split("/").filter(Boolean);
     const currentLang = pathSegments[0];
 
-    // ✅ الآن نأخذ en ضمن اللغات المدعومة
     if (["fr", "ar", "en"].includes(currentLang)) {
       pathSegments[0] = lang;
     } else {
@@ -18,27 +17,53 @@ export default function LanguageSwitcher() {
     }
 
     const newPath = "/" + pathSegments.join("/");
+
+    // 🔹 Change la langue
     i18n.changeLanguage(lang);
+
+    // 🔹 Sauvegarde dans localStorage
+    localStorage.setItem("i18nextLng", lang);
+
+    // 🔹 Met à jour la direction RTL/LTR
+    document.documentElement.setAttribute("lang", lang);
+    document.documentElement.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
+
+    // 🔹 Navigation vers la nouvelle URL
     navigate(newPath);
   };
+
+  // 🔹 Langue courante (sans région)
+  const currentLang = i18n.language.split("-")[0];
 
   return (
     <div className="flex gap-2 items-center bg-white p-2 rounded shadow">
       <button
         onClick={() => switchLang("fr")}
-        className={`px-3 py-1 rounded ${i18n.language === "fr" ? "bg-blue-700 text-white" : "bg-gray-200 text-blue-700"}`}
+        className={`px-3 py-1 rounded ${
+          currentLang === "fr"
+            ? "bg-blue-700 text-white"
+            : "bg-gray-200 text-blue-700"
+        }`}
       >
         FR
       </button>
       <button
         onClick={() => switchLang("ar")}
-        className={`px-3 py-1 rounded ${i18n.language === "ar" ? "bg-blue-700 text-white" : "bg-gray-200 text-blue-700"}`}
+        className={`px-3 py-1 rounded ${
+          currentLang === "ar"
+            ? "bg-blue-700 text-white"
+            : "bg-gray-200 text-blue-700"
+        }`}
       >
         AR
       </button>
       <button
         onClick={() => switchLang("en")}
-        className={`px-3 py-1 rounded ${i18n.language === "en" ? "bg-blue-700 text-white" : "bg-gray-200 text-blue-700"}`}
+        className={`px-3 py-1 rounded ${
+          currentLang === "en"
+            ? "bg-blue-700 text-white"
+            : "bg-gray-200 text-blue-700"
+        }`}
       >
         EN
       </button>

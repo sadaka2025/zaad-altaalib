@@ -1,12 +1,20 @@
 // src/pages/ProfAvisPage.jsx
-import React, { useState, useEffect } from "react";
+
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import instructorData from "../../locales/ar/translation.json";
-import profImg from "../../assets/instructor3.jpg";
-import bgImage from "../../assets/OIP.jpeg";
-
 export default function ProfAvisPage() {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch("/locales/ar/translation.json")
+      .then((res) => {
+        if (!res.ok) throw new Error("Erreur de chargement");
+        return res.json();
+      })
+      .then((json) => setData(json))
+      .catch((err) => console.error(err));
+  }, []);
   const [message, setMessage] = useState("");
 
   // Fonction de vérification email
@@ -63,6 +71,8 @@ export default function ProfAvisPage() {
     inst.image.includes("instructor3.jpg")
   );
 
+  // Si aucun instructeur trouvé, retourner null ou un message
+  if (!instructor) return <p>Instructeur non trouvé</p>;
   useEffect(() => {
     const saved = localStorage.getItem("profFeedbacks");
     if (saved) setFeedbacks(JSON.parse(saved));
@@ -125,6 +135,14 @@ export default function ProfAvisPage() {
       className="min-h-screen py-10 px-4 bg-gradient-to-br from-sky-100 via-sky-200 to-white"
       dir="rtl"
     >
+      <div>
+        <h2>{instructor.name}</h2>
+        <img
+          src={`/images/instructors/${instructor.image}`} // chemin depuis public
+          alt={instructor.name}
+          style={{ width: "200px", height: "auto" }}
+        />
+      </div>
       <div className="font-[Arial] max-w-4xl mx-auto p-6 bg-white rounded shadow space-y-8">
         <button
           onClick={() => navigate("/ar/intro")}
@@ -137,16 +155,17 @@ export default function ProfAvisPage() {
         <div
           className="flex flex-col md:flex-row items-center bg-gradient-to-r from-sky-100 to-white p-4 rounded shadow mb-8"
           style={{
-            backgroundImage: `url(${bgImage})`,
+            backgroundImage: `url(/images/OIP.jpeg)`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
         >
           <img
-            src={profImg}
+            src="/images/instructor3.jpg"
             alt="Instructor"
             className="w-32 h-32 rounded-full object-cover border-4 border-yellow-300 mb-4 md:mb-0 md:mr-6"
           />
+
           <div className="text-right flex-1">
             <h2 className="text-2xl font-bold text-sky-800 mb-1">
               عبد الفتاح حسين
