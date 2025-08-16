@@ -3,35 +3,33 @@ import React, { useState, useEffect, useRef } from "react";
 import { useAuth } from "../context/AuthContext";
 
 export default function LoginForm({ onLoginSuccess }) {
+  // Icônes
   const facebookIcon = "/images/facebook-icon.png";
   const googleIcon = "/images/google-icon.png";
   const appleIcon = "/images/apple-icon.png";
+
   const { login } = useAuth();
 
+  // États
   const [email, setEmail] = useState("");
   const [pastEmails, setPastEmails] = useState([]);
   const [message, setMessage] = useState("");
   const [step, setStep] = useState("email");
-
   const [nom, setNom] = useState("");
   const [prenom, setPrenom] = useState("");
   const [profil, setProfil] = useState("student");
   const [error, setError] = useState("");
-
   const [canSignUp, setCanSignUp] = useState(false);
   const [canSignIn, setCanSignIn] = useState(false);
-
   const [allowedList, setAllowedList] = useState([]);
   const [blockedList, setBlockedList] = useState([]);
-
   const debounceTimer = useRef(null);
-  const DEBUG_MODE = true;
 
+  // Charger historique + listes emails
   useEffect(() => {
     const savedEmails = JSON.parse(localStorage.getItem("pastEmails") || "[]");
     setPastEmails(savedEmails);
 
-    // Charger les fichiers JSON depuis /public/dataemail
     const loadEmailLists = async () => {
       try {
         const allowed = await fetch("/dataemail/allowedEmails.json").then(
@@ -40,15 +38,18 @@ export default function LoginForm({ onLoginSuccess }) {
         const blocked = await fetch("/dataemail/blockedEmails.json").then(
           (res) => res.json()
         );
-        setAllowedList(allowed);
-        setBlockedList(blocked);
+
+        setAllowedList(allowed.map((e) => e.toLowerCase()));
+        setBlockedList(blocked.map((e) => e.toLowerCase()));
       } catch (err) {
         console.error("Erreur chargement listes emails:", err);
       }
     };
+
     loadEmailLists();
   }, []);
 
+  // Sauvegarder email dans l’historique
   const saveEmailToHistory = (newEmail) => {
     if (!newEmail) return;
     const saved = JSON.parse(localStorage.getItem("pastEmails") || "[]");
@@ -59,11 +60,12 @@ export default function LoginForm({ onLoginSuccess }) {
     }
   };
 
+  // Vérification du format email et autorisation
   const verifyEmailFormat = (inputEmail) => {
     if (!inputEmail) return;
-
     const lowerEmail = inputEmail.toLowerCase();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!emailRegex.test(lowerEmail)) {
       setCanSignIn(false);
       setCanSignUp(false);
@@ -86,6 +88,7 @@ export default function LoginForm({ onLoginSuccess }) {
     }
   };
 
+  // Gestion saisie email avec debounce
   const handleEmailChange = (value) => {
     setEmail(value);
     setMessage("");
@@ -94,22 +97,26 @@ export default function LoginForm({ onLoginSuccess }) {
     setError("");
 
     if (debounceTimer.current) clearTimeout(debounceTimer.current);
+
     debounceTimer.current = setTimeout(() => {
       verifyEmailFormat(value);
     }, 500);
   };
 
+  // Soumission email
   const handleSubmitEmail = (e) => {
     e.preventDefault();
     if (canSignIn) {
       saveEmailToHistory(email.toLowerCase());
       login();
       if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
+      window.location.href = "/ar/";
     } else if (canSignUp) {
       setStep("signup");
     }
   };
 
+  // Soumission inscription
   const handleSignupSubmit = (e) => {
     e.preventDefault();
     if (!nom || !prenom) {
@@ -123,45 +130,47 @@ export default function LoginForm({ onLoginSuccess }) {
 
   return (
     <div className="flex flex-col min-h-screen">
+      {/* Effet bouton */}
       <style>{`
-    .buttonEffect {
-      position: relative;
-      display: inline-block;
-      padding: 1rem 2.5rem;
-      border: none;
-      border-radius: 5px;
-      overflow: hidden;
-      background: radial-gradient(ellipse farthest-corner at right bottom, #4f83cc 0%, #3b6db1 8%, #2f5990 30%, #274a78 40%, transparent 80%),
-                  radial-gradient(ellipse farthest-corner at left top, #d0e4ff 0%, #a4c7ff 8%, #6b96d6 25%, #274a78 62.5%, #274a78 100%);
-      color: #fff;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-    .buttonEffect::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: -100%;
-      display: inline-block;
-      width: 10%;
-      height: 120%;
-      transform: skewX(30deg);
-      background-color: #fff;
-      box-shadow: 10px 0px 10px rgba(255,255,255,0.5);
-      transition: left 1s ease;
-    }
-    .buttonEffect:hover::before {
-      left: 150%;
-    }
-    .buttonEffect:disabled {
-      background: #ccc;
-      color: #777;
-      cursor: not-allowed;
-    }
-  `}</style>
+        .buttonEffect {
+          position: relative;
+          display: inline-block;
+          padding: 1rem 2.5rem;
+          border: none;
+          border-radius: 5px;
+          overflow: hidden;
+          background: radial-gradient(ellipse farthest-corner at right bottom, #4f83cc 0%, #3b6db1 8%, #2f5990 30%, #274a78 40%, transparent 80%),
+                      radial-gradient(ellipse farthest-corner at left top, #d0e4ff 0%, #a4c7ff 8%, #6b96d6 25%, #274a78 62.5%, #274a78 100%);
+          color: #fff;
+          font-family: Arial, sans-serif;
+          font-weight: bold;
+          text-transform: uppercase;
+          cursor: pointer;
+        }
+        .buttonEffect::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: -100%;
+          display: inline-block;
+          width: 10%;
+          height: 120%;
+          transform: skewX(30deg);
+          background-color: #fff;
+          box-shadow: 10px 0px 10px rgba(255,255,255,0.5);
+          transition: left 1s ease;
+        }
+        .buttonEffect:hover::before {
+          left: 150%;
+        }
+        .buttonEffect:disabled {
+          background: #ccc;
+          color: #777;
+          cursor: not-allowed;
+        }
+      `}</style>
 
+      {/* En-tête */}
       <div className="w-full bg-cover bg-center flex justify-center items-center h-64">
         <div className="bg-blue-800/80 backdrop-blur-md p-6 rounded-2xl shadow-lg text-center animate-fadeIn">
           <h1
@@ -170,21 +179,14 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             مرحبا بكم بيننا 🌸
           </h1>
-          <p
-            className="text-lg text-white mb-1"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
+          <p className="text-lg text-white mb-1">
             بسم الله الرحمن الرحيم عليه توكلت و إليه أنيب
           </p>
-          <p
-            className="text-lg text-white mb-4"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
-            صلوا على رسول الله ﷺ
-          </p>
+          <p className="text-lg text-white mb-4">صلوا على رسول الله ﷺ</p>
         </div>
       </div>
 
+      {/* Étape Email */}
       {step === "email" && (
         <form
           onSubmit={handleSubmitEmail}
@@ -206,6 +208,7 @@ export default function LoginForm({ onLoginSuccess }) {
           </datalist>
 
           {message && <p className="text-sm text-gray-600 mb-3">{message}</p>}
+          {error && <p className="text-red-600 mb-3">{error}</p>}
 
           <button
             type="submit"
@@ -215,6 +218,7 @@ export default function LoginForm({ onLoginSuccess }) {
             {canSignIn ? "Sign In" : "Sign Up"}
           </button>
 
+          {/* Boutons sociaux */}
           <div className="flex items-center gap-3 mt-4">
             <button
               type="button"
@@ -229,7 +233,6 @@ export default function LoginForm({ onLoginSuccess }) {
             >
               <img src={facebookIcon} alt="Facebook" className="mx-auto h-5" />
             </button>
-
             <button
               type="button"
               className="flex-1 border p-2 rounded"
@@ -243,7 +246,6 @@ export default function LoginForm({ onLoginSuccess }) {
             >
               <img src={googleIcon} alt="Google" className="mx-auto h-5" />
             </button>
-
             <button
               type="button"
               className="flex-1 border p-2 rounded"
@@ -261,6 +263,7 @@ export default function LoginForm({ onLoginSuccess }) {
         </form>
       )}
 
+      {/* Étape Signup */}
       {step === "signup" && (
         <form
           onSubmit={handleSignupSubmit}
