@@ -1,5 +1,4 @@
-// src/context/AuthContext.jsx
-import { createContext, useContext, useState, useEffect } from "react";
+import React, { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext();
 
@@ -18,7 +17,7 @@ export const AuthProvider = ({ children }) => {
 
   const logout = () => {
     localStorage.removeItem("isAuthenticated");
-    localStorage.removeItem("userEmail"); // si tu stockes l'email
+    localStorage.removeItem("userEmail");
     setIsAuthenticated(false);
   };
 

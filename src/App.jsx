@@ -6,15 +6,14 @@ import {
   Route,
   Navigate,
   useParams,
+  useLocation,
 } from "react-router-dom";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "./firebase";
-import Login from "./Login";
+import { useTranslation } from "react-i18next";
+
+import { AuthProvider, useAuth } from "./context/AuthContext";
 
 import Layout from "./components/Layout";
 import HomePage from "./pages/HomePage";
-
-// import LoginPage from "./pages/LoginPage";  // PLUS IMPORTÉ ICI, modal gère le login
 import Formations from "./pages/Formations";
 import NiveauDebutant from "./pages/NiveauDebutant/niveau-debutant";
 import IntroFikhPage from "./pages/NiveauDebutant/IntroFikhPage";
@@ -31,17 +30,20 @@ import SubjectPage from "./features/subjects/pages/SubjectPage";
 import i18n from "./i18n";
 import "./i18n";
 
+// Composant pour protéger les pages
 function RequireAuth({ children }) {
-  const email = localStorage.getItem("userEmail");
-  if (!email) {
-    // Redirection vers la home page, pas vers login
+  const { isAuthenticated } = useAuth();
+  if (!isAuthenticated) {
     return <Navigate to={`/${i18n.language || "ar"}`} replace />;
   }
   return children;
 }
 
+// Wrapper pour gérer la langue
 function LangRoutesWrapper() {
   const { lang } = useParams();
+  const location = useLocation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const supportedLangs = ["fr", "ar", "en"];
@@ -52,13 +54,11 @@ function LangRoutesWrapper() {
       "dir",
       selectedLang === "ar" ? "rtl" : "ltr"
     );
-  }, [lang]);
+  }, [lang, i18n]);
 
   return (
     <Routes>
-      {/* PLUS de route "login" standalone */}
-
-      {/* Pages avec Layout */}
+      {/* Toutes les routes avec Layout */}
       <Route element={<Layout />}>
         {/* HomePage accessible sans login */}
         <Route index element={<HomePage />} />
@@ -152,6 +152,8 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
+
+        {/* Redirection vers Fiqh semestre 1 */}
         <Route
           path="niveau-debutant/semester1/fiqh"
           element={
@@ -175,26 +177,24 @@ function LangRoutesWrapper() {
         }
       />
 
-      {/* Route catch-all : rediriger vers home ou 404 (optionnel) */}
+      {/* Catch-all */}
       <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
     </Routes>
   );
 }
 
+// App global avec AuthProvider
 export default function App() {
-  const [user, loading] = useAuthState(auth);
-
-  if (loading) return <p>Chargement...</p>;
-
-  if (!user) return <Login />;
   return (
-    <Router>
-      <Routes>
-        {/* Redirection par défaut vers home (avec langue ar) */}
-        <Route path="/" element={<Navigate to="/ar" replace />} />
-        {/* Toutes les routes avec paramètre langue */}
-        <Route path="/:lang/*" element={<LangRoutesWrapper />} />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          {/* Redirection par défaut */}
+          <Route path="/" element={<Navigate to="/ar" replace />} />
+          {/* Toutes les routes avec paramètre langue */}
+          <Route path="/:lang/*" element={<LangRoutesWrapper />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }

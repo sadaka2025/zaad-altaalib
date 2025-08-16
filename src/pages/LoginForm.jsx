@@ -1,5 +1,5 @@
+// src/pages/LoginForm.jsx
 import React, { useState, useEffect, useRef } from "react";
-
 import { useAuth } from "../context/AuthContext";
 
 export default function LoginForm({ onLoginSuccess }) {
@@ -63,8 +63,6 @@ export default function LoginForm({ onLoginSuccess }) {
     if (!inputEmail) return;
 
     const lowerEmail = inputEmail.toLowerCase();
-
-    // Vérification du format email avec regex
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(lowerEmail)) {
       setCanSignIn(false);
@@ -73,7 +71,6 @@ export default function LoginForm({ onLoginSuccess }) {
       return;
     }
 
-    // Vérification dans les listes
     if (blockedList.includes(lowerEmail)) {
       setCanSignIn(false);
       setCanSignUp(false);
@@ -123,6 +120,7 @@ export default function LoginForm({ onLoginSuccess }) {
     login();
     if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
   };
+
   return (
     <div className="flex flex-col min-h-screen">
       <style>{`
@@ -164,7 +162,6 @@ export default function LoginForm({ onLoginSuccess }) {
     }
   `}</style>
 
-      {/* DIV D'ACCUEIL EN HAUT PLEINE LARGEUR */}
       <div className="w-full bg-cover bg-center flex justify-center items-center h-64">
         <div className="bg-blue-800/80 backdrop-blur-md p-6 rounded-2xl shadow-lg text-center animate-fadeIn">
           <h1
@@ -191,12 +188,8 @@ export default function LoginForm({ onLoginSuccess }) {
       {step === "email" && (
         <form
           onSubmit={handleSubmitEmail}
-          className="flex flex-col items-center w-full"
+          className="flex flex-col items-center w-full px-4"
         >
-          <div className="flex gap-6 mb-6"></div>
-          <div className="w-full border-t mb-6"></div>
-
-          <div className="flex-1 flex flex-col items-center mt-8 w-full"></div>
           <input
             type="email"
             list="pastEmails"
@@ -204,7 +197,7 @@ export default function LoginForm({ onLoginSuccess }) {
             value={email}
             onChange={(e) => handleEmailChange(e.target.value)}
             required
-            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3 text-black"
           />
           <datalist id="pastEmails">
             {pastEmails.map((mail, i) => (
@@ -217,12 +210,11 @@ export default function LoginForm({ onLoginSuccess }) {
           <button
             type="submit"
             disabled={!canSignIn && !canSignUp}
-            className={`w-full py-3 rounded-full font-medium buttonEffect`}
+            className="w-full py-3 rounded-full font-medium buttonEffect"
           >
             {canSignIn ? "Sign In" : "Sign Up"}
           </button>
 
-          {/* Boutons sociaux */}
           <div className="flex items-center gap-3 mt-4">
             <button
               type="button"
@@ -272,7 +264,7 @@ export default function LoginForm({ onLoginSuccess }) {
       {step === "signup" && (
         <form
           onSubmit={handleSignupSubmit}
-          className="flex flex-col items-center w-full"
+          className="flex flex-col items-center w-full px-4"
         >
           <input
             type="text"
@@ -280,7 +272,7 @@ export default function LoginForm({ onLoginSuccess }) {
             value={nom}
             onChange={(e) => setNom(e.target.value)}
             required
-            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3 text-black"
           />
           <input
             type="text"
@@ -288,18 +280,18 @@ export default function LoginForm({ onLoginSuccess }) {
             value={prenom}
             onChange={(e) => setPrenom(e.target.value)}
             required
-            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3 text-black"
           />
           <input
             type="email"
             value={email}
             readOnly
-            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3 text-black"
           />
           <select
             value={profil}
             onChange={(e) => setProfil(e.target.value)}
-            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3"
+            className="w-full p-3 rounded-full bg-gray-100 border border-gray-200 mb-3 text-black"
           >
             <option value="student">Student</option>
             <option value="enseignant">Teacher</option>
