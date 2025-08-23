@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import path from "path"; // nécessaire pour résoudre les chemins
 
 export default defineConfig({
   plugins: [
@@ -13,8 +14,9 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@": "/src",
-      "@locales": "/src/locales",
+      "@": path.resolve(__dirname, "src"),
+      "@locales": path.resolve(__dirname, "src/locales"),
+      "@components": path.resolve(__dirname, "src/components"), // <-- ajouté
     },
   },
   server: {

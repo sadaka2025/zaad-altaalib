@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -10,27 +9,26 @@ import {
 } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import { AuthProvider, useAuth } from "./context/AuthContext";
-
-import Layout from "./components/Layout";
-import HomePage from "./pages/HomePage";
-import Formations from "./pages/Formations";
-import NiveauDebutant from "./pages/NiveauDebutant/niveau-debutant";
-import IntroFikhPage from "./pages/NiveauDebutant/IntroFikhPage";
-import AvisPage from "./pages/NiveauDebutant/AvisPage";
-import QRPage from "./pages/NiveauDebutant/QRPage";
-import AnnoncesPage from "./pages/NiveauDebutant/AnnoncesPage";
-import ProfAvisPage from "./pages/NiveauDebutant/ProfAvisPage";
-import Niveau2 from "./pages/Niveau2";
-import NiveauMoyen from "./pages/NiveauMoyen";
-import Niveau4 from "./pages/Niveau4";
-import NiveauAvance from "./pages/NiveauAvance";
-import SubjectPage from "./features/subjects/pages/SubjectPage";
-
+import Layout from "./pages/Home/Layout";
+import HomePage from "./pages/Home/HomePage";
+import Formations from "./pages/Formation/Formations";
+import NiveauDebutant from "./pages/Formation/years/year1/BeginnerLevel";
+import IntroFikhPage from "./pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage";
+import AvisPage from "./pages/Formation/utils/AvisPage";
+import QRPage from "./pages/Formation/utils/QRPage";
+import AnnoncesPage from "./pages/Formation/utils/AnnoncesPage";
+import ProfAvisPage from "./pages/Formation/years/year1/Introsubjects/Introfiqh/ProfAvisPage";
+import Niveau2 from "./pages/Formation/years/year2/LevelTwo";
+import NiveauMoyen from "./pages/Formation/years/year3/MediumLevel";
+import Niveau4 from "./pages/Formation/years/year4/LevelFour";
+import NiveauAvance from "./pages/Formation/years/year5/AdvancedLevel";
+import SubjectPage from "./pages/Formation/years/subjects/pages/SubjectPage";
 import i18n from "./i18n";
 import "./i18n";
 
-// Composant pour protéger les pages
+import { useAuth } from "./context/AuthContext";
+
+// ✅ Composant pour protéger les pages
 function RequireAuth({ children }) {
   const { isAuthenticated } = useAuth();
   if (!isAuthenticated) {
@@ -39,7 +37,7 @@ function RequireAuth({ children }) {
   return children;
 }
 
-// Wrapper pour gérer la langue
+// ✅ Wrapper pour gérer la langue
 function LangRoutesWrapper() {
   const { lang } = useParams();
   const location = useLocation();
@@ -153,21 +151,16 @@ function LangRoutesWrapper() {
           }
         />
 
-        {/* Redirection vers Fiqh semestre 1 */}
+        {/* Exemple redirection : niveau débutant fiqh → route générique */}
         <Route
           path="niveau-debutant/semester1/fiqh"
           element={
-            <RequireAuth>
-              <Navigate
-                to={`/${lang}/annee/1/matiere/fiqh?semestre=1`}
-                replace
-              />
-            </RequireAuth>
+            <Navigate to={`/${lang}/annee/1/matiere/fiqh?semestre=1`} replace />
           }
         />
       </Route>
 
-      {/* Page Subject isolée protégée */}
+      {/* ✅ Route générique pour toutes les années/matières */}
       <Route
         path="annee/:year/matiere/:subjectSlug"
         element={
@@ -183,18 +176,16 @@ function LangRoutesWrapper() {
   );
 }
 
-// App global avec AuthProvider
+// ✅ App global (AuthProvider est déjà dans main.jsx)
 export default function App() {
   return (
-    <AuthProvider>
-      <Router>
-        <Routes>
-          {/* Redirection par défaut */}
-          <Route path="/" element={<Navigate to="/ar" replace />} />
-          {/* Toutes les routes avec paramètre langue */}
-          <Route path="/:lang/*" element={<LangRoutesWrapper />} />
-        </Routes>
-      </Router>
-    </AuthProvider>
+    <Router>
+      <Routes>
+        {/* Redirection par défaut */}
+        <Route path="/" element={<Navigate to="/ar" replace />} />
+        {/* Toutes les routes avec paramètre langue */}
+        <Route path="/:lang/*" element={<LangRoutesWrapper />} />
+      </Routes>
+    </Router>
   );
 }

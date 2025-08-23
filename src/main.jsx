@@ -2,18 +2,21 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
 
-import "./i18n"; // ✅ Import i18n ici
+import "./i18n"; // ✅ Configuration i18n
 import "./app.css"; // ✅ ou tailwind.css
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { AuthProvider } from "./context/AuthContext";
-import { HelmetProvider } from "react-helmet-async"; // ✅
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // ✅ styles du carousel
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <HelmetProvider>
-    {" "}
-    {/* ✅ Fournit le contexte Helmet */}
-    <AuthProvider>
-      <App />
-    </AuthProvider>
-  </HelmetProvider>
+import { AuthProvider } from "./context/AuthContext";
+import { HelmetProvider } from "react-helmet-async"; // ✅ gestion du head
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
+  <React.StrictMode>
+    <HelmetProvider>
+      <AuthProvider>
+        <App />
+      </AuthProvider>
+    </HelmetProvider>
+  </React.StrictMode>
 );
