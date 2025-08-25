@@ -7,7 +7,12 @@ export default function ProblemePage() {
   const navigate = useNavigate();
   const [sent, setSent] = useState(false);
   return (
-    <div className="font-[Arial] max-w-4xl mx-auto mt-10 p-6 bg-white shadow rounded space-y-6">
+    <div
+      className="font-[Arial] max-w-4xl mx-auto mt-10 p-6 bg-white shadow rounded space-y-6"
+      style={{
+        backgroundColor: "lightblue",
+      }}
+    >
       {/* 🔙 زر الرجوع */}
       <button
         onClick={() => navigate("/ar/intro")}
@@ -28,11 +33,6 @@ export default function ProblemePage() {
           onChange={(e) => setTitle(e.target.value)}
           className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
           dir="rtl"
-          style={{
-            backgroundImage: `url(${bgImage})`,
-            backgroundSize: "cover", // optionnel : pour que l’image couvre tout
-            backgroundPosition: "center", // optionnel : pour centrer l’image
-          }}
         />
 
         <textarea
@@ -41,11 +41,6 @@ export default function ProblemePage() {
           onChange={(e) => setContent(e.target.value)}
           className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
           dir="rtl"
-          style={{
-            backgroundImage: `url(/images/OIP.jpeg)`,
-            backgroundSize: "cover", // optionnel : pour que l’image couvre tout
-            backgroundPosition: "center", // optionnel : pour centrer l’image
-          }}
         />
         <label className="block mb-4">
           <input
@@ -53,11 +48,6 @@ export default function ProblemePage() {
             placeholder=" لتواصل معك أدخل بريدك الإلكتروني"
             className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
             dir="rtl"
-            style={{
-              backgroundImage: `url(/images/OIP.jpeg)`,
-              backgroundSize: "cover", // optionnel : pour que l’image couvre tout
-              backgroundPosition: "center", // optionnel : pour centrer l’image
-            }}
           />
         </label>
 

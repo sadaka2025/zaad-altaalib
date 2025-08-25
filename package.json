@@ -2,6 +2,7 @@
   "name": "zaad-altaalib-react",
   "version": "0.0.1",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,8 +11,12 @@
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@material-tailwind/react": "^2.1.10",
+    "@supabase/supabase-js": "^2.56.0",
     "axios": "^1.11.0",
     "firebase": "^12.1.0",
+    "firebase-admin": "^13.4.0",
+    "fs-extra": "^11.3.1",
+    "glob": "^7.2.3",
     "gsap": "^3.13.0",
     "i18next": "^25.3.2",
     "i18next-browser-languagedetector": "^8.2.0",

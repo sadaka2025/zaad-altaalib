@@ -23,7 +23,7 @@ export default function Footer() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
         {/* Contact Button */}
         <div className="mb-6">
-          <Link to={`"./global/components/pages/Home/ProblemePage"`}>
+          <Link to="/probleme">
             <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2 rounded">
               📥 {t("report_issue")}
             </button>

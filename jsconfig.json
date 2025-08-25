@@ -11,5 +11,5 @@
       "@components/*": ["components/*"]
     }
   },
-  "include": ["src"]
+  "include": ["src", "check-pdfs.js"]
 }

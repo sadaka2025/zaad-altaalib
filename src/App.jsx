@@ -1,3 +1,4 @@
+// src/App.jsx
 import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
@@ -23,12 +24,19 @@ import NiveauMoyen from "./pages/Formation/years/year3/MediumLevel";
 import Niveau4 from "./pages/Formation/years/year4/LevelFour";
 import NiveauAvance from "./pages/Formation/years/year5/AdvancedLevel";
 import SubjectPage from "./pages/Formation/years/subjects/pages/SubjectPage";
+import ProblemePage from "./pages/Home/ProblemePage";
+import Footer from "./pages/Home/Footer";
+
 import i18n from "./i18n";
 import "./i18n";
 
 import { useAuth } from "./context/AuthContext";
 
-// ✅ Composant pour protéger les pages
+// 📂 Import du composant PDF
+import PdfList from "./components/PdfList";
+import PdfManager from "./components/PdfManager";
+
+// ✅ Protection d’accès
 function RequireAuth({ children }) {
   const { isAuthenticated } = useAuth();
   if (!isAuthenticated) {
@@ -37,7 +45,7 @@ function RequireAuth({ children }) {
   return children;
 }
 
-// ✅ Wrapper pour gérer la langue
+// ✅ Wrapper langue
 function LangRoutesWrapper() {
   const { lang } = useParams();
   const location = useLocation();
@@ -55,136 +63,151 @@ function LangRoutesWrapper() {
   }, [lang, i18n]);
 
   return (
-    <Routes>
-      {/* Toutes les routes avec Layout */}
-      <Route element={<Layout />}>
-        {/* HomePage accessible sans login */}
-        <Route index element={<HomePage />} />
+    <>
+      <Routes>
+        {/* Toutes les routes avec Layout */}
+        <Route element={<Layout />}>
+          <Route index element={<HomePage />} />
 
-        {/* Pages protégées */}
-        <Route
-          path="formations"
-          element={
-            <RequireAuth>
-              <Formations />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-debutant"
-          element={
-            <RequireAuth>
-              <NiveauDebutant />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="intro"
-          element={
-            <RequireAuth>
-              <IntroFikhPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="avis"
-          element={
-            <RequireAuth>
-              <AvisPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="qr"
-          element={
-            <RequireAuth>
-              <QRPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="annonces"
-          element={
-            <RequireAuth>
-              <AnnoncesPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="profavis"
-          element={
-            <RequireAuth>
-              <ProfAvisPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-2"
-          element={
-            <RequireAuth>
-              <Niveau2 />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-moyen"
-          element={
-            <RequireAuth>
-              <NiveauMoyen />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-4"
-          element={
-            <RequireAuth>
-              <Niveau4 />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-avance"
-          element={
-            <RequireAuth>
-              <NiveauAvance />
-            </RequireAuth>
-          }
-        />
+          <Route
+            path="formations"
+            element={
+              <RequireAuth>
+                <Formations />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-debutant"
+            element={
+              <RequireAuth>
+                <NiveauDebutant />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="intro"
+            element={
+              <RequireAuth>
+                <IntroFikhPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="avis"
+            element={
+              <RequireAuth>
+                <AvisPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="qr"
+            element={
+              <RequireAuth>
+                <QRPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="annonces"
+            element={
+              <RequireAuth>
+                <AnnoncesPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="profavis"
+            element={
+              <RequireAuth>
+                <ProfAvisPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-2"
+            element={
+              <RequireAuth>
+                <Niveau2 />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-moyen"
+            element={
+              <RequireAuth>
+                <NiveauMoyen />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-4"
+            element={
+              <RequireAuth>
+                <Niveau4 />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-avance"
+            element={
+              <RequireAuth>
+                <NiveauAvance />
+              </RequireAuth>
+            }
+          />
 
-        {/* Exemple redirection : niveau débutant fiqh → route générique */}
-        <Route
-          path="niveau-debutant/semester1/fiqh"
-          element={
-            <Navigate to={`/${lang}/annee/1/matiere/fiqh?semestre=1`} replace />
-          }
-        />
-      </Route>
+          {/* Exemple redirection */}
+          <Route
+            path="niveau-debutant/semester1/fiqh"
+            element={
+              <Navigate
+                to={`/${lang}/annee/1/matiere/fiqh?semestre=1`}
+                replace
+              />
+            }
+          />
 
-      {/* ✅ Route générique pour toutes les années/matières */}
-      <Route
-        path="annee/:year/matiere/:subjectSlug"
-        element={
-          <RequireAuth>
-            <SubjectPage />
-          </RequireAuth>
-        }
-      />
+          {/* Matière dynamique */}
+          <Route
+            path="annee/:year/matiere/:subjectSlug"
+            element={
+              <RequireAuth>
+                <SubjectPage />
+              </RequireAuth>
+            }
+          />
+        </Route>
 
-      {/* Catch-all */}
-      <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
-    </Routes>
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
+      </Routes>
+
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }
 
-// ✅ App global (AuthProvider est déjà dans main.jsx)
+// ✅ App global
 export default function App() {
   return (
     <Router>
       <Routes>
         {/* Redirection par défaut */}
         <Route path="/" element={<Navigate to="/ar" replace />} />
-        {/* Toutes les routes avec paramètre langue */}
+
+        {/* Routes avec langue */}
         <Route path="/:lang/*" element={<LangRoutesWrapper />} />
+
+        {/* ✅ Route directe pour PDFs, sans langue */}
+        <Route path="/pdfs" element={<PdfList />} />
+        {/* ✅ Route directe pour apload PDFs, sans langue */}
+        <Route path="/pdfs/manage" element={<PdfManager />} />
+
+        {/* Probleme accessible sans langue */}
+        <Route path="/probleme" element={<ProblemePage />} />
       </Routes>
     </Router>
   );
