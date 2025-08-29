@@ -25,7 +25,6 @@ import Niveau4 from "./pages/Formation/years/year4/LevelFour";
 import NiveauAvance from "./pages/Formation/years/year5/AdvancedLevel";
 import SubjectPage from "./pages/Formation/years/subjects/pages/SubjectPage";
 import ProblemePage from "./pages/Home/ProblemePage";
-import Footer from "./pages/Home/Footer";
 
 import i18n from "./i18n";
 import "./i18n";
@@ -183,9 +182,6 @@ function LangRoutesWrapper() {
         {/* Catch-all */}
         <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
       </Routes>
-
-      {/* Footer */}
-      <Footer />
     </>
   );
 }

@@ -16,7 +16,9 @@ export default defineConfig({
     alias: {
       "@": path.resolve(__dirname, "src"),
       "@locales": path.resolve(__dirname, "src/locales"),
-      "@components": path.resolve(__dirname, "src/components"), // <-- ajouté
+      "@components": path.resolve(__dirname, "src/components"),
+      "@pages": path.resolve(__dirname, "src/pages"), // <-- ajouté
+      "@utils": path.resolve(__dirname, "src/utils"), // <-- ajouté
     },
   },
   server: {

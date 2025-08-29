@@ -8,8 +8,17 @@
     "moduleResolution": "Node",
     "baseUrl": "src",
     "paths": {
+      "@/*": ["*"],
       "@components/*": ["components/*"]
-    }
+    },
+    "resolveJsonModule": true,
+    "esModuleInterop": true
   },
-  "include": ["src", "check-pdfs.js"]
+  "include": [
+    "src",
+    "check-pdfs.js",
+    "print-bucket-tree.js",
+    "generateStats.js",
+    "generate_stats.js"
+  ]
 }

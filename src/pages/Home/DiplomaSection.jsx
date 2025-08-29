@@ -16,10 +16,11 @@ export default function DiplomaSection() {
   // Sécurisation de la récupération du tableau subjects
   const subjects = useSafeTranslateArray("diploma.subjects");
 
-  // Log si vide ou mal formé
-  if (!subjects.length) {
-    console.error(
-      "Subjects is empty or malformed for language:",
+  // Si vide ou mal formé
+  const hasSubjects = Array.isArray(subjects) && subjects.length > 0;
+  if (!hasSubjects) {
+    console.warn(
+      "⚠️ Subjects is empty or malformed for language:",
       i18n.language
     );
   }
@@ -56,32 +57,42 @@ export default function DiplomaSection() {
         <h2 className="text-2xl font-bold mb-6 text-center">
           {t("diploma.heading")}
         </h2>
-        <Swiper
-          slidesPerView={1}
-          spaceBetween={20}
-          breakpoints={{
-            640: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 },
-          }}
-          navigation
-          pagination={{ clickable: true }}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          modules={[Navigation, Pagination, Autoplay]}
-          dir={isRTL ? "rtl" : "ltr"}
-        >
-          {subjects.map((subject, idx) => (
-            <SwiperSlide key={idx}>
-              <button
-                className="bg-gray-100 p-6 rounded-xl shadow text-center hover:scale-105 transition-transform duration-300 w-full"
-                onClick={() => setModalSubject(subject)}
-              >
-                <div className="text-4xl mb-2">{subject.icon}</div>
-                <h4 className="text-lg font-semibold">{subject.name}</h4>
-              </button>
-            </SwiperSlide>
-          ))}
-        </Swiper>
+
+        {hasSubjects ? (
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={20}
+            breakpoints={{
+              640: { slidesPerView: 2 },
+              768: { slidesPerView: 3 },
+              1024: { slidesPerView: 4 },
+            }}
+            navigation
+            pagination={{ clickable: true }}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            modules={[Navigation, Pagination, Autoplay]}
+            dir={isRTL ? "rtl" : "ltr"}
+          >
+            {subjects.map((subject, idx) => (
+              <SwiperSlide key={idx}>
+                <button
+                  className="bg-gray-100 p-6 rounded-xl shadow text-center hover:scale-105 transition-transform duration-300 w-full"
+                  onClick={() => setModalSubject(subject)}
+                >
+                  <div className="text-4xl mb-2">{subject.icon}</div>
+                  <h4 className="text-lg font-semibold">{subject.name}</h4>
+                </button>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        ) : (
+          <div className="text-center text-gray-500 italic">
+            {t(
+              "diploma.no_subjects",
+              "⚠️ Aucune matière disponible pour le moment."
+            )}
+          </div>
+        )}
 
         {/* Modal */}
         {modalSubject && (

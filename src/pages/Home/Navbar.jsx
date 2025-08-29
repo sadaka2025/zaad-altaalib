@@ -31,7 +31,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="bg-[#1e3a8a] text-white py-4 shadow font-sans">
+    <header className="bg-[#1e3a8a] text-white py-4 shadow font-sans sticky top-0 z-50">
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <h1
