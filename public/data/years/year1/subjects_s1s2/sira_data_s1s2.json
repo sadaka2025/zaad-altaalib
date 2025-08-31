@@ -1,1 +1,10 @@
-[]
+{
+  "meta": {
+    "year": 1,
+    "slug": "sira"
+  },
+  "semesters": {
+    "1": { "lessons": [], "contentLinks": {} },
+    "2": { "lessons": [], "contentLinks": {} }
+  }
+}

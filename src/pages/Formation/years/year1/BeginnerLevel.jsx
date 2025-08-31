@@ -1,3 +1,4 @@
+// src/pages/Formation/years/year1/BeginnerLevel.jsx
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
@@ -7,6 +8,7 @@ import ScrollDownButton from '@components/global/scroll/ScrollDownButton';
 import BooksModal from './BooksModal';
 
 export default function NiveauDebutant() {
+  const [selectedSubjectKey, setSelectedSubjectKey] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [showBooksModal, setShowBooksModal] = useState(false);
 
@@ -79,8 +81,8 @@ export default function NiveauDebutant() {
               content={
                 <div className="aspect-video w-full">
                   <iframe
-                    className="w-full h-full rounded-lg"
-                    src="https://res.cloudinary.com/dlik6kdpg/video/upload/v1752794147/كلمة_ترحابية.mp4"
+                    className="w-full rounded-lg shadow-lg aspect-video"
+                    src="https://res.cloudinary.com/dlik6kdpg/video/upload/v1752794147/%D9%83%D9%84%D9%85%D8%A9_%D8%AA%D8%B1%D8%AD%D8%A7%D8%A8%D9%8A%D8%A9_%D9%84%D9%81%D8%B6%D9%8A%D9%84%D8%A9_%D8%A7%D9%84%D8%B4%D9%8A%D8%AE_%D8%A7%D9%84%D8%AF%D9%83%D9%80%D8%AA%D9%88%D8%B1_%D9%85%D9%80%D9%80%D9%80%D9%80%D9%80%D9%80%D9%85%D9%86%D9%8A%D8%B1_%D8%A7%D9%84%D9%80%D9%83%D9%80%D9%80%D9%85%D9%80%D9%80%D9%86%D8%AA%D8%B1_%D8%B1%D8%A6%D9%80%D9%80%D9%80%D9%80%D9%8A%D8%B3_%D9%85%D8%B4%D9%8A%D8%AE%D8%A9_%D8%AC%D8%A7%D9%85%D8%B9_%D8%A7%D9%84%D8%B2%D9%8A%D8%AA%D9%88%D9%86%D8%A9_%D8%A7%D9%84%D9%85%D8%B9%D9%85%D9%88%D8%B1_v40lhe.mp4"
                     title="كلمة افتتاحية"
                     allowFullScreen
                   ></iframe>
@@ -111,6 +113,7 @@ export default function NiveauDebutant() {
       <BooksModal
         isOpen={showBooksModal}
         onClose={() => setShowBooksModal(false)}
+        subjectKey={selectedSubjectKey}
       />
 
       <ScrollToTopButton />
@@ -125,10 +128,18 @@ function SectionSemester({ title, subjects, subjectKeys, semesterNumber }) {
   const { i18n } = useTranslation();
   const lang = i18n.language;
 
+  // Liste des matières qui doivent passer par une IntroPage
+  const introSubjects = ['fiqh'];
+  // 🔔 Tu peux ajouter ici d’autres matières plus tard (ex: 'tajwid', 'aqida', ...)
+
   const handleClick = (subjectKey) => {
-    navigate(
-      `/${lang}/annee/1/matiere/${subjectKey}?semestre=${semesterNumber}`
-    );
+    if (introSubjects.includes(subjectKey)) {
+      navigate(`/${lang}/intro${subjectKey}?semestre=${semesterNumber}`);
+    } else {
+      navigate(
+        `/${lang}/annee/1/matiere/${subjectKey}?semestre=${semesterNumber}`
+      );
+    }
   };
 
   if (!Array.isArray(subjects)) return null;

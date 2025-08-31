@@ -7,19 +7,11 @@ const StatsSection = ({ stats }) => {
     <section className="bg-white py-12">
       <div className="text-center mb-12 px-4">
         <h2 className="text-3xl font-bold">
-          Rejoignes les{' '}
+          مشيخة الزيتونة… حيث الأصالة والثقة | أكثر من{' '}
           <span className="text-red-600">
-            <CountUp
-              end={stats.totalEntrepreneurs}
-              duration={3}
-              separator=","
-            />
+            <CountUp end={700} duration={3} separator="," />
           </span>{' '}
-          Entrepreneurs nous ont fait confiance dont{' '}
-          <span className="text-red-600">
-            <CountUp end={stats.participants} duration={3} separator="," />
-          </span>{' '}
-          ont acheté cette formation
+          طالب على درب المشايخ
         </h2>
       </div>
 

@@ -1,33 +1,33 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from 'react';
 import {
   Link,
   useParams,
   useSearchParams,
   useNavigate,
-} from "react-router-dom";
-import { useTranslation } from "react-i18next";
+} from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
-import ScrollToTopButton from "../../../../../components/global/scroll/ScrollToTopButton";
-import ScrollDownButton from "../../../../../components/global/scroll/ScrollDownButton";
-import Modal from "../../../../../components/global/Modal/Modal";
-import { useSubjectData } from "../hooks/useSubjectData";
+import ScrollToTopButton from '../../../../../components/global/scroll/ScrollToTopButton';
+import ScrollDownButton from '../../../../../components/global/scroll/ScrollDownButton';
+import Modal from '../../../../../components/global/Modal/Modal';
+import { useSubjectData } from '../hooks/useSubjectData';
 
 export default function SubjectPage() {
   const { i18n } = useTranslation();
   const lang = i18n.language;
   const navigate = useNavigate();
 
-  const { year = "1", subjectSlug = "" } = useParams();
+  const { year = '1', subjectSlug = '' } = useParams();
   const [searchParams, setSearchParams] = useSearchParams();
-  const sem = searchParams.get("semestre") || "1";
+  const sem = searchParams.get('semestre') || '1';
 
   const { data, pending, error } = useSubjectData(year, subjectSlug);
 
   const [selectedLessonId, setSelectedLessonId] = useState(1);
-  const [selectedTab, setSelectedTab] = useState("video");
+  const [selectedTab, setSelectedTab] = useState('video');
   const [openSubmenus, setOpenSubmenus] = useState({});
   const [modalOpen, setModalOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState("");
+  const [modalTitle, setModalTitle] = useState('');
   const [modalContent, setModalContent] = useState(null);
 
   const tabs = data?.meta?.tabs || [];
@@ -57,7 +57,7 @@ export default function SubjectPage() {
   useEffect(() => {
     const firstLessonId = allLessons.length > 0 ? allLessons[0].id : 1;
     setSelectedLessonId(firstLessonId);
-    setSelectedTab(tabs[0] || "video");
+    setSelectedTab(tabs[0] || 'video');
     setOpenSubmenus({ [firstLessonId]: true });
   }, [sem, data]);
 
@@ -75,7 +75,7 @@ export default function SubjectPage() {
   };
 
   const setSem = (newSem) => {
-    searchParams.set("semestre", newSem);
+    searchParams.set('semestre', newSem);
     setSearchParams(searchParams, { replace: true });
   };
 
@@ -86,10 +86,10 @@ export default function SubjectPage() {
       return selectedLesson.links?.[selectedTab];
     }
     if (!content) return null;
-    if (selectedTab === "video") return content.videoDownload;
-    if (selectedTab === "summaryPDF") return content.summaryDownload;
-    if (selectedTab === "textExtraction") return content.textExtraction;
-    if (selectedTab === "qna") return content.qna;
+    if (selectedTab === 'video') return content.videoDownload;
+    if (selectedTab === 'summaryPDF') return content.summaryDownload;
+    if (selectedTab === 'textExtraction') return content.textExtraction;
+    if (selectedTab === 'qna') return content.qna;
     return null;
   };
 
@@ -114,7 +114,7 @@ export default function SubjectPage() {
       ? selectedLesson.tabLabels?.[selectedTab]
       : tabLabels?.[selectedTab];
 
-    setModalTitle(`${selectedLesson?.title || ""} - ${tabLabel}`);
+    setModalTitle(`${selectedLesson?.title || ''} - ${tabLabel}`);
     setModalContent(
       <iframe
         src={link}
@@ -140,13 +140,13 @@ export default function SubjectPage() {
           </h2>
 
           <div className="flex gap-2 justify-center">
-            {["1", "2"].map((s) => (
+            {['1', '2'].map((s) => (
               <button
                 key={s}
                 className={`px-3 py-1 rounded ${
                   sem === s
-                    ? "bg-blue-700 text-white"
-                    : "bg-white text-blue-700 border"
+                    ? 'bg-blue-700 text-white'
+                    : 'bg-white text-blue-700 border'
                 }`}
                 onClick={() => setSem(s)}
               >
@@ -172,10 +172,10 @@ export default function SubjectPage() {
             </Link>
 
             <Link
-              to={`/${lang}/intro`}
+              to={`/${lang}/introfiqh`}
               className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
             >
-              🎯 أهداف السداسي {sem === "1" ? "الأول" : "الثاني"}
+              🎯 أهداف السداسي {sem === '1' ? 'الأول' : 'الثاني'}
             </Link>
           </div>
         </div>
@@ -186,12 +186,12 @@ export default function SubjectPage() {
               <button
                 onClick={() => {
                   setSelectedLessonId(lesson.id);
-                  setSelectedTab((lesson.tabs || tabs)[0] || "video");
+                  setSelectedTab((lesson.tabs || tabs)[0] || 'video');
                 }}
                 className={`w-full text-right px-2 py-2 rounded font-semibold flex justify-between items-center ${
                   String(selectedLessonId) === String(lesson.id)
-                    ? "bg-blue-500 text-white"
-                    : "bg-blue-200 hover:bg-blue-300 text-blue-900"
+                    ? 'bg-blue-500 text-white'
+                    : 'bg-blue-200 hover:bg-blue-300 text-blue-900'
                 }`}
               >
                 <span className="text-sm">{lesson.title}</span>
@@ -202,7 +202,7 @@ export default function SubjectPage() {
                     toggleSubmenu(lesson.id);
                   }}
                 >
-                  {openSubmenus[lesson.id] ? "−" : "+"}
+                  {openSubmenus[lesson.id] ? '−' : '+'}
                 </span>
               </button>
 
@@ -218,8 +218,8 @@ export default function SubjectPage() {
                         className={`text-sm w-full text-right px-2 py-1 rounded hover:bg-blue-300 ${
                           String(selectedLessonId) === String(lesson.id) &&
                           selectedTab === tab
-                            ? "bg-blue-600 text-white"
-                            : "bg-blue-100 text-blue-900"
+                            ? 'bg-blue-600 text-white'
+                            : 'bg-blue-100 text-blue-900'
                         }`}
                       >
                         {(lesson.tabLabels || tabLabels)?.[tab] || tab}
