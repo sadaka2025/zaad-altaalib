@@ -172,7 +172,7 @@ export default function SubjectPage() {
             </Link>
 
             <Link
-              to={`/${lang}/introfiqh`}
+              to={`/${lang}/introfiqh?semestre=${sem}`}
               className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
             >
               🎯 أهداف السداسي {sem === '1' ? 'الأول' : 'الثاني'}

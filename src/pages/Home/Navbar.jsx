@@ -1,27 +1,50 @@
-// src/components/Navbar.jsx
-import React, { useState } from "react";
-import { useParams, useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
-import LanguageSwitcher from "../../components/global/Translation/LanguageSwitcher";
+// @ts-nocheck
+import React, { useEffect, useMemo, useRef, useState } from 'react';
+import { useParams, useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import { motion, AnimatePresence } from 'framer-motion';
+import {
+  ChevronDown,
+  Menu,
+  X,
+  BookOpen,
+  GraduationCap,
+  ScrollText,
+  Book,
+  Volume2,
+  HeartHandshake,
+  Brackets,
+  BookMarked,
+  CalendarDays,
+  Feather,
+  Landmark,
+} from 'lucide-react';
 
-import ModalWithLogin from "../../components/global/Modal/ModalWithLogin";
-import { useAuth } from "../../context/AuthContext";
+import LanguageSwitcher from '../../components/global/Translation/LanguageSwitcher';
+import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
+import { useAuth } from '../../context/AuthContext';
 
 export default function Navbar() {
-  const { lang } = useParams();
+  const { lang = 'ar' } = useParams();
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { isAuthenticated, login, logout } = useAuth();
 
-  const [showModal, setShowModal] = useState(false);
+  const isRTL = lang === 'ar' || lang === 'ar-TN' || lang === 'ar-MA';
 
-  const link = (path) => `/${lang}${path.startsWith("/") ? path : "/" + path}`;
+  const [showModal, setShowModal] = useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const [studentMenuOpen, setStudentMenuOpen] = useState(false);
+  const [activeSubject, setActiveSubject] = useState(null);
+
+  const link = (path) => `/${lang}${path.startsWith('/') ? path : '/' + path}`;
 
   const handleNavClick = (path) => {
     if (!isAuthenticated) {
       setShowModal(true);
     } else {
       navigate(link(path));
+      setMobileOpen(false);
     }
   };
 
@@ -30,83 +53,250 @@ export default function Navbar() {
     setShowModal(false);
   };
 
+  // === MATIÈRES ===
+  const subjects = useMemo(
+    () => [
+      { key: 'fiqh', label: '⚖️ فقه', icon: GraduationCap },
+      { key: 'sirah', label: '📜 سيرة', icon: BookOpen },
+      { key: 'tajwid', label: '📖 تجويد', icon: Volume2 },
+      { key: 'nahw', label: '✒️ نحو', icon: Brackets },
+      { key: 'akhlaq', label: '🌿 الأخلاق', icon: HeartHandshake },
+      { key: 'hadith', label: '📚 الحديث', icon: ScrollText },
+      { key: 'aqeedah', label: '🕌 العقيدة', icon: Landmark },
+    ],
+    [t]
+  );
+
+  const bonus = {
+    key: 'bonus',
+    label: '📘 ' + t('student_board.bonus.name'),
+    icon: BookMarked,
+    items: t('student_board.bonus.items', { returnObjects: true }),
+  };
+
+  const pop = {
+    hidden: { opacity: 0, y: 8, filter: 'blur(2px)' },
+    visible: {
+      opacity: 1,
+      y: 0,
+      filter: 'blur(0px)',
+      transition: { type: 'spring', stiffness: 260, damping: 20 },
+    },
+    exit: {
+      opacity: 0,
+      y: 6,
+      filter: 'blur(2px)',
+      transition: { duration: 0.15 },
+    },
+  };
+
+  const rootRef = useRef(null);
+  useEffect(() => {
+    function onClickOutside(e) {
+      if (rootRef.current && !rootRef.current.contains(e.target)) {
+        setStudentMenuOpen(false);
+        setActiveSubject(null);
+      }
+    }
+    document.addEventListener('mousedown', onClickOutside);
+    return () => document.removeEventListener('mousedown', onClickOutside);
+  }, []);
+
+  const years = [1, 2, 3, 4, 5];
+
   return (
-    <header className="bg-[#1e3a8a] text-white py-4 shadow font-sans sticky top-0 z-50">
+    <header
+      className={`bg-gradient-to-r from-indigo-900 via-blue-900 to-slate-900 text-white py-4 shadow-xl font-sans sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 ${
+        isRTL ? 'rtl' : ''
+      }`}
+      dir={isRTL ? 'rtl' : 'ltr'}
+    >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <h1
-          className="text-2xl font-bold flex items-center gap-2 cursor-pointer"
-          onClick={() => navigate(link("/"))}
-          style={{ fontFamily: "Arial, sans-serif", fontWeight: "bold" }}
+          className="text-3xl font-extrabold flex items-center gap-2 cursor-pointer select-none text-yellow-400 drop-shadow-lg"
+          onClick={() => navigate(link('/'))}
         >
-          <span
-            role="img"
-            aria-label="mosquée"
-            className="text-yellow-400 text-3xl"
-          >
-            🕌
-          </span>
-          زاد الطالب
+          🕌 زاد الطالب
         </h1>
 
-        {/* Liens navbar */}
-        <nav className="flex gap-4 items-center">
-          {["/", "/formations", "/dashboard-1", "/contact"].map((path, i) => (
+        {/* NAV Desktop */}
+        <nav className="hidden md:flex gap-3 items-center" ref={rootRef}>
+          {/* === الرئيسية === */}
+          <button
+            onClick={() => handleNavClick('/')}
+            className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition"
+          >
+            {t('home')}
+          </button>
+
+          {/* ==== لوحة الطالب ==== */}
+          <div
+            className="relative"
+            onMouseEnter={() => setStudentMenuOpen(true)}
+            onMouseLeave={() => {
+              setStudentMenuOpen(false);
+              setActiveSubject(null);
+            }}
+          >
             <button
-              key={i}
-              onClick={() => handleNavClick(path)}
-              className="border border-yellow-500 text-yellow-500 font-bold px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition"
-              style={{ fontFamily: "Arial, sans-serif" }}
+              className="group border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl 
+              bg-gradient-to-r from-slate-800 to-slate-700 hover:from-yellow-500 hover:to-yellow-400 
+              hover:text-slate-900 transition-all shadow-lg flex items-center gap-2"
+              onClick={() => setStudentMenuOpen((v) => !v)}
             >
-              {t(["home", "courses", "dashboard", "contact"][i])}
+              {t('student_board.title')}
+              <ChevronDown
+                className={`size-4 transition-transform ${
+                  studentMenuOpen ? (isRTL ? 'rotate-90' : '-rotate-90') : ''
+                }`}
+              />
             </button>
-          ))}
+
+            {/* === Sous-menu DESKTOP === */}
+            <AnimatePresence>
+              {studentMenuOpen && (
+                <motion.div
+                  key="subjects"
+                  variants={pop}
+                  initial="hidden"
+                  animate="visible"
+                  exit="exit"
+                  className={`absolute ${
+                    isRTL ? 'right-0' : 'left-0'
+                  } mt-2 bg-white/90 backdrop-blur-xl text-slate-900 rounded-2xl 
+                  shadow-2xl ring-1 ring-black/10 p-4 grid grid-cols-2 gap-3 w-[520px]`}
+                >
+                  {[...subjects, bonus].map((s) => {
+                    const Icon = s.icon;
+                    const isActive = activeSubject === s.key;
+
+                    return (
+                      <div key={s.key} className="relative">
+                        <button
+                          onMouseEnter={() => setActiveSubject(s.key)}
+                          onFocus={() => setActiveSubject(s.key)}
+                          className={`w-full text-start flex items-center gap-3 px-3 py-2 rounded-xl transition-all border ${
+                            isActive
+                              ? 'bg-yellow-50 border-yellow-400 shadow-inner'
+                              : 'bg-white hover:bg-slate-50 border-slate-200'
+                          }`}
+                        >
+                          <span className="shrink-0 inline-flex items-center justify-center rounded-xl p-2 bg-slate-100">
+                            <Icon className="size-5" />
+                          </span>
+                          <span className="font-semibold">{s.label}</span>
+                        </button>
+
+                        {/* Sous-menu latéral */}
+                        <AnimatePresence>
+                          {isActive && (
+                            <motion.ul
+                              initial={{ opacity: 0, x: isRTL ? -15 : 15 }}
+                              animate={{ opacity: 1, x: 0 }}
+                              exit={{ opacity: 0, x: isRTL ? -15 : 15 }}
+                              className={`absolute top-0 ${
+                                isRTL ? 'right-full mr-2' : 'left-full ml-2'
+                              } 
+                              bg-white/95 backdrop-blur-xl text-gray-900 rounded-xl shadow-xl p-3 min-w-[240px] z-50`}
+                            >
+                              {s.key !== 'bonus'
+                                ? years.map((y) => (
+                                    <li
+                                      key={y}
+                                      className="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100 cursor-pointer rounded-md whitespace-nowrap"
+                                      onClick={() =>
+                                        handleNavClick(
+                                          `/annee/${y}/matiere/${s.key}`
+                                        )
+                                      }
+                                    >
+                                      <CalendarDays className="size-4 text-blue-500" />
+                                      {t(
+                                        `student_board.subjects.${s.key}.years.year${y}`
+                                      )}
+                                    </li>
+                                  ))
+                                : s.items.map((item, idx) => (
+                                    <li
+                                      key={idx}
+                                      className="px-4 py-2 hover:bg-yellow-100 cursor-pointer rounded-md whitespace-nowrap"
+                                    >
+                                      {item}
+                                    </li>
+                                  ))}
+                            </motion.ul>
+                          )}
+                        </AnimatePresence>
+                      </div>
+                    );
+                  })}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </div>
+
+          {/* Autres liens */}
+          <button
+            onClick={() => handleNavClick('/formations')}
+            className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition"
+          >
+            {t('courses')}
+          </button>
+          <button
+            onClick={() => handleNavClick('/contact')}
+            className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition"
+          >
+            {t('contact')}
+          </button>
+          <button
+            onClick={() => handleNavClick('/blog')}
+            className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition flex items-center gap-2"
+          >
+            <Feather className="size-4" /> مذكراتي
+          </button>
         </nav>
 
-        {/* Traduction + Actions */}
-        <div className="flex items-center gap-3">
-          {/* Traduction */}
-          <div
-            className="border border-yellow-500 text-yellow-500 font-bold px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition"
-            style={{ fontFamily: "Arial, sans-serif" }}
-          >
+        {/* Lang + Login */}
+        <div className="flex items-center gap-2">
+          <div className="hidden md:flex border border-yellow-500 text-yellow-400 font-bold px-3 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900">
             <LanguageSwitcher />
           </div>
 
-          {/* Actions Auth */}
           {!isAuthenticated ? (
-            <>
-              <button
-                onClick={() => setShowModal(true)}
-                className="border border-yellow-500 text-yellow-500 font-bold px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition"
-                style={{ fontFamily: "Arial, sans-serif" }}
-              >
-                {t("signIn")}
-              </button>
-              <button
-                onClick={() => setShowModal(true)}
-                className="border border-yellow-500 text-yellow-500 font-bold px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition"
-                style={{ fontFamily: "Arial, sans-serif" }}
-              >
-                {t("getStarted")}
-              </button>
-            </>
+            <button
+              onClick={() => setShowModal(true)}
+              className="hidden md:inline-flex border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900 ml-2"
+            >
+              {t('signIn')}
+            </button>
           ) : (
             <button
               onClick={() => {
                 logout();
-                navigate(link("/"));
+                navigate(link('/'));
               }}
-              className="border border-yellow-500 text-yellow-500 font-bold px-4 py-2 rounded hover:bg-yellow-500 hover:text-white transition"
-              style={{ fontFamily: "Arial, sans-serif" }}
+              className="hidden md:inline-flex border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900 ml-2"
             >
-              {t("logout")}
+              {t('logout')}
             </button>
           )}
+
+          {/* Mobile Toggle */}
+          <button
+            className="md:hidden inline-flex items-center justify-center rounded-xl border border-yellow-500 p-2 text-yellow-400 hover:bg-yellow-500 hover:text-slate-900 ml-2"
+            onClick={() => setMobileOpen((v) => !v)}
+          >
+            {mobileOpen ? (
+              <X className="size-5" />
+            ) : (
+              <Menu className="size-5" />
+            )}
+          </button>
         </div>
       </div>
 
-      {/* Modale */}
+      {/* Modal Login */}
       {showModal && (
         <ModalWithLogin
           onLoginSuccess={handleLoginSuccess}
