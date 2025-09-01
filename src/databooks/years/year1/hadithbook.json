@@ -1,0 +1,11 @@
+{
+  "id": 6,
+  "title": "الحديث",
+  "author": "اسم المؤلف",
+  "price": "9 د.ت",
+  "library": "مكتبة دار الزيتونة للكتاب",
+  "bio": "سيرة قصيرة عن المؤلف...",
+  "objectives": "أهداف هذا المقرر: ... ضع هنا نص أهداف المقرر الكامل إذا رغبت",
+  "image": "/images/books/hadith.jpg",
+  "pdf": "/public/PDFs/year1/pdfStudyBooks/s1/hadith/bookshadiths1.pdf"
+}

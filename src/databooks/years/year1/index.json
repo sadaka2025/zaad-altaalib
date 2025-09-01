@@ -1,0 +1,11 @@
+{
+  "books": [
+    { "key": "fiqh", "file": "fiqhbook.json" },
+    { "key": "aqida", "file": "aqidabook.json" },
+    { "key": "tajwid", "file": "tajwidbook.json" },
+    { "key": "nahw", "file": "nahwbook.json" },
+    { "key": "sira", "file": "sirabook.json" },
+    { "key": "hadith", "file": "hadithbook.json" },
+    { "key": "akhlak", "file": "akhlakbook.json" }
+  ]
+}

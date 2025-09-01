@@ -1,7 +1,6 @@
 // src/pages/Formation/years/year1/BooksModal.jsx
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState } from 'react';
 import Modal from '@components/global/Modal/Modal';
-import ColorThief from 'colorthief';
 
 // === Map globale des livres par clé ===
 const booksMap = {
@@ -89,12 +88,6 @@ const booksMap = {
   },
 };
 
-// Fonction utilitaire pour choisir un texte contrastant
-const getContrastingColor = ([r, g, b]) => {
-  const brightness = (r * 299 + g * 587 + b * 114) / 1000;
-  return brightness > 125 ? '#000000' : '#ffffff';
-};
-
 export default function BooksModal({ isOpen, onClose, subjectKey }) {
   const [selectedBook, setSelectedBook] = useState(null);
   const [showBio, setShowBio] = useState(false);
@@ -104,14 +97,14 @@ export default function BooksModal({ isOpen, onClose, subjectKey }) {
 
   const lineStyle = {
     display: 'inline-block',
-    maxHeight: '1.2em',
+    maxHeight: '1.2em', // hauteur d'une ligne
     overflow: 'hidden',
     verticalAlign: 'bottom',
     transition: 'max-height 0.3s ease',
   };
 
   const expandedStyle = {
-    maxHeight: '500px',
+    maxHeight: '500px', // assez grand pour tout le texte
   };
 
   return (
@@ -126,8 +119,8 @@ export default function BooksModal({ isOpen, onClose, subjectKey }) {
       title="مقررات السنة الأولى"
       content={
         selectedBook ? (
-          // === Vue détaillée ===
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-2 md:p-6 relative">
+            {/* Bouton رجوع en haut à droite */}
             <button
               onClick={() => setSelectedBook(null)}
               className="absolute top-2 right-2 bg-yellow-600 hover:bg-yellow-700 text-white px-4 py-2 rounded-lg shadow z-10"
@@ -217,7 +210,6 @@ export default function BooksModal({ isOpen, onClose, subjectKey }) {
             </div>
           </div>
         ) : (
-          // === Vue grille ===
           <div className="space-y-6">
             {!subjectKey && (
               <div className="relative rounded-2xl overflow-hidden">
@@ -228,12 +220,9 @@ export default function BooksModal({ isOpen, onClose, subjectKey }) {
                 />
                 <div className="absolute inset-0 bg-black/40" />
                 <div className="relative py-8 md:py-12 text-center px-4">
-                  <h2 className="text-2xl md:text-4xl font-black text-black drop-shadow mb-2">
+                  <h2 className="text-2xl md:text-4xl font-black text-white drop-shadow">
                     مقررات السنة الأولى للسنة الدراسية 2024-2025
                   </h2>
-                  <p className="text-2xl md:text-4xl font-black text-black drop-shadow mb-2">
-                    📚 اكتشف تفاصيل الكتاب – انقر على الصورة
-                  </p>
                 </div>
               </div>
             )}
@@ -241,11 +230,25 @@ export default function BooksModal({ isOpen, onClose, subjectKey }) {
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-items-center">
               {books.map((book) =>
                 book ? (
-                  <BookCard
+                  <div
                     key={book.id}
-                    book={book}
                     onClick={() => setSelectedBook(book)}
-                  />
+                    className="relative cursor-pointer group w-40 rounded-xl overflow-hidden shadow-lg"
+                  >
+                    <img
+                      src={book.image || '/images/placeholder.png'}
+                      alt={book.title}
+                      className="w-40 h-56 object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-red-600 via-blue-600 to-transparent opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center">
+                      <span className="text-white font-bold text-lg drop-shadow-lg">
+                        📖 اضغط للمزيد
+                      </span>
+                    </div>
+                    <p className="text-center p-2 font-semibold bg-white">
+                      {book.title}
+                    </p>
+                  </div>
                 ) : null
               )}
             </div>
@@ -255,59 +258,3 @@ export default function BooksModal({ isOpen, onClose, subjectKey }) {
     />
   );
 }
-
-// === Composant BookCard avec ColorThief ===
-const BookCard = ({ book, onClick }) => {
-  const imgRef = useRef(null);
-  const [dominantColor, setDominantColor] = useState([107, 114, 128]);
-  const [contrastColor, setContrastColor] = useState('#fff');
-
-  useEffect(() => {
-    const img = imgRef.current;
-    if (!img) return;
-    if (img.complete) {
-      extractColor();
-    } else {
-      img.addEventListener('load', extractColor);
-      return () => img.removeEventListener('load', extractColor);
-    }
-  }, [book.image]);
-
-  const extractColor = () => {
-    try {
-      const colorThief = new ColorThief();
-      const color = colorThief.getColor(imgRef.current);
-      setDominantColor(color);
-      setContrastColor(getContrastingColor(color));
-    } catch (err) {
-      console.warn('ColorThief error:', err);
-    }
-  };
-
-  return (
-    <div
-      onClick={onClick}
-      className="relative cursor-pointer group w-40 rounded-xl overflow-hidden shadow-lg"
-    >
-      <img
-        ref={imgRef}
-        src={book.image || '/images/placeholder.png'}
-        alt={book.title}
-        crossOrigin="anonymous"
-        className="w-40 h-56 object-cover"
-      />
-      <div
-        className="absolute inset-0 opacity-0 group-hover:opacity-90 transition duration-300 flex items-center justify-center"
-        style={{ backgroundColor: `rgb(${dominantColor.join(',')})` }}
-      >
-        <span
-          className="font-bold font-black text-center drop-shadow-lg"
-          style={{ color: contrastColor }}
-        >
-          📚 اكتشف تفاصيل الكتاب
-        </span>
-      </div>
-      <p className="text-center p-2 font-semibold bg-white">{book.title}</p>
-    </div>
-  );
-};
