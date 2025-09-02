@@ -1,0 +1,539 @@
+{
+  "meta": {
+    "year": 1,
+    "slug": "akhlaq",
+    "code": "AKHLAQ101",
+    "title": {
+      "ar": "الأخلاق",
+      "fr": "akhlaq",
+      "en": "akhlaq"
+    },
+    "instructors": [
+      {
+        "name": "Dr. X"
+      }
+    ],
+    "tabs": ["video", "summaryPDF", "textExtraction", "qna"],
+    "tabLabels": {
+      "video": "🎥 فيديو الدرس",
+      "summaryPDF": "📝 مختصر الدرس",
+      "textExtraction": "📄 استخراج النصوص من الفيديو",
+      "qna": "📘 تلخيص الدرس في شكل سؤال و جواب (QCM)"
+    }
+  },
+  "semesters": {
+    "1": {
+      "lessons": [
+        { "id": "٠١", "title": "الدرس عدد 1: فضل العلم" },
+        { "id": "٠٢", "title": "الدرس عدد 2: أدب العالم في نفسه الحصة الاولى" },
+        {
+          "id": "٠٣",
+          "title": "الدرس عدد 3 : أدب العالم في نفسه الحصة الثانية"
+        },
+        { "id": "٠٤", "title": "الدرس عدد 4: أدب العالم في درسه الحصة الاولى" },
+        {
+          "id": "٠٥",
+          "title": "الدرس عدد 5: أدب العالم في درسه الحصة الثانية"
+        },
+        {
+          "id": "٠٦",
+          "title": "الدرس عدد 6: أدب العالم في درسه الحصة الثالثة"
+        },
+        {
+          "id": "٠٧",
+          "title": "الدرس عدد 7: أدب العالم في درسه الحصة الرابعة"
+        },
+        {
+          "id": "٠٨",
+          "title": "الدرس عدد 8: أدب العالم مع طلبته الحصة الاولى"
+        },
+        {
+          "id": "٠٩",
+          "title": "الدرس عدد 9: أدب العالم مع طلبته الحصة  الثانية"
+        },
+        {
+          "id": "١٠",
+          "title": "الدرس عدد 10: أدب العالم مع طلبته الحصة الثالثة"
+        },
+        {
+          "id": "١١",
+          "title": "الدرس عدد 11: أدب العالم مع طلبته الحصة  الرابعة"
+        },
+        {
+          "id": "١٢",
+          "title": "الدرس عدد 12 : أدب العالم مع طلبته الحصة  الخامسة"
+        },
+        {
+          "id": "١٣",
+          "title": "الدرس عدد  13: أدب العالم مع طلبته الحصة  السادسة"
+        },
+        {
+          "id": "١٤",
+          "title": "الدرس عدد 14 : أدب العالم مع طلبته الحصة  السابعة"
+        },
+        {
+          "id": "١٥",
+          "title": "الدرس عدد 15 : أدب العالم مع طلبته الحصة  الثامنة"
+        }
+      ],
+      "contentLinks": {
+        "٠١": {
+          "video": "https://drive.google.com/file/d/13ht5rO-f-hsgaHs2WYwsU2eHSuWHojqM/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=13ht5rO-f-hsgaHs2WYwsU2eHSuWHojqM",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٢": {
+          "video": "https://drive.google.com/file/d/1HX6KJ_RY8pjRW4115B1khmXNO6wf9WnW/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1HX6KJ_RY8pjRW4115B1khmXNO6wf9WnW",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٣": {
+          "video": "https://drive.google.com/file/d/1RjosPUGH6d2PfLE1uGmXgSJI3pC3HBqi/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1RjosPUGH6d2PfLE1uGmXgSJI3pC3HBqi",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٤": {
+          "video": "https://drive.google.com/file/d/1Ahsh15xLlWoHlTzQK_8PXXSruS2OGr5o/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1Ahsh15xLlWoHlTzQK_8PXXSruS2OGr5o",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٥": {
+          "video": "https://drive.google.com/file/d/1kMCmMd0KOZLdlSkalvwJ-nVm1G6C3UJ7/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1kMCmMd0KOZLdlSkalvwJ-nVm1G6C3UJ7",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٦": {
+          "video": "https://drive.google.com/file/d/1tCymbfbVhjly7UfLyxdAJ92B3o2OKwHB/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1tCymbfbVhjly7UfLyxdAJ92B3o2OKwHB",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٧": {
+          "video": "https://drive.google.com/file/d/155PlUupPHyqKZ0z08YySrqvkwf7kg23L/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=155PlUupPHyqKZ0z08YySrqvkwf7kg23L",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٨": {
+          "video": "https://drive.google.com/file/d/17PuklJ6T7aT-_pNQITVBQC9crFo2xyGm/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=17PuklJ6T7aT-_pNQITVBQC9crFo2xyGm",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٩": {
+          "video": "https://drive.google.com/file/d/1cWw9_rHe65GMq9WTmmTfZLmAV8ZiOiuG/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1cWw9_rHe65GMq9WTmmTfZLmAV8ZiOiuG",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٠": {
+          "video": "https://drive.google.com/file/d/1fAPIgPa0WD1BNkNL_MlMLO5pVN9s4nwN/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1fAPIgPa0WD1BNkNL_MlMLO5pVN9s4nwN",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١١": {
+          "video": "https://drive.google.com/file/d/1USCA3OojzaTDShZP7g_FuCIaVFZMefx2/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1USCA3OojzaTDShZP7g_FuCIaVFZMefx2",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٢": {
+          "video": "https://drive.google.com/file/d/1R4Y09D8fR4hA8oKOBIpPZ-TNZlePjrbI/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1R4Y09D8fR4hA8oKOBIpPZ-TNZlePjrbI",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٣": {
+          "video": "https://drive.google.com/file/d/1qlb93ibbaB86f50L7i6Y8Scp8RcgONTZ/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1qlb93ibbaB86f50L7i6Y8Scp8RcgONTZ",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٤": {
+          "video": "https://drive.google.com/file/d/1hjKfj9YvUuX4wSGNKTtyfwgb3I2CcJ61/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1hjKfj9YvUuX4wSGNKTtyfwgb3I2CcJ61",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٥": {
+          "video": "https://drive.google.com/file/d/14KlGhehPWeKf8nbOQmwPcAWf5Z4_klnI/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=14KlGhehPWeKf8nbOQmwPcAWf5Z4_klnI",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        }
+      },
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "الملتقى الاول",
+                "label": "الملتقى الأول",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1zkNWmPlW2HLAtzsufm0SCJzvJ4DAl29i/preview",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1zkNWmPlW2HLAtzsufm0SCJzvJ4DAl29i",
+                  "summaryPDF": ""
+                }
+              },
+              {
+                "id": "الملتقى الثاني",
+                "label": "الملتقى الثاني",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/17r49fnLMzH8AVbiDVKC9JI5MTIkY-jP9/preview",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=17r49fnLMzH8AVbiDVKC9JI5MTIkY-jP9",
+                  "summaryPDF": ""
+                }
+              },
+              {
+                "id": "الملتقى الثالث",
+                "label": "الملتقى الثالث",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1jiMND9P3LM1LVhZOcDya-xkWy3sFgMT0/preview",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1jiMND9P3LM1LVhZOcDya-xkWy3sFgMT0",
+                  "summaryPDF": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "CombinedCourse",
+                "label": "CombinedCourse",
+                "tabs": ["fusion"],
+                "tabLabels": { "fusion": "📝CombinedCourse" },
+                "links": { "fusion": "" }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "lessons": [
+        {
+          "id": "٠١",
+          "title": "الدرس عدد 1: آداب المتعلم في نفسه الحصة الاولى"
+        },
+        {
+          "id": "٠٢",
+          "title": "الدرس عدد 2: أدب المتعلم في نفسه الحصة الثانية"
+        },
+        {
+          "id": "٠٣",
+          "title": "الدرس عدد 3 : أدب المتعلم  في نفسه الحصة الثالثة"
+        },
+        {
+          "id": "٠٤",
+          "title": "الدرس عدد 4: آداب المتعلم مع شيخه الحصة الاولى"
+        },
+        {
+          "id": "٠٥",
+          "title": "الدرس عدد 5: آداب المتعلم مع شيخه الحصة الثانية"
+        },
+        {
+          "id": "٠٦",
+          "title": "الدرس عدد 6: آداب المتعلم مع شيخه الحصة الثالثة"
+        },
+        {
+          "id": "٠٧",
+          "title": "الدرس عدد 7 :   آداب المتعلم مع شيخه الحصة الرابعة"
+        },
+        {
+          "id": "٠٨",
+          "title": "الدرس عدد 8 : آداب المتعلم في دروسه الحصة الاولى"
+        },
+        {
+          "id": "٠٩",
+          "title": "الدرس عدد 9 :  آداب المتعلم في دروسه الحصة  الثانية"
+        },
+        {
+          "id": "١٠",
+          "title": "الدرس عدد 10: آداب المتعلم في دروسه الحصة  الثالثة"
+        },
+        {
+          "id": "١١",
+          "title": "الدرس عدد 11: آداب المتعلم في دروسه الحصة  الرابعة"
+        },
+        { "id": "١٢", "title": "الدرس عدد 12 : الأدب مع الكتب الحصة الاولى" },
+        { "id": "١٣", "title": "الدرس عدد  13: الأدب مع الكتب الحصة الثانية" },
+        {
+          "id": "١٤",
+          "title": "الدرس عدد 14 : آداب سكنى المدارس الحصة الاولى"
+        },
+        {
+          "id": "١٥",
+          "title": "الدرس عدد 15 : آداب سكنى المدارس الحصة الثانية"
+        }
+      ],
+      "contentLinks": {
+        "٠١": {
+          "video": "https://drive.google.com/file/d/1JBInlKaiC0RUQ5Lka-QENmz17e-IsTQq/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1JBInlKaiC0RUQ5Lka-QENmz17e-IsTQq",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٢": {
+          "video": "https://drive.google.com/file/d/1eLlDDgMVq-KpJcN6r0WOUn6iNgjkcbw4/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1eLlDDgMVq-KpJcN6r0WOUn6iNgjkcbw4",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٣": {
+          "video": "https://drive.google.com/file/d/1vitWaJ68LVgqbx6I7EziNdJsUUvM0206/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1vitWaJ68LVgqbx6I7EziNdJsUUvM0206",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٤": {
+          "video": "https://drive.google.com/file/d/18Yim5HLFLSm6xLl5pCvuVViRL3vHASI8/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=18Yim5HLFLSm6xLl5pCvuVViRL3vHASI8",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٥": {
+          "video": "https://drive.google.com/file/d/1C7-r3rs3hWQbl0088kg9pKJO6_wRyRB1/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1C7-r3rs3hWQbl0088kg9pKJO6_wRyRB1",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٦": {
+          "video": "https://drive.google.com/file/d/1z1RW8Ol5kYoTOSWqeDJKiqC_uEyqklUA/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1z1RW8Ol5kYoTOSWqeDJKiqC_uEyqklUA",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٧": {
+          "video": "https://drive.google.com/file/d/1B9o0kqAjl9dQF5H97bhRC0J38ABpJOF2/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1B9o0kqAjl9dQF5H97bhRC0J38ABpJOF2",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٨": {
+          "video": "https://drive.google.com/file/d/1tNunDdhOoe6mpp9QVzOvWXZv08kmouO6/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1tNunDdhOoe6mpp9QVzOvWXZv08kmouO6",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٩": {
+          "video": "https://drive.google.com/file/d/1xZmqzQq3vCTgwjtUlHo7VUBNdYVmyVIC/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1xZmqzQq3vCTgwjtUlHo7VUBNdYVmyVIC",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٠": {
+          "video": "https://drive.google.com/file/d/1pRieYINRyrLFnyWN_mo1Z-UuXnzUesqy/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1pRieYINRyrLFnyWN_mo1Z-UuXnzUesqy",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١١": {
+          "video": "https://drive.google.com/file/d/137JeoXjZqbQllbOO_g0bpQ_I66DX11F7/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=137JeoXjZqbQllbOO_g0bpQ_I66DX11F7",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٢": {
+          "video": "https://drive.google.com/file/d/1kOUxWxFfi3Lfv3z5YzP825_cok2CIihX/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1kOUxWxFfi3Lfv3z5YzP825_cok2CIihX",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٣": {
+          "video": "https://drive.google.com/file/d/1pnrIf0Cq2l6eDya4wuxLXeETFeTh0J1f/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1pnrIf0Cq2l6eDya4wuxLXeETFeTh0J1f",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٤": {
+          "video": "https://drive.google.com/file/d/1W_ZBzTMxaolbMgm2c834K_AFPbMJEsWr/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1W_ZBzTMxaolbMgm2c834K_AFPbMJEsWr",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٥": {
+          "video": "https://drive.google.com/file/d/1kcJlRxRhJ2Ut7LcJAZq3O0jeSpQ-P5Bg/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1kcJlRxRhJ2Ut7LcJAZq3O0jeSpQ-P5Bg",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        }
+      },
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "الملتقى الاول",
+                "label": "الملتقى الأول",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1Sjn2SvRKZJWhcQ8BQrlYysvmB_h2Hat_/preview",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1Sjn2SvRKZJWhcQ8BQrlYysvmB_h2Hat_",
+                  "summaryPDF": ""
+                }
+              },
+              {
+                "id": "الملتقى الثاني",
+                "label": "الملتقى الثاني",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1S7pgbBSXsN3bP3N-yMEIsho0N3fzQ_SS/preview",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1S7pgbBSXsN3bP3N-yMEIsho0N3fzQ_SS",
+                  "summaryPDF": ""
+                }
+              },
+              {
+                "id": "الملتقى الثالث",
+                "label": "الملتقى الثالث",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1KFz8JNwWTE3XM0gMMdpMhwJ_25AJNnRP/preview",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1KFz8JNwWTE3XM0gMMdpMhwJ_25AJNnRP",
+                  "summaryPDF": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "CombinedCourse",
+                "label": "CombinedCourse",
+                "tabs": ["fusion"],
+                "tabLabels": { "fusion": "📝CombinedCourse" },
+                "links": { "fusion": "" }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

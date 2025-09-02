@@ -1,0 +1,397 @@
+{
+  "meta": {
+    "year": 1,
+    "slug": "sirah",
+    "code": "SIRAH101",
+    "title": {
+      "ar": "السيرة",
+      "fr": "sirah (Biographie du Prophète)",
+      "en": "Seerah"
+    },
+    "instructors": [
+      {
+        "name": "Dr. X"
+      }
+    ],
+    "tabs": ["video", "summaryPDF", "textExtraction", "qna"],
+    "tabLabels": {
+      "video": "🎥 فيديو الدرس",
+      "summaryPDF": "📝 مختصر الدرس",
+      "textExtraction": "📄 استخراج النصوص من الفيديو",
+      "qna": "📘 تلخيص الدرس في شكل سؤال و جواب (QCM)"
+    }
+  },
+  "semesters": {
+    "1": {
+      "lessons": [
+        { "id": "٠١", "title": "الدرس 1 مقدمة" },
+        { "id": "٠٢", "title": "الدرس 2 امنة بنت وهب" },
+        { "id": "٠٣", "title": "الدرس 3 عبد المطلب و هاشم 1" },
+        { "id": "٠٤", "title": "الدرس 4 عبد مناف و قصي" },
+        { "id": "٠٥", "title": "الدرس 5 النزاع بين بطون قريش و" },
+        { "id": "٠٦", "title": "الدرس 6 حليمة السعدية" },
+        { "id": "٠٧", "title": "الدرس 7 حرب الفجار" },
+        { "id": "٠٨", "title": "الدرس 8 حلف الفضول" },
+        { "id": "٠٩", "title": "الدرس  9 بناء بيت الحرام" },
+        { "id": "١٠", "title": "الدرس  10 شعب ابي طالب" },
+        { "id": "١١", "title": "الدرس 11 السنة 1 السداسي 1" },
+        { "id": "١٢", "title": "الدرس 12 الهجرة إلى الطائف و" },
+        { "id": "١٣", "title": "الدرس 13 االاسراء والمعراج" },
+        { "id": "١٤", "title": "الدرس 14 بيعة العقبة" },
+        { "id": "١٥", "title": "الدرس 15 الهجرة" },
+        { "id": "١٦", "title": "الدرس 16 مسجد قباء" }
+      ],
+      "contentLinks": {
+        "٠١": {
+          "video": "https://drive.google.com/file/d/1hti7H5jtRd-k9pPS_lrmn4R-UnhcSXFg/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1hti7H5jtRd-k9pPS_lrmn4R-UnhcSXFg",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٢": {
+          "video": "https://drive.google.com/file/d/1YopmL2_qP3Cv6JWXZgiwaQRMtHKaVQ8A/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1YopmL2_qP3Cv6JWXZgiwaQRMtHKaVQ8A",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٣": {
+          "video": "https://drive.google.com/file/d/1ytDGe5OL7Fc6uCl8GnXuDiSW0v1SpmEA/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1ytDGe5OL7Fc6uCl8GnXuDiSW0v1SpmEA",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٤": {
+          "video": "https://drive.google.com/file/d/1rQTWvso_ObvbLGd_utIpQbi6gzeki8lr/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1rQTWvso_ObvbLGd_utIpQbi6gzeki8lr",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٥": {
+          "video": "https://drive.google.com/file/d/14Tbyfo7mqKRd5NiuEpj9bXPT6XFe1aeE/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=14Tbyfo7mqKRd5NiuEpj9bXPT6XFe1aeE",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٦": {
+          "video": "https://drive.google.com/file/d/1r0mkGrpQbRh4w8yzWBZbexCyXw4swQHT/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1r0mkGrpQbRh4w8yzWBZbexCyXw4swQHT",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٧": {
+          "video": "https://drive.google.com/file/d/16QVV_y4SXDe8xzVgQwLyr4Y9FBP26AOd/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=16QVV_y4SXDe8xzVgQwLyr4Y9FBP26AOd",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٨": {
+          "video": "https://drive.google.com/file/d/1_TfwGcIBLLpiJON7KImW1aCMsg6ETihb/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1_TfwGcIBLLpiJON7KImW1aCMsg6ETihb",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٩": {
+          "video": "https://drive.google.com/file/d/1tDz614S_tX7zbZLPGn4n0BKMghSS77pN/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1tDz614S_tX7zbZLPGn4n0BKMghSS77pN",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٠": {
+          "video": "https://drive.google.com/file/d/1QGASaD9WJgwkjALXdlC8IU9ST3XCAnp-/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1QGASaD9WJgwkjALXdlC8IU9ST3XCAnp-",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١١": {
+          "video": "https://drive.google.com/file/d/12sNzv-aEd0F3Dmxw57oL5wJpNySpG3GJ/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=12sNzv-aEd0F3Dmxw57oL5wJpNySpG3GJ",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٢": {
+          "video": "https://drive.google.com/file/d/1uUGQz4RB6el7cTYCb1sc3DYIDlrwQ0Rg/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1uUGQz4RB6el7cTYCb1sc3DYIDlrwQ0Rg",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٣": {
+          "video": "https://drive.google.com/file/d/17PIxM6aUDUjXE6RLiG8MHnfJQZPRHVNz/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=17PIxM6aUDUjXE6RLiG8MHnfJQZPRHVNz",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٤": {
+          "video": "https://drive.google.com/file/d/1AFHW0lP5nVcHnO5Xu2h3zb46z611hPHT/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1AFHW0lP5nVcHnO5Xu2h3zb46z611hPHT",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٥": {
+          "video": "https://drive.google.com/file/d/1fu2fsNVje8A-_Mh6hHmf7mNzz-x8iW3B/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1fu2fsNVje8A-_Mh6hHmf7mNzz-x8iW3B",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٦": {
+          "video": "https://drive.google.com/file/d/1o9XkWDD00bAJ7hRbWE7sCDkNWm6oVQOf/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1o9XkWDD00bAJ7hRbWE7sCDkNWm6oVQOf",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        }
+      },
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "الملتقى الاول",
+                "label": "الملتقى الاول",
+                "tabs": ["video"],
+                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
+                "links": { "video": "zero" }
+              },
+              {
+                "id": "الملتقى الثاني",
+                "label": "الملتقى الثاني",
+                "tabs": ["video"],
+                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
+                "links": { "video": "" }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "CombinedCourse",
+                "label": "CombinedCourse",
+                "tabs": ["fusion"],
+                "tabLabels": { "fusion": "📝CombinedCourse" },
+                "links": { "fusion": "" }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "lessons": [
+        { "id": "٠١", "title": "الدرس 1  بناء المسجد" },
+        { "id": "٠٢", "title": "الدرس 2  المنافقون" },
+        { "id": "٠٣", "title": "الدرس 3  بدأ القتال" },
+        { "id": "٠٤", "title": "الدرس 4 غزوة بدر" },
+        { "id": "٠٥", "title": "الدرس 5 أسرى بدر" },
+        { "id": "٠٦", "title": "الدرس 6 غزوة بني قينقاع" },
+        { "id": "٠٧", "title": "الدرس 7 غزوة غطفان" },
+        { "id": "٠٨", "title": "الدرس 8 غزوة حمراء الأسد" },
+        { "id": "٠٩", "title": "الدرس 9 السنة الرابعة" },
+        { "id": "١٠", "title": "الدرس 10 حادثة القراء" },
+        { "id": "١١", "title": "الدرس 11  غزوة بني النضير" },
+        { "id": "١٢", "title": "الدرس 12 غزوة ذات الرقاع" }
+      ],
+      "contentLinks": {
+        "٠١": {
+          "video": "https://drive.google.com/file/d/10GeaDuDiwEcO9TOCpIuULNUL1eBlpGVW/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=10GeaDuDiwEcO9TOCpIuULNUL1eBlpGVW",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٢": {
+          "video": "https://drive.google.com/file/d/1aVijJBUNdk4xFyVBvygk8i9vWpZkQ579/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1aVijJBUNdk4xFyVBvygk8i9vWpZkQ579",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٣": {
+          "video": "https://drive.google.com/file/d/1OOPs20hFhh5CAP-y13pXB4LXFgFO1ENU/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1OOPs20hFhh5CAP-y13pXB4LXFgFO1ENU",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٤": {
+          "video": "https://drive.google.com/file/d/1vAOSzqnTXHTW8O5yb-g40qMNcq_XhIW8/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1vAOSzqnTXHTW8O5yb-g40qMNcq_XhIW8",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٥": {
+          "video": "https://drive.google.com/file/d/1ScgxxiGIRsADEdJJw27IdgKgB3jGBDaN/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1ScgxxiGIRsADEdJJw27IdgKgB3jGBDaN",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٦": {
+          "video": "https://drive.google.com/file/d/1MjQBfFcKHKgmtt6EgL0uLa8otbCoVMxT/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1MjQBfFcKHKgmtt6EgL0uLa8otbCoVMxT",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٧": {
+          "video": "https://drive.google.com/file/d/1huSX2XyJnLE-dLFljUMPcZlwQZvuyqyD/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1huSX2XyJnLE-dLFljUMPcZlwQZvuyqyD",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٨": {
+          "video": "https://drive.google.com/file/d/1kQpQBJZ_e-xhqvURZmDeykZah1R8_CVv/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1kQpQBJZ_e-xhqvURZmDeykZah1R8_CVv",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "٠٩": {
+          "video": "https://drive.google.com/file/d/1xKSylodjZ9joXX3Q_9dXTuXdv4iTRWV7/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1xKSylodjZ9joXX3Q_9dXTuXdv4iTRWV7",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٠": {
+          "video": "https://drive.google.com/file/d/1Ew8FhfiwnPOEl8PW4rQbOrwEpC_U5pYQ/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1Ew8FhfiwnPOEl8PW4rQbOrwEpC_U5pYQ",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١١": {
+          "video": "https://drive.google.com/file/d/1WivbIytNGHbxlDkCOwb-x6Od1Or2EosX/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1WivbIytNGHbxlDkCOwb-x6Od1Or2EosX",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "١٢": {
+          "video": "https://drive.google.com/file/d/1fxS9ZQDwH-Sij4M2XFTzDo49ZfjGbpHq/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1fxS9ZQDwH-Sij4M2XFTzDo49ZfjGbpHq",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        }
+      },
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "الملتقى الاول",
+                "label": "الملتقى الأول",
+                "tabs": ["video"],
+                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
+                "links": { "video": "" }
+              },
+              {
+                "id": "الملتقى الثاني",
+                "label": "الملتقى الثاني",
+                "tabs": ["video"],
+                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
+                "links": { "video": "" }
+              },
+              {
+                "id": "الملتقى الثالث",
+                "label": "الملتقى الثالث",
+                "tabs": ["video"],
+                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
+                "links": { "video": "" }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": { "qna": "" }
+              },
+              {
+                "id": "CombinedCourse",
+                "label": "CombinedCourse",
+                "tabs": ["fusion"],
+                "tabLabels": { "fusion": "📝CombinedCourse" },
+                "links": { "fusion": "" }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

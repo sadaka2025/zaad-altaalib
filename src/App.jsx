@@ -10,7 +10,8 @@ import {
 } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import Layout from './pages/Home/Layout';
+import LayoutConfigurable from './pages/Home/LayoutConfigurable';
+
 import HomePage from './pages/Home/HomePage';
 import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
@@ -25,7 +26,7 @@ import Niveau4 from './pages/Formation/years/year4/LevelFour';
 import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
 
 import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
-// en haut
+// Pages Intro
 import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
 import IntrosiraPage from './pages/Formation/years/year1/Introsubjects/Introsira/IntrosiraPage';
 import IntroakhlakPage from './pages/Formation/years/year1/Introsubjects/Introakhlak/IntroakhlakPage';
@@ -39,7 +40,7 @@ import './i18n';
 
 import { useAuth } from './context/AuthContext';
 
-// 📂 Import du composant PDF
+// 📂 PDF components
 import PdfList from './components/PdfList';
 import PdfManager from './components/PdfManager';
 
@@ -71,23 +72,14 @@ function LangRoutesWrapper() {
 
   return (
     <Routes>
-      {/* Toutes les routes avec Layout */}
-      <Route element={<Layout />}>
+      {/* Pages avec Navbar */}
+      <Route element={<LayoutConfigurable showNavbar={true} />}>
         <Route index element={<HomePage />} />
-
         <Route
           path="formations"
           element={
             <RequireAuth>
               <Formations />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-debutant"
-          element={
-            <RequireAuth>
-              <NiveauDebutant />
             </RequireAuth>
           }
         />
@@ -115,7 +107,6 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-
         <Route
           path="niveau-2"
           element={
@@ -149,17 +140,7 @@ function LangRoutesWrapper() {
           }
         />
 
-        {/* Matières dynamiques → SubjectPage */}
-        <Route
-          path="annee/:year/matiere/:subjectSlug"
-          element={
-            <RequireAuth>
-              <SubjectPage />
-            </RequireAuth>
-          }
-        />
-
-        {/* Page Intro spécifique pour Fiqh */}
+        {/* Pages Intro → Navbar visible */}
         <Route
           path="introfiqh"
           element={
@@ -168,7 +149,6 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-
         <Route
           path="introsira"
           element={
@@ -185,7 +165,6 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-
         <Route
           path="introaqida"
           element={
@@ -194,7 +173,6 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-
         <Route
           path="introhadith"
           element={
@@ -203,7 +181,6 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-
         <Route
           path="intronahw"
           element={
@@ -217,6 +194,26 @@ function LangRoutesWrapper() {
           element={
             <RequireAuth>
               <IntrotajwidPage />
+            </RequireAuth>
+          }
+        />
+      </Route>
+
+      {/* Pages sans Navbar */}
+      <Route element={<LayoutConfigurable showNavbar={false} />}>
+        <Route
+          path="niveau-debutant"
+          element={
+            <RequireAuth>
+              <NiveauDebutant />
+            </RequireAuth>
+          }
+        />
+        <Route
+          path="annee/:year/matiere/:subjectSlug"
+          element={
+            <RequireAuth>
+              <SubjectPage />
             </RequireAuth>
           }
         />

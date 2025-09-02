@@ -1,6 +1,6 @@
 // src/components/Modal.jsx
-import React, { useEffect, useState } from "react";
-import { X } from "lucide-react";
+import React, { useEffect, useState } from 'react';
+import { X } from 'lucide-react';
 
 export default function Modal({ isOpen, onClose, title, content }) {
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -11,19 +11,19 @@ export default function Modal({ isOpen, onClose, title, content }) {
       setIsFullscreen(Boolean(document.fullscreenElement));
     };
 
-    document.addEventListener("fullscreenchange", handleFullscreenChange);
+    document.addEventListener('fullscreenchange', handleFullscreenChange);
     return () => {
-      document.removeEventListener("fullscreenchange", handleFullscreenChange);
+      document.removeEventListener('fullscreenchange', handleFullscreenChange);
     };
   }, []);
 
   if (!isOpen) return null;
 
   const enterFullScreen = () => {
-    const contentEl = document.querySelector(".modal-content");
+    const contentEl = document.querySelector('.modal-content');
     if (contentEl && !document.fullscreenElement) {
       contentEl.requestFullscreen().catch((err) => {
-        console.error("Erreur plein écran :", err.message);
+        console.error('Erreur plein écran :', err.message);
       });
     }
   };
@@ -50,7 +50,7 @@ export default function Modal({ isOpen, onClose, title, content }) {
         {!isFullscreen && (
           <button
             onClick={enterFullScreen}
-            className="absolute top-4 end-16 bg-green-600 hover:bg-green-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+            className="absolute top-4 end-16 bg-[#00CED1]/80 hover:bg-green-700 text-white px-3 py-1 rounded shadow text-sm z-50 animate-pulse"
             aria-label="Plein écran"
           >
             ⛶ ملء الشاشة
