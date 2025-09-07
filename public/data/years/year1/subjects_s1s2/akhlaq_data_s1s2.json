@@ -13,7 +13,12 @@
         "name": "Dr. X"
       }
     ],
-    "tabs": ["video", "summaryPDF", "textExtraction", "qna"],
+    "tabs": [
+      "video",
+      "summaryPDF",
+      "textExtraction",
+      "qna"
+    ],
     "tabLabels": {
       "video": "🎥 فيديو الدرس",
       "summaryPDF": "📝 مختصر الدرس",
@@ -24,178 +29,187 @@
   "semesters": {
     "1": {
       "lessons": [
-        { "id": "٠١", "title": "الدرس عدد 1: فضل العلم" },
-        { "id": "٠٢", "title": "الدرس عدد 2: أدب العالم في نفسه الحصة الاولى" },
         {
-          "id": "٠٣",
+          "id": "1",
+          "title": "الدرس عدد 1: فضل العلم"
+        },
+        {
+          "id": "2",
+          "title": "الدرس عدد 2: أدب العالم في نفسه الحصة الاولى"
+        },
+        {
+          "id": "3",
           "title": "الدرس عدد 3 : أدب العالم في نفسه الحصة الثانية"
         },
-        { "id": "٠٤", "title": "الدرس عدد 4: أدب العالم في درسه الحصة الاولى" },
         {
-          "id": "٠٥",
+          "id": "4",
+          "title": "الدرس عدد 4: أدب العالم في درسه الحصة الاولى"
+        },
+        {
+          "id": "5",
           "title": "الدرس عدد 5: أدب العالم في درسه الحصة الثانية"
         },
         {
-          "id": "٠٦",
+          "id": "6",
           "title": "الدرس عدد 6: أدب العالم في درسه الحصة الثالثة"
         },
         {
-          "id": "٠٧",
+          "id": "7",
           "title": "الدرس عدد 7: أدب العالم في درسه الحصة الرابعة"
         },
         {
-          "id": "٠٨",
+          "id": "8",
           "title": "الدرس عدد 8: أدب العالم مع طلبته الحصة الاولى"
         },
         {
-          "id": "٠٩",
+          "id": "9",
           "title": "الدرس عدد 9: أدب العالم مع طلبته الحصة  الثانية"
         },
         {
-          "id": "١٠",
+          "id": "10",
           "title": "الدرس عدد 10: أدب العالم مع طلبته الحصة الثالثة"
         },
         {
-          "id": "١١",
+          "id": "11",
           "title": "الدرس عدد 11: أدب العالم مع طلبته الحصة  الرابعة"
         },
         {
-          "id": "١٢",
+          "id": "12",
           "title": "الدرس عدد 12 : أدب العالم مع طلبته الحصة  الخامسة"
         },
         {
-          "id": "١٣",
+          "id": "13",
           "title": "الدرس عدد  13: أدب العالم مع طلبته الحصة  السادسة"
         },
         {
-          "id": "١٤",
+          "id": "14",
           "title": "الدرس عدد 14 : أدب العالم مع طلبته الحصة  السابعة"
         },
         {
-          "id": "١٥",
+          "id": "15",
           "title": "الدرس عدد 15 : أدب العالم مع طلبته الحصة  الثامنة"
         }
       ],
       "contentLinks": {
-        "٠١": {
+        "1": {
           "video": "https://drive.google.com/file/d/13ht5rO-f-hsgaHs2WYwsU2eHSuWHojqM/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=13ht5rO-f-hsgaHs2WYwsU2eHSuWHojqM",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr1akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr1akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec1akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc1akhlaqs1.pdf"
         },
-        "٠٢": {
+        "2": {
           "video": "https://drive.google.com/file/d/1HX6KJ_RY8pjRW4115B1khmXNO6wf9WnW/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1HX6KJ_RY8pjRW4115B1khmXNO6wf9WnW",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr2akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr2akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec2akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc2akhlaqs1.pdf"
         },
-        "٠٣": {
+        "3": {
           "video": "https://drive.google.com/file/d/1RjosPUGH6d2PfLE1uGmXgSJI3pC3HBqi/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1RjosPUGH6d2PfLE1uGmXgSJI3pC3HBqi",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr3akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr3akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec3akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc3akhlaqs1.pdf"
         },
-        "٠٤": {
+        "4": {
           "video": "https://drive.google.com/file/d/1Ahsh15xLlWoHlTzQK_8PXXSruS2OGr5o/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1Ahsh15xLlWoHlTzQK_8PXXSruS2OGr5o",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr4akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr4akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec4akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc4akhlaqs1.pdf"
         },
-        "٠٥": {
+        "5": {
           "video": "https://drive.google.com/file/d/1kMCmMd0KOZLdlSkalvwJ-nVm1G6C3UJ7/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1kMCmMd0KOZLdlSkalvwJ-nVm1G6C3UJ7",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr5akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr5akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec5akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc5akhlaqs1.pdf"
         },
-        "٠٦": {
+        "6": {
           "video": "https://drive.google.com/file/d/1tCymbfbVhjly7UfLyxdAJ92B3o2OKwHB/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1tCymbfbVhjly7UfLyxdAJ92B3o2OKwHB",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr6akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr6akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec6akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc6akhlaqs1.pdf"
         },
-        "٠٧": {
-          "video": "https://drive.google.com/file/d/155PlUupPHyqKZ0z08YySrqvkwf7kg23L/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=155PlUupPHyqKZ0z08YySrqvkwf7kg23L",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+        "7": {
+          "video": "https://drive.google.com/file/d/155PlUupPHyqKZ0z8YySrqvkwf7kg23L/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=155PlUupPHyqKZ0z8YySrqvkwf7kg23L",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr7akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr7akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec7akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc7akhlaqs1.pdf"
         },
-        "٠٨": {
+        "8": {
           "video": "https://drive.google.com/file/d/17PuklJ6T7aT-_pNQITVBQC9crFo2xyGm/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=17PuklJ6T7aT-_pNQITVBQC9crFo2xyGm",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr8akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr8akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec8akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc8akhlaqs1.pdf"
         },
-        "٠٩": {
+        "9": {
           "video": "https://drive.google.com/file/d/1cWw9_rHe65GMq9WTmmTfZLmAV8ZiOiuG/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1cWw9_rHe65GMq9WTmmTfZLmAV8ZiOiuG",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr9akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr9akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec9akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc9akhlaqs1.pdf"
         },
-        "١٠": {
+        "10": {
           "video": "https://drive.google.com/file/d/1fAPIgPa0WD1BNkNL_MlMLO5pVN9s4nwN/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1fAPIgPa0WD1BNkNL_MlMLO5pVN9s4nwN",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr10akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr10akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec10akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc10akhlaqs1.pdf"
         },
-        "١١": {
+        "11": {
           "video": "https://drive.google.com/file/d/1USCA3OojzaTDShZP7g_FuCIaVFZMefx2/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1USCA3OojzaTDShZP7g_FuCIaVFZMefx2",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr11akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr11akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec11akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc11akhlaqs1.pdf"
         },
-        "١٢": {
-          "video": "https://drive.google.com/file/d/1R4Y09D8fR4hA8oKOBIpPZ-TNZlePjrbI/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=1R4Y09D8fR4hA8oKOBIpPZ-TNZlePjrbI",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+        "12": {
+          "video": "https://drive.google.com/file/d/1R4Y9D8fR4hA8oKOBIpPZ-TNZlePjrbI/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1R4Y9D8fR4hA8oKOBIpPZ-TNZlePjrbI",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr12akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr12akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec12akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc12akhlaqs1.pdf"
         },
-        "١٣": {
+        "13": {
           "video": "https://drive.google.com/file/d/1qlb93ibbaB86f50L7i6Y8Scp8RcgONTZ/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1qlb93ibbaB86f50L7i6Y8Scp8RcgONTZ",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr13akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr13akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec13akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc13akhlaqs1.pdf"
         },
-        "١٤": {
+        "14": {
           "video": "https://drive.google.com/file/d/1hjKfj9YvUuX4wSGNKTtyfwgb3I2CcJ61/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1hjKfj9YvUuX4wSGNKTtyfwgb3I2CcJ61",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr14akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr14akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec14akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc14akhlaqs1.pdf"
         },
-        "١٥": {
+        "15": {
           "video": "https://drive.google.com/file/d/14KlGhehPWeKf8nbOQmwPcAWf5Z4_klnI/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=14KlGhehPWeKf8nbOQmwPcAWf5Z4_klnI",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr15akhlaqs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/akhlaq/pcr15akhlaqs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec15akhlaqs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/akhlaq/quizc15akhlaqs1.pdf"
         }
       },
       "conclusion": {
@@ -207,7 +221,10 @@
               {
                 "id": "الملتقى الاول",
                 "label": "الملتقى الأول",
-                "tabs": ["video", "summaryPDF"],
+                "tabs": [
+                  "video",
+                  "summaryPDF"
+                ],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -215,13 +232,18 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/1zkNWmPlW2HLAtzsufm0SCJzvJ4DAl29i/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=1zkNWmPlW2HLAtzsufm0SCJzvJ4DAl29i",
-                  "summaryPDF": ""
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf"
                 }
               },
               {
                 "id": "الملتقى الثاني",
                 "label": "الملتقى الثاني",
-                "tabs": ["video", "summaryPDF"],
+                "tabs": [
+                  "video",
+                  "summaryPDF"
+                ],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -229,13 +251,18 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/17r49fnLMzH8AVbiDVKC9JI5MTIkY-jP9/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=17r49fnLMzH8AVbiDVKC9JI5MTIkY-jP9",
-                  "summaryPDF": ""
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf"
                 }
               },
               {
                 "id": "الملتقى الثالث",
                 "label": "الملتقى الثالث",
-                "tabs": ["video", "summaryPDF"],
+                "tabs": [
+                  "video",
+                  "summaryPDF"
+                ],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -243,7 +270,9 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/1jiMND9P3LM1LVhZOcDya-xkWy3sFgMT0/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=1jiMND9P3LM1LVhZOcDya-xkWy3sFgMT0",
-                  "summaryPDF": ""
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf"
                 }
               }
             ]
@@ -254,23 +283,50 @@
               {
                 "id": "quiz-general",
                 "label": "Quiz général sur les cours",
-                "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
-                "links": { "qna": "" }
+                "tabs": [
+                  "qna"
+                ],
+                "tabLabels": {
+                  "qna": "📝 Quiz général (QCM)"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/akhlaq/quizsemakhlaqs1.pdf",
+                  "quizSemester": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/akhlaq/quizsemakhlaqs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/akhlaq/quizsemakhlaqs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/akhlaq/quizsemakhlaqs1.pdf"
+                }
               },
               {
                 "id": "final-exam",
                 "label": "Examen final",
-                "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Sujet d'examen" },
-                "links": { "qna": "" }
+                "tabs": [
+                  "qna"
+                ],
+                "tabLabels": {
+                  "qna": "📝 Sujet d'examen"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/akhlaq/quizexamakhlaqs1.pdf",
+                  "quizExam": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/akhlaq/quizexamakhlaqs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/akhlaq/quizexamakhlaqs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/akhlaq/quizexamakhlaqs1.pdf"
+                }
               },
               {
                 "id": "CombinedCourse",
                 "label": "CombinedCourse",
-                "tabs": ["fusion"],
-                "tabLabels": { "fusion": "📝CombinedCourse" },
-                "links": { "fusion": "" }
+                "tabs": [
+                  "fusion"
+                ],
+                "tabLabels": {
+                  "fusion": "📝CombinedCourse"
+                },
+                "links": {
+                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/akhlaq/pccakhlaqs1.pdf",
+                  "combinedCourse": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/akhlaq/pccakhlaqs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/akhlaq/pccakhlaqs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/akhlaq/pccakhlaqs1.pdf"
+                }
               }
             ]
           }
@@ -280,180 +336,186 @@
     "2": {
       "lessons": [
         {
-          "id": "٠١",
+          "id": "1",
           "title": "الدرس عدد 1: آداب المتعلم في نفسه الحصة الاولى"
         },
         {
-          "id": "٠٢",
+          "id": "2",
           "title": "الدرس عدد 2: أدب المتعلم في نفسه الحصة الثانية"
         },
         {
-          "id": "٠٣",
+          "id": "3",
           "title": "الدرس عدد 3 : أدب المتعلم  في نفسه الحصة الثالثة"
         },
         {
-          "id": "٠٤",
+          "id": "4",
           "title": "الدرس عدد 4: آداب المتعلم مع شيخه الحصة الاولى"
         },
         {
-          "id": "٠٥",
+          "id": "5",
           "title": "الدرس عدد 5: آداب المتعلم مع شيخه الحصة الثانية"
         },
         {
-          "id": "٠٦",
+          "id": "6",
           "title": "الدرس عدد 6: آداب المتعلم مع شيخه الحصة الثالثة"
         },
         {
-          "id": "٠٧",
+          "id": "7",
           "title": "الدرس عدد 7 :   آداب المتعلم مع شيخه الحصة الرابعة"
         },
         {
-          "id": "٠٨",
+          "id": "8",
           "title": "الدرس عدد 8 : آداب المتعلم في دروسه الحصة الاولى"
         },
         {
-          "id": "٠٩",
+          "id": "9",
           "title": "الدرس عدد 9 :  آداب المتعلم في دروسه الحصة  الثانية"
         },
         {
-          "id": "١٠",
+          "id": "10",
           "title": "الدرس عدد 10: آداب المتعلم في دروسه الحصة  الثالثة"
         },
         {
-          "id": "١١",
+          "id": "11",
           "title": "الدرس عدد 11: آداب المتعلم في دروسه الحصة  الرابعة"
         },
-        { "id": "١٢", "title": "الدرس عدد 12 : الأدب مع الكتب الحصة الاولى" },
-        { "id": "١٣", "title": "الدرس عدد  13: الأدب مع الكتب الحصة الثانية" },
         {
-          "id": "١٤",
+          "id": "12",
+          "title": "الدرس عدد 12 : الأدب مع الكتب الحصة الاولى"
+        },
+        {
+          "id": "13",
+          "title": "الدرس عدد  13: الأدب مع الكتب الحصة الثانية"
+        },
+        {
+          "id": "14",
           "title": "الدرس عدد 14 : آداب سكنى المدارس الحصة الاولى"
         },
         {
-          "id": "١٥",
+          "id": "15",
           "title": "الدرس عدد 15 : آداب سكنى المدارس الحصة الثانية"
         }
       ],
       "contentLinks": {
-        "٠١": {
+        "1": {
           "video": "https://drive.google.com/file/d/1JBInlKaiC0RUQ5Lka-QENmz17e-IsTQq/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1JBInlKaiC0RUQ5Lka-QENmz17e-IsTQq",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr1akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr1akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec1akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc1akhlaqs2.pdf"
         },
-        "٠٢": {
+        "2": {
           "video": "https://drive.google.com/file/d/1eLlDDgMVq-KpJcN6r0WOUn6iNgjkcbw4/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1eLlDDgMVq-KpJcN6r0WOUn6iNgjkcbw4",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr2akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr2akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec2akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc2akhlaqs2.pdf"
         },
-        "٠٣": {
-          "video": "https://drive.google.com/file/d/1vitWaJ68LVgqbx6I7EziNdJsUUvM0206/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=1vitWaJ68LVgqbx6I7EziNdJsUUvM0206",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+        "3": {
+          "video": "https://drive.google.com/file/d/1vitWaJ68LVgqbx6I7EziNdJsUUvM206/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1vitWaJ68LVgqbx6I7EziNdJsUUvM206",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr3akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr3akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec3akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc3akhlaqs2.pdf"
         },
-        "٠٤": {
+        "4": {
           "video": "https://drive.google.com/file/d/18Yim5HLFLSm6xLl5pCvuVViRL3vHASI8/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=18Yim5HLFLSm6xLl5pCvuVViRL3vHASI8",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr4akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr4akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec4akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc4akhlaqs2.pdf"
         },
-        "٠٥": {
-          "video": "https://drive.google.com/file/d/1C7-r3rs3hWQbl0088kg9pKJO6_wRyRB1/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=1C7-r3rs3hWQbl0088kg9pKJO6_wRyRB1",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+        "5": {
+          "video": "https://drive.google.com/file/d/1C7-r3rs3hWQbl88kg9pKJO6_wRyRB1/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1C7-r3rs3hWQbl88kg9pKJO6_wRyRB1",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr5akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr5akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec5akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc5akhlaqs2.pdf"
         },
-        "٠٦": {
+        "6": {
           "video": "https://drive.google.com/file/d/1z1RW8Ol5kYoTOSWqeDJKiqC_uEyqklUA/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1z1RW8Ol5kYoTOSWqeDJKiqC_uEyqklUA",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr6akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr6akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec6akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc6akhlaqs2.pdf"
         },
-        "٠٧": {
+        "7": {
           "video": "https://drive.google.com/file/d/1B9o0kqAjl9dQF5H97bhRC0J38ABpJOF2/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1B9o0kqAjl9dQF5H97bhRC0J38ABpJOF2",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr7akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr7akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec7akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc7akhlaqs2.pdf"
         },
-        "٠٨": {
-          "video": "https://drive.google.com/file/d/1tNunDdhOoe6mpp9QVzOvWXZv08kmouO6/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=1tNunDdhOoe6mpp9QVzOvWXZv08kmouO6",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+        "8": {
+          "video": "https://drive.google.com/file/d/1tNunDdhOoe6mpp9QVzOvWXZv8kmouO6/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1tNunDdhOoe6mpp9QVzOvWXZv8kmouO6",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr8akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr8akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec8akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc8akhlaqs2.pdf"
         },
-        "٠٩": {
+        "9": {
           "video": "https://drive.google.com/file/d/1xZmqzQq3vCTgwjtUlHo7VUBNdYVmyVIC/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1xZmqzQq3vCTgwjtUlHo7VUBNdYVmyVIC",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr9akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr9akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec9akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc9akhlaqs2.pdf"
         },
-        "١٠": {
+        "10": {
           "video": "https://drive.google.com/file/d/1pRieYINRyrLFnyWN_mo1Z-UuXnzUesqy/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1pRieYINRyrLFnyWN_mo1Z-UuXnzUesqy",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr10akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr10akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec10akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc10akhlaqs2.pdf"
         },
-        "١١": {
+        "11": {
           "video": "https://drive.google.com/file/d/137JeoXjZqbQllbOO_g0bpQ_I66DX11F7/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=137JeoXjZqbQllbOO_g0bpQ_I66DX11F7",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr11akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr11akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec11akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc11akhlaqs2.pdf"
         },
-        "١٢": {
+        "12": {
           "video": "https://drive.google.com/file/d/1kOUxWxFfi3Lfv3z5YzP825_cok2CIihX/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1kOUxWxFfi3Lfv3z5YzP825_cok2CIihX",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr12akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr12akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec12akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc12akhlaqs2.pdf"
         },
-        "١٣": {
+        "13": {
           "video": "https://drive.google.com/file/d/1pnrIf0Cq2l6eDya4wuxLXeETFeTh0J1f/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1pnrIf0Cq2l6eDya4wuxLXeETFeTh0J1f",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr13akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr13akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec13akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc13akhlaqs2.pdf"
         },
-        "١٤": {
+        "14": {
           "video": "https://drive.google.com/file/d/1W_ZBzTMxaolbMgm2c834K_AFPbMJEsWr/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1W_ZBzTMxaolbMgm2c834K_AFPbMJEsWr",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr14akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr14akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec14akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc14akhlaqs2.pdf"
         },
-        "١٥": {
+        "15": {
           "video": "https://drive.google.com/file/d/1kcJlRxRhJ2Ut7LcJAZq3O0jeSpQ-P5Bg/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1kcJlRxRhJ2Ut7LcJAZq3O0jeSpQ-P5Bg",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr15akhlaqs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/akhlaq/pcr15akhlaqs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec15akhlaqs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/akhlaq/quizc15akhlaqs2.pdf"
         }
       },
       "conclusion": {
@@ -465,7 +527,10 @@
               {
                 "id": "الملتقى الاول",
                 "label": "الملتقى الأول",
-                "tabs": ["video", "summaryPDF"],
+                "tabs": [
+                  "video",
+                  "summaryPDF"
+                ],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -473,13 +538,18 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/1Sjn2SvRKZJWhcQ8BQrlYysvmB_h2Hat_/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=1Sjn2SvRKZJWhcQ8BQrlYysvmB_h2Hat_",
-                  "summaryPDF": ""
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf"
                 }
               },
               {
                 "id": "الملتقى الثاني",
                 "label": "الملتقى الثاني",
-                "tabs": ["video", "summaryPDF"],
+                "tabs": [
+                  "video",
+                  "summaryPDF"
+                ],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -487,13 +557,18 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/1S7pgbBSXsN3bP3N-yMEIsho0N3fzQ_SS/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=1S7pgbBSXsN3bP3N-yMEIsho0N3fzQ_SS",
-                  "summaryPDF": ""
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf"
                 }
               },
               {
                 "id": "الملتقى الثالث",
                 "label": "الملتقى الثالث",
-                "tabs": ["video", "summaryPDF"],
+                "tabs": [
+                  "video",
+                  "summaryPDF"
+                ],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -501,7 +576,9 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/1KFz8JNwWTE3XM0gMMdpMhwJ_25AJNnRP/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=1KFz8JNwWTE3XM0gMMdpMhwJ_25AJNnRP",
-                  "summaryPDF": ""
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf"
                 }
               }
             ]
@@ -512,23 +589,47 @@
               {
                 "id": "quiz-general",
                 "label": "Quiz général sur les cours",
-                "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
-                "links": { "qna": "" }
+                "tabs": [
+                  "qna"
+                ],
+                "tabLabels": {
+                  "qna": "📝 Quiz général (QCM)"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizSemester/s2/akhlaq/quizsemakhlaqs2.pdf"
+                }
               },
               {
                 "id": "final-exam",
                 "label": "Examen final",
-                "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Sujet d'examen" },
-                "links": { "qna": "" }
+                "tabs": [
+                  "qna"
+                ],
+                "tabLabels": {
+                  "qna": "📝 Sujet d'examen"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/akhlaq/quizexamakhlaqs2.pdf",
+                  "quizExam": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/akhlaq/quizexamakhlaqs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/akhlaq/quizexamakhlaqs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/akhlaq/quizexamakhlaqs2.pdf"
+                }
               },
               {
                 "id": "CombinedCourse",
                 "label": "CombinedCourse",
-                "tabs": ["fusion"],
-                "tabLabels": { "fusion": "📝CombinedCourse" },
-                "links": { "fusion": "" }
+                "tabs": [
+                  "fusion"
+                ],
+                "tabLabels": {
+                  "fusion": "📝CombinedCourse"
+                },
+                "links": {
+                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/akhlaq/pccakhlaqs2.pdf",
+                  "combinedCourse": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/akhlaq/pccakhlaqs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/akhlaq/pccakhlaqs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/akhlaq/pccakhlaqs2.pdf"
+                }
               }
             ]
           }

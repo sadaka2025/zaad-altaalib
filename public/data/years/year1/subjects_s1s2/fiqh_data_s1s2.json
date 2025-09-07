@@ -93,130 +93,130 @@
         "1": {
           "video": "https://drive.google.com/file/d/1ZdMl-A722jg6YMeOhyoXsOBP7tqc-cSs/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1ZdMl-A722jg6YMeOhyoXsOBP7tqc-cSs",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf1s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf1s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec1fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc1fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr1fiqhs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr1fiqhs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec1fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc1fiqhs1.pdf"
         },
         "2": {
           "video": "https://drive.google.com/file/d/1ZTsifHOm8F9XtHnxtnGFqvdWx7OSJ0rP/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1ZTsifHOm8F9XtHnxtnGFqvdWx7OSJ0rP",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf2s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf2s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec2fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc2fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr2fiqhs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr2fiqhs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec2fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc2fiqhs1.pdf"
         },
         "3": {
           "video": "https://drive.google.com/file/d/1W8bY9Qnpj-Xs4q8vR_IqXR2Uq4voO0EX/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1W8bY9Qnpj-Xs4q8vR_IqXR2Uq4voO0EX",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf3s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf3s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec3fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc3fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr3fiqhs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr3fiqhs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec3fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc3fiqhs1.pdf"
         },
         "4": {
           "video": "https://drive.google.com/file/d/19y27vN4qG_PWnDhL2ru_zuBdsa9zhfMi/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=19y27vN4qG_PWnDhL2ru_zuBdsa9zhfMi",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf4s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf4s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec4fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc4fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr4fiqhs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcr4fiqhs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec4fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc4fiqhs1.pdf"
         },
         "5": {
           "video": "https://drive.google.com/file/d/1mKJPld9TZyc_92zOWHx-ZIEJRPsSbAkL/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1mKJPld9TZyc_92zOWHx-ZIEJRPsSbAkL",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf5s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf5s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec5fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc5fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh5s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh5s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec5fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc5fiqhs1.pdf"
         },
         "6": {
           "video": "https://drive.google.com/file/d/1OwDQ-BFEMx4NHkDJx-1RW7j8v8AGO5LO/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1OwDQ-BFEMx4NHkDJx-1RW7j8v8AGO5LO",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf6s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf6s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec6fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc6fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh6s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh6s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec6fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc6fiqhs1.pdf"
         },
         "7": {
           "video": "https://drive.google.com/file/d/1L5DO2TKh0Y2y33oAsxcJg_FI8iu28nv3/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1L5DO2TKh0Y2y33oAsxcJg_FI8iu28nv3",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf7s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf7s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec7fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc7fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh7s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh7s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec7fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc7fiqhs1.pdf"
         },
         "8": {
           "video": "https://drive.google.com/file/d/1kJRGz2MQU4CIIe3DTFzwwZcVI58Swx_5/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1kJRGz2MQU4CIIe3DTFzwwZcVI58Swx_5",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf8s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf8s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec8fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc8fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh8s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh8s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec8fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc8fiqhs1.pdf"
         },
         "9": {
-          "video": "https://drive.google.com/file/d/1JTFL-x8eW7atgeGmVC2W07pnrtfTN7Tf/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=1JTFL-x8eW7atgeGmVC2W07pnrtfTN7Tf",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf9s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf9s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec9fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc9fiqhs1.pdf"
+          "video": "https://drive.google.com/file/d/1JTFL-x8eW7atgeGmVC2W7pnrtfTN7Tf/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1JTFL-x8eW7atgeGmVC2W7pnrtfTN7Tf",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh9s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh9s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec9fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc9fiqhs1.pdf"
         },
         "10": {
           "video": "https://drive.google.com/file/d/19TJjwLHh9Mi4sloS83ZqtLqXGIkBFdT0/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=19TJjwLHh9Mi4sloS83ZqtLqXGIkBFdT0",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf10s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf10s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec10fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc10fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh10s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh10s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec10fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc10fiqhs1.pdf"
         },
         "11": {
           "video": "https://drive.google.com/file/d/1pcldGwYzSfd7hqGVT2fKcHnWKmAlYp0H/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1pcldGwYzSfd7hqGVT2fKcHnWKmAlYp0H",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf11s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf11s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec11fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc11fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh11s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh11s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec11fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc11fiqhs1.pdf"
         },
         "12": {
           "video": "https://drive.google.com/file/d/1RKPTvINNU2vdRwL3TJ4ZCz38l0D0dSGr/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1RKPTvINNU2vdRwL3TJ4ZCz38l0D0dSGr",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf12s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf12s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec12fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc12fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh12s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh12s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec12fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc12fiqhs1.pdf"
         },
         "13": {
           "video": "https://drive.google.com/file/d/1UacryxFPbdmRK4BoIsK5seyvoVI83k7L/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1UacryxFPbdmRK4BoIsK5seyvoVI83k7L",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf13s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf13s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec13fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc13fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh13s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh13s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec13fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc13fiqhs1.pdf"
         },
         "14": {
           "video": "https://drive.google.com/file/d/1jYnNe0wT55jp3ypbB-PqDZTTDPQb5_4z/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1jYnNe0wT55jp3ypbB-PqDZTTDPQb5_4z",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf14s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf14s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec14fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc14fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh14s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh14s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec14fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc14fiqhs1.pdf"
         },
         "15": {
           "video": "https://drive.google.com/file/d/1Pzs8LjSaQaP4gAcVigy5YJx2PBNtPa0N/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1Pzs8LjSaQaP4gAcVigy5YJx2PBNtPa0N",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf15s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf15s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec15fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc15fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh15s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh15s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec15fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc15fiqhs1.pdf"
         },
         "16": {
           "video": "https://drive.google.com/file/d/1T4yAcP-bzCI4MhXKQs5DWIJs3jSPtf7V/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1T4yAcP-bzCI4MhXKQs5DWIJs3jSPtf7V",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf16s1.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/fiqh/pcrf16s1.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec16fiqhs1.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s1/fiqh/quizc16fiqhs1.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh16s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/fiqh/pcrfiqh16s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec16fiqhs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/fikh/quizc16fiqhs1.pdf"
         }
       },
       "conclusion": {
@@ -235,8 +235,10 @@
                 },
                 "links": {
                   "video": "https://drive.google.com/file/d/1ralS9t235PV4w_R6E1kbd5Y4_ErKXxP-/preview",
-                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meet1fiqhs1.pdf",
-                  "videoDownload": "https://drive.google.com/uc?export=download&id=1ralS9t235PV4w_R6E1kbd5Y4_ErKXxP-"
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1ralS9t235PV4w_R6E1kbd5Y4_ErKXxP-",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf"
                 }
               },
               {
@@ -249,8 +251,10 @@
                 },
                 "links": {
                   "video": "https://drive.google.com/file/d/1cMUDVEkRX7fdVT_8MM-YSQEhzBD-47sD/preview",
-                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meet2fiqhs1.pdf",
-                  "videoDownload": "https://drive.google.com/uc?export=download&id=1cMUDVEkRX7fdVT_8MM-YSQEhzBD-47sD"
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1cMUDVEkRX7fdVT_8MM-YSQEhzBD-47sD",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf"
                 }
               },
               {
@@ -264,7 +268,9 @@
                 "links": {
                   "video": "https://drive.google.com/file/d/1dlJrfi0FBHfXHZ3ikj0uihXpviNEdB18/preview",
                   "videoDownload": "https://drive.google.com/uc?export=download&id=1dlJrfi0FBHfXHZ3ikj0uihXpviNEdB18",
-                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meet3fiqhs1.pdf"
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf"
                 }
               }
             ]
@@ -280,7 +286,10 @@
                   "qna": "📝 Quiz général (QCM)"
                 },
                 "links": {
-                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf"
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf",
+                  "quizSemester": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf"
                 }
               },
               {
@@ -291,7 +300,10 @@
                   "qna": "📝 Sujet d'examen"
                 },
                 "links": {
-                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf"
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf",
+                  "quizExam": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf"
                 }
               },
               {
@@ -302,7 +314,10 @@
                   "fusion": "📝CombinedCourse"
                 },
                 "links": {
-                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf"
+                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf",
+                  "combinedCourse": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf"
                 }
               }
             ]
@@ -373,114 +388,114 @@
         "1": {
           "video": "https://drive.google.com/file/d/1RVQUo3pBghrTLedIQAnyQ_S4EXZGVUx_/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1RVQUo3pBghrTLedIQAnyQ_S4EXZGVUx_",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf1s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf1s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec1fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc1fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcr1fiqhs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcr1fiqhs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec1fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc1fiqhs2.pdf"
         },
         "2": {
           "video": "https://drive.google.com/file/d/1L_kRA_fft8aXZCWy0dqhOOKzK-a5X0RE/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1L_kRA_fft8aXZCWy0dqhOOKzK-a5X0RE",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf2s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf2s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec2fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc2fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh2s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh2s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec2fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc2fiqhs2.pdf"
         },
         "3": {
           "video": "https://drive.google.com/file/d/1tkJBApYjIP38Qg-tUCodPVbIBObfcMrb/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1tkJBApYjIP38Qg-tUCodPVbIBObfcMrb",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf3s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf3s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec3fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc3fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh3s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh3s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec3fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc3fiqhs2.pdf"
         },
         "4": {
           "video": "https://drive.google.com/file/d/1hx91BCOO8Tubxy5i2h60nH0Wk6VtEIxs/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1hx91BCOO8Tubxy5i2h60nH0Wk6VtEIxs",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf4s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf4s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec4fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc4fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh4s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh4s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec4fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc4fiqhs2.pdf"
         },
         "5": {
           "video": "https://drive.google.com/file/d/15NnYn1pjx805Fkc2oisx_bn62ldwz6ze/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=15NnYn1pjx805Fkc2oisx_bn62ldwz6ze",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf5s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf5s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec5fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc5fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh5s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh5s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec5fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc5fiqhs2.pdf"
         },
         "6": {
           "video": "https://drive.google.com/file/d/1WO6u5aN-9Cy9qrT564eSj5LvZZ7bmq_1/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1WO6u5aN-9Cy9qrT564eSj5LvZZ7bmq_1",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf6s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf6s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec6fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc6fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh6s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh6s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec6fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc6fiqhs2.pdf"
         },
         "7": {
           "video": "https://drive.google.com/file/d/15umEen0UioM5mYjVqBXygaWlJyIzc1wp/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=15umEen0UioM5mYjVqBXygaWlJyIzc1wp",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf7s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf7s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec7fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc7fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh7s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh7s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec7fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc7fiqhs2.pdf"
         },
         "8": {
           "video": "https://drive.google.com/file/d/10gF1Ld5bPc1dUAKxPT7GSbUyXcsG8O23/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=10gF1Ld5bPc1dUAKxPT7GSbUyXcsG8O23",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf8s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf8s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec8fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc8fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh8s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh8s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec8fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc8fiqhs2.pdf"
         },
         "9": {
           "video": "https://drive.google.com/file/d/1Ad7ULhiu_pJEXDp4X-d4ukOM36Glcm2c/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1Ad7ULhiu_pJEXDp4X-d4ukOM36Glcm2c",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf9s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf9s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec9fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc9fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh9s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh9s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec9fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc9fiqhs2.pdf"
         },
         "10": {
           "video": "https://drive.google.com/file/d/188Zqaj4Z3wCZLB_85_vKSmcZ1x2xc3RR/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=188Zqaj4Z3wCZLB_85_vKSmcZ1x2xc3RR",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf10s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf10s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec10fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc10fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh10s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh10s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec10fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc10fiqhs2.pdf"
         },
         "11": {
           "video": "https://drive.google.com/file/d/1aYBFHFGIXjOjJrnkFcPlU5paAIp17RaB/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1aYBFHFGIXjOjJrnkFcPlU5paAIp17RaB",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf11s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf11s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec11fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc11fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh11s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh11s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec11fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc11fiqhs2.pdf"
         },
         "12": {
           "video": "https://drive.google.com/file/d/1yuCCd6Ir8LfkzvOZdw2OQFstghOSbuc1/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1yuCCd6Ir8LfkzvOZdw2OQFstghOSbuc1",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf12s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf12s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec12fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc12fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh12s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh12s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec12fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc12fiqhs2.pdf"
         },
         "13": {
           "video": "https://drive.google.com/file/d/1cwmLK_-_IC30NUxKOzQtXbBNBuDCbVl_/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1cwmLK_-_IC30NUxKOzQtXbBNBuDCbVl_",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf13s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf13s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec13fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc13fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh13s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh13s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec13fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc13fiqhs2.pdf"
         },
         "14": {
           "video": "https://drive.google.com/file/d/1yfGEAHBRvPzvM19Ub343XauL214Ln4A6/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1yfGEAHBRvPzvM19Ub343XauL214Ln4A6",
-          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf14s2.pdf",
-          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s2/fiqh/pcrf14s2.pdf",
-          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec14fiqhs2.pdf",
-          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizCourse/s2/fiqh/quizc14fiqhs2.pdf"
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh14s2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/fiqh/pcrfiqh14s2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec14fiqhs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/fiqh/quizc14fiqhs2.pdf"
         }
       },
       "conclusion": {
@@ -498,9 +513,11 @@
                   "summaryPDF": "📝 ملخص اللقاء"
                 },
                 "links": {
-                  "video": "https://drive.google.com/file/d/1qoOn_dccSdP_NZxclPtq02jQQqTKhXsa/preview",
-                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meet1fiqhs1.pdf",
-                  "videoDownload": "https://drive.google.com/uc?export=download&id=1qoOn_dccSdP_NZxclPtq02jQQqTKhXsa"
+                  "video": "https://drive.google.com/file/d/1qoOn_dccSdP_NZxclPtq2jQQqTKhXsa/preview",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=1qoOn_dccSdP_NZxclPtq2jQQqTKhXsa",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf"
                 }
               },
               {
@@ -513,8 +530,10 @@
                 },
                 "links": {
                   "video": "https://drive.google.com/file/d/16eAgJTdxxSLtffgscUCv3eZzlnJnmJSA/preview",
-                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meet2fiqhs1.pdf",
-                  "videoDownload": "https://drive.google.com/uc?export=download&id=16eAgJTdxxSLtffgscUCv3eZzlnJnmJSA"
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
+                  "videoDownload": "https://drive.google.com/uc?export=download&id=16eAgJTdxxSLtffgscUCv3eZzlnJnmJSA",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf"
                 }
               }
             ]
@@ -530,7 +549,10 @@
                   "qna": "📝 Quiz général (QCM)"
                 },
                 "links": {
-                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf"
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/fiqh/quizsemfiqhs2.pdf",
+                  "quizSemester": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/fiqh/quizsemfiqhs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/fiqh/quizsemfiqhs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/fiqh/quizsemfiqhs2.pdf"
                 }
               },
               {
@@ -541,7 +563,10 @@
                   "qna": "📝 Sujet d'examen"
                 },
                 "links": {
-                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf"
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/fiqh/quizexamfiqhs2.pdf",
+                  "quizExam": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/fiqh/quizexamfiqhs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/fiqh/quizexamfiqhs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/fiqh/quizexamfiqhs2.pdf"
                 }
               },
               {
@@ -552,7 +577,10 @@
                   "fusion": "📝CombinedCourse"
                 },
                 "links": {
-                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf"
+                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/fiqh/pccfiqhs2.pdf",
+                  "combinedCourse": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/fiqh/pccfiqhs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/fiqh/pccfiqhs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/fiqh/pccfiqhs2.pdf"
                 }
               }
             ]

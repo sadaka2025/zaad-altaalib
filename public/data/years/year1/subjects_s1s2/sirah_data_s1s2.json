@@ -24,151 +24,199 @@
   "semesters": {
     "1": {
       "lessons": [
-        { "id": "٠١", "title": "الدرس 1 مقدمة" },
-        { "id": "٠٢", "title": "الدرس 2 امنة بنت وهب" },
-        { "id": "٠٣", "title": "الدرس 3 عبد المطلب و هاشم 1" },
-        { "id": "٠٤", "title": "الدرس 4 عبد مناف و قصي" },
-        { "id": "٠٥", "title": "الدرس 5 النزاع بين بطون قريش و" },
-        { "id": "٠٦", "title": "الدرس 6 حليمة السعدية" },
-        { "id": "٠٧", "title": "الدرس 7 حرب الفجار" },
-        { "id": "٠٨", "title": "الدرس 8 حلف الفضول" },
-        { "id": "٠٩", "title": "الدرس  9 بناء بيت الحرام" },
-        { "id": "١٠", "title": "الدرس  10 شعب ابي طالب" },
-        { "id": "١١", "title": "الدرس 11 السنة 1 السداسي 1" },
-        { "id": "١٢", "title": "الدرس 12 الهجرة إلى الطائف و" },
-        { "id": "١٣", "title": "الدرس 13 االاسراء والمعراج" },
-        { "id": "١٤", "title": "الدرس 14 بيعة العقبة" },
-        { "id": "١٥", "title": "الدرس 15 الهجرة" },
-        { "id": "١٦", "title": "الدرس 16 مسجد قباء" }
+        {
+          "id": "1",
+          "title": "الدرس 1 مقدمة"
+        },
+        {
+          "id": "2",
+          "title": "الدرس 2 امنة بنت وهب"
+        },
+        {
+          "id": "3",
+          "title": "الدرس 3 عبد المطلب و هاشم 1"
+        },
+        {
+          "id": "4",
+          "title": "الدرس 4 عبد مناف و قصي"
+        },
+        {
+          "id": "5",
+          "title": "الدرس 5 النزاع بين بطون قريش و"
+        },
+        {
+          "id": "6",
+          "title": "الدرس 6 حليمة السعدية"
+        },
+        {
+          "id": "7",
+          "title": "الدرس 7 حرب الفجار"
+        },
+        {
+          "id": "8",
+          "title": "الدرس 8 حلف الفضول"
+        },
+        {
+          "id": "9",
+          "title": "الدرس  9 بناء بيت الحرام"
+        },
+        {
+          "id": "10",
+          "title": "الدرس  10 شعب ابي طالب"
+        },
+        {
+          "id": "11",
+          "title": "الدرس 11 السنة 1 السداسي 1"
+        },
+        {
+          "id": "12",
+          "title": "الدرس 12 الهجرة إلى الطائف و"
+        },
+        {
+          "id": "13",
+          "title": "الدرس 13 االاسراء والمعراج"
+        },
+        {
+          "id": "14",
+          "title": "الدرس 14 بيعة العقبة"
+        },
+        {
+          "id": "15",
+          "title": "الدرس 15 الهجرة"
+        },
+        {
+          "id": "16",
+          "title": "الدرس 16 مسجد قباء"
+        }
       ],
       "contentLinks": {
-        "٠١": {
+        "1": {
           "video": "https://drive.google.com/file/d/1hti7H5jtRd-k9pPS_lrmn4R-UnhcSXFg/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1hti7H5jtRd-k9pPS_lrmn4R-UnhcSXFg",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr1sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr1sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec1sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc1sirahs1.pdf"
         },
-        "٠٢": {
+        "2": {
           "video": "https://drive.google.com/file/d/1YopmL2_qP3Cv6JWXZgiwaQRMtHKaVQ8A/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1YopmL2_qP3Cv6JWXZgiwaQRMtHKaVQ8A",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr2sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr2sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec2sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc2sirahs1.pdf"
         },
-        "٠٣": {
+        "3": {
           "video": "https://drive.google.com/file/d/1ytDGe5OL7Fc6uCl8GnXuDiSW0v1SpmEA/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1ytDGe5OL7Fc6uCl8GnXuDiSW0v1SpmEA",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah3s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah3s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec3sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc3sirahs1.pdf"
         },
-        "٠٤": {
+        "4": {
           "video": "https://drive.google.com/file/d/1rQTWvso_ObvbLGd_utIpQbi6gzeki8lr/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1rQTWvso_ObvbLGd_utIpQbi6gzeki8lr",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr4sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr4sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec4sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc4sirahs1.pdf"
         },
-        "٠٥": {
+        "5": {
           "video": "https://drive.google.com/file/d/14Tbyfo7mqKRd5NiuEpj9bXPT6XFe1aeE/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=14Tbyfo7mqKRd5NiuEpj9bXPT6XFe1aeE",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr5sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr5sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec5sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc5sirahs1.pdf"
         },
-        "٠٦": {
+        "6": {
           "video": "https://drive.google.com/file/d/1r0mkGrpQbRh4w8yzWBZbexCyXw4swQHT/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1r0mkGrpQbRh4w8yzWBZbexCyXw4swQHT",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr6sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr6sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec6sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc6sirahs1.pdf"
         },
-        "٠٧": {
+        "7": {
           "video": "https://drive.google.com/file/d/16QVV_y4SXDe8xzVgQwLyr4Y9FBP26AOd/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=16QVV_y4SXDe8xzVgQwLyr4Y9FBP26AOd",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr7sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr7sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec7sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc7sirahs1.pdf"
         },
-        "٠٨": {
+        "8": {
           "video": "https://drive.google.com/file/d/1_TfwGcIBLLpiJON7KImW1aCMsg6ETihb/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1_TfwGcIBLLpiJON7KImW1aCMsg6ETihb",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr8sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr8sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec8sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc8sirahs1.pdf"
         },
-        "٠٩": {
+        "9": {
           "video": "https://drive.google.com/file/d/1tDz614S_tX7zbZLPGn4n0BKMghSS77pN/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1tDz614S_tX7zbZLPGn4n0BKMghSS77pN",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr9sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr9sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec9sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc9sirahs1.pdf"
         },
-        "١٠": {
+        "10": {
           "video": "https://drive.google.com/file/d/1QGASaD9WJgwkjALXdlC8IU9ST3XCAnp-/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1QGASaD9WJgwkjALXdlC8IU9ST3XCAnp-",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr10sirahs1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s1/sirah/pcr10sirahs1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec10sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc10sirahs1.pdf"
         },
-        "١١": {
+        "11": {
           "video": "https://drive.google.com/file/d/12sNzv-aEd0F3Dmxw57oL5wJpNySpG3GJ/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=12sNzv-aEd0F3Dmxw57oL5wJpNySpG3GJ",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah11s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah11s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec11sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc11sirahs1.pdf"
         },
-        "١٢": {
+        "12": {
           "video": "https://drive.google.com/file/d/1uUGQz4RB6el7cTYCb1sc3DYIDlrwQ0Rg/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1uUGQz4RB6el7cTYCb1sc3DYIDlrwQ0Rg",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah12s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah12s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec12sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc12sirahs1.pdf"
         },
-        "١٣": {
+        "13": {
           "video": "https://drive.google.com/file/d/17PIxM6aUDUjXE6RLiG8MHnfJQZPRHVNz/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=17PIxM6aUDUjXE6RLiG8MHnfJQZPRHVNz",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah13s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah13s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec13sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc13sirahs1.pdf"
         },
-        "١٤": {
+        "14": {
           "video": "https://drive.google.com/file/d/1AFHW0lP5nVcHnO5Xu2h3zb46z611hPHT/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1AFHW0lP5nVcHnO5Xu2h3zb46z611hPHT",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah14s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah14s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec14sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc14sirahs1.pdf"
         },
-        "١٥": {
+        "15": {
           "video": "https://drive.google.com/file/d/1fu2fsNVje8A-_Mh6hHmf7mNzz-x8iW3B/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1fu2fsNVje8A-_Mh6hHmf7mNzz-x8iW3B",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah15s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah15s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec15sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc15sirahs1.pdf"
         },
-        "١٦": {
-          "video": "https://drive.google.com/file/d/1o9XkWDD00bAJ7hRbWE7sCDkNWm6oVQOf/preview",
-          "videoDownload": "https://drive.google.com/uc?export=download&id=1o9XkWDD00bAJ7hRbWE7sCDkNWm6oVQOf",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+        "16": {
+          "video": "https://drive.google.com/file/d/1o9XkWDD0bAJ7hRbWE7sCDkNWm6oVQOf/preview",
+          "videoDownload": "https://drive.google.com/uc?export=download&id=1o9XkWDD0bAJ7hRbWE7sCDkNWm6oVQOf",
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah16s1.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfCourseResume/s1/sirah/pcrsirah16s1.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec16sirahs1.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s1/sirah/quizc16sirahs1.pdf"
         }
       },
       "conclusion": {
@@ -180,16 +228,32 @@
               {
                 "id": "الملتقى الاول",
                 "label": "الملتقى الاول",
-                "tabs": ["video"],
-                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
-                "links": { "video": "zero" }
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "zero",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf"
+                }
               },
               {
                 "id": "الملتقى الثاني",
                 "label": "الملتقى الثاني",
-                "tabs": ["video"],
-                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
-                "links": { "video": "" }
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "zero",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf"
+                }
               }
             ]
           },
@@ -200,22 +264,40 @@
                 "id": "quiz-general",
                 "label": "Quiz général sur les cours",
                 "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
-                "links": { "qna": "" }
+                "tabLabels": {
+                  "qna": "📝 Quiz général (QCM)"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/sirah/quizsemsirahs1.pdf",
+                  "quizSemester": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/sirah/quizsemsirahs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/sirah/quizsemsirahs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s1/sirah/quizsemsirahs1.pdf"
+                }
               },
               {
                 "id": "final-exam",
                 "label": "Examen final",
                 "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Sujet d'examen" },
-                "links": { "qna": "" }
+                "tabLabels": {
+                  "qna": "📝 Sujet d'examen"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/sirah/quizexamsirahs1.pdf",
+                  "quizExam": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/sirah/quizexamsirahs1.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/sirah/quizexamsirahs1.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s1/sirah/quizexamsirahs1.pdf"
+                }
               },
               {
                 "id": "CombinedCourse",
                 "label": "CombinedCourse",
                 "tabs": ["fusion"],
-                "tabLabels": { "fusion": "📝CombinedCourse" },
-                "links": { "fusion": "" }
+                "tabLabels": {
+                  "fusion": "📝CombinedCourse"
+                },
+                "links": {
+                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfCombinedCourse/s1/sirah/pccsirahs1.pdf"
+                }
               }
             ]
           }
@@ -224,115 +306,151 @@
     },
     "2": {
       "lessons": [
-        { "id": "٠١", "title": "الدرس 1  بناء المسجد" },
-        { "id": "٠٢", "title": "الدرس 2  المنافقون" },
-        { "id": "٠٣", "title": "الدرس 3  بدأ القتال" },
-        { "id": "٠٤", "title": "الدرس 4 غزوة بدر" },
-        { "id": "٠٥", "title": "الدرس 5 أسرى بدر" },
-        { "id": "٠٦", "title": "الدرس 6 غزوة بني قينقاع" },
-        { "id": "٠٧", "title": "الدرس 7 غزوة غطفان" },
-        { "id": "٠٨", "title": "الدرس 8 غزوة حمراء الأسد" },
-        { "id": "٠٩", "title": "الدرس 9 السنة الرابعة" },
-        { "id": "١٠", "title": "الدرس 10 حادثة القراء" },
-        { "id": "١١", "title": "الدرس 11  غزوة بني النضير" },
-        { "id": "١٢", "title": "الدرس 12 غزوة ذات الرقاع" }
+        {
+          "id": "1",
+          "title": "الدرس 1  بناء المسجد"
+        },
+        {
+          "id": "2",
+          "title": "الدرس 2  المنافقون"
+        },
+        {
+          "id": "3",
+          "title": "الدرس 3  بدأ القتال"
+        },
+        {
+          "id": "4",
+          "title": "الدرس 4 غزوة بدر"
+        },
+        {
+          "id": "5",
+          "title": "الدرس 5 أسرى بدر"
+        },
+        {
+          "id": "6",
+          "title": "الدرس 6 غزوة بني قينقاع"
+        },
+        {
+          "id": "7",
+          "title": "الدرس 7 غزوة غطفان"
+        },
+        {
+          "id": "8",
+          "title": "الدرس 8 غزوة حمراء الأسد"
+        },
+        {
+          "id": "9",
+          "title": "الدرس 9 السنة الرابعة"
+        },
+        {
+          "id": "10",
+          "title": "الدرس 10 حادثة القراء"
+        },
+        {
+          "id": "11",
+          "title": "الدرس 11  غزوة بني النضير"
+        },
+        {
+          "id": "12",
+          "title": "الدرس 12 غزوة ذات الرقاع"
+        }
       ],
       "contentLinks": {
-        "٠١": {
+        "1": {
           "video": "https://drive.google.com/file/d/10GeaDuDiwEcO9TOCpIuULNUL1eBlpGVW/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=10GeaDuDiwEcO9TOCpIuULNUL1eBlpGVW",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr1sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr1sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec1sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc1sirahs2.pdf"
         },
-        "٠٢": {
+        "2": {
           "video": "https://drive.google.com/file/d/1aVijJBUNdk4xFyVBvygk8i9vWpZkQ579/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1aVijJBUNdk4xFyVBvygk8i9vWpZkQ579",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr2sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr2sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec2sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc2sirahs2.pdf"
         },
-        "٠٣": {
+        "3": {
           "video": "https://drive.google.com/file/d/1OOPs20hFhh5CAP-y13pXB4LXFgFO1ENU/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1OOPs20hFhh5CAP-y13pXB4LXFgFO1ENU",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr3sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr3sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec3sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc3sirahs2.pdf"
         },
-        "٠٤": {
+        "4": {
           "video": "https://drive.google.com/file/d/1vAOSzqnTXHTW8O5yb-g40qMNcq_XhIW8/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1vAOSzqnTXHTW8O5yb-g40qMNcq_XhIW8",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr4sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr4sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec4sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc4sirahs2.pdf"
         },
-        "٠٥": {
+        "5": {
           "video": "https://drive.google.com/file/d/1ScgxxiGIRsADEdJJw27IdgKgB3jGBDaN/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1ScgxxiGIRsADEdJJw27IdgKgB3jGBDaN",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr5sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr5sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec5sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc5sirahs2.pdf"
         },
-        "٠٦": {
+        "6": {
           "video": "https://drive.google.com/file/d/1MjQBfFcKHKgmtt6EgL0uLa8otbCoVMxT/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1MjQBfFcKHKgmtt6EgL0uLa8otbCoVMxT",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr6sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr6sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec6sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc6sirahs2.pdf"
         },
-        "٠٧": {
+        "7": {
           "video": "https://drive.google.com/file/d/1huSX2XyJnLE-dLFljUMPcZlwQZvuyqyD/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1huSX2XyJnLE-dLFljUMPcZlwQZvuyqyD",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr7sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr7sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec7sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc7sirahs2.pdf"
         },
-        "٠٨": {
+        "8": {
           "video": "https://drive.google.com/file/d/1kQpQBJZ_e-xhqvURZmDeykZah1R8_CVv/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1kQpQBJZ_e-xhqvURZmDeykZah1R8_CVv",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr8sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr8sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec8sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc8sirahs2.pdf"
         },
-        "٠٩": {
+        "9": {
           "video": "https://drive.google.com/file/d/1xKSylodjZ9joXX3Q_9dXTuXdv4iTRWV7/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1xKSylodjZ9joXX3Q_9dXTuXdv4iTRWV7",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr9sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr9sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec9sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc9sirahs2.pdf"
         },
-        "١٠": {
+        "10": {
           "video": "https://drive.google.com/file/d/1Ew8FhfiwnPOEl8PW4rQbOrwEpC_U5pYQ/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1Ew8FhfiwnPOEl8PW4rQbOrwEpC_U5pYQ",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr10sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr10sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec10sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc10sirahs2.pdf"
         },
-        "١١": {
+        "11": {
           "video": "https://drive.google.com/file/d/1WivbIytNGHbxlDkCOwb-x6Od1Or2EosX/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1WivbIytNGHbxlDkCOwb-x6Od1Or2EosX",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr11sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr11sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec11sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc11sirahs2.pdf"
         },
-        "١٢": {
+        "12": {
           "video": "https://drive.google.com/file/d/1fxS9ZQDwH-Sij4M2XFTzDo49ZfjGbpHq/preview",
           "videoDownload": "https://drive.google.com/uc?export=download&id=1fxS9ZQDwH-Sij4M2XFTzDo49ZfjGbpHq",
-          "summaryPDF": "",
-          "summaryDownload": "",
-          "textExtraction": "",
-          "qna": ""
+          "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr12sirahs2.pdf",
+          "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfcourseresume/s2/sirah/pcr12sirahs2.pdf",
+          "textExtraction": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec12sirahs2.pdf",
+          "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizCourse/s2/sirah/quizc12sirahs2.pdf"
         }
       },
       "conclusion": {
@@ -344,23 +462,47 @@
               {
                 "id": "الملتقى الاول",
                 "label": "الملتقى الأول",
-                "tabs": ["video"],
-                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
-                "links": { "video": "" }
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/1UlH3xYx4Nr3NkWbpPYiuutM45XBfllSJ/preview",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf"
+                }
               },
               {
                 "id": "الملتقى الثاني",
                 "label": "الملتقى الثاني",
-                "tabs": ["video"],
-                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
-                "links": { "video": "" }
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "https://drive.google.com/file/d/19k6OMZCxD_eA_xrbTGRsSmF93LAQxjlI/preview",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf"
+                }
               },
               {
                 "id": "الملتقى الثالث",
                 "label": "الملتقى الثالث",
-                "tabs": ["video"],
-                "tabLabels": { "video": "🎥 تسجيل اللقاء" },
-                "links": { "video": "" }
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "zero",
+                  "meeting": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf"
+                }
               }
             ]
           },
@@ -371,22 +513,40 @@
                 "id": "quiz-general",
                 "label": "Quiz général sur les cours",
                 "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
-                "links": { "qna": "" }
+                "tabLabels": {
+                  "qna": "📝 Quiz général (QCM)"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/sirah/quizsemsirahs2.pdf",
+                  "quizSemester": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/sirah/quizsemsirahs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/sirah/quizsemsirahs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizSemester/s2/sirah/quizsemsirahs2.pdf"
+                }
               },
               {
                 "id": "final-exam",
                 "label": "Examen final",
                 "tabs": ["qna"],
-                "tabLabels": { "qna": "📝 Sujet d'examen" },
-                "links": { "qna": "" }
+                "tabLabels": {
+                  "qna": "📝 Sujet d'examen"
+                },
+                "links": {
+                  "qna": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/sirah/quizexamsirahs2.pdf",
+                  "quizExam": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/sirah/quizexamsirahs2.pdf",
+                  "summaryPDF": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/sirah/quizexamsirahs2.pdf",
+                  "summaryDownload": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfQuizExam/s2/sirah/quizexamsirahs2.pdf"
+                }
               },
               {
                 "id": "CombinedCourse",
                 "label": "CombinedCourse",
                 "tabs": ["fusion"],
-                "tabLabels": { "fusion": "📝CombinedCourse" },
-                "links": { "fusion": "" }
+                "tabLabels": {
+                  "fusion": "📝CombinedCourse"
+                },
+                "links": {
+                  "fusion": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdfs/year1/pdfInfoChat/pdfCombinedCourse/s2/sirah/pccsirahs2.pdf"
+                }
               }
             ]
           }

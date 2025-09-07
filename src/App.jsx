@@ -41,7 +41,7 @@ import './i18n';
 import { useAuth } from './context/AuthContext';
 
 // 📂 PDF components
-import PdfList from './components/PdfList';
+import PdfsPage from './components/PdfsPage';
 import PdfManager from './components/PdfManager';
 
 // ✅ Protection d’accès
@@ -237,8 +237,8 @@ export default function App() {
         <Route path="/:lang/*" element={<LangRoutesWrapper />} />
 
         {/* ✅ Route directe pour PDFs, sans langue */}
-        <Route path="/pdfs" element={<PdfList />} />
-        <Route path="/pdfs/manage" element={<PdfManager />} />
+        <Route path="/pdf" element={<PdfsPage />} />
+        <Route path="/pdf/manage" element={<PdfManager />} />
 
         {/* Probleme accessible sans langue */}
         <Route path="/probleme" element={<ProblemePage />} />

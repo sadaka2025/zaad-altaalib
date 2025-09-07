@@ -1,16 +1,16 @@
 // print-bucket-tree.js
-import { createClient } from "@supabase/supabase-js";
-import fs from "fs";
+import { createClient } from '@supabase/supabase-js';
+import fs from 'fs';
 
 // ⚠️ Utilise Service Role Key seulement côté serveur
-const SUPABASE_URL = "https://ariqdghgxknuvowhgftt.supabase.co";
+const SUPABASE_URL = 'https://ariqdghgxknuvowhgftt.supabase.co';
 const SUPABASE_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaXFkZ2hneGtudXZvd2hnZnR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTk5Njg4NiwiZXhwIjoyMDcxNTcyODg2fQ.5GvrFHXupLjQqdQxxucik6JkSpt2GUgUpy8gdJrTgXk";
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaXFkZ2hneGtudXZvd2hnZnR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTk5Njg4NiwiZXhwIjoyMDcxNTcyODg2fQ.5GvrFHXupLjQqdQxxucik6JkSpt2GUgUpy8gdJrTgXk';
 
-const BUCKET = "pdfs";
+const BUCKET = 'pdf';
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
-async function listFilesRecursively(path = "") {
+async function listFilesRecursively(path = '') {
   let tree = [];
 
   const { data, error } = await supabase.storage
@@ -18,7 +18,7 @@ async function listFilesRecursively(path = "") {
     .list(path, { limit: 100 });
 
   if (error) {
-    console.error("❌ Erreur lors de la récupération :", error.message);
+    console.error('❌ Erreur lors de la récupération :', error.message);
     return tree;
   }
 
@@ -26,7 +26,7 @@ async function listFilesRecursively(path = "") {
     if (item.metadata) {
       // 📄 C'est un fichier
       tree.push({
-        type: "file",
+        type: 'file',
         name: item.name,
         path: path ? `${path}/${item.name}` : item.name,
       });
@@ -36,7 +36,7 @@ async function listFilesRecursively(path = "") {
         path ? `${path}/${item.name}` : item.name
       );
       tree.push({
-        type: "folder",
+        type: 'folder',
         name: item.name,
         children: subTree,
       });
@@ -46,11 +46,11 @@ async function listFilesRecursively(path = "") {
   return tree;
 }
 
-function printTree(tree, indent = "") {
+function printTree(tree, indent = '') {
   for (const node of tree) {
-    if (node.type === "folder") {
+    if (node.type === 'folder') {
       console.log(`${indent}📂 ${node.name}/`);
-      printTree(node.children, indent + "  ");
+      printTree(node.children, indent + '  ');
     } else {
       console.log(`${indent}📄 ${node.name}`);
     }
@@ -59,11 +59,22 @@ function printTree(tree, indent = "") {
 
 (async () => {
   console.log("🔍 Récupération de l'arborescence du bucket...");
-  const tree = await listFilesRecursively("");
 
-  console.log("\n📂 Arborescence du bucket :");
-  printTree(tree);
+  const tree = await listFilesRecursively('');
 
-  fs.writeFileSync("bucket-tree.json", JSON.stringify(tree, null, 2), "utf-8");
-  console.log("\n✅ Arborescence sauvegardée dans bucket-tree.json");
+  // 👉 On encapsule dans un objet avec le nom du bucket
+  const bucketTree = {
+    bucket: BUCKET,
+    children: tree,
+  };
+
+  console.log(`\n📦 Bucket: ${BUCKET}`);
+  printTree(bucketTree.children, '  ');
+
+  fs.writeFileSync(
+    'bucket-tree.json',
+    JSON.stringify(bucketTree, null, 2),
+    'utf-8'
+  );
+  console.log('\n✅ Arborescence sauvegardée dans bucket-tree.json');
 })();

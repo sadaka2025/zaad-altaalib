@@ -1,10 +1,10 @@
 // src/components/PdfManager.jsx
-import { useEffect, useState } from "react";
-import { createClient } from "@supabase/supabase-js";
+import { useEffect, useState } from 'react';
+import { createClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = "https://ariqdghgxknuvowhgftt.supabase.co";
+const SUPABASE_URL = 'https://ariqdghgxknuvowhgftt.supabase.co';
 const SUPABASE_ANON_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaXFkZ2hneGtudXZvd2hnZnR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTk5Njg4NiwiZXhwIjoyMDcxNTcyODg2fQ.5GvrFHXupLjQqdQxxucik6JkSpt2GUgUpy8gdJk";
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaXFkZ2hneGtudXZvd2hnZnR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTk5Njg4NiwiZXhwIjoyMDcxNTcyODg2fQ.5GvrFHXupLjQqdQxxucik6JkSpt2GUgUpy8gdJk';
 
 const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
@@ -13,12 +13,12 @@ export default function PdfManager() {
   const [uploading, setUploading] = useState(false);
 
   // 🔹 Fonction récursive pour lister fichiers et sous-dossiers
-  const fetchPdfsRecursive = async (folder = "") => {
+  const fetchPdfsRecursive = async (folder = '') => {
     try {
-      const { data, error } = await supabase.storage.from("pdfs").list(folder, {
+      const { data, error } = await supabase.storage.from('pdf').list(folder, {
         limit: 100,
         offset: 0,
-        sortBy: { column: "name", order: "asc" },
+        sortBy: { column: 'name', order: 'asc' },
       });
 
       if (error) throw error;
@@ -27,12 +27,12 @@ export default function PdfManager() {
 
       for (const item of data) {
         // @ts-ignore
-        if (item.type === "folder") {
+        if (item.type === 'folder') {
           const subFiles = await fetchPdfsRecursive(`${folder}${item.name}/`);
           filesWithUrls.push(...subFiles);
         } else {
           const { data: publicUrl } = supabase.storage
-            .from("pdfs")
+            .from('pdf')
             .getPublicUrl(`${folder}${item.name}`);
           filesWithUrls.push({
             name: item.name,
@@ -44,7 +44,7 @@ export default function PdfManager() {
 
       return filesWithUrls;
     } catch (err) {
-      console.error("❌ Erreur fetch PDFs:", err.message);
+      console.error('❌ Erreur fetch PDFs:', err.message);
       return [];
     }
   };
@@ -67,15 +67,15 @@ export default function PdfManager() {
     setUploading(true);
     try {
       const { error } = await supabase.storage
-        .from("pdfs")
+        .from('pdf')
         .upload(file.name, file, {
           upsert: true,
-          contentType: "application/pdf",
+          contentType: 'application/pdf',
         });
 
       if (error) throw error;
     } catch (err) {
-      console.error("❌ Erreur upload:", err.message);
+      console.error('❌ Erreur upload:', err.message);
     } finally {
       setUploading(false);
       e.target.value = null; // reset input
@@ -106,7 +106,7 @@ export default function PdfManager() {
       <ul className="space-y-2">
         {pdfList.map((pdf, index) => (
           <li key={index}>
-            <strong>{pdf.path}</strong>{" "}
+            <strong>{pdf.path}</strong>{' '}
             <a
               href={pdf.url}
               target="_blank"

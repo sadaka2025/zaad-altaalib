@@ -1,0 +1,4284 @@
+{
+  "bucket": "pdf",
+  "children": [
+    {
+      "type": "folder",
+      "name": "year1",
+      "children": [
+        {
+          "type": "folder",
+          "name": "pdfInfoChat",
+          "children": [
+            {
+              "type": "folder",
+              "name": "pdfCombinedCourse",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "s1",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "akhlaq",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccakhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/akhlaq/pccakhlaqs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "aqida",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccaqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/aqida/pccaqidas1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "fiqh",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccfiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "hadith",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pcchadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/hadith/pcchadiths1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "nahw",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccnahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/nahw/pccnahws1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "sirah",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccssirah1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/sirah/pccssirah1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "tajwid",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pcctajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s1/tajwid/pcctajwids1.pdf"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "s2",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "akhlaq",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccakhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/akhlaq/pccakhlaqs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "aqida",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccaqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/aqida/pccaqidas2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "fiqh",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccfiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/fiqh/pccfiqhs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "hadith",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pcchadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/hadith/pcchadiths2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "nahw",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccnahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/nahw/pccnahws2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "sirah",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pccssirah2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/sirah/pccssirah2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "tajwid",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "pcctajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfCombinedCourse/s2/tajwid/pcctajwids2.pdf"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "pdfExtractionCourse",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "s1",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "akhlaq",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec10akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec11akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec12akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec13akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec14akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec15akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec1akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec2akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec3akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec4akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec5akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec6akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec7akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec8akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/akhlaq/ec9akhlaqs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "aqida",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec0aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec0aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec10aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec10aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec11aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec12aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec13aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec14aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec15aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec1aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec2aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec3aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec4aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec5aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec6aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec7aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec8aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/aqida/ec9aqidas1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "fiqh",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec10fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec11fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec12fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec13fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec14fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec15fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec16fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec16fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec1fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec2fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec3fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec4fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec5fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec6fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec7fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec8fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/fiqh/ec9fiqhs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "hadith",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec10hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec11hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec12hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec13hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec14hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec15hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec1hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec2hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec3hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec4hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec5hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec6hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec7hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec8hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/hadith/ec9hadiths1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "nahw",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec0nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec0nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec10nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec10nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec11nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec12nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec13nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec1nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec2nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec3nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec4nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec5nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec6nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec7nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec8nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/nahw/ec9nahws1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "sirah",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec10sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec11sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec12sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec13sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec14sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec15sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec16sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec16sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec1sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec2sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec3sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec4sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec5sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec6sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec7sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec8sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/sirah/ec9sirahs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "tajwid",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec10tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec11tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec12tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec1tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec2tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec3tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec4tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec5tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec6tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec7tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec8tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s1/tajwid/ec9tajwids1.pdf"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "s2",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "akhlaq",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec10akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec11akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec12akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec13akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec14akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec15akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec1akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec2akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec3akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec4akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec5akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec6akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec7akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec8akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/akhlaq/ec9akhlaqs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "aqida",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec10aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec11aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec12aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec13aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec1aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec2aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec3aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec4aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec5aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec6aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec7aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec8aqidas2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/aqida/ec9aqidas2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "fiqh",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec10fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec11fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec12fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec13fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec14fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec1fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec2fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec3fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec4fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec5fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec6fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec7fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec8fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/fiqh/ec9fiqhs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "hadith",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec10hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec11hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec12hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec13hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec14hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec1hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec2hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec3hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec4hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec5hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec6hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec7hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec8hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/hadith/ec9hadiths2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "nahw",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec10nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec11nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec12nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec13nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec13nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec14nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec14nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec15nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec15nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec16nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec16nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec17nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec17nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec18nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec18nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec19nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec19nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec1nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec20nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec20nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec21nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec21nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec22nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec22nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec23nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec23nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec2nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec3nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec4nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec5nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec6nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec7nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec8nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/nahw/ec9nahws2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "sirah",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec10sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec10sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec11sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec11sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec12sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec12sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec1sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec1sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec2sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec3sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec4sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec5sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec6sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec6sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec7sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec7sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec8sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec8sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec9sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/sirah/ec9sirahs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "tajwid",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "ec1tajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/tajwid/ec1tajwids2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec2tajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/tajwid/ec2tajwids2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec3tajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/tajwid/ec3tajwids2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec4tajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/tajwid/ec4tajwids2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "ec5tajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfExtractionCourse/s2/tajwid/ec5tajwids2.pdf"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "pdfMeeting",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "s1",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "akhlaq",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting1akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting2akhlaqs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting3akhlaqs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "aqida",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting1aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting2aqidas1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting3aqidas1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting3aqidas1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "fiqh",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting1fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting2fiqhs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting3fiqhs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "hadith",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/hadith/meeting1hadiths1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2hadiths1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/hadith/meeting2hadiths1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "nahw",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/nahw/meeting1nahws1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2nahws1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/nahw/meeting2nahws1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "sirah",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting1sirahs1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2sirahs1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "tajwid",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/tajwid/meeting1tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/tajwid/meeting2tajwids1.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting3tajwids1.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s1/tajwid/meeting3tajwids1.pdf"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "s2",
+                  "children": [
+                    {
+                      "type": "folder",
+                      "name": "akhlaq",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting1akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting2akhlaqs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting3akhlaqs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "aqida",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1aqidas2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/aqida/meeting1aqidas2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "fiqh",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting1fiqhs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2fiqhs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "hadith",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/hadith/meeting1hadiths2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2hadiths2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/hadith/meeting2hadiths2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "nahw",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/nahw/meeting1nahws2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2nahws2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/nahw/meeting2nahws2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "sirah",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting1sirahs2.pdf"
+                        },
+                        {
+                          "type": "file",
+                          "name": "meeting2sirahs2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "folder",
+                      "name": "tajwid",
+                      "children": [
+                        {
+                          "type": "file",
+                          "name": "meeting1tajwids2.pdf",
+                          "path": "year1/pdfInfoChat/pdfMeeting/s2/tajwid/meeting1tajwids2.pdf"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "pdfQuizCourse",
+          "children": [
+            {
+              "type": "folder",
+              "name": "s1",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc10akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc11akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc12akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc13akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc14akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc15akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc1akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc2akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc3akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc4akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc5akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc6akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc7akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc8akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9akhlaqs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/akhlaq/quizc9akhlaqs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc0aqidaks1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc0aqidaks1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc10aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc10aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc11aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc12aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc13aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc15aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc1aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc2aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc3aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc4aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc5aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc6aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc7aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc8aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9aqidas1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/aqida/quizc9aqidas1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fikh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc10fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc11fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc12fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc13fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc14fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc15fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc16fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc16fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc1fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc2fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc3fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc4fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc5fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc6fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc7fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc8fiqhs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9fiqhs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/fikh/quizc9fiqhs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc10hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc11hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc12hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc13hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc14hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc15hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc1hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc2hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc3hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc4hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc5hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc6hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc7hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc8hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9hadiths1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/hadith/quizc9hadiths1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc10nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc11nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc12nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc13nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc1nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc2nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc3nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc4nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc5nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc6nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc7nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc8nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9nahws1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/nahw/quizc9nahws1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc10sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc11sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc12sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc13sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc14sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc15sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc16sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc16sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc1sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc2sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc3sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc4sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc5sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc6sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc7sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc8sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9sirahs1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/sirah/quizc9sirahs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc10tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc11tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc12tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc1tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc2tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3tajwids1 .pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc3tajwids1 .pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc4tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc5tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc6tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc7tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc8tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9tajwids1.pdf",
+                      "path": "year1/pdfQuizCourse/s1/tajwid/quizc9tajwids1.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "s2",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc10akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc11akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc12akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc13akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc14akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc15akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc1akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc2akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc3akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc4akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc5akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc6akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc7akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc8akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9akhlaqs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/akhlaq/quizc9akhlaqs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc10aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc11aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc12aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc13aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc1aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc2aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc3aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc4aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc5aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc6aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc7aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc8aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9aqidas2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/aqida/quizc9aqidas2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc10fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc11fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc12fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc13fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc14fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc15fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc16fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc16fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc17fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc17fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc1fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc2fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc3fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc4fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc5fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc6fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc7fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc8fiqhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9fiqhs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/fiqh/quizc9fiqhs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc10hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc11hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc12hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc13hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc14hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc1hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc3hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc4hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc5hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc6hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc7hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc8hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9hadiths2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/hadith/quizc9hadiths2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc10nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc11nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc12nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc13nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc13nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc14nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc14nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc15nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc15nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc16nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc16nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc17nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc17nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc18nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc18nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc19nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc19nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc1nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc20nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc20nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc21nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc21nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc22nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc22nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc23nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc23nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc2nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc3nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc4nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc5nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc6nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc7nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc8nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9nahws2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/nahw/quizc9nahws2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc10sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc10sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc11sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc11sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc12sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc12sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc1sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc1sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc2sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc3sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc4sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc4sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc5sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc6sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc6sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc7sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc7sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc8sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc8sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc9sirahs2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/sirah/quizc9sirahs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizc1tajwids2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/tajwid/quizc1tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc2tajwids2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/tajwid/quizc2tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc3tajwids2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/tajwid/quizc3tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "quizc5tajwids2.pdf",
+                      "path": "year1/pdfQuizCourse/s2/tajwid/quizc5tajwids2.pdf"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "pdfQuizExam",
+          "children": [
+            {
+              "type": "folder",
+              "name": "s1",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamakhlaqs1.pdf",
+                      "path": "year1/pdfQuizExam/s1/akhlaq/quizexamakhlaqs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamaqidas1.pdf",
+                      "path": "year1/pdfQuizExam/s1/aqida/quizexamaqidas1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamfiqhs1.pdf",
+                      "path": "year1/pdfQuizExam/s1/fiqh/quizexamfiqhs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamhadiths1.pdf",
+                      "path": "year1/pdfQuizExam/s1/hadith/quizexamhadiths1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamnahws1.pdf",
+                      "path": "year1/pdfQuizExam/s1/nahw/quizexamnahws1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamsirahs1.pdf",
+                      "path": "year1/pdfQuizExam/s1/sirah/quizexamsirahs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamtajwids1.pdf",
+                      "path": "year1/pdfQuizExam/s1/tajwid/quizexamtajwids1.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "s2",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamakhlaqs2.pdf",
+                      "path": "year1/pdfQuizExam/s2/akhlaq/quizexamakhlaqs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamaqidas2.pdf",
+                      "path": "year1/pdfQuizExam/s2/aqida/quizexamaqidas2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamfiqhs2.pdf",
+                      "path": "year1/pdfQuizExam/s2/fiqh/quizexamfiqhs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamhadiths2.pdf",
+                      "path": "year1/pdfQuizExam/s2/hadith/quizexamhadiths2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamnahws2.pdf",
+                      "path": "year1/pdfQuizExam/s2/nahw/quizexamnahws2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamsirahs2.pdf",
+                      "path": "year1/pdfQuizExam/s2/sirah/quizexamsirahs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizexamtajwids2.pdf",
+                      "path": "year1/pdfQuizExam/s2/tajwid/quizexamtajwids2.pdf"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "pdfQuizSemester",
+          "children": [
+            {
+              "type": "folder",
+              "name": "s1",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemakhlaqs1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/akhlaq/quizsemakhlaqs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemaqidas1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/aqida/quizsemaqidas1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemfiqhs1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/fiqh/quizsemfiqhs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemhadiths1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/hadith/quizsemhadiths1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemnahws1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/nahw/quizsemnahws1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemsirahs1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/sirah/quizsemsirahs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemtajwids1.pdf",
+                      "path": "year1/pdfQuizSemester/s1/tajwid/quizsemtajwids1.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "s2",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemakhlaqs1.pdf",
+                      "path": "year1/pdfQuizSemester/s2/akhlaq/quizsemakhlaqs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemaqidas2.pdf",
+                      "path": "year1/pdfQuizSemester/s2/aqida/quizsemaqidas2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemfiqhs2.pdf",
+                      "path": "year1/pdfQuizSemester/s2/fiqh/quizsemfiqhs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemhadiths2.pdf",
+                      "path": "year1/pdfQuizSemester/s2/hadith/quizsemhadiths2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemnahws2.pdf",
+                      "path": "year1/pdfQuizSemester/s2/nahw/quizsemnahws2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemsirahs2.pdf",
+                      "path": "year1/pdfQuizSemester/s2/sirah/quizsemsirahs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "quizsemtajwids2.pdf",
+                      "path": "year1/pdfQuizSemester/s2/tajwid/quizsemtajwids2.pdf"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "pdfStudyBooks",
+          "children": [
+            {
+              "type": "folder",
+              "name": "s1",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksakhlaqs1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/akhlaq/booksakhlaqs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksaqidas1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/aqida/booksaqidas1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksfiqhs1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/fiqh/booksfiqhs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "bookshadiths1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/hadith/bookshadiths1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksnahws1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/nahw/booksnahws1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "bookssirahs1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/sirah/bookssirahs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "bookstajwids1.pdf",
+                      "path": "year1/pdfStudyBooks/s1/tajwid/bookstajwids1.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "s2",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlak",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksakhlaqs2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/akhlak/booksakhlaqs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksaqidas2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/aqida/booksaqidas2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksfiqhs2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/fiqh/booksfiqhs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "bookshadiths2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/hadith/bookshadiths2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "booksnahws2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/nahw/booksnahws2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "bookssirahs2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/sirah/bookssirahs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "bookstajwids2.pdf",
+                      "path": "year1/pdfStudyBooks/s2/tajwid/bookstajwids2.pdf"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "folder",
+          "name": "pdfcourseresume",
+          "children": [
+            {
+              "type": "folder",
+              "name": "s1",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr10akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr11akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr12akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr13akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr14akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr14akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr15akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr15akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr1akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr2akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr3akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr4akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr5akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr6akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr7akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr8akhlaqs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9akhlaqs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/akhlaq/pcr9akhlaqs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr10aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr11aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr12aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr13aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr1aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr2aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr3aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr4aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr5aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr6aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr7aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr8aqidas1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9aqidas1.pdf",
+                      "path": "year1/pdfcourseresume/s1/aqida/pcr9aqidas1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr10hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr11hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr12hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr13hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr14hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr14hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr1hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr2hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr3hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr4hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr5hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr6hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr7hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr8hadiths1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9hadiths1.pdf",
+                      "path": "year1/pdfcourseresume/s1/hadith/pcr9hadiths1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr0nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr0nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr10nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr10nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr11nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr12nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr13nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr1nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr2nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr3nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr4nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr5nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr6nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr7nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr8nahws1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9nahws1.pdf",
+                      "path": "year1/pdfcourseresume/s1/nahw/pcr9nahws1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr10sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr1sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr2sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr4sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr5sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr6sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr7sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr8sirahs1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9sirahs1.pdf",
+                      "path": "year1/pdfcourseresume/s1/sirah/pcr9sirahs1.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr1tajwids1.pdf",
+                      "path": "year1/pdfcourseresume/s1/tajwid/pcr1tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2tajwids1.pdf",
+                      "path": "year1/pdfcourseresume/s1/tajwid/pcr2tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3tajwids1.pdf",
+                      "path": "year1/pdfcourseresume/s1/tajwid/pcr3tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4tajwids1.pdf",
+                      "path": "year1/pdfcourseresume/s1/tajwid/pcr4tajwids1.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5tajwids1.pdf",
+                      "path": "year1/pdfcourseresume/s1/tajwid/pcr5tajwids1.pdf"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "folder",
+              "name": "s2",
+              "children": [
+                {
+                  "type": "folder",
+                  "name": "akhlaq",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr10akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr11akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr12akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr13akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr14akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr14akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr15akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr15akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr1akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr2akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr3akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr4akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr5akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr6akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr7akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr8akhlaqs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9akhlaqs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/akhlaq/pcr9akhlaqs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "aqida",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr10aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr11aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr12aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr13aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr1aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr2aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr3aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr4aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr5aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr6aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr7aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr8aqidas2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9aqidas2.pdf",
+                      "path": "year1/pdfcourseresume/s2/aqida/pcr9aqidas2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "fiqh",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr10fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr11fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr12fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr13fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr14fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr14fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr1fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr2fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr3fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr4fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr5fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr6fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr7fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr8fikhs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9fikhs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/fiqh/pcr9fikhs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "hadith",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr10hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr11hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr12hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr13hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr14hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr14hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr15hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr15hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr16hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr16hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr17hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr17hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr18hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr18hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr19hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr19hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr1hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr20hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr20hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr21hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr21hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr22hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr22hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr23hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr23hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr24hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr24hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr25hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr25hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr26hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr26hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr27hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr27hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr2hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr3hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr4hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr5hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr6hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr7hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr8hadiths2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9hadiths2.pdf",
+                      "path": "year1/pdfcourseresume/s2/hadith/pcr9hadiths2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "nahw",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr10nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr11nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr12nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr13nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr13nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr14nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr14nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr15nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr15nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr16nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr16nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr17nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr17nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr18nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr18nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr19nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr19nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr1nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr20nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr20nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr21nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr21nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr22nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr22nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr23nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr23nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr2nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr3nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr4nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr5nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr6nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr7nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr8nahws2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9nahws2.pdf",
+                      "path": "year1/pdfcourseresume/s2/nahw/pcr9nahws2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "sirah",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr10sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr10sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr11sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr11sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr12sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr12sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr1sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr1sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr2sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr3sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr4sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr5sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr6sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr6sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr7sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr7sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr8sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr8sirahs2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr9sirahs2.pdf",
+                      "path": "year1/pdfcourseresume/s2/sirah/pcr9sirahs2.pdf"
+                    }
+                  ]
+                },
+                {
+                  "type": "folder",
+                  "name": "tajwid",
+                  "children": [
+                    {
+                      "type": "file",
+                      "name": "pcr1tajwids2.pdf",
+                      "path": "year1/pdfcourseresume/s2/tajwid/pcr1tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr2tajwids2.pdf",
+                      "path": "year1/pdfcourseresume/s2/tajwid/pcr2tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr3tajwids2.pdf",
+                      "path": "year1/pdfcourseresume/s2/tajwid/pcr3tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr4tajwids2.pdf",
+                      "path": "year1/pdfcourseresume/s2/tajwid/pcr4tajwids2.pdf"
+                    },
+                    {
+                      "type": "file",
+                      "name": "pcr5tajwids2.pdf",
+                      "path": "year1/pdfcourseresume/s2/tajwid/pcr5tajwids2.pdf"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "year2",
+      "children": [
+        {
+          "type": "folder",
+          "name": "FiqhPDFs",
+          "children": [
+            {
+              "type": "folder",
+              "name": "FiqhPDFs1",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-2.pdf",
+                  "path": "year2/FiqhPDFs/FiqhPDFs1/fiqh-lesson-2.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-22.pdf",
+                  "path": "year2/FiqhPDFs/FiqhPDFs1/fiqh-lesson-22.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-222.pdf",
+                  "path": "year2/FiqhPDFs/FiqhPDFs1/fiqh-lesson-222.pdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "year3",
+      "children": [
+        {
+          "type": "folder",
+          "name": "FiqhPDFs",
+          "children": [
+            {
+              "type": "folder",
+              "name": "FiqhPDFs1",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-2.pdf",
+                  "path": "year3/FiqhPDFs/FiqhPDFs1/fiqh-lesson-2.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-22.pdf",
+                  "path": "year3/FiqhPDFs/FiqhPDFs1/fiqh-lesson-22.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-222.pdf",
+                  "path": "year3/FiqhPDFs/FiqhPDFs1/fiqh-lesson-222.pdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "year4",
+      "children": [
+        {
+          "type": "folder",
+          "name": "FiqhPDFs",
+          "children": [
+            {
+              "type": "folder",
+              "name": "FiqhPDFs1",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-2.pdf",
+                  "path": "year4/FiqhPDFs/FiqhPDFs1/fiqh-lesson-2.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-22.pdf",
+                  "path": "year4/FiqhPDFs/FiqhPDFs1/fiqh-lesson-22.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-222.pdf",
+                  "path": "year4/FiqhPDFs/FiqhPDFs1/fiqh-lesson-222.pdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "folder",
+      "name": "year5",
+      "children": [
+        {
+          "type": "folder",
+          "name": "FiqhPDFs",
+          "children": [
+            {
+              "type": "folder",
+              "name": "FiqhPDFs1",
+              "children": [
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-2.pdf",
+                  "path": "year5/FiqhPDFs/FiqhPDFs1/fiqh-lesson-2.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-22.pdf",
+                  "path": "year5/FiqhPDFs/FiqhPDFs1/fiqh-lesson-22.pdf"
+                },
+                {
+                  "type": "file",
+                  "name": "fiqh-lesson-222.pdf",
+                  "path": "year5/FiqhPDFs/FiqhPDFs1/fiqh-lesson-222.pdf"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

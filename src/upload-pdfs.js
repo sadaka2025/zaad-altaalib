@@ -1,25 +1,25 @@
 // upload-pdfs.js
-import { createClient } from "@supabase/supabase-js";
-import fs from "fs";
-import path from "path";
-import glob from "glob";
+import { createClient } from '@supabase/supabase-js';
+import fs from 'fs';
+import path from 'path';
+import glob from 'glob';
 
 // 🔑 Service Role (⚠️ jamais côté frontend)
-const SUPABASE_URL = "https://ariqdghgxknuvowhgftt.supabase.co";
+const SUPABASE_URL = 'https://ariqdghgxknuvowhgftt.supabase.co';
 const SUPABASE_KEY =
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaXFkZ2hneGtudXZvd2hnZnR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTk5Njg4NiwiZXhwIjoyMDcxNTcyODg2fQ.5GvrFHXupLjQqdQxxucik6JkSpt2GUgUpy8gdJrTgXk";
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImFyaXFkZ2hneGtudXZvd2hnZnR0Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc1NTk5Njg4NiwiZXhwIjoyMDcxNTcyODg2fQ.5GvrFHXupLjQqdQxxucik6JkSpt2GUgUpy8gdJrTgXk';
 
-const BUCKET = "pdfs";
+const BUCKET = 'pdf';
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
 // Dossier local à parcourir
-const localDir = path.join(process.cwd(), "public", "PDFs");
+const localDir = path.join(process.cwd(), 'public', 'PDFs');
 
 async function uploadAllPdfs() {
-  const files = glob.sync("**/*.pdf", { cwd: localDir });
+  const files = glob.sync('**/*.pdf', { cwd: localDir });
 
   if (files.length === 0) {
-    console.log("⚠️ Aucun PDF trouvé dans", localDir);
+    console.log('⚠️ Aucun PDF trouvé dans', localDir);
     return;
   }
 
@@ -32,9 +32,9 @@ async function uploadAllPdfs() {
     const { error } = await supabase.storage
       .from(BUCKET)
       .upload(relativePath, fileBuffer, {
-        cacheControl: "3600",
+        cacheControl: '3600',
         upsert: true,
-        contentType: "application/pdf",
+        contentType: 'application/pdf',
       });
 
     if (error) {
@@ -50,29 +50,29 @@ async function uploadAllPdfs() {
     }
   }
 
-  console.log("🎉 Tous les PDFs ont été uploadés !");
+  console.log('🎉 Tous les PDFs ont été uploadés !');
   await checkBucketContents();
 }
 
 async function checkBucketContents() {
-  console.log("🔎 Vérification du bucket 'pdfs'...");
+  console.log("🔎 Vérification du bucket 'pdf'...");
 
-  const { data, error } = await supabase.storage.from(BUCKET).list("", {
+  const { data, error } = await supabase.storage.from(BUCKET).list('', {
     limit: 100,
     offset: 0,
-    sortBy: { column: "name", order: "asc" },
+    sortBy: { column: 'name', order: 'asc' },
   });
 
   if (error) {
-    console.error("❌ Erreur check bucket:", error.message);
+    console.error('❌ Erreur check bucket:', error.message);
     return;
   }
 
   if (!data || data.length === 0) {
-    console.log("📂 Le bucket 'pdfs' est VIDE !");
+    console.log("📂 Le bucket 'pdf' est VIDE !");
   } else {
     console.log(`📂 ${data.length} fichiers trouvés dans le bucket :`);
-    data.forEach((file) => console.log("   - " + file.name));
+    data.forEach((file) => console.log('   - ' + file.name));
   }
 }
 
