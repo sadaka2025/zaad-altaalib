@@ -13,17 +13,9 @@ import ScrollDownButton from '@components/global/scroll/ScrollDownButton';
 import DiplomaSection from './DiplomaSection';
 import Footer from './Footer';
 import StatsSection from './StatsSection';
+import merge_stats_5years from '../../datastat/years/merge_stats_5years.json';
 
 export default function HomePage() {
-  const stats = {
-    totalEntrepreneurs: 1741,
-    participants: 708,
-    positiveReviews: 100,
-    questions: 3000,
-    videos: 60,
-    videosDetail: '42 + 18 sur le groupe',
-  };
-
   const [modalOpen, setModalOpen] = useState(false);
   const { t, i18n } = useTranslation();
   const { lang } = useParams();
@@ -53,17 +45,14 @@ export default function HomePage() {
     setModalOpen(false);
   };
 
-  // Animation framer-motion compatible JS/TS
   const sectionVariant = {
     hidden: { opacity: 0, y: 50 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } }, // pas d'ease pour éviter erreurs TS
+    visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
   };
 
   return (
     <div
-      className={`min-h-screen bg-sky-100 text-gray-800 ${
-        isRTL ? 'font-arabic' : ''
-      }`}
+      className={`min-h-screen bg-sky-100 text-gray-800 ${isRTL ? 'font-arabic' : ''}`}
     >
       <Helmet>
         <html lang={i18n.language} />
@@ -71,7 +60,6 @@ export default function HomePage() {
         <meta name="description" content={t('seo_home_description')} />
       </Helmet>
 
-      {/* Sections animées */}
       <motion.section
         className="mb-12"
         variants={sectionVariant}
@@ -129,7 +117,7 @@ export default function HomePage() {
         whileInView="visible"
         viewport={{ once: true }}
       >
-        <StatsSection stats={stats} />
+        <StatsSection statsJson={merge_stats_5years} />
       </motion.section>
 
       <ScrollToTopButton />

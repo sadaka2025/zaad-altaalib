@@ -1,0 +1,68 @@
+{
+  "year1": {
+    "videos": 199,
+    "summaryPDF": 199,
+    "textExtraction": 199,
+    "quizCourse": 199,
+    "quizSemester": 14,
+    "finalExam": 14,
+    "totalQuiz": 227,
+    "lives": 32,
+    "livesPDF": 32
+  },
+  "year2": {
+    "videos": 0,
+    "summaryPDF": 0,
+    "textExtraction": 0,
+    "quizCourse": 0,
+    "quizSemester": 0,
+    "finalExam": 0,
+    "totalQuiz": 0,
+    "lives": 0,
+    "livesPDF": 0
+  },
+  "year3": {
+    "videos": 0,
+    "summaryPDF": 0,
+    "textExtraction": 0,
+    "quizCourse": 0,
+    "quizSemester": 0,
+    "finalExam": 0,
+    "totalQuiz": 0,
+    "lives": 0,
+    "livesPDF": 0
+  },
+  "year4": {
+    "videos": 0,
+    "summaryPDF": 0,
+    "textExtraction": 0,
+    "quizCourse": 0,
+    "quizSemester": 0,
+    "finalExam": 0,
+    "totalQuiz": 0,
+    "lives": 0,
+    "livesPDF": 0
+  },
+  "year5": {
+    "videos": 0,
+    "summaryPDF": 0,
+    "textExtraction": 0,
+    "quizCourse": 0,
+    "quizSemester": 0,
+    "finalExam": 0,
+    "totalQuiz": 0,
+    "lives": 0,
+    "livesPDF": 0
+  },
+  "totalAllYears": {
+    "videos": 199,
+    "summaryPDF": 199,
+    "textExtraction": 199,
+    "quizCourse": 199,
+    "quizSemester": 14,
+    "finalExam": 14,
+    "totalQuiz": 227,
+    "lives": 32,
+    "livesPDF": 32
+  }
+}
