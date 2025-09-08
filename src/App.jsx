@@ -28,12 +28,12 @@ import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
 import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
 // Pages Intro
 import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
-import IntrosiraPage from './pages/Formation/years/year1/Introsubjects/Introsira/IntrosiraPage';
-import IntroakhlakPage from './pages/Formation/years/year1/Introsubjects/Introakhlak/IntroakhlakPage';
-import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaquida/IntroaqidaPage';
-import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
-import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
-import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
+// import IntrosiraPage from './pages/Formation/years/year1/Introsubjects/Introsira/IntrosiraPage';
+// import IntroakhlakPage from './pages/Formation/years/year1/Introsubjects/Introakhlak/IntroakhlakPage';
+// import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaquida/IntroaqidaPage';
+// import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
+// import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
+// import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
 
 import i18n from './i18n';
 import './i18n';
@@ -149,7 +149,7 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-        <Route
+        {/* <Route
           path="introsira"
           element={
             <RequireAuth>
@@ -196,7 +196,7 @@ function LangRoutesWrapper() {
               <IntrotajwidPage />
             </RequireAuth>
           }
-        />
+        /> */}
       </Route>
 
       {/* Pages sans Navbar */}
