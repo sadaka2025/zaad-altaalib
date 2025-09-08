@@ -1,0 +1,39 @@
+{
+  "year1": {
+    "hadith": {
+      "s1": {
+        "videos": 15,
+        "summaryPDF": 15,
+        "textExtraction": 15,
+        "quizCourse": 15,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 17,
+        "lives": 2,
+        "livesPDF": 2
+      },
+      "s2": {
+        "videos": 14,
+        "summaryPDF": 14,
+        "textExtraction": 14,
+        "quizCourse": 14,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 16,
+        "lives": 2,
+        "livesPDF": 2
+      },
+      "yearStats": {
+        "videos": 29,
+        "summaryPDF": 29,
+        "textExtraction": 29,
+        "quizCourse": 29,
+        "quizSemester": 2,
+        "finalExam": 2,
+        "lives": 4,
+        "livesPDF": 4,
+        "totalQuiz": 33
+      }
+    }
+  }
+}

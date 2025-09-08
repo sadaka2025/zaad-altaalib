@@ -1,0 +1,39 @@
+{
+  "year1": {
+    "sirah": {
+      "s1": {
+        "videos": 16,
+        "summaryPDF": 16,
+        "textExtraction": 16,
+        "quizCourse": 16,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 18,
+        "lives": 2,
+        "livesPDF": 2
+      },
+      "s2": {
+        "videos": 12,
+        "summaryPDF": 12,
+        "textExtraction": 12,
+        "quizCourse": 12,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 14,
+        "lives": 3,
+        "livesPDF": 3
+      },
+      "yearStats": {
+        "videos": 28,
+        "summaryPDF": 28,
+        "textExtraction": 28,
+        "quizCourse": 28,
+        "quizSemester": 2,
+        "finalExam": 2,
+        "lives": 5,
+        "livesPDF": 5,
+        "totalQuiz": 32
+      }
+    }
+  }
+}

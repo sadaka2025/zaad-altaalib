@@ -1,0 +1,39 @@
+{
+  "year1": {
+    "fiqh": {
+      "s1": {
+        "videos": 16,
+        "summaryPDF": 16,
+        "textExtraction": 16,
+        "quizCourse": 16,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 18,
+        "lives": 3,
+        "livesPDF": 3
+      },
+      "s2": {
+        "videos": 14,
+        "summaryPDF": 14,
+        "textExtraction": 14,
+        "quizCourse": 14,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 16,
+        "lives": 2,
+        "livesPDF": 2
+      },
+      "yearStats": {
+        "videos": 30,
+        "summaryPDF": 30,
+        "textExtraction": 30,
+        "quizCourse": 30,
+        "quizSemester": 2,
+        "finalExam": 2,
+        "lives": 5,
+        "livesPDF": 5,
+        "totalQuiz": 34
+      }
+    }
+  }
+}
