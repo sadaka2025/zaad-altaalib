@@ -1,0 +1,39 @@
+{
+  "year1": {
+    "nahw": {
+      "s1": {
+        "videos": 14,
+        "summaryPDF": 14,
+        "textExtraction": 14,
+        "quizCourse": 14,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 16,
+        "lives": 2,
+        "livesPDF": 2
+      },
+      "s2": {
+        "videos": 23,
+        "summaryPDF": 23,
+        "textExtraction": 23,
+        "quizCourse": 23,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 25,
+        "lives": 2,
+        "livesPDF": 2
+      },
+      "yearStats": {
+        "videos": 37,
+        "summaryPDF": 37,
+        "textExtraction": 37,
+        "quizCourse": 37,
+        "quizSemester": 2,
+        "finalExam": 2,
+        "lives": 4,
+        "livesPDF": 4,
+        "totalQuiz": 41
+      }
+    }
+  }
+}

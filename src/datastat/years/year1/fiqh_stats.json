@@ -1,7 +1,7 @@
 {
-  "fiqh": {
-    "year1": {
-      "semester1": {
+  "year1": {
+    "fiqh": {
+      "s1": {
         "videos": 16,
         "summaryPDF": 16,
         "textExtraction": 16,
@@ -12,7 +12,7 @@
         "lives": 3,
         "livesPDF": 3
       },
-      "semester2": {
+      "s2": {
         "videos": 14,
         "summaryPDF": 14,
         "textExtraction": 14,
@@ -23,16 +23,16 @@
         "lives": 2,
         "livesPDF": 2
       },
-      "totalYear1": {
+      "yearStats": {
         "videos": 30,
         "summaryPDF": 30,
         "textExtraction": 30,
         "quizCourse": 30,
         "quizSemester": 2,
         "finalExam": 2,
-        "totalQuiz": 34,
         "lives": 5,
-        "livesPDF": 5
+        "livesPDF": 5,
+        "totalQuiz": 34
       }
     }
   }

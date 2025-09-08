@@ -18,10 +18,11 @@
     "src",
     "check-pdfs.js",
     "print-bucket-tree.js",
-    "generateStats.js",
+    "generateStats.cjss",
     "generate_stats.js",
     "update-json-pdf.js",
     "upload-pdfs.js",
-    "scripts"
+    "scripts",
+    "scripts/generateAllStats.js"
   ]
 }
