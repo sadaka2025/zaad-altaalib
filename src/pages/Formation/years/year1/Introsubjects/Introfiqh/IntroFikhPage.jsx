@@ -7,7 +7,7 @@ import CountUp from 'react-countup';
 
 import data from '../../../../../../datatext/years/year1/datatxtfiqh.json';
 import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListfiqh.json';
-import fiqhStats from '../../../../../../datastat/years/year1/fiqhstat.json';
+import fiqhStats from '../../../../../../datastat/years/year1/fiqh_stats.json';
 
 import Modal from '@components/global/Modal/Modal';
 import BooksModal from '../../BooksModal';
