@@ -1,84 +1,52 @@
-// src/pages/ProfAvisPage.jsx
+// src/pages/ProffAvisPage.jsx
 
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
-import axios from "axios";
-export default function ProfAvisPage() {
+import { useEffect, useState } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
+import axios from 'axios';
+
+export default function ProffAvisPage() {
+  const navigate = useNavigate();
+  const { subject } = useParams(); // 👈 récupère "fiqh", "nahw", etc. depuis l’URL
+
+  // États pour le JSON et l'instructeur
   const [data, setData] = useState(null);
+  const [instructor, setInstructor] = useState(null);
 
+  // États pour les avis
+  const [feedbacks, setFeedbacks] = useState([]);
+  const [visitorName, setVisitorName] = useState('');
+  const [visitorEmail, setVisitorEmail] = useState('');
+  const [rating, setRating] = useState(0);
+  const [comment, setComment] = useState('');
+  const [message, setMessage] = useState('');
+  const [showCV, setShowCV] = useState(false);
+
+  // Charger le JSON et sélectionner l'instructeur correspondant au subject
   useEffect(() => {
-    fetch("/locales/ar/translation.json")
+    fetch('/locales/ar/translation.json')
       .then((res) => {
-        if (!res.ok) throw new Error("Erreur de chargement");
+        if (!res.ok) throw new Error('Erreur de chargement JSON');
         return res.json();
       })
-      .then((json) => setData(json))
+      .then((json) => {
+        setData(json);
+
+        // Trouver l'instructeur correspondant
+        const instr = json.instructors.find((inst) => inst.subject === subject);
+        setInstructor(instr || null);
+      })
       .catch((err) => console.error(err));
-  }, []);
-  const [message, setMessage] = useState("");
+  }, [subject]);
 
-  // Fonction de vérification email
-  const verifyEmail = async () => {
-    if (
-      visitorEmail.trim() &&
-      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(visitorEmail)
-    ) {
-      alert("❗ يرجى إدخال بريد إلكتروني صالح أو تركه فارغًا.");
-      setMessage("");
-      return;
-    }
-
-    if (!visitorEmail.trim()) {
-      setMessage("");
-      return;
-    }
-
-    try {
-      const response = await axios.get(
-        `https://emailvalidation.abstractapi.com/v1/?api_key=84e1421241314d25a7b82d45fc7ed2ac&email=${visitorEmail}`
-      );
-
-      const data = response.data;
-
-      if (data.is_valid_format.value && data.is_smtp_valid.value) {
-        setMessage("✅ Email valide et actif.");
-      } else {
-        setMessage("❌ Email invalide ou n’existe pas.");
-      }
-    } catch (error) {
-      console.error(error);
-      setMessage("❌ Erreur lors de la vérification.");
-    }
-  };
-
-  const handleDeleteFeedback = (index) => {
-    if (window.confirm("هل أنت متأكد من حذف هذا التقييم؟")) {
-      const updated = feedbacks.filter((_, i) => i !== index);
-      setFeedbacks(updated);
-      localStorage.setItem("profFeedbacks", JSON.stringify(updated));
-      alert("🗑️ تم حذف التقييم.");
-    }
-  };
-  const [rating, setRating] = useState(0);
-  const [comment, setComment] = useState("");
-  const [visitorName, setVisitorName] = useState("");
-  const [visitorEmail, setVisitorEmail] = useState(""); // état email ajouté
-  const [feedbacks, setFeedbacks] = useState([]);
-  const [showCV, setShowCV] = useState(false);
-  const navigate = useNavigate();
-
-  const instructor = instructorData.instructors.find((inst) =>
-    inst.image.includes("instructor3.jpg")
-  );
-
-  // Si aucun instructeur trouvé, retourner null ou un message
-  if (!instructor) return <p>Instructeur non trouvé</p>;
+  // Charger les avis depuis localStorage (clé unique par matière)
   useEffect(() => {
-    const saved = localStorage.getItem("profFeedbacks");
+    const saved = localStorage.getItem(`profFeedbacks_${subject}`);
     if (saved) setFeedbacks(JSON.parse(saved));
-  }, []);
+  }, [subject]);
 
-  // Calcul moyenne et stats
+  if (!instructor) return <p>⏳ تحميل بيانات الأستاذ...</p>; // fallback si pas trouvé
+
+  // Calcul moyenne
   const averageRating =
     feedbacks.length === 0
       ? 0
@@ -88,22 +56,50 @@ export default function ProfAvisPage() {
     (star) => feedbacks.filter((f) => f.rating === star).length
   );
 
-  // Envoyer l'avis (avec validation basique)
-  const handleSend = () => {
-    if (!visitorName.trim()) {
-      alert("❗ يرجى كتابة اسمك قبل الإرسال.");
+  // Vérification email
+  const verifyEmail = async () => {
+    if (
+      visitorEmail.trim() &&
+      !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(visitorEmail)
+    ) {
+      alert('❗ يرجى إدخال بريد إلكتروني صالح أو تركه فارغًا.');
+      setMessage('');
       return;
     }
+    if (!visitorEmail.trim()) {
+      setMessage('');
+      return;
+    }
+    try {
+      const response = await axios.get(
+        `https://emailvalidation.abstractapi.com/v1/?api_key=84e1421241314d25a7b82d45fc7ed2ac&email=${visitorEmail}`
+      );
+      const data = response.data;
+      if (data.is_valid_format.value && data.is_smtp_valid.value) {
+        setMessage('✅ Email valide et actif.');
+      } else {
+        setMessage('❌ Email invalide أو n’existe pas.');
+      }
+    } catch (error) {
+      console.error(error);
+      setMessage('❌ Erreur lors de la vérification.');
+    }
+  };
 
+  // Envoyer avis
+  const handleSend = () => {
+    if (!visitorName.trim()) {
+      alert('❗ يرجى كتابة اسمك قبل الإرسال.');
+      return;
+    }
     if (!rating) {
-      alert("❗ يرجى اختيار تقييم قبل الإرسال.");
+      alert('❗ يرجى اختيار تقييم قبل الإرسال.');
       return;
     }
     if (!comment.trim()) {
-      alert("❗ يرجى كتابة تعليق.");
+      alert('❗ يرجى كتابة تعليق.');
       return;
     }
-
     const newFeedback = {
       visitorName,
       visitorEmail,
@@ -113,20 +109,30 @@ export default function ProfAvisPage() {
     };
     const updated = [...feedbacks, newFeedback];
     setFeedbacks(updated);
-    localStorage.setItem("profFeedbacks", JSON.stringify(updated));
-    alert("✔️ تم إرسال تقييمك بنجاح!");
-    setVisitorName("");
-    setVisitorEmail("");
+    localStorage.setItem(`profFeedbacks_${subject}`, JSON.stringify(updated));
+    alert('✔️ تم إرسال تقييمك بنجاح!');
+    setVisitorName('');
+    setVisitorEmail('');
     setRating(0);
-    setComment("");
+    setComment('');
+  };
+
+  // Supprimer un avis
+  const handleDeleteFeedback = (index) => {
+    if (window.confirm('هل أنت متأكد من حذف هذا التقييم؟')) {
+      const updated = feedbacks.filter((_, i) => i !== index);
+      setFeedbacks(updated);
+      localStorage.setItem(`profFeedbacks_${subject}`, JSON.stringify(updated));
+      alert('🗑️ تم حذف التقييم.');
+    }
   };
 
   // Supprimer tous les avis
   const handleClearRatings = () => {
-    if (window.confirm("هل أنت متأكد من حذف جميع التقييمات؟")) {
-      localStorage.removeItem("profFeedbacks");
+    if (window.confirm('هل أنت متأكد من حذف جميع التقييمات؟')) {
+      localStorage.removeItem(`profFeedbacks_${subject}`);
       setFeedbacks([]);
-      alert("🗑️ تم حذف جميع التقييمات.");
+      alert('🗑️ تم حذف جميع التقييمات.');
     }
   };
 
@@ -135,46 +141,31 @@ export default function ProfAvisPage() {
       className="min-h-screen py-10 px-4 bg-gradient-to-br from-sky-100 via-sky-200 to-white"
       dir="rtl"
     >
-      <div>
-        <h2>{instructor.name}</h2>
-        <img
-          src={`/images/instructors/${instructor.image}`} // chemin depuis public
-          alt={instructor.name}
-          style={{ width: "200px", height: "auto" }}
-        />
-      </div>
       <div className="font-[Arial] max-w-4xl mx-auto p-6 bg-white rounded shadow space-y-8">
         <button
-          onClick={() => navigate("/ar/intro")}
+          onClick={() => navigate(`/ar/intro${subject}`)}
           className="bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm"
         >
           🔙 رجوع
         </button>
 
         {/* Présentation de l'instructeur */}
-        <div
-          className="flex flex-col md:flex-row items-center bg-gradient-to-r from-sky-100 to-white p-4 rounded shadow mb-8"
-          style={{
-            backgroundImage: `url(/images/OIP.jpeg)`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <div className="flex flex-col md:flex-row items-center bg-gradient-to-r from-sky-100 to-white p-4 rounded shadow mb-8">
           <img
-            src="/images/instructor3.jpg"
-            alt="Instructor"
+            src={instructor.image}
+            alt={instructor.name}
             className="w-32 h-32 rounded-full object-cover border-4 border-yellow-300 mb-4 md:mb-0 md:mr-6"
           />
 
           <div className="text-right flex-1">
             <h2 className="text-2xl font-bold text-sky-800 mb-1">
-              عبد الفتاح حسين
+              {instructor.name}
             </h2>
             <p className="text-sky-700 font-semibold">
-              🟊 معدل التقييم الحالي:{" "}
+              🟊 معدل التقييم الحالي:{' '}
               <span className="text-sky-900 text-lg">
                 {feedbacks.length === 0
-                  ? " لا يوجد تقييم بعد"
+                  ? ' لا يوجد تقييم بعد'
                   : `${averageRating.toFixed(1)} / 5`}
               </span>
             </p>
@@ -184,7 +175,7 @@ export default function ProfAvisPage() {
                   <span
                     key={n}
                     className={`text-2xl ${
-                      averageRating >= n ? "text-yellow-400" : "text-gray-300"
+                      averageRating >= n ? 'text-yellow-400' : 'text-gray-300'
                     }`}
                   >
                     ★
@@ -205,53 +196,31 @@ export default function ProfAvisPage() {
             )}
           </div>
         </div>
-
-        {/* تقييم الزوار */}
+        {/* Section avis visiteurs */}
         <div className="text-center space-y-4">
           <h2 className="text-xl font-bold">⬇️ كيف تقيّم أداء الأستاذ؟</h2>
-          {/* الاسم */}
           <input
             type="text"
             placeholder="اكتب اسمك هنا..."
             value={visitorName}
             onChange={(e) => setVisitorName(e.target.value)}
-            style={{
-              backgroundImage: `url(${bgImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
+            className="w-full border rounded p-2 mt-1 text-right placeholder-gray-700"
           />
-          {/* البريد الإلكتروني */}
           <input
             type="email"
             placeholder="البريد الإلكتروني (اختياري)"
             value={visitorEmail}
             onChange={(e) => setVisitorEmail(e.target.value)}
             onBlur={verifyEmail}
-            style={{
-              backgroundImage: `url(${bgImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-            dir="rtl"
-            className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
+            className="w-full border rounded p-2 mt-1 text-right placeholder-gray-700"
           />
           <p>{message}</p>
-          {/* النجوم */}
           <div className="flex justify-center gap-2 my-2">
             {[1, 2, 3, 4, 5].map((n) => (
               <span
                 key={n}
                 onClick={() => setRating(n)}
-                className={`text-4xl cursor-pointer transition-transform ${
-                  rating >= n ? "text-yellow-400" : "text-gray-300"
-                } hover:scale-125`}
-                style={{
-                  backgroundImage: `url(${bgImage})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
+                className={`text-4xl cursor-pointer ${rating >= n ? 'text-yellow-400' : 'text-gray-300'}`}
               >
                 ★
               </span>
@@ -262,21 +231,13 @@ export default function ProfAvisPage() {
               تقييمك: {rating} / 5
             </p>
           )}
-          {/* التعليق */}
           <textarea
-            className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700"
             rows={4}
             placeholder="شاركنا رأيك..."
-            dir="rtl"
             value={comment}
             onChange={(e) => setComment(e.target.value)}
-            style={{
-              backgroundImage: `url(${bgImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          />
-          {/* Boutons envoyer & supprimer */}
+            className="w-full border rounded p-2 mt-1 text-right placeholder-gray-700"
+          ></textarea>
           <button
             onClick={handleSend}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded w-full mt-4"
@@ -285,29 +246,18 @@ export default function ProfAvisPage() {
           </button>
         </div>
 
-        {/* إحصائيات التقييمات */}
+        {/* Section statistiques */}
         <div className="space-y-4">
           <h3 className="text-lg font-bold text-right">📊 آراء الطلاب:</h3>
-
-          <div
-            className="flex flex-col sm:flex-row items-center sm:items-end gap-6"
-            style={{
-              backgroundImage: `url(${bgImage})`,
-              backgroundSize: "cover",
-              backgroundPosition: "center",
-            }}
-          >
+          <div className="flex flex-col sm:flex-row items-center sm:items-end gap-6">
             <div className="text-center">
               <p className="text-5xl font-bold">{averageRating.toFixed(1)}</p>
               <div className="text-yellow-400 text-xl">
-                {"★".repeat(Math.round(averageRating))}
-                {"☆".repeat(5 - Math.round(averageRating))}
+                {'★'.repeat(Math.round(averageRating))}
+                {'☆'.repeat(5 - Math.round(averageRating))}
               </div>
-              <p className="w-full border rounded p-2 mt-1 focus:outline-none focus:ring-2 focus:ring-blue-500 text-right placeholder-gray-700">
-                مجموع {feedbacks.length} تقييم
-              </p>
+              <p>مجموع {feedbacks.length} تقييم</p>
             </div>
-
             <div className="flex-1 w-full space-y-1">
               {[5, 4, 3, 2, 1].map((star, i) => (
                 <div key={star} className="flex items-center gap-2 w-full">
@@ -318,7 +268,7 @@ export default function ProfAvisPage() {
                       style={{
                         width:
                           feedbacks.length === 0
-                            ? "0%"
+                            ? '0%'
                             : `${(ratingCounts[i] / feedbacks.length) * 100}%`,
                       }}
                     ></div>
@@ -332,17 +282,15 @@ export default function ProfAvisPage() {
           </div>
         </div>
 
-        {/* التعليقات */}
+        {/* Commentaires visiteurs */}
         <div className="space-y-4">
           <h3 className="text-lg font-bold text-right">📝 آراء الزوار:</h3>
           <p className="text-sm text-gray-600 text-right">
             كل التقييمات المرسلة محفوظة هنا بشكل دائم.
           </p>
-
           {feedbacks.length === 0 && (
             <p className="text-gray-500 text-center">لا توجد تقييمات بعد.</p>
           )}
-
           {feedbacks.map((fb, i) => (
             <div
               key={i}
@@ -350,8 +298,8 @@ export default function ProfAvisPage() {
             >
               <div className="flex items-center justify-between mb-2">
                 <div className="text-yellow-400 text-lg">
-                  {"★".repeat(fb.rating)}
-                  {"☆".repeat(5 - fb.rating)}
+                  {'★'.repeat(fb.rating)}
+                  {'☆'.repeat(5 - fb.rating)}
                 </div>
                 <p className="text-sm font-bold">{fb.visitorName}</p>
               </div>
@@ -359,7 +307,6 @@ export default function ProfAvisPage() {
               <p className="text-sm text-gray-500 mt-1">
                 🗓️ {new Date(fb.date).toLocaleDateString()}
               </p>
-              {/* Voici le bouton supprimer */}
               <button
                 onClick={() => handleDeleteFeedback(i)}
                 className="absolute top-3 left-3 bg-blue-600 hover:bg-blue-700 text-white px-2 py-1 rounded text-xs"

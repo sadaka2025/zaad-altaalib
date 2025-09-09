@@ -268,7 +268,7 @@ export default function IntroFikhPage() {
           📢 الإعلانات
         </button>
         <button
-          onClick={() => navigate('/ar/profavis')}
+          onClick={() => navigate('/ar/profavis/fiqh')}
           className="px-4 py-2 rounded-lg font-bold shadow-md"
           style={{
             backgroundColor: '#fef3c7',

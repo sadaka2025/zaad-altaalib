@@ -17,6 +17,7 @@ import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
 import AvisPage from './pages/Formation/utils/AvisPage';
 import QRPage from './pages/Formation/utils/QRPage';
+import ProffAvisPage from './pages/Formation/utils/ProffAvisPage';
 import AnnoncesPage from './pages/Formation/utils/AnnoncesPage';
 import ProblemePage from './pages/Home/ProblemePage';
 
@@ -107,6 +108,15 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
+        <Route
+          path="profavis/:subject"
+          element={
+            <RequireAuth>
+              <ProffAvisPage />
+            </RequireAuth>
+          }
+        />
+
         <Route
           path="niveau-2"
           element={
