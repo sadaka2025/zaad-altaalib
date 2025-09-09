@@ -5,9 +5,9 @@ import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
-import data from '../../../../../../datatext/years/year1/datatxtfiqh.json';
-import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListfiqh.json';
-import fiqhStats from '../../../../../../datastat/years/year1/fiqh_stats.json';
+import data from '../../../../../../datatext/years/year1/datatxtaqida.json';
+import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListaqida.json';
+import aqidaStats from '../../../../../../datastat/years/year1/aqida_stats.json';
 
 import Modal from '@components/global/Modal/Modal';
 import BooksModal from '../../BooksModal';
@@ -77,7 +77,7 @@ function TypewriterArabic({ lines = [], cps = 35, className = '' }) {
   );
 }
 
-export default function IntroFikhPage() {
+export default function IntroAqidaPage() {
   const navigate = useNavigate();
   const { lang } = useParams();
 
@@ -100,7 +100,7 @@ export default function IntroFikhPage() {
 
   // ✅ accès sécurisé
   const semesterKey = selectedSemester === 'semester1' ? 's1' : 's2';
-  const semesterData = data?.year1?.fiqh?.[semesterKey] || {};
+  const semesterData = data?.year1?.aqida?.[semesterKey] || {};
   const sections = Array.isArray(semesterData?.lessons)
     ? semesterData.lessons
     : [];
@@ -113,10 +113,10 @@ export default function IntroFikhPage() {
   }, [selectedSemester]);
 
   // pour S1 / S2
-  const semesterStats = fiqhStats?.year1?.fiqh?.[semesterKey] || {};
+  const semesterStats = aqidaStats?.year1?.aqida?.[semesterKey] || {};
 
   // pour les stats annuelles
-  const totalYearStats = fiqhStats?.year1?.fiqh?.yearStats || {};
+  const totalYearStats = aqidaStats?.year1?.aqida?.yearStats || {};
 
   const handleOpenModal = (section) => {
     if (section.modal) {
@@ -152,7 +152,7 @@ export default function IntroFikhPage() {
 
   const goToLesson = (lessonId) => {
     navigate(
-      `/ar/annee/1/matiere/fiqh?semestre=${selectedSemester === 'semester1' ? 1 : 2}&lesson=${lessonId}`
+      `/ar/annee/1/matiere/aqida?semestre=${selectedSemester === 'semester1' ? 1 : 2}&lesson=${lessonId}`
     );
     setIsModalLessonsOpen(false);
   };
@@ -206,24 +206,24 @@ export default function IntroFikhPage() {
 
     const isS1 = selectedSemester === 'semester1';
     const header = isS1
-      ? 'في هذا السداسي الأوّل، نمضي خطوة بخطوة لفهم مبادئ الفقه وتطبيقاته اليومية.'
-      : 'في هذا السداسي الثاني، نواصل البناء بإتقان الأبواب المتقدمة وربط العلم بالعمل.';
+      ? 'في هذا السداسي الأوّل، نبني أساس العقيدة الصحيحة مع تبسيط المبادئ.'
+      : 'في هذا السداسي الثاني، نغوص في مسائل الاعتقاد والتوحيد وتطبيقاتهما.';
 
     const body = (sections || [])
       .slice(0, 4)
       .map((s, i) => `المحور ${i + 1}: ${s?.title || '—'}.`);
 
     const tail = isS1
-      ? 'هدفنا ترسيخ الأصول وتسهيل التدرّج، مع برنامج واضح وتمارين عملية.'
-      : 'نركّز هنا على التثبيت والمراجعة، مع تقييمات مرحلية وتقويم نهائي.';
+      ? 'الهدف فهم الأصول وحماية القلب من الشبهات، مع أمثلة تطبيقية.'
+      : 'نهدف إلى تثبيت المناهج والعناية بالأسئلة التطبيقية والأمثلة العملية.';
 
     return [header, ...body, tail];
   }, [sections, semesterData, selectedSemester]);
 
-  if (!data?.year1?.fiqh) {
+  if (!data?.year1?.aqida) {
     return (
       <div className="p-6 text-center text-red-600">
-        ⚠️ Les données de fiqh ne sont pas disponibles.
+        ⚠️ Les données d’aqida ne sont pas disponibles.
       </div>
     );
   }
@@ -242,7 +242,7 @@ export default function IntroFikhPage() {
         <BooksModal
           isOpen={open}
           onClose={() => setOpen(false)}
-          subjectKey="fiqh"
+          subjectKey="aqida"
         />
 
         <button
@@ -301,7 +301,7 @@ export default function IntroFikhPage() {
           }`}
           onClick={() => {
             setSelectedSemester('semester1');
-            navigate(`/${lang}/introfiqh?semestre=1`);
+            navigate(`/${lang}/introaqida?semestre=1`);
           }}
         >
           📘 السداسي الأول
@@ -314,7 +314,7 @@ export default function IntroFikhPage() {
           }`}
           onClick={() => {
             setSelectedSemester('semester2');
-            navigate(`/${lang}/introfiqh?semestre=2`);
+            navigate(`/${lang}/introaqida?semestre=2`);
           }}
         >
           📗 السداسي الثاني
@@ -360,7 +360,7 @@ export default function IntroFikhPage() {
         <button
           onClick={() =>
             navigate(
-              `/ar/annee/1/matiere/fiqh?semestre=${selectedSemester === 'semester1' ? 1 : 2}`
+              `/ar/annee/1/matiere/aqida?semestre=${selectedSemester === 'semester1' ? 1 : 2}`
             )
           }
           className="bg-blue-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 shadow-md"
@@ -408,8 +408,8 @@ export default function IntroFikhPage() {
           <div className="bg-neutral-900/95 rounded-2xl p-4 md:p-6 shadow-[0_10px_40px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
             <h2 className="text-center text-white text-2xl md:text-3xl font-bold mb-4">
               {selectedSemester === 'semester1'
-                ? 'هذا السداسي الأول يركّز على 4 أجزاء رئيسية'
-                : 'هذا السداسي الثاني يركّز على 4 أجزاء رئيسية'}
+                ? 'هذا السداسي الأول يركّز على 4 أجزاء رئيسية في العقيدة'
+                : 'هذا السداسي الثاني يركّز على 4 أجزاء رئيسية في العقيدة'}
             </h2>
 
             {/* Carte Parchemin */}
@@ -519,7 +519,7 @@ export default function IntroFikhPage() {
       <Modal
         isOpen={isModalLessonsOpen}
         onClose={() => setIsModalLessonsOpen(false)}
-        title="📚 قائمة دروس الفقه"
+        title="📚 قائمة دروس العقيدة"
         content={lessonContent}
       />
 

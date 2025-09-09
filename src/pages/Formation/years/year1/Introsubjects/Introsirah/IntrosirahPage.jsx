@@ -5,9 +5,9 @@ import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 
-import data from '../../../../../../datatext/years/year1/datatxtfiqh.json';
-import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListfiqh.json';
-import fiqhStats from '../../../../../../datastat/years/year1/fiqh_stats.json';
+import data from '../../../../../../datatext/years/year1/datatxtsirah.json';
+import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListsirah.json';
+import sirahStats from '../../../../../../datastat/years/year1/sirah_stats.json';
 
 import Modal from '@components/global/Modal/Modal';
 import BooksModal from '../../BooksModal';
@@ -77,7 +77,7 @@ function TypewriterArabic({ lines = [], cps = 35, className = '' }) {
   );
 }
 
-export default function IntroFikhPage() {
+export default function IntroSirahPage() {
   const navigate = useNavigate();
   const { lang } = useParams();
 
@@ -98,28 +98,32 @@ export default function IntroFikhPage() {
   const [lessons, setLessons] = useState([]);
   const [conclusion, setConclusion] = useState(null);
 
-  // ✅ accès sécurisé
+  // ✅ accès sécurisé — on garde niveau intermédiaire "sirah" dans les JSON
   const semesterKey = selectedSemester === 'semester1' ? 's1' : 's2';
-  const semesterData = data?.year1?.fiqh?.[semesterKey] || {};
+  const semesterData = data?.year1?.sirah?.[semesterKey] || {};
   const sections = Array.isArray(semesterData?.lessons)
     ? semesterData.lessons
     : [];
 
   useEffect(() => {
     const semesterIndex = selectedSemester === 'semester1' ? '1' : '2';
-    const semesterCourseData = courseDataJSON?.semesters?.[semesterIndex] || {};
-    setLessons(semesterCourseData.lessons || []);
+    // NOTE: courseDataJSON has intermediate "sirah" according to your request
+    const semesterCourseData =
+      courseDataJSON?.sirah?.semesters?.[semesterIndex] || {};
+    setLessons(
+      Array.isArray(semesterCourseData.lessons)
+        ? semesterCourseData.lessons
+        : []
+    );
     setConclusion(semesterCourseData.conclusion || null);
   }, [selectedSemester]);
 
-  // pour S1 / S2
-  const semesterStats = fiqhStats?.year1?.fiqh?.[semesterKey] || {};
-
-  // pour les stats annuelles
-  const totalYearStats = fiqhStats?.year1?.fiqh?.yearStats || {};
+  // pour S1 / S2 — structure avec niveau "sirah"
+  const semesterStats = sirahStats?.year1?.sirah?.[semesterKey] || {};
+  const totalYearStats = sirahStats?.year1?.sirah?.yearStats || {};
 
   const handleOpenModal = (section) => {
-    if (section.modal) {
+    if (section?.modal) {
       setModalData(section.modal);
       setIsLessonModalOpen(true);
     }
@@ -127,32 +131,33 @@ export default function IntroFikhPage() {
 
   const renderModalContent = (modal) => (
     <div className="text-right leading-relaxed space-y-4">
-      {modal.quote && (
+      {modal?.quote && (
         <p className="font-semibold text-lg text-center">{modal.quote}</p>
       )}
-      {modal.intro && <p>{modal.intro}</p>}
-      {modal.poem && (
+      {modal?.intro && <p>{modal.intro}</p>}
+      {modal?.poem && (
         <p>
           <em>{modal.poem}</em>
         </p>
       )}
-      {modal.listTitle && (
+      {modal?.listTitle && (
         <h3 className="font-bold text-blue-700">{modal.listTitle}</h3>
       )}
-      {modal.listItems && (
+      {Array.isArray(modal?.listItems) && (
         <ul className="list-disc pr-5 space-y-1">
           {modal.listItems.map((item, idx) => (
             <li key={idx}>{item}</li>
           ))}
         </ul>
       )}
-      {modal.summary && <p className="mt-4">{modal.summary}</p>}
+      {modal?.summary && <p className="mt-4">{modal.summary}</p>}
     </div>
   );
 
   const goToLesson = (lessonId) => {
+    if (!lessonId) return;
     navigate(
-      `/ar/annee/1/matiere/fiqh?semestre=${selectedSemester === 'semester1' ? 1 : 2}&lesson=${lessonId}`
+      `/ar/annee/1/matiere/sirah?semestre=${selectedSemester === 'semester1' ? 1 : 2}&lesson=${lessonId}`
     );
     setIsModalLessonsOpen(false);
   };
@@ -163,38 +168,43 @@ export default function IntroFikhPage() {
       style={{ backgroundImage: "url('/images/OIP.jpeg')" }}
     >
       <ul className="space-y-2">
-        {lessons.map((lesson) => (
-          <li key={lesson.id}>
-            <button
-              onClick={() => goToLesson(lesson.id)}
-              className="text-blue-800 hover:underline font-medium"
-            >
-              {lesson.title}
-            </button>
-          </li>
-        ))}
+        {Array.isArray(lessons) &&
+          lessons.map((lesson) => (
+            <li key={lesson?.id}>
+              <button
+                onClick={() => goToLesson(lesson.id)}
+                className="text-blue-800 hover:underline font-medium"
+              >
+                {lesson?.title || '—'}
+              </button>
+            </li>
+          ))}
       </ul>
 
-      {conclusion && (
+      {conclusion?.sections && (
         <div className="mt-4 border-t pt-3">
-          <h2 className="font-bold mb-2 text-right">{conclusion.title}</h2>
-          {conclusion.sections.map((section, idx) => (
-            <div key={idx} className="mb-4">
-              <h3 className="font-semibold mb-2 text-right">{section.title}</h3>
-              <ul className="list-disc list-inside text-right space-y-1">
-                {section.items.map((item, index) => (
-                  <li key={index}>
-                    <button
-                      onClick={() => console.log('Item clicked:', item.id)}
-                      className="text-blue-800 hover:underline"
-                    >
-                      {item.id}
-                    </button>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          <h2 className="font-bold mb-2 text-right">{conclusion?.title}</h2>
+          {Array.isArray(conclusion.sections) &&
+            conclusion.sections.map((section, idx) => (
+              <div key={idx} className="mb-4">
+                <h3 className="font-semibold mb-2 text-right">
+                  {section?.title}
+                </h3>
+                <ul className="list-disc list-inside text-right space-y-1">
+                  {Array.isArray(section.items) &&
+                    section.items.map((item, index) => (
+                      <li key={index}>
+                        <button
+                          onClick={() => console.log('Item clicked:', item?.id)}
+                          className="text-blue-800 hover:underline"
+                        >
+                          {item?.id || '—'}
+                        </button>
+                      </li>
+                    ))}
+                </ul>
+              </div>
+            ))}
         </div>
       )}
     </div>
@@ -206,24 +216,24 @@ export default function IntroFikhPage() {
 
     const isS1 = selectedSemester === 'semester1';
     const header = isS1
-      ? 'في هذا السداسي الأوّل، نمضي خطوة بخطوة لفهم مبادئ الفقه وتطبيقاته اليومية.'
-      : 'في هذا السداسي الثاني، نواصل البناء بإتقان الأبواب المتقدمة وربط العلم بالعمل.';
+      ? 'في هذا السداسي الأوّل، نبحر في سيرة النبي ﷺ والمراحل التاريخية للحياة النبوية.'
+      : 'في هذا السداسي الثاني، ندرس غزواته، سنوات المدينة، والدروس العملية من السيرة.';
 
     const body = (sections || [])
       .slice(0, 4)
       .map((s, i) => `المحور ${i + 1}: ${s?.title || '—'}.`);
 
     const tail = isS1
-      ? 'هدفنا ترسيخ الأصول وتسهيل التدرّج، مع برنامج واضح وتمارين عملية.'
-      : 'نركّز هنا على التثبيت والمراجعة، مع تقييمات مرحلية وتقويم نهائي.';
+      ? 'الهدف فهم السياق التاريخي والأحداث وتأثيرها على بناء الأمة.'
+      : 'نركّز على استخلاص الدروس والسلوكيات والتطبيق العملي للسيرة.';
 
     return [header, ...body, tail];
   }, [sections, semesterData, selectedSemester]);
 
-  if (!data?.year1?.fiqh) {
+  if (!data?.year1?.sirah || !sirahStats?.year1?.sirah) {
     return (
       <div className="p-6 text-center text-red-600">
-        ⚠️ Les données de fiqh ne sont pas disponibles.
+        ⚠️ Les données de sirah ne sont pas disponibles.
       </div>
     );
   }
@@ -242,7 +252,7 @@ export default function IntroFikhPage() {
         <BooksModal
           isOpen={open}
           onClose={() => setOpen(false)}
-          subjectKey="fiqh"
+          subjectKey="sirah"
         />
 
         <button
@@ -301,7 +311,7 @@ export default function IntroFikhPage() {
           }`}
           onClick={() => {
             setSelectedSemester('semester1');
-            navigate(`/${lang}/introfiqh?semestre=1`);
+            navigate(`/${lang}/introsirah?semestre=1`);
           }}
         >
           📘 السداسي الأول
@@ -314,7 +324,7 @@ export default function IntroFikhPage() {
           }`}
           onClick={() => {
             setSelectedSemester('semester2');
-            navigate(`/${lang}/introfiqh?semestre=2`);
+            navigate(`/${lang}/introsirah?semestre=2`);
           }}
         >
           📗 السداسي الثاني
@@ -360,7 +370,7 @@ export default function IntroFikhPage() {
         <button
           onClick={() =>
             navigate(
-              `/ar/annee/1/matiere/fiqh?semestre=${selectedSemester === 'semester1' ? 1 : 2}`
+              `/ar/annee/1/matiere/sirah?semestre=${selectedSemester === 'semester1' ? 1 : 2}`
             )
           }
           className="bg-blue-800 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-600 shadow-md"
@@ -378,14 +388,14 @@ export default function IntroFikhPage() {
           transition={{ duration: 0.5 }}
           className="relative w-full max-w-3xl mx-auto"
         >
-          {semesterData.introAudio ? (
+          {semesterData?.introAudio ? (
             <audio
               src={semesterData.introAudio}
               controls
               autoPlay
               className="w-full"
             />
-          ) : (
+          ) : semesterData?.introVideo ? (
             <div className="rounded-2xl overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.25)] ring-1 ring-black/10">
               <iframe
                 src={semesterData.introVideo}
@@ -393,6 +403,10 @@ export default function IntroFikhPage() {
                 className="w-full h-64 md:h-[420px]"
                 allowFullScreen
               />
+            </div>
+          ) : (
+            <div className="p-6 text-center text-gray-500 bg-gray-100 rounded-xl">
+              Vidéo ou audio non disponible
             </div>
           )}
         </motion.div>
@@ -408,8 +422,8 @@ export default function IntroFikhPage() {
           <div className="bg-neutral-900/95 rounded-2xl p-4 md:p-6 shadow-[0_10px_40px_rgba(0,0,0,0.35)] ring-1 ring-white/10">
             <h2 className="text-center text-white text-2xl md:text-3xl font-bold mb-4">
               {selectedSemester === 'semester1'
-                ? 'هذا السداسي الأول يركّز على 4 أجزاء رئيسية'
-                : 'هذا السداسي الثاني يركّز على 4 أجزاء رئيسية'}
+                ? 'هذا السداسي الأول يركّز على محطات السيرة والوقائع التاريخية'
+                : 'هذا السداسي الثاني يركّز على التحليل التاريخي والدروس التطبيقية من السيرة'}
             </h2>
 
             {/* Carte Parchemin */}
@@ -434,26 +448,29 @@ export default function IntroFikhPage() {
 
               {/* 4 parties (sections) */}
               <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
-                {sections.map((item, index) => (
-                  <div key={index} className="text-right">
-                    <div className="h-1 w-10 bg-orange-600/80 mb-2"></div>
-                    <p className="font-bold text-gray-700">{item.id}.</p>
+                {Array.isArray(sections) &&
+                  sections.map((item, index) => (
+                    <div key={index} className="text-right">
+                      <div className="h-1 w-10 bg-orange-600/80 mb-2"></div>
+                      <p className="font-bold text-gray-700">{item?.id}.</p>
 
-                    <h3
-                      className={`text-lg font-bold ${
-                        item.modal
-                          ? 'cursor-pointer hover:text-orange-700 transition'
-                          : 'text-gray-900'
-                      }`}
-                      onClick={() => handleOpenModal(item)}
-                      style={{ textShadow: '0 1px 0 rgba(255,255,255,0.4)' }}
-                    >
-                      {item.title}
-                    </h3>
+                      <h3
+                        className={`text-lg font-bold ${
+                          item?.modal
+                            ? 'cursor-pointer hover:text-orange-700 transition'
+                            : 'text-gray-900'
+                        }`}
+                        onClick={() => handleOpenModal(item)}
+                        style={{ textShadow: '0 1px 0 rgba(255,255,255,0.4)' }}
+                      >
+                        {item?.title || '—'}
+                      </h3>
 
-                    <p className="text-gray-700/90 text-sm mt-1">{item.desc}</p>
-                  </div>
-                ))}
+                      <p className="text-gray-700/90 text-sm mt-1">
+                        {item?.desc || item?.description || ''}
+                      </p>
+                    </div>
+                  ))}
               </div>
             </div>
           </div>
@@ -467,12 +484,12 @@ export default function IntroFikhPage() {
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
           {Object.entries({
-            '🎥 Vidéos': totalYearStats.videos || 0,
-            '📄 PDF résumé': totalYearStats.summaryPDF || 0,
-            '📝 Quiz cours': totalYearStats.quizCourse || 0,
-            '📊 Quiz semestres': totalYearStats.quizSemester || 0,
-            '🏆 Examens finaux': totalYearStats.finalExam || 0,
-            '📚 Total Quiz': totalYearStats.totalQuiz || 0,
+            '🎥 Vidéos': totalYearStats?.videos ?? 0,
+            '📄 PDF résumé': totalYearStats?.summaryPDF ?? 0,
+            '📝 Quiz cours': totalYearStats?.quizCourse ?? 0,
+            '📊 Quiz semestres': totalYearStats?.quizSemester ?? 0,
+            '🏆 Examens finaux': totalYearStats?.finalExam ?? 0,
+            '📚 Total Quiz': totalYearStats?.totalQuiz ?? 0,
           }).map(([label, value]) => (
             <div key={label} className="bg-white p-4 rounded-lg shadow">
               <p className="text-xl font-bold">{value}</p>
@@ -491,12 +508,12 @@ export default function IntroFikhPage() {
         content={
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-center">
             {Object.entries({
-              '🎥 Vidéos': semesterStats.videos || 0,
-              '📄 PDF résumé': semesterStats.summaryPDF || 0,
-              '📝 Quiz cours': semesterStats.quizCourse || 0,
-              '📊 Quiz semestre': semesterStats.quizSemester || 0,
-              '🏆 Examen final': semesterStats.finalExam || 0,
-              '📚 Total Quiz': semesterStats.totalQuiz || 0,
+              '🎥 Vidéos': semesterStats?.videos ?? 0,
+              '📄 PDF résumé': semesterStats?.summaryPDF ?? 0,
+              '📝 Quiz cours': semesterStats?.quizCourse ?? 0,
+              '📊 Quiz semestre': semesterStats?.quizSemester ?? 0,
+              '🏆 Examen final': semesterStats?.finalExam ?? 0,
+              '📚 Total Quiz': semesterStats?.totalQuiz ?? 0,
             }).map(([label, value], i) => (
               <motion.div
                 key={label}
@@ -519,7 +536,7 @@ export default function IntroFikhPage() {
       <Modal
         isOpen={isModalLessonsOpen}
         onClose={() => setIsModalLessonsOpen(false)}
-        title="📚 قائمة دروس الفقه"
+        title="📚 قائمة دروس السيرة"
         content={lessonContent}
       />
 

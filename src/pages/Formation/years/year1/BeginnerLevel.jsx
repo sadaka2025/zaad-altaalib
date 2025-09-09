@@ -129,7 +129,16 @@ function SectionSemester({ title, subjects, subjectKeys, semesterNumber }) {
   const lang = i18n.language;
 
   // Liste des matières qui doivent passer par une IntroPage
-  const introSubjects = ['fiqh'];
+  const introSubjects = [
+    'fiqh',
+    'akhlaq',
+    'aqida',
+    'tajwid',
+    'nahw',
+    'sirah',
+    'hadith',
+  ];
+
   // 🔔 Tu peux ajouter ici d’autres matières plus tard (ex: 'tajwid', 'aqida', ...)
 
   const handleClick = (subjectKey) => {

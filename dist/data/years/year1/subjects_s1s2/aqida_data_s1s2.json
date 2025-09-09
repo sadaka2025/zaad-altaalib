@@ -10,15 +10,10 @@
     },
     "instructors": [
       {
-        "name": "Dr. X"
+        "name": "Dr. Y"
       }
     ],
-    "tabs": [
-      "video",
-      "summaryPDF",
-      "textExtraction",
-      "qna"
-    ],
+    "tabs": ["video", "summaryPDF", "textExtraction", "qna"],
     "tabLabels": {
       "video": "🎥 فيديو الدرس",
       "summaryPDF": "📝 مختصر الدرس",
@@ -221,10 +216,7 @@
               {
                 "id": "الملتقى الاول",
                 "label": "الملتقى الأول",
-                "tabs": [
-                  "video",
-                  "summaryPDF"
-                ],
+                "tabs": ["video", "summaryPDF"],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -240,10 +232,7 @@
               {
                 "id": "الملتقى الثاني",
                 "label": "الملتقى الثاني",
-                "tabs": [
-                  "video",
-                  "summaryPDF"
-                ],
+                "tabs": ["video", "summaryPDF"],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -259,10 +248,7 @@
               {
                 "id": "الملتقى الثالث",
                 "label": "الملتقى الثالث",
-                "tabs": [
-                  "video",
-                  "summaryPDF"
-                ],
+                "tabs": ["video", "summaryPDF"],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -283,9 +269,7 @@
               {
                 "id": "quiz-general",
                 "label": "Quiz général sur les cours",
-                "tabs": [
-                  "qna"
-                ],
+                "tabs": ["qna"],
                 "tabLabels": {
                   "qna": "📝 Quiz général (QCM)"
                 },
@@ -299,9 +283,7 @@
               {
                 "id": "final-exam",
                 "label": "Examen final",
-                "tabs": [
-                  "qna"
-                ],
+                "tabs": ["qna"],
                 "tabLabels": {
                   "qna": "📝 Sujet d'examen"
                 },
@@ -315,9 +297,7 @@
               {
                 "id": "CombinedCourse",
                 "label": "CombinedCourse",
-                "tabs": [
-                  "fusion"
-                ],
+                "tabs": ["fusion"],
                 "tabLabels": {
                   "fusion": "📝CombinedCourse"
                 },
@@ -503,10 +483,7 @@
               {
                 "id": "الملتقى الاول",
                 "label": "الملتقى الاول",
-                "tabs": [
-                  "video",
-                  "summaryPDF"
-                ],
+                "tabs": ["video", "summaryPDF"],
                 "tabLabels": {
                   "video": "🎥 تسجيل اللقاء",
                   "summaryPDF": "📝 ملخص اللقاء"
@@ -527,9 +504,7 @@
               {
                 "id": "quiz-general",
                 "label": "Quiz général sur les cours",
-                "tabs": [
-                  "qna"
-                ],
+                "tabs": ["qna"],
                 "tabLabels": {
                   "qna": "📝 Quiz général (QCM)"
                 },
@@ -543,9 +518,7 @@
               {
                 "id": "final-exam",
                 "label": "Examen final",
-                "tabs": [
-                  "qna"
-                ],
+                "tabs": ["qna"],
                 "tabLabels": {
                   "qna": "📝 Sujet d'examen"
                 },
@@ -559,9 +532,7 @@
               {
                 "id": "CombinedCourse",
                 "label": "CombinedCourse",
-                "tabs": [
-                  "fusion"
-                ],
+                "tabs": ["fusion"],
                 "tabLabels": {
                   "fusion": "📝CombinedCourse"
                 },

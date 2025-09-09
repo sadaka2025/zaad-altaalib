@@ -1,0 +1,59 @@
+{
+  "year1": {
+    "sirah": {
+      "s1": {
+        "introVideo": "https://drive.google.com/file/d/1hti7H5jtRd-k9pPS_lrmn4R-UnhcSXFg/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "الجذور والنسب ",
+            "desc": "أأصل النبوة ؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "الطفولة والشباب",
+            "desc": "رعاية الله "
+          },
+          {
+            "id": "٠٣",
+            "title": "الدعوة والابتلاء",
+            "desc": "صبر الرسالة"
+          },
+          {
+            "id": "٠٤",
+            "title": "الهجرة وبناء المجتمع",
+            "desc": "نهضة الأمة"
+          }
+        ]
+      },
+
+      "s2": {
+        "introVideo": "https://drive.google.com/file/d/10GeaDuDiwEcO9TOCpIuULNUL1eBlpGVW/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "تأسيس المجتمع",
+            "desc": "بناء الأمة؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "بداية المواجهة",
+            "desc": " دفاع الحق ؟ "
+          },
+          {
+            "id": "٠٣",
+            "title": "الغزوات المتتابعة",
+            "desc": " قوة الصمود"
+          },
+          {
+            "id": "٠٤",
+            "title": "أحداث لاحقة وتحديات",
+            "desc": " ثبات الدعوة"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
     },
     "instructors": [
       {
-        "name": "Dr. X"
+        "name": "Dr. E"
       }
     ],
     "tabs": ["video", "summaryPDF", "textExtraction", "qna"],

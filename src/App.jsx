@@ -28,12 +28,12 @@ import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
 import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
 // Pages Intro
 import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
-// import IntrosiraPage from './pages/Formation/years/year1/Introsubjects/Introsira/IntrosiraPage';
-// import IntroakhlakPage from './pages/Formation/years/year1/Introsubjects/Introakhlak/IntroakhlakPage';
-// import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaquida/IntroaqidaPage';
-// import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
-// import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
-// import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
+import IntrosirahPage from './pages/Formation/years/year1/Introsubjects/Introsirah/IntrosirahPage';
+import IntroakhlaqPage from './pages/Formation/years/year1/Introsubjects/Introakhlaq/IntroakhlaqPage';
+import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaqida/IntroaqidaPage';
+import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
+import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
+import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
 
 import i18n from './i18n';
 import './i18n';
@@ -149,19 +149,19 @@ function LangRoutesWrapper() {
             </RequireAuth>
           }
         />
-        {/* <Route
-          path="introsira"
+        <Route
+          path="introsirah"
           element={
             <RequireAuth>
-              <IntrosiraPage />
+              <IntrosirahPage />
             </RequireAuth>
           }
         />
         <Route
-          path="introakhlak"
+          path="introakhlaq"
           element={
             <RequireAuth>
-              <IntroakhlakPage />
+              <IntroakhlaqPage />
             </RequireAuth>
           }
         />
@@ -196,7 +196,7 @@ function LangRoutesWrapper() {
               <IntrotajwidPage />
             </RequireAuth>
           }
-        /> */}
+        />
       </Route>
 
       {/* Pages sans Navbar */}
