@@ -1,4 +1,3 @@
-// scripts/generate_semesters_json.mjs
 import fs from 'fs';
 import path from 'path';
 
@@ -40,10 +39,17 @@ walk(bucket);
 
 console.log('✅ Fichiers trouvés dans le bucket:', files.length);
 
-// ---- helper : trouver un PDF par motif
+/**
+ * Trouver un PDF par motif
+ * @param {string} subject - Nom de la matière
+ * @param {number} sem - Numéro du semestre (1 ou 2)
+ * @param {string} type - Type de fichier (pcc, meeting, books...)
+ * @param {string | number} [num] - Numéro de meeting (optionnel)
+ * @returns {string} - URL trouvée ou chaîne vide
+ */
 function findPdf(subject, sem, type, num = '') {
   const subj = subject.toLowerCase();
-  const numStr = String(num); // 🔥 conversion explicite
+  const numStr = String(num); // conversion explicite
   return (
     files.find((f) =>
       f.name.toLowerCase().includes(`${type}${numStr}${subj}s${sem}`)

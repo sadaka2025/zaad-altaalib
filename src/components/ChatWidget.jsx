@@ -30,14 +30,65 @@ export default function ChatWidget({
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
 
-  // 🔹 Correction arabe automatique
-  function fixArabicText(text) {
-    return text
-      .split(/\s+/)
-      .map((word) =>
-        /[\u0600-\u06FF]/.test(word) ? word.split('').reverse().join('') : word
-      )
-      .join(' ');
+  // 🔹 Correction et inversion phrases arabes
+  function fixArabicSentence(text) {
+    if (!text) return '';
+
+    const stopWords = ['عمجم', 'سورد', 'ب'];
+
+    // Nettoyage général
+    let clean = text
+      .replace(/\u202B|\u202C|\u202A|\u200F|\u200E/g, '')
+      .replace(/[{}\[\]—\-–()<>]/g, '')
+      .replace(/[.,;:،ـ…!؟]/g, '')
+      .replace(/\s{2,}/g, ' ')
+      .trim();
+
+    // Découper en mots
+    let words = clean.split(' ').filter(Boolean);
+
+    // Détecter les suffixes fixes comme "مجمع الدروس"
+    let suffixIndex = words.findIndex(
+      (w, i) => w === 'مجمع' && words[i + 1] === 'الدروس'
+    );
+    let mainPhrase, suffix;
+    if (suffixIndex >= 0) {
+      mainPhrase = words.slice(0, suffixIndex);
+      suffix = words.slice(suffixIndex, suffixIndex + 2);
+    } else {
+      mainPhrase = words;
+      suffix = [];
+    }
+
+    // Supprimer mots parasites
+    mainPhrase = mainPhrase.filter((w) => !stopWords.includes(w));
+
+    // Inverser la phrase principale
+    mainPhrase = mainPhrase.reverse();
+
+    // Recomposer la phrase finale
+    let finalText = mainPhrase.join(' ');
+    if (suffix.length) finalText += '. ' + suffix.join(' ');
+
+    return finalText;
+  }
+
+  // 🔹 Mise en forme pédagogique
+  function formatArabicAnswer(text) {
+    if (!text) return '';
+
+    let clean = fixArabicSentence(text);
+
+    // Ajouter الإجابة الصحيحة: et السند: automatiquement si présents
+    if (/الإجابة|السند/.test(clean)) {
+      clean = clean
+        .replace(/الإجابة.*/g, 'الإجابة الصحيحة:')
+        .replace(/السند.*/g, 'السند:')
+        .replace(/\s{2,}/g, ' ')
+        .trim();
+    }
+
+    return clean;
   }
 
   async function handleSend(e) {
@@ -67,7 +118,7 @@ export default function ChatWidget({
       const assistantMsg = {
         id: Date.now() + 1,
         role: 'assistant',
-        text: fixArabicText(data.answer ?? '(pas de réponse)'),
+        text: formatArabicAnswer(data.answer ?? '(pas de réponse)'),
         sources: data.chunks || [],
       };
 
@@ -88,7 +139,6 @@ export default function ChatWidget({
     }
   }
 
-  // 🔹 Réécriture IA avec remplacement du texte
   async function handleAiRewrite(messageId, originalText, actionPrompt) {
     setLoading(true);
     try {
@@ -105,7 +155,7 @@ export default function ChatWidget({
           msg.id === messageId
             ? {
                 ...msg,
-                text: fixArabicText(data.answer ?? '(pas de réponse)'),
+                text: formatArabicAnswer(data.answer ?? '(pas de réponse)'),
               }
             : msg
         )
@@ -117,7 +167,6 @@ export default function ChatWidget({
     }
   }
 
-  // 🔹 Options IA avec icônes colorées
   const rewriteOptions = [
     { label: '✍️ Améliorer la rédaction', prompt: 'Améliore ce texte :' },
     { label: '✅ Corriger orthographe', prompt: 'Corrige les fautes :' },
@@ -137,7 +186,6 @@ export default function ChatWidget({
   return (
     <div className="fixed right-8 bottom-8 z-50">
       <div className="flex flex-col items-end">
-        {/* Floating button */}
         <button
           aria-label="Open chat"
           onClick={() => setOpen((v) => !v)}
@@ -146,7 +194,6 @@ export default function ChatWidget({
           💬
         </button>
 
-        {/* Chat window */}
         <AnimatePresence>
           {open && (
             <motion.div
@@ -210,7 +257,7 @@ export default function ChatWidget({
                             className="w-9 h-9 rounded-full mr-3"
                           />
                           <div className="flex flex-col max-w-[85%]">
-                            <div className="bg-white rounded-2xl px-4 py-3 shadow text-sm relative text-black font-bold text-justify">
+                            <div className="bg-white rounded-2xl px-4 py-3 shadow text-sm relative text-black font-bold text-justify whitespace-pre-line">
                               {m.text}
                             </div>
 
@@ -252,9 +299,7 @@ export default function ChatWidget({
                                 </button>
                                 <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-md border border-gray-200 mt-1 w-40">
                                   <a
-                                    href={`https://t.me/share/url?url=&text=${encodeURIComponent(
-                                      m.text
-                                    )}`}
+                                    href={`https://t.me/share/url?url=&text=${encodeURIComponent(m.text)}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="block px-3 py-2 hover:bg-gray-100 text-sm"
@@ -262,9 +307,7 @@ export default function ChatWidget({
                                     Telegram
                                   </a>
                                   <a
-                                    href={`https://wa.me/?text=${encodeURIComponent(
-                                      m.text
-                                    )}`}
+                                    href={`https://wa.me/?text=${encodeURIComponent(m.text)}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="block px-3 py-2 hover:bg-gray-100 text-sm"
@@ -272,9 +315,7 @@ export default function ChatWidget({
                                     WhatsApp
                                   </a>
                                   <a
-                                    href={`mailto:?body=${encodeURIComponent(
-                                      m.text
-                                    )}`}
+                                    href={`mailto:?body=${encodeURIComponent(m.text)}`}
                                     className="block px-3 py-2 hover:bg-gray-100 text-sm"
                                   >
                                     Email
