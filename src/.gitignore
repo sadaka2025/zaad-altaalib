@@ -1,1 +1,10 @@
 node_modules/
+public/PDFs/
+.env
+dist/
+build/
+*.mp4
+*.pdf
+/dist/
+/public/videos/
+

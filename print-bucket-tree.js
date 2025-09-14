@@ -10,6 +10,11 @@ const SUPABASE_KEY =
 const BUCKET = 'pdf';
 const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
+// Génère l’URL publique complète
+function getPublicUrl(bucket, path) {
+  return `${SUPABASE_URL}/storage/v1/object/public/${bucket}/${path}`;
+}
+
 async function listFilesRecursively(path = '') {
   let tree = [];
 
@@ -24,14 +29,15 @@ async function listFilesRecursively(path = '') {
 
   for (const item of data) {
     if (item.metadata) {
-      // 📄 C'est un fichier
+      // 📄 Fichier
+      const fullPath = path ? `${path}/${item.name}` : item.name;
       tree.push({
         type: 'file',
         name: item.name,
-        path: path ? `${path}/${item.name}` : item.name,
+        url: getPublicUrl(BUCKET, fullPath), // 👉 URL complète
       });
     } else {
-      // 📂 C'est un dossier
+      // 📂 Dossier
       const subTree = await listFilesRecursively(
         path ? `${path}/${item.name}` : item.name
       );
@@ -52,7 +58,7 @@ function printTree(tree, indent = '') {
       console.log(`${indent}📂 ${node.name}/`);
       printTree(node.children, indent + '  ');
     } else {
-      console.log(`${indent}📄 ${node.name}`);
+      console.log(`${indent}📄 ${node.name} → ${node.url}`);
     }
   }
 }
@@ -62,7 +68,6 @@ function printTree(tree, indent = '') {
 
   const tree = await listFilesRecursively('');
 
-  // 👉 On encapsule dans un objet avec le nom du bucket
   const bucketTree = {
     bucket: BUCKET,
     children: tree,

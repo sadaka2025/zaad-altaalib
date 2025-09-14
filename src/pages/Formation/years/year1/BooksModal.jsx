@@ -17,7 +17,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: متن ابن عاشر المسمى (المرشد المعين على الضروري من علوم الدين) هو كتاب للإمام عبد الواحد بن عاشر المالكي الأشعري الصوفي (ت 1040هـ = 1631م) عبارة عن منظومة في أصول الدين على مذهب الإمام مالك ضمّت 317 بيتاً من بحر الرجز في العقيدة والفقه والسلوك ، وهي منظومة ذاع صيتها وتلقتها الأمة الإسلامية بالقبول حتى اعتبرت درَّة من دُرر الفقه المالكي.\nوالمنظومة وإن كانت صغيرة الحجم، فقد جمعت أصول الدين وفروعه، مما لا يسع المسلم جهله، في أوجز لفظ، وأوضح عبارة، تقيد فيها ابن عاشر بالمذهب المالكي، ولم يخرج عن المشهور، والراجح، والمعمول به، والمنظومة كذلك لا تخلو من دليل يرتكز على الكتاب والسنة والأصول التي اعتمدها المالكية في مذهبهم، لذلك ظلت المنظومة ولا تزال المنطلق الأول لمن أراد دراسة الفقه المالكي.\nكما اتسمت العناية بالنظم من لدن العلماء بالوفرة والتنوع، إذ منهم من خصه بالشرح المطول لسائر أبواب النظم، ومنهم من أفرد أحد الأبواب الثلاثة بالشرح المستفيض أي العقيدة أو الفقه أو التصوف، ومنهم من اكتفى بالشرح المختصر، ومنهم من اتجهت عنايته إلى شرحه شرحاً إشارياً على اصطلاح أهل التصوف.\nولقد خص العلامة ابن عاشر علم الاعتقاد بكتاب مستقل من منظومته المذكورة، قصد فيه إلى بيان أمهات العقائد على مذهب الإمام المجدد أبي الحسن الأشعري (ت 324هـ)، حيث جاءت مقاصده معربة عن التوجهات الأصلية الكبرى للمذهب الأشعري، والتي ينتظمها أصل التنزيه والتعظيم مقصداً، وأصل الوسطية والاعتدال منهجاً..',
     image: '/images/books/fiqh.jpg',
-    pdf: '/pdf/books/fiqh.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/fiqh/booksfiqhs1.pdf',
   },
   aqida: {
     id: 2,
@@ -31,7 +31,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: يتسم كتاب "الشذرات الذهبية" بأنه شرح لمنظومة في العقيدة الأشعرية، ويهدف إلى توضيح مبادئ العقيدة الإسلامية.',
     image: '/images/books/aqida.jpg',
-    pdf: '/pdf/books/aqida.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/aqida/booksaqidas1.pdf',
   },
   tajwid: {
     id: 3,
@@ -44,7 +44,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: متن منظوم في علم تجويد القرآن، يُدرس في المستوى الابتدائي، اختصت بأحكام النون الساكنة والتنوين والمدود فقط، بأسلوب مبسط للطلبة المبتدئين.',
     image: '/images/books/tajwid.jpg',
-    pdf: '/pdf/books/tajwid.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/tajwid/bookstajwids1.pdf',
   },
   nahw: {
     id: 4,
@@ -57,7 +57,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: تزويد المتعلم بأساس متين في قواعد النحو العربي من خلال شرح مبسط وتدريجي، مع التركيز على القواعد الأساسية للإعراب وتطبيقها.',
     image: '/images/books/nahw.jpg',
-    pdf: '/pdf/books/nahw.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/nahw/booksnahws1.pdf',
   },
   sirah: {
     id: 5,
@@ -70,7 +70,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: يتناول الكتاب السيرة النبوية بتسلسل زمني يشمل: المولد والنشأة، الطفولة، البعثة، الهجرة، الغزوات الكبرى، حجة الوداع، الوفاة.',
     image: '/images/books/sirah.jpg',
-    pdf: '/pdf/books/sirah.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/sirah/bookssirahs1.pdf',
   },
   hadith: {
     id: 6,
@@ -84,7 +84,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: تيسير فهم الأحاديث النبوية وشرحها وتبيين الأحكام والفوائد المستنبطة منها، مع التأكيد على العمل بمضمونها.',
     image: '/images/books/hadith.jpg',
-    pdf: '/public/PDFs/year1/pdfStudyBooks/s1/hadith/bookshadiths1.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/hadith/bookshadiths1.pdf',
   },
   akhlaq: {
     id: 7,
@@ -97,7 +97,7 @@ const booksMap = {
     objectives:
       'أهداف هذا المقرر: يشمل فضائل العلم، آداب العلماء، التخلق بالزهد، التحلي بمكارم الأخلاق، صيانة العلم، المحافظة على المندوبات والشعائر، الاجتهاد في التعلم، والاقتداء بالنبي صلى الله عليه وسلم.',
     image: '/images/books/akhlaq.jpg',
-    pdf: '/pdf/books/akhlaq.pdf',
+    pdf: 'https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/akhlaq/booksakhlaqs1.pdf',
   },
 };
 

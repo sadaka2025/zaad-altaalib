@@ -13,6 +13,7 @@ import { useTranslation } from 'react-i18next';
 import LayoutConfigurable from './pages/Home/LayoutConfigurable';
 
 import HomePage from './pages/Home/HomePage';
+import ChatWidget from './components/ChatWidget'; // ✅ ton widget
 import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
 import AvisPage from './pages/Formation/utils/AvisPage';
@@ -72,166 +73,170 @@ function LangRoutesWrapper() {
   }, [lang, i18n]);
 
   return (
-    <Routes>
-      {/* Pages avec Navbar */}
-      <Route element={<LayoutConfigurable showNavbar={true} />}>
-        <Route index element={<HomePage />} />
-        <Route
-          path="formations"
-          element={
-            <RequireAuth>
-              <Formations />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="avis"
-          element={
-            <RequireAuth>
-              <AvisPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="qr"
-          element={
-            <RequireAuth>
-              <QRPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="annonces"
-          element={
-            <RequireAuth>
-              <AnnoncesPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="profavis/:subject"
-          element={
-            <RequireAuth>
-              <ProffAvisPage />
-            </RequireAuth>
-          }
-        />
+    <>
+      <Routes>
+        {/* Pages avec Navbar */}
+        <Route element={<LayoutConfigurable showNavbar={true} />}>
+          <Route index element={<HomePage />} />
+          <Route
+            path="formations"
+            element={
+              <RequireAuth>
+                <Formations />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="avis"
+            element={
+              <RequireAuth>
+                <AvisPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="qr"
+            element={
+              <RequireAuth>
+                <QRPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="annonces"
+            element={
+              <RequireAuth>
+                <AnnoncesPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="profavis/:subject"
+            element={
+              <RequireAuth>
+                <ProffAvisPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-2"
+            element={
+              <RequireAuth>
+                <Niveau2 />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-moyen"
+            element={
+              <RequireAuth>
+                <NiveauMoyen />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-4"
+            element={
+              <RequireAuth>
+                <Niveau4 />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-avance"
+            element={
+              <RequireAuth>
+                <NiveauAvance />
+              </RequireAuth>
+            }
+          />
 
-        <Route
-          path="niveau-2"
-          element={
-            <RequireAuth>
-              <Niveau2 />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-moyen"
-          element={
-            <RequireAuth>
-              <NiveauMoyen />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-4"
-          element={
-            <RequireAuth>
-              <Niveau4 />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="niveau-avance"
-          element={
-            <RequireAuth>
-              <NiveauAvance />
-            </RequireAuth>
-          }
-        />
+          {/* Pages Intro → Navbar visible */}
+          <Route
+            path="introfiqh"
+            element={
+              <RequireAuth>
+                <IntroFikhPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="introsirah"
+            element={
+              <RequireAuth>
+                <IntrosirahPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="introakhlaq"
+            element={
+              <RequireAuth>
+                <IntroakhlaqPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="introaqida"
+            element={
+              <RequireAuth>
+                <IntroaqidaPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="introhadith"
+            element={
+              <RequireAuth>
+                <IntrohadithPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="intronahw"
+            element={
+              <RequireAuth>
+                <IntronahwPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="introtajwid"
+            element={
+              <RequireAuth>
+                <IntrotajwidPage />
+              </RequireAuth>
+            }
+          />
+        </Route>
 
-        {/* Pages Intro → Navbar visible */}
-        <Route
-          path="introfiqh"
-          element={
-            <RequireAuth>
-              <IntroFikhPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="introsirah"
-          element={
-            <RequireAuth>
-              <IntrosirahPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="introakhlaq"
-          element={
-            <RequireAuth>
-              <IntroakhlaqPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="introaqida"
-          element={
-            <RequireAuth>
-              <IntroaqidaPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="introhadith"
-          element={
-            <RequireAuth>
-              <IntrohadithPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="intronahw"
-          element={
-            <RequireAuth>
-              <IntronahwPage />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="introtajwid"
-          element={
-            <RequireAuth>
-              <IntrotajwidPage />
-            </RequireAuth>
-          }
-        />
-      </Route>
+        {/* Pages sans Navbar */}
+        <Route element={<LayoutConfigurable showNavbar={false} />}>
+          <Route
+            path="niveau-debutant"
+            element={
+              <RequireAuth>
+                <NiveauDebutant />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="annee/:year/matiere/:subjectSlug"
+            element={
+              <RequireAuth>
+                <SubjectPage />
+              </RequireAuth>
+            }
+          />
+        </Route>
 
-      {/* Pages sans Navbar */}
-      <Route element={<LayoutConfigurable showNavbar={false} />}>
-        <Route
-          path="niveau-debutant"
-          element={
-            <RequireAuth>
-              <NiveauDebutant />
-            </RequireAuth>
-          }
-        />
-        <Route
-          path="annee/:year/matiere/:subjectSlug"
-          element={
-            <RequireAuth>
-              <SubjectPage />
-            </RequireAuth>
-          }
-        />
-      </Route>
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
+      </Routes>
 
-      {/* Catch-all */}
-      <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
-    </Routes>
+      {/* ✅ Widget flottant accessible partout */}
+      <ChatWidget apiPath="http://localhost:5000/api/ask" />
+    </>
   );
 }
 
