@@ -16,6 +16,7 @@ import HomePage from './pages/Home/HomePage';
 import ChatWidget from './components/ChatWidget'; // ✅ ton widget
 import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
+import QuizChrono from './pages/Home/QuizChrono';
 import AvisPage from './pages/Formation/utils/AvisPage';
 import QRPage from './pages/Formation/utils/QRPage';
 import ProffAvisPage from './pages/Formation/utils/ProffAvisPage';
@@ -205,6 +206,14 @@ function LangRoutesWrapper() {
             element={
               <RequireAuth>
                 <IntrotajwidPage />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/quizchrono"
+            element={
+              <RequireAuth>
+                <QuizChrono />
               </RequireAuth>
             }
           />

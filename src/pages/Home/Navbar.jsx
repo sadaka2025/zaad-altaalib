@@ -10,7 +10,6 @@ import {
   BookOpen,
   GraduationCap,
   ScrollText,
-  Book,
   Volume2,
   HeartHandshake,
   Brackets,
@@ -18,6 +17,7 @@ import {
   CalendarDays,
   Feather,
   Landmark,
+  Timer,
 } from 'lucide-react';
 
 import LanguageSwitcher from '../../components/global/Translation/LanguageSwitcher';
@@ -231,6 +231,21 @@ export default function Navbar() {
                       </div>
                     );
                   })}
+
+                  {/* 🚀 Bouton QuizChrono (Desktop) */}
+                  <div className="col-span-2">
+                    <button
+                      onClick={() => handleNavClick('/QuizChrono ')}
+                      className="w-full flex items-center gap-3 px-3 py-3 rounded-xl border 
+                      bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg 
+                      hover:from-red-600 hover:to-orange-500 transition-all"
+                    >
+                      <span className="shrink-0 inline-flex items-center justify-center rounded-xl p-2 bg-white/20">
+                        <Timer className="size-5" />
+                      </span>
+                      <span className="font-semibold">⏳ QuizChrono</span>
+                    </button>
+                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -295,6 +310,71 @@ export default function Navbar() {
           </button>
         </div>
       </div>
+
+      {/* === MENU MOBILE === */}
+      <AnimatePresence>
+        {mobileOpen && (
+          <motion.div
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -10 }}
+            className="md:hidden bg-slate-900 text-yellow-400 shadow-2xl p-6 space-y-4"
+          >
+            <button
+              onClick={() => handleNavClick('/')}
+              className="w-full text-start px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-slate-900"
+            >
+              {t('home')}
+            </button>
+            {subjects.map((s) => (
+              <div key={s.key} className="w-full">
+                <p className="px-4 py-2 font-bold">{s.label}</p>
+                <ul className="pl-6 space-y-1">
+                  {years.map((y) => (
+                    <li
+                      key={y}
+                      className="px-4 py-1 hover:bg-yellow-500 hover:text-slate-900 rounded-md cursor-pointer"
+                      onClick={() =>
+                        handleNavClick(`/annee/${y}/matiere/${s.key}`)
+                      }
+                    >
+                      {t(`student_board.subjects.${s.key}.years.year${y}`)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+            {/* 🚀 QuizChrono mobile */}
+            <button
+              onClick={() => handleNavClick('/quizchrono')}
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl border 
+              bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg 
+              hover:from-red-600 hover:to-orange-500 transition-all"
+            >
+              <Timer className="size-5" />
+              <span>⏳ QuizChrono</span>
+            </button>
+            <button
+              onClick={() => handleNavClick('/formations')}
+              className="w-full text-start px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-slate-900"
+            >
+              {t('courses')}
+            </button>
+            <button
+              onClick={() => handleNavClick('/contact')}
+              className="w-full text-start px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-slate-900"
+            >
+              {t('contact')}
+            </button>
+            <button
+              onClick={() => handleNavClick('/blog')}
+              className="w-full text-start px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-slate-900 flex items-center gap-2"
+            >
+              <Feather className="size-4" /> مذكراتي
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* Modal Login */}
       {showModal && (
