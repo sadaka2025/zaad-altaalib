@@ -62,7 +62,7 @@ export default function Navbar() {
       { key: 'nahw', label: '✒️ نحو', icon: Brackets },
       { key: 'akhlaq', label: '🌿 الأخلاق', icon: HeartHandshake },
       { key: 'hadith', label: '📚 الحديث', icon: ScrollText },
-      { key: 'aqeedah', label: '🕌 العقيدة', icon: Landmark },
+      { key: 'aqida', label: '🕌 العقيدة', icon: Landmark },
     ],
     [t]
   );

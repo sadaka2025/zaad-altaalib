@@ -170,7 +170,7 @@ export default function ChatWidget({
                 <img
                   src="/images/ai-assistant-avatar.png"
                   alt="AI"
-                  className="w-10 h-10 rounded-full object-cover ring-2 ring-white/70"
+                  className="w-16 h-16 rounded-full object-cover ring-2 ring-white/70"
                 />
                 <div>
                   <div className="font-semibold text-base">Assistant AI</div>
@@ -221,7 +221,7 @@ export default function ChatWidget({
                               subjectAvatars.default
                             }
                             alt="ai"
-                            className="w-9 h-9 rounded-full mr-3"
+                            className="w-16 h-16 rounded-full mr-3"
                           />
                           <div className="flex flex-col max-w-[85%]">
                             <div className="bg-white rounded-2xl px-4 py-3 shadow text-sm relative text-black font-bold text-justify whitespace-pre-line">
