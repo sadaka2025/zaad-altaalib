@@ -32,7 +32,10 @@ export default function ModalWithLogin({
         playsInline
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
       >
-        <source src="/videos/bg-login.mp4" type="video/mp4" />
+        <source
+          src="https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/videos/bg-login.mp4"
+          type="video/mp4"
+        />
       </video>
 
       {/* Modal central */}
@@ -58,7 +61,10 @@ export default function ModalWithLogin({
             objectFit: 'contain', // pour garder les proportions
           }}
         >
-          <source src="/videos/logo.mp4" type="video/mp4" />
+          <source
+            src="https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/videos/logo.mp4"
+            type="video/mp4"
+          />
           Votre navigateur ne supporte pas la vidéo.
         </video>
 
