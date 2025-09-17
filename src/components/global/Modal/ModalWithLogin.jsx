@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import LoginForm from '../../../pages/Login/LoginForm';
+import LoginForm from '../../../pages/Home/LoginForm';
 
 export default function ModalWithLogin({
   buttonLabel = 'Se connecter',

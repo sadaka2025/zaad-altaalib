@@ -8,7 +8,7 @@ export default function LoginForm({ onLoginSuccess }) {
   // Icônes sociaux
   const facebookIcon = '/images/facebook-icon.png';
   const googleIcon = '/images/google-icon.png';
-  const githubIcon = '/images/github-icon.png';
+  const githubIcon = '/images/github.jpeg';
 
   // États
   const [email, setEmail] = useState('');
