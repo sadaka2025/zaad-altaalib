@@ -1,6 +1,47 @@
 // src/pages/LoginForm.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../../context/AuthContext';
+import { supabase } from '../../supabaseClient';
+
+// Utilitaire Supabase pour synchroniser les visiteurs
+async function syncVisitor({
+  email,
+  status = 'check',
+  nom = null,
+  prenom = null,
+  profil = 'student',
+}) {
+  const lowerEmail = email.toLowerCase();
+
+  const { data, error } = await supabase
+    .from('visitors')
+    .upsert(
+      [
+        {
+          email: lowerEmail,
+          status,
+          nom,
+          prenom,
+          profil,
+          last_visit: new Date(),
+        },
+      ],
+      { onConflict: ['email'] }
+    )
+    .select();
+
+  if (error) console.error('Erreur Supabase syncVisitor:', error);
+
+  // Incrémente visits_count si existant
+  if (data && data.length > 0 && data[0].visits_count) {
+    await supabase
+      .from('visitors')
+      .update({ visits_count: data[0].visits_count + 1 })
+      .eq('email', lowerEmail);
+  }
+
+  return data;
+}
 
 export default function LoginForm({ onLoginSuccess }) {
   const { login } = useAuth();
@@ -40,6 +81,11 @@ export default function LoginForm({ onLoginSuccess }) {
         );
         setAllowedList(allowed.map((e) => e.toLowerCase()));
         setBlockedList(blocked.map((e) => e.toLowerCase()));
+
+        // 🔹 Synchroniser les emails bloqués dans Supabase
+        blocked.forEach(async (email) => {
+          await syncVisitor({ email, status: 'blocked' });
+        });
       } catch (err) {
         console.error('Erreur chargement listes emails:', err);
       }
@@ -98,26 +144,43 @@ export default function LoginForm({ onLoginSuccess }) {
     }, 500);
   };
 
-  const handleSubmitEmail = (e) => {
+  const handleSubmitEmail = async (e) => {
     e.preventDefault();
+    const lowerEmail = email.toLowerCase();
+
     if (canSignIn) {
-      saveEmailToHistory(email.toLowerCase());
+      saveEmailToHistory(lowerEmail);
+
+      // 🔹 Stockage automatique dans Supabase
+      await syncVisitor({ email: lowerEmail, status: 'allowed' });
+
       login();
-      if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
+      if (onLoginSuccess) onLoginSuccess(lowerEmail);
     } else if (canSignUp) {
       setStep('signup');
     }
   };
 
-  const handleSignupSubmit = (e) => {
+  const handleSignupSubmit = async (e) => {
     e.preventDefault();
     if (!nom || !prenom) {
       setError('Merci de remplir tous les champs.');
       return;
     }
-    saveEmailToHistory(email.toLowerCase());
+    const lowerEmail = email.toLowerCase();
+    saveEmailToHistory(lowerEmail);
+
+    // 🔹 Stockage automatique avec infos utilisateur
+    await syncVisitor({
+      email: lowerEmail,
+      status: 'check',
+      nom,
+      prenom,
+      profil,
+    });
+
     login();
-    if (onLoginSuccess) onLoginSuccess(email.toLowerCase());
+    if (onLoginSuccess) onLoginSuccess(lowerEmail);
   };
 
   return (
