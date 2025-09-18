@@ -1,5 +1,20 @@
+// src/pages/Blog/ArticleDetail.jsx
 import { Link, useParams } from 'react-router-dom';
 import articles from '../../datablog/blog.json';
+import {
+  FacebookShareButton,
+  TwitterShareButton,
+  TelegramShareButton,
+  WhatsappShareButton,
+  LinkedinShareButton,
+  EmailShareButton,
+  FacebookIcon,
+  TwitterIcon,
+  TelegramIcon,
+  WhatsappIcon,
+  LinkedinIcon,
+  EmailIcon,
+} from 'react-share';
 
 export default function ArticleDetail() {
   const { id } = useParams();
@@ -14,6 +29,9 @@ export default function ArticleDetail() {
   const intro = article.content?.intro || '';
   const paragraph2 = article.content?.paragraph2 || '';
   const conclusion = article.content?.conclusion || '';
+
+  const articleUrl = window.location.href; // URL actuelle
+  const shareText = article.title; // Titre comme texte de partage
 
   return (
     <div
@@ -99,6 +117,38 @@ export default function ArticleDetail() {
           dangerouslySetInnerHTML={{ __html: conclusion }}
         />
       )}
+
+      {/* Zone de partage social */}
+      <div className="mt-8 text-center">
+        <h2 className="text-lg font-semibold mb-3 text-gray-700">
+          شارك المقال عبر :
+        </h2>
+        <div className="flex justify-center gap-3">
+          <FacebookShareButton url={articleUrl} quote={shareText}>
+            <FacebookIcon size={40} round />
+          </FacebookShareButton>
+
+          <TwitterShareButton url={articleUrl} title={shareText}>
+            <TwitterIcon size={40} round />
+          </TwitterShareButton>
+
+          <TelegramShareButton url={articleUrl} title={shareText}>
+            <TelegramIcon size={40} round />
+          </TelegramShareButton>
+
+          <WhatsappShareButton url={articleUrl} title={shareText}>
+            <WhatsappIcon size={40} round />
+          </WhatsappShareButton>
+
+          <LinkedinShareButton url={articleUrl} title={shareText}>
+            <LinkedinIcon size={40} round />
+          </LinkedinShareButton>
+
+          <EmailShareButton url={articleUrl} subject={shareText}>
+            <EmailIcon size={40} round />
+          </EmailShareButton>
+        </div>
+      </div>
     </div>
   );
 }
