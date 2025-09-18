@@ -13,7 +13,7 @@ import { useTranslation } from 'react-i18next';
 import LayoutConfigurable from './pages/Home/LayoutConfigurable';
 
 import HomePage from './pages/Home/HomePage';
-import ChatWidget from './components/ChatWidget'; // ✅ ton widget
+import ChatWidget from './components/ChatWidget';
 import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
 import QuizChrono from './pages/Home/QuizChrono';
@@ -43,11 +43,15 @@ import './i18n';
 
 import { useAuth } from './context/AuthContext';
 
-// 📂 PDF components
+// PDF components
 import PdfsPage from './components/PdfsPage';
 import PdfManager from './components/PdfManager';
 
-// ✅ Protection d’accès
+// Blog components (simple layout)
+import LyaoutArticle from './components/LyaoutArticle';
+import Blog from './pages/Blog/Blog';
+import ArticleDetail from './pages/Blog/ArticleDetail';
+// Protection d’accès
 function RequireAuth({ children }) {
   const { isAuthenticated } = useAuth();
   if (!isAuthenticated) {
@@ -56,10 +60,9 @@ function RequireAuth({ children }) {
   return children;
 }
 
-// ✅ Wrapper langue
+// Wrapper langue
 function LangRoutesWrapper() {
   const { lang } = useParams();
-  const location = useLocation();
   const { i18n } = useTranslation();
 
   useEffect(() => {
@@ -152,7 +155,7 @@ function LangRoutesWrapper() {
             }
           />
 
-          {/* Pages Intro → Navbar visible */}
+          {/* Pages Intro */}
           <Route
             path="introfiqh"
             element={
@@ -239,17 +242,35 @@ function LangRoutesWrapper() {
           />
         </Route>
 
+        {/* Blog simple avec LyaoutArticle */}
+        <Route
+          path="blog-simple"
+          element={
+            <LyaoutArticle>
+              <Blog />
+            </LyaoutArticle>
+          }
+        />
+        <Route
+          path="/blog-simple/:id"
+          element={
+            <LyaoutArticle>
+              <ArticleDetail />
+            </LyaoutArticle>
+          }
+        />
+
         {/* Catch-all */}
         <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
       </Routes>
 
-      {/* ✅ Widget flottant accessible partout */}
+      {/* Widget flottant */}
       <ChatWidget apiPath="http://localhost:5000/api/ask" />
     </>
   );
 }
 
-// ✅ App global
+// App global
 export default function App() {
   return (
     <Router>
@@ -260,12 +281,30 @@ export default function App() {
         {/* Routes avec langue */}
         <Route path="/:lang/*" element={<LangRoutesWrapper />} />
 
-        {/* ✅ Route directe pour PDFs, sans langue */}
+        {/* Route directe pour PDFs */}
         <Route path="/pdf" element={<PdfsPage />} />
         <Route path="/pdf/manage" element={<PdfManager />} />
 
         {/* Probleme accessible sans langue */}
         <Route path="/probleme" element={<ProblemePage />} />
+
+        {/* Blog simple indépendant */}
+        <Route
+          path="/blog-simple"
+          element={
+            <LyaoutArticle>
+              <Blog />
+            </LyaoutArticle>
+          }
+        />
+        <Route
+          path="/blog-simple/:id"
+          element={
+            <LyaoutArticle>
+              <ArticleDetail />
+            </LyaoutArticle>
+          }
+        />
       </Routes>
     </Router>
   );

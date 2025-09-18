@@ -15,7 +15,6 @@ import {
   Brackets,
   BookMarked,
   CalendarDays,
-  Feather,
   Landmark,
   Timer,
 } from 'lucide-react';
@@ -265,10 +264,10 @@ export default function Navbar() {
             {t('contact')}
           </button>
           <button
-            onClick={() => handleNavClick('/blog')}
+            onClick={() => handleNavClick('/blog-simple')}
             className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition flex items-center gap-2"
           >
-            <Feather className="size-4" /> مذكراتي
+            📰 مقالات
           </button>
         </nav>
 
@@ -367,10 +366,10 @@ export default function Navbar() {
               {t('contact')}
             </button>
             <button
-              onClick={() => handleNavClick('/blog')}
+              onClick={() => handleNavClick('/blog-simple')}
               className="w-full text-start px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-slate-900 flex items-center gap-2"
             >
-              <Feather className="size-4" /> مذكراتي
+              📰 مقالات
             </button>
           </motion.div>
         )}
