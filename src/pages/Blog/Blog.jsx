@@ -1,6 +1,7 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import articles from '../../datablog/blog.json';
-import ArticleCard from '../../components/ArticleCard';
+import ArticleCard from './ArticleCard';
 
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -14,11 +15,20 @@ export default function Blog() {
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 
   return (
-    <div>
+    <div className="p-5">
+      {/* En-tête avec titre et lien retour */}
+      <div className="flex items-center justify-between mb-6">
+        <Link to="/" className="text-blue-600 hover:underline font-semibold">
+          ← الرجوع إلى الصفحة الرئيسية
+        </Link>
+      </div>
+
       {/* Liste des articles */}
-      {currentArticles.map((article) => (
-        <ArticleCard key={article.id} article={article} />
-      ))}
+      <div className="space-y-6">
+        {currentArticles.map((article) => (
+          <ArticleCard key={article.id} article={article} />
+        ))}
+      </div>
 
       {/* Pagination */}
       <div className="flex justify-center mt-6 space-x-2">

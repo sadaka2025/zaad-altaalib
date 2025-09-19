@@ -6,7 +6,6 @@ import {
   Route,
   Navigate,
   useParams,
-  useLocation,
 } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
@@ -22,6 +21,7 @@ import QRPage from './pages/Formation/utils/QRPage';
 import ProffAvisPage from './pages/Formation/utils/ProffAvisPage';
 import AnnoncesPage from './pages/Formation/utils/AnnoncesPage';
 import ProblemePage from './pages/Home/ProblemePage';
+import ContactPage from './pages/Home/ContactPage';
 
 import Niveau2 from './pages/Formation/years/year2/LevelTwo';
 import NiveauMoyen from './pages/Formation/years/year3/MediumLevel';
@@ -29,7 +29,7 @@ import Niveau4 from './pages/Formation/years/year4/LevelFour';
 import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
 
 import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
-// Pages Intro
+
 import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
 import IntrosirahPage from './pages/Formation/years/year1/Introsubjects/Introsirah/IntrosirahPage';
 import IntroakhlaqPage from './pages/Formation/years/year1/Introsubjects/Introakhlaq/IntroakhlaqPage';
@@ -41,26 +41,29 @@ import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introta
 import i18n from './i18n';
 import './i18n';
 
-import { useAuth } from './context/AuthContext';
+import { AuthProvider, useAuth } from './context/AuthContext';
 
-// PDF components
 import PdfsPage from './components/PdfsPage';
 import PdfManager from './components/PdfManager';
 
-// Blog components (simple layout)
 import LyaoutArticle from './components/LyaoutArticle';
 import Blog from './pages/Blog/Blog';
 import ArticleDetail from './pages/Blog/ArticleDetail';
-// Protection d’accès
+
 function RequireAuth({ children }) {
-  const { isAuthenticated } = useAuth();
-  if (!isAuthenticated) {
-    return <Navigate to={`/${i18n.language || 'ar'}`} replace />;
-  }
+  const { user, login } = useAuth();
+  if (!user)
+    return (
+      <button
+        onClick={login}
+        className="m-4 p-2 bg-blue-600 text-white rounded"
+      >
+        Connexion Simulée / Login
+      </button>
+    );
   return children;
 }
 
-// Wrapper langue
 function LangRoutesWrapper() {
   const { lang } = useParams();
   const { i18n } = useTranslation();
@@ -79,7 +82,6 @@ function LangRoutesWrapper() {
   return (
     <>
       <Routes>
-        {/* Pages avec Navbar */}
         <Route element={<LayoutConfigurable showNavbar={true} />}>
           <Route index element={<HomePage />} />
           <Route
@@ -154,8 +156,6 @@ function LangRoutesWrapper() {
               </RequireAuth>
             }
           />
-
-          {/* Pages Intro */}
           <Route
             path="introfiqh"
             element={
@@ -222,7 +222,6 @@ function LangRoutesWrapper() {
           />
         </Route>
 
-        {/* Pages sans Navbar */}
         <Route element={<LayoutConfigurable showNavbar={false} />}>
           <Route
             path="niveau-debutant"
@@ -242,7 +241,6 @@ function LangRoutesWrapper() {
           />
         </Route>
 
-        {/* Blog simple avec LyaoutArticle */}
         <Route
           path="blog-simple"
           element={
@@ -260,52 +258,29 @@ function LangRoutesWrapper() {
           }
         />
 
-        {/* Catch-all */}
+        <Route path="/contact" element={<ContactPage />} />
+
         <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
       </Routes>
 
-      {/* Widget flottant */}
+      {/* Chat Widget global */}
       <ChatWidget apiPath="http://localhost:5000/api/ask" />
     </>
   );
 }
 
-// App global
 export default function App() {
   return (
-    <Router>
-      <Routes>
-        {/* Redirection par défaut */}
-        <Route path="/" element={<Navigate to="/ar" replace />} />
-
-        {/* Routes avec langue */}
-        <Route path="/:lang/*" element={<LangRoutesWrapper />} />
-
-        {/* Route directe pour PDFs */}
-        <Route path="/pdf" element={<PdfsPage />} />
-        <Route path="/pdf/manage" element={<PdfManager />} />
-
-        {/* Probleme accessible sans langue */}
-        <Route path="/probleme" element={<ProblemePage />} />
-
-        {/* Blog simple indépendant */}
-        <Route
-          path="/blog-simple"
-          element={
-            <LyaoutArticle>
-              <Blog />
-            </LyaoutArticle>
-          }
-        />
-        <Route
-          path="/blog-simple/:id"
-          element={
-            <LyaoutArticle>
-              <ArticleDetail />
-            </LyaoutArticle>
-          }
-        />
-      </Routes>
-    </Router>
+    <AuthProvider>
+      <Router>
+        <Routes>
+          <Route path="/" element={<Navigate to="/ar" replace />} />
+          <Route path="/:lang/*" element={<LangRoutesWrapper />} />
+          <Route path="/pdf" element={<PdfsPage />} />
+          <Route path="/pdf/manage" element={<PdfManager />} />
+          <Route path="/probleme" element={<ProblemePage />} />
+        </Routes>
+      </Router>
+    </AuthProvider>
   );
 }

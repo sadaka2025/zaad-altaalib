@@ -30,6 +30,9 @@ export default function ArticleDetail() {
   const paragraph2 = article.content?.paragraph2 || '';
   const conclusion = article.content?.conclusion || '';
 
+  // ✅ background dynamique (si non défini → valeur par défaut)
+  const bgImage = article.background || '/images/textBgImage.jpg';
+
   const articleUrl = window.location.href; // URL actuelle
   const shareText = article.title; // Titre comme texte de partage
 
@@ -37,7 +40,7 @@ export default function ArticleDetail() {
     <div
       className="min-h-screen p-6 bg-gray-50"
       style={{
-        backgroundImage: 'url("/images/textBgImage.jpg")',
+        backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }}
@@ -77,7 +80,7 @@ export default function ArticleDetail() {
         <div
           className="prose prose-lg text-gray-800 text-right mb-6 p-4 rounded"
           style={{
-            backgroundImage: 'url("/images/textBgImage.jpg")',
+            backgroundImage: `url(${bgImage})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}
@@ -96,7 +99,7 @@ export default function ArticleDetail() {
           <div
             className="prose prose-lg text-gray-800 md:flex-1 text-right p-4 rounded"
             style={{
-              backgroundImage: 'url("/images/textBgImage.jpg")',
+              backgroundImage: `url(${bgImage})`,
               backgroundSize: 'cover',
               backgroundRepeat: 'no-repeat',
             }}
@@ -110,7 +113,7 @@ export default function ArticleDetail() {
         <div
           className="prose prose-lg text-gray-800 text-right p-4 rounded"
           style={{
-            backgroundImage: 'url("/images/textBgImage.jpg")',
+            backgroundImage: `url(${bgImage})`,
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
           }}
