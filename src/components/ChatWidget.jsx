@@ -170,7 +170,7 @@ export default function ChatWidget({
                 <img
                   src="/images/ai-assistant-avatar.png"
                   alt="AI"
-                  className="w-10 h-10 rounded-full object-cover ring-2 ring-white/70"
+                  className="w-16 h-16 rounded-full object-cover ring-2 ring-white/70"
                 />
                 <div>
                   <div className="font-semibold text-base">Assistant AI</div>
@@ -221,7 +221,7 @@ export default function ChatWidget({
                               subjectAvatars.default
                             }
                             alt="ai"
-                            className="w-9 h-9 rounded-full mr-3"
+                            className="w-16 h-16 rounded-full mr-3"
                           />
                           <div className="flex flex-col max-w-[85%]">
                             <div className="bg-white rounded-2xl px-4 py-3 shadow text-sm relative text-black font-bold text-justify whitespace-pre-line">
@@ -307,60 +307,73 @@ export default function ChatWidget({
               <div className="flex items-center justify-between px-5 py-3 border-t border-gray-200 bg-gray-50">
                 {/* Partage */}
                 <div className="flex gap-4 text-lg">
-                  <a
-                    href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-600 hover:text-blue-800"
-                    title="Partager sur Facebook"
-                  >
-                    <FaFacebook />
-                  </a>
-                  <a
-                    href={`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent('Regarde ça !')}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-sky-500 hover:text-sky-700"
-                    title="Partager sur Telegram"
-                  >
-                    <FaTelegramPlane />
-                  </a>
-                  <a
-                    href={`https://wa.me/?text=${encodeURIComponent(window.location.href)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-green-500 hover:text-green-700"
-                    title="Partager sur WhatsApp"
-                  >
-                    <FaWhatsapp />
-                  </a>
-                  <a
-                    href={`mailto:?subject=Découvre ce lien&body=${encodeURIComponent(window.location.href)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-gray-800"
-                    title="Partager par Email"
-                  >
-                    <FaEnvelope />
-                  </a>
-                  <a
-                    href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-700 hover:text-blue-900"
-                    title="Partager sur LinkedIn"
-                  >
-                    <FaLinkedin />
-                  </a>
-                  <a
-                    href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent('Regarde ça !')}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-black hover:text-gray-700"
-                    title="Partager sur Twitter (X)"
-                  >
-                    <FaTwitter />
-                  </a>
+                  {(() => {
+                    const lastAssistantMsg = messages
+                      .filter((m) => m.role === 'assistant')
+                      .slice(-1)[0];
+                    const shareText = lastAssistantMsg?.text
+                      ? `${lastAssistantMsg.text}\n\n👉 ${window.location.href}`
+                      : window.location.href;
+
+                    return (
+                      <>
+                        <a
+                          href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareText)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:text-blue-800"
+                          title="Partager sur Facebook"
+                        >
+                          <FaFacebook />
+                        </a>
+                        <a
+                          href={`https://t.me/share/url?url=${encodeURIComponent(window.location.href)}&text=${encodeURIComponent(shareText)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-sky-500 hover:text-sky-700"
+                          title="Partager sur Telegram"
+                        >
+                          <FaTelegramPlane />
+                        </a>
+                        <a
+                          href={`https://wa.me/?text=${encodeURIComponent(shareText)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-green-500 hover:text-green-700"
+                          title="Partager sur WhatsApp"
+                        >
+                          <FaWhatsapp />
+                        </a>
+                        <a
+                          href={`mailto:?subject=Découvre ce lien&body=${encodeURIComponent(shareText)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-gray-600 hover:text-gray-800"
+                          title="Partager par Email"
+                        >
+                          <FaEnvelope />
+                        </a>
+                        <a
+                          href={`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}&summary=${encodeURIComponent(shareText)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-700 hover:text-blue-900"
+                          title="Partager sur LinkedIn"
+                        >
+                          <FaLinkedin />
+                        </a>
+                        <a
+                          href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(shareText)}`}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-black hover:text-gray-700"
+                          title="Partager sur Twitter (X)"
+                        >
+                          <FaTwitter />
+                        </a>
+                      </>
+                    );
+                  })()}
                 </div>
 
                 {/* Bouton agrandir/réduire */}

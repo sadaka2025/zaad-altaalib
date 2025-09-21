@@ -15,20 +15,21 @@ import {
   Brackets,
   BookMarked,
   CalendarDays,
-  Feather,
   Landmark,
   Timer,
+  UserCircle,
 } from 'lucide-react';
 
 import LanguageSwitcher from '../../components/global/Translation/LanguageSwitcher';
 import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
 import { useAuth } from '../../context/AuthContext';
+import { supabase } from '../../supabaseClient';
 
 export default function Navbar() {
   const { lang = 'ar' } = useParams();
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { isAuthenticated, login, logout } = useAuth();
+  const { isAuthenticated, login, logout, user } = useAuth();
 
   const isRTL = lang === 'ar' || lang === 'ar-TN' || lang === 'ar-MA';
 
@@ -36,6 +37,24 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [studentMenuOpen, setStudentMenuOpen] = useState(false);
   const [activeSubject, setActiveSubject] = useState(null);
+
+  // === Avatar ===
+  const [avatarUrl, setAvatarUrl] = useState(null);
+
+  useEffect(() => {
+    const fetchAvatar = async () => {
+      if (user?.id) {
+        // chemin: avatars/user.id.png (par ex)
+        const { data } = supabase.storage
+          .from('avatars')
+          .getPublicUrl(`${user.id}.png`);
+        if (data?.publicUrl) {
+          setAvatarUrl(data.publicUrl);
+        }
+      }
+    };
+    fetchAvatar();
+  }, [user]);
 
   const link = (path) => `/${lang}${path.startsWith('/') ? path : '/' + path}`;
 
@@ -62,7 +81,7 @@ export default function Navbar() {
       { key: 'nahw', label: '✒️ نحو', icon: Brackets },
       { key: 'akhlaq', label: '🌿 الأخلاق', icon: HeartHandshake },
       { key: 'hadith', label: '📚 الحديث', icon: ScrollText },
-      { key: 'aqeedah', label: '🕌 العقيدة', icon: Landmark },
+      { key: 'aqida', label: '🕌 العقيدة', icon: Landmark },
     ],
     [t]
   );
@@ -122,7 +141,7 @@ export default function Navbar() {
 
         {/* NAV Desktop */}
         <nav className="hidden md:flex gap-3 items-center" ref={rootRef}>
-          {/* === الرئيسية === */}
+          {/* === Accueil === */}
           <button
             onClick={() => handleNavClick('/')}
             className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition"
@@ -130,7 +149,7 @@ export default function Navbar() {
             {t('home')}
           </button>
 
-          {/* ==== لوحة الطالب ==== */}
+          {/* ==== Student Board ==== */}
           <div
             className="relative"
             onMouseEnter={() => setStudentMenuOpen(true)}
@@ -235,7 +254,7 @@ export default function Navbar() {
                   {/* 🚀 Bouton QuizChrono (Desktop) */}
                   <div className="col-span-2">
                     <button
-                      onClick={() => handleNavClick('/QuizChrono ')}
+                      onClick={() => handleNavClick('/quizchrono')}
                       className="w-full flex items-center gap-3 px-3 py-3 rounded-xl border 
                       bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg 
                       hover:from-red-600 hover:to-orange-500 transition-all"
@@ -265,10 +284,10 @@ export default function Navbar() {
             {t('contact')}
           </button>
           <button
-            onClick={() => handleNavClick('/blog')}
+            onClick={() => handleNavClick('/blog-simple')}
             className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition flex items-center gap-2"
           >
-            <Feather className="size-4" /> مذكراتي
+            📰 مقالات
           </button>
         </nav>
 
@@ -286,15 +305,27 @@ export default function Navbar() {
               {t('signIn')}
             </button>
           ) : (
-            <button
-              onClick={() => {
-                logout();
-                navigate(link('/'));
-              }}
-              className="hidden md:inline-flex border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900 ml-2"
-            >
-              {t('logout')}
-            </button>
+            <div className="flex items-center gap-3 ml-2">
+              {/* Avatar utilisateur */}
+              {avatarUrl ? (
+                <img
+                  src={avatarUrl}
+                  alt="avatar"
+                  className="w-10 h-10 rounded-full border-2 border-yellow-500 shadow-md"
+                />
+              ) : (
+                <UserCircle className="w-10 h-10 text-yellow-400" />
+              )}
+              <button
+                onClick={() => {
+                  logout();
+                  navigate(link('/'));
+                }}
+                className="border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900"
+              >
+                {t('logout')}
+              </button>
+            </div>
           )}
 
           {/* Mobile Toggle */}
@@ -367,10 +398,10 @@ export default function Navbar() {
               {t('contact')}
             </button>
             <button
-              onClick={() => handleNavClick('/blog')}
+              onClick={() => handleNavClick('/blog-simple')}
               className="w-full text-start px-4 py-2 rounded-lg hover:bg-yellow-500 hover:text-slate-900 flex items-center gap-2"
             >
-              <Feather className="size-4" /> مذكراتي
+              📰 مقالات
             </button>
           </motion.div>
         )}
