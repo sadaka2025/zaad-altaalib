@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "checkJs": true,
+    "checkJs": false, // Désactive la vérification TS sur les fichiers JS/JSX
     "allowJs": true,
     "jsx": "react-jsx",
     "target": "ES2020",

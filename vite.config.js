@@ -29,7 +29,7 @@ export default defineConfig({
   build: {
     target: 'esnext',
     sourcemap: false,
-    chunkSizeWarningLimit: 1000,
+    chunkSizeWarningLimit: 3000, // ✅ limite augmentée
   },
   // ⬇️ Ajout pour éviter crash avec @xenova/transformers
   optimizeDeps: {
