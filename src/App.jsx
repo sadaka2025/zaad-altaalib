@@ -1,5 +1,5 @@
 // src/App.jsx
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -8,59 +8,35 @@ import {
   useParams,
 } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { AuthProvider, useAuth } from './context/AuthContext';
 
+import LoginForm from './pages/Visitors/LoginForm';
 import LayoutConfigurable from './pages/Home/LayoutConfigurable';
-
 import HomePage from './pages/Home/HomePage';
-import ChatWidget from './components/ChatWidget';
 import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
 import QuizChrono from './pages/Home/QuizChrono';
 import AvisPage from './pages/Formation/utils/AvisPage';
 import QRPage from './pages/Formation/utils/QRPage';
-import ProffAvisPage from './pages/Formation/utils/ProffAvisPage';
 import AnnoncesPage from './pages/Formation/utils/AnnoncesPage';
-import ProblemePage from './pages/Home/ProblemePage';
-import ContactPage from './pages/Home/ContactPage';
-
+import ProffAvisPage from './pages/Formation/utils/ProffAvisPage';
 import Niveau2 from './pages/Formation/years/year2/LevelTwo';
 import NiveauMoyen from './pages/Formation/years/year3/MediumLevel';
 import Niveau4 from './pages/Formation/years/year4/LevelFour';
 import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
-
 import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
-
-import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
-import IntrosirahPage from './pages/Formation/years/year1/Introsubjects/Introsirah/IntrosirahPage';
-import IntroakhlaqPage from './pages/Formation/years/year1/Introsubjects/Introakhlaq/IntroakhlaqPage';
-import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaqida/IntroaqidaPage';
-import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
-import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
-import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
-
-import i18n from './i18n';
-import './i18n';
-
-import { AuthProvider, useAuth } from './context/AuthContext';
-
+import ChatWidget from './components/ChatWidget';
 import PdfsPage from './components/PdfsPage';
 import PdfManager from './components/PdfManager';
-
 import LyaoutArticle from './components/LyaoutArticle';
 import Blog from './pages/Blog/Blog';
 import ArticleDetail from './pages/Blog/ArticleDetail';
+import ContactPage from './pages/Home/ContactPage';
+import ProblemePage from './pages/Home/ProblemePage';
 
 function RequireAuth({ children }) {
-  const { user, login } = useAuth();
-  if (!user)
-    return (
-      <button
-        onClick={login}
-        className="m-4 p-2 bg-blue-600 text-white rounded"
-      >
-        Connexion Simulée / Login
-      </button>
-    );
+  const { user } = useAuth();
+  if (!user) return <Navigate to="/login" replace />;
   return children;
 }
 
@@ -82,8 +58,15 @@ function LangRoutesWrapper() {
   return (
     <>
       <Routes>
+        {/* Pages publiques */}
         <Route element={<LayoutConfigurable showNavbar={true} />}>
           <Route index element={<HomePage />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/login" element={<LoginForm />} />
+        </Route>
+
+        {/* Pages protégées */}
+        <Route element={<LayoutConfigurable showNavbar={true} />}>
           <Route
             path="formations"
             element={
@@ -157,58 +140,10 @@ function LangRoutesWrapper() {
             }
           />
           <Route
-            path="introfiqh"
+            path="annee/:year/matiere/:subjectSlug"
             element={
               <RequireAuth>
-                <IntroFikhPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="introsirah"
-            element={
-              <RequireAuth>
-                <IntrosirahPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="introakhlaq"
-            element={
-              <RequireAuth>
-                <IntroakhlaqPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="introaqida"
-            element={
-              <RequireAuth>
-                <IntroaqidaPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="introhadith"
-            element={
-              <RequireAuth>
-                <IntrohadithPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="intronahw"
-            element={
-              <RequireAuth>
-                <IntronahwPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="introtajwid"
-            element={
-              <RequireAuth>
-                <IntrotajwidPage />
+                <SubjectPage />
               </RequireAuth>
             }
           />
@@ -222,44 +157,20 @@ function LangRoutesWrapper() {
           />
         </Route>
 
-        <Route element={<LayoutConfigurable showNavbar={false} />}>
-          <Route
-            path="niveau-debutant"
-            element={
-              <RequireAuth>
-                <NiveauDebutant />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="annee/:year/matiere/:subjectSlug"
-            element={
-              <RequireAuth>
-                <SubjectPage />
-              </RequireAuth>
-            }
-          />
+        {/* Blog */}
+        <Route element={<LyaoutArticle />}>
+          <Route path="blog-simple" element={<Blog />} />
+          <Route path="blog-simple/:id" element={<ArticleDetail />} />
         </Route>
 
-        <Route
-          path="blog-simple"
-          element={
-            <LyaoutArticle>
-              <Blog />
-            </LyaoutArticle>
-          }
-        />
-        <Route
-          path="/blog-simple/:id"
-          element={
-            <LyaoutArticle>
-              <ArticleDetail />
-            </LyaoutArticle>
-          }
-        />
+        {/* PDF */}
+        <Route path="/pdf" element={<PdfsPage />} />
+        <Route path="/pdf/manage" element={<PdfManager />} />
 
-        <Route path="/contact" element={<ContactPage />} />
+        {/* Page problème */}
+        <Route path="/probleme" element={<ProblemePage />} />
 
+        {/* Fallback */}
         <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
       </Routes>
 
@@ -276,9 +187,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/ar" replace />} />
           <Route path="/:lang/*" element={<LangRoutesWrapper />} />
-          <Route path="/pdf" element={<PdfsPage />} />
-          <Route path="/pdf/manage" element={<PdfManager />} />
-          <Route path="/probleme" element={<ProblemePage />} />
+          <Route path="/login" element={<LoginForm />} />
         </Routes>
       </Router>
     </AuthProvider>

@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import LoginForm from '../../../pages/Home/LoginForm';
+import LoginForm from '../../../pages/Visitors/LoginForm';
+import { useAuth } from '../../../context/AuthContext';
 
 export default function ModalWithLogin({
   buttonLabel = 'Se connecter',
-  onLoginSuccess = () => {},
   forceOpen = false,
   onClose = () => {},
 }) {
   const [isOpen, setIsOpen] = useState(forceOpen);
+  const { login } = useAuth();
 
   useEffect(() => {
     setIsOpen(forceOpen);
@@ -19,12 +20,16 @@ export default function ModalWithLogin({
     if (onClose) onClose();
   };
 
+  const handleLoginSuccess = (email, name) => {
+    login(email, name); // ⚡ met à jour le contexte Auth
+    setIsOpen(false);
+  };
+
   const modalContent = isOpen && (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center">
-      {/* Overlay léger */}
       <div className="absolute inset-0 bg-black/40" onClick={handleClose}></div>
 
-      {/* Vidéo en arrière-plan pleine fenêtre */}
+      {/* Vidéo arrière-plan */}
       <video
         autoPlay
         muted
@@ -40,7 +45,6 @@ export default function ModalWithLogin({
 
       {/* Modal central */}
       <div className="relative z-10 w-[35%] min-w-[350px] max-w-[700px] bg-white rounded-2xl shadow-2xl p-8 flex flex-col items-center">
-        {/* Bouton fermer */}
         <button
           onClick={handleClose}
           className="absolute top-4 right-4 text-gray-500 hover:text-gray-900 text-2xl font-bold"
@@ -48,7 +52,7 @@ export default function ModalWithLogin({
           ✕
         </button>
 
-        {/* Logo en vidéo */}
+        {/* Logo vidéo */}
         <video
           autoPlay
           loop
@@ -56,20 +60,19 @@ export default function ModalWithLogin({
           playsInline
           className="mb-6"
           style={{
-            width: '80%', // même largeur que le logo
-            height: '20%', // même hauteur que le logo
-            objectFit: 'contain', // pour garder les proportions
+            width: '80%',
+            height: '20%',
+            objectFit: 'contain',
           }}
         >
           <source
             src="https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/videos/logo.mp4"
             type="video/mp4"
           />
-          Votre navigateur ne supporte pas la vidéo.
         </video>
 
-        {/* LoginForm */}
-        <LoginForm onLoginSuccess={onLoginSuccess} />
+        {/* Formulaire login */}
+        <LoginForm onLoginSuccess={handleLoginSuccess} />
 
         {/* Footer juridique */}
         <div className="mt-6 text-center text-xs text-gray-400">
