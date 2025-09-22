@@ -15,11 +15,12 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, 'src'),
-      '@locales': path.resolve(__dirname, 'src/locales'),
-      '@components': path.resolve(__dirname, 'src/components'),
-      '@pages': path.resolve(__dirname, 'src/pages'),
-      '@utils': path.resolve(__dirname, 'src/utils'),
+      '@': path.resolve(__dirname, './src'),
+      '@locales': path.resolve(__dirname, './src/locales'),
+      '@components': path.resolve(__dirname, './src/components'),
+      '@pages': path.resolve(__dirname, './src/pages'),
+      '@utils': path.resolve(__dirname, './src/utils'),
+      '@dataIntro': path.resolve(__dirname, './src/dataIntro'),
     },
   },
   server: {
