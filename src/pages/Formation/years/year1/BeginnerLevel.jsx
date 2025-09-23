@@ -14,6 +14,7 @@ export default function NiveauDebutant() {
 
   const { t, i18n } = useTranslation();
   const lang = i18n.language;
+  const navigate = useNavigate(); // 👉 pour retour
 
   const subjectKeys = [
     'fiqh',
@@ -33,6 +34,17 @@ export default function NiveauDebutant() {
       className="bg-cover bg-center text-white pt-4 min-h-screen flex flex-col items-center"
       style={{ backgroundImage: "url('/images/zitouna-bg.jpg')" }}
     >
+      {/* 🔙 Bouton retour en haut à droite */}
+      <button
+        onClick={() => navigate(-1)}
+        className="min-w-[220px] backdrop-blur-md bg-gradient-to-r from-amber-500 via-orange-600 to-rose-600
+                       hover:from-amber-400 hover:via-orange-500 hover:to-rose-500
+                       text-white px-6 py-2 rounded-2xl shadow-lg border border-white/30 transition
+                       font-bold text-lg ring-2 ring-white/20 hover:ring-white/40"
+        aria-label="رجوع"
+      >
+        🔙 رجوع
+      </button>
       <div className="bg-black/70 p-4 flex flex-col items-center justify-start w-full max-w-6xl">
         {/* ===== Titre + Bouton ===== */}
         <div className="w-full flex flex-col md:flex-row items-center justify-center gap-4 mb-6">

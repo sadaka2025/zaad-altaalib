@@ -1,4 +1,3 @@
-//app.jsx
 // src/App.jsx
 import React, { useEffect } from 'react';
 import {
@@ -11,11 +10,19 @@ import {
 import { useTranslation } from 'react-i18next';
 
 import LayoutConfigurable from './pages/Home/LayoutConfigurable';
-
 import HomePage from './pages/Home/HomePage';
 import ChatWidget from './components/ChatWidget';
+
+// Pages Formation
 import Formations from './pages/Formation/Formations';
 import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
+import Niveau2 from './pages/Formation/years/year2/LevelTwo';
+import NiveauMoyen from './pages/Formation/years/year3/MediumLevel';
+import Niveau4 from './pages/Formation/years/year4/LevelFour';
+import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
+import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
+
+// Pages utils
 import QuizChrono from './pages/Home/QuizChrono';
 import AvisPage from './pages/Formation/utils/AvisPage';
 import QRPage from './pages/Formation/utils/QRPage';
@@ -24,13 +31,7 @@ import AnnoncesPage from './pages/Formation/utils/AnnoncesPage';
 import ProblemePage from './pages/Home/ProblemePage';
 import ContactPage from './pages/Home/ContactPage';
 
-import Niveau2 from './pages/Formation/years/year2/LevelTwo';
-import NiveauMoyen from './pages/Formation/years/year3/MediumLevel';
-import Niveau4 from './pages/Formation/years/year4/LevelFour';
-import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
-
-import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
-
+// Intros
 import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
 import IntrosirahPage from './pages/Formation/years/year1/Introsubjects/Introsirah/IntrosirahPage';
 import IntroakhlaqPage from './pages/Formation/years/year1/Introsubjects/Introakhlaq/IntroakhlaqPage';
@@ -39,29 +40,24 @@ import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introha
 import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
 import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
 
+// Divers
 import i18n from './i18n';
 import './i18n';
 
 import { AuthProvider, useAuth } from './context/AuthContext';
-
 import PdfsPage from './components/PdfsPage';
 import PdfManager from './components/PdfManager';
-
 import LyaoutArticle from './components/LyaoutArticle';
 import Blog from './pages/Blog/Blog';
 import ArticleDetail from './pages/Blog/ArticleDetail';
+import LoginForm from './pages/Visitors/LoginForm';
 
+// --- RequireAuth corrigé ---
 function RequireAuth({ children }) {
-  const { user, login } = useAuth();
-  if (!user)
-    return (
-      <button
-        onClick={login}
-        className="m-4 p-2 bg-blue-600 text-white rounded"
-      >
-        Connexion Simulée / Login
-      </button>
-    );
+  const { user } = useAuth();
+  if (!user) {
+    return <Navigate to="/login" replace />;
+  }
   return children;
 }
 
@@ -85,6 +81,8 @@ function LangRoutesWrapper() {
       <Routes>
         <Route element={<LayoutConfigurable showNavbar={true} />}>
           <Route index element={<HomePage />} />
+
+          {/* Formation */}
           <Route
             path="formations"
             element={
@@ -214,7 +212,7 @@ function LangRoutesWrapper() {
             }
           />
           <Route
-            path="/quizchrono"
+            path="quizchrono"
             element={
               <RequireAuth>
                 <QuizChrono />
@@ -242,6 +240,7 @@ function LangRoutesWrapper() {
           />
         </Route>
 
+        {/* Blog */}
         <Route
           path="blog-simple"
           element={
@@ -251,7 +250,7 @@ function LangRoutesWrapper() {
           }
         />
         <Route
-          path="/blog-simple/:id"
+          path="blog-simple/:id"
           element={
             <LyaoutArticle>
               <ArticleDetail />
@@ -260,7 +259,6 @@ function LangRoutesWrapper() {
         />
 
         <Route path="/contact" element={<ContactPage />} />
-
         <Route path="*" element={<Navigate to={`/${lang}`} replace />} />
       </Routes>
 
@@ -277,6 +275,11 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Navigate to="/ar" replace />} />
           <Route path="/:lang/*" element={<LangRoutesWrapper />} />
+
+          {/* Login */}
+          <Route path="/login" element={<LoginForm />} />
+
+          {/* PDF / Problème */}
           <Route path="/pdf" element={<PdfsPage />} />
           <Route path="/pdf/manage" element={<PdfManager />} />
           <Route path="/probleme" element={<ProblemePage />} />

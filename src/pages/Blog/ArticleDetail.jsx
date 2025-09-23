@@ -1,5 +1,5 @@
 // src/pages/Blog/ArticleDetail.jsx
-import { Link, useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import articles from '../../datablog/blog.json';
 import {
   FacebookShareButton,
@@ -18,6 +18,7 @@ import {
 
 export default function ArticleDetail() {
   const { id } = useParams();
+  const navigate = useNavigate();
   const article = articles.find((a) => a.id.toString() === id);
 
   if (!article) {
@@ -30,33 +31,33 @@ export default function ArticleDetail() {
   const paragraph2 = article.content?.paragraph2 || '';
   const conclusion = article.content?.conclusion || '';
 
-  // ✅ background dynamique (si non défini → valeur par défaut)
   const bgImage = article.background || '/images/textBgImage.jpg';
 
-  const articleUrl = window.location.href; // URL actuelle
-  const shareText = article.title; // Titre comme texte de partage
+  const articleUrl = window.location.href;
+  const shareText = article.title;
 
   return (
     <div
-      className="min-h-screen p-6 bg-gray-50"
+      className="min-h-screen p-6 bg-gray-50 relative"
       style={{
         backgroundImage: `url(${bgImage})`,
         backgroundSize: 'cover',
         backgroundRepeat: 'no-repeat',
       }}
     >
-      {/* Retour */}
-      <Link
-        to="/blog-simple"
-        className="inline-block mb-4 text-blue-600 hover:underline font-semibold"
+      {/* 🔙 Bouton retour en haut à droite */}
+      <button
+        onClick={() => navigate(-1)}
+        className="absolute top-4 end-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+        aria-label="رجوع"
       >
-        ← الرجوع إلى الصفحة الرئيسية
-      </Link>
+        🔙 رجوع
+      </button>
 
       <h1 className="text-3xl font-bold text-blue-600 mb-2">{article.title}</h1>
       <p className="text-gray-500 text-sm mb-4">{article.date}</p>
 
-      {/* Vidéo principale autoplay ou image */}
+      {/* Vidéo principale ou image */}
       {article.video ? (
         <video
           src={article.video}
@@ -88,7 +89,7 @@ export default function ArticleDetail() {
         />
       )}
 
-      {/* Deuxième paragraphe avec image à gauche */}
+      {/* Deuxième paragraphe avec image */}
       {paragraph2 && article.image && (
         <div className="flex flex-col md:flex-row mb-6 items-start gap-4">
           <img

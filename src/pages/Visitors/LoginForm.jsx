@@ -1,3 +1,4 @@
+// src/pages/Auth/LoginForm.jsx
 import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { supabase } from '../../supabaseClient';
@@ -151,9 +152,20 @@ export default function LoginForm({ onLoginSuccess }) {
 
     if (canSignIn) {
       saveEmailToHistory(lowerEmail);
-      await syncVisitor({ email: lowerEmail, status: 'allowed' });
+      const visitor = await syncVisitor({
+        email: lowerEmail,
+        status: 'allowed',
+      });
 
-      login();
+      // login avec user complet
+      login({
+        id: visitor?.[0]?.id || uuidv4(),
+        email: lowerEmail,
+        name: visitor?.[0]?.nom || 'Utilisateur',
+        role: visitor?.[0]?.profil || 'student',
+        avatar_url: visitor?.[0]?.avatar_url || null,
+      });
+
       if (onLoginSuccess) onLoginSuccess(lowerEmail);
     } else if (canSignUp) {
       setStep('signup');
@@ -181,7 +193,7 @@ export default function LoginForm({ onLoginSuccess }) {
         console.error('Erreur upload avatar:', uploadError.message);
     }
 
-    await syncVisitor({
+    const visitor = await syncVisitor({
       email: lowerEmail,
       status: 'check',
       nom,
@@ -190,7 +202,15 @@ export default function LoginForm({ onLoginSuccess }) {
       avatar_url: avatarPath,
     });
 
-    login();
+    // login avec user complet
+    login({
+      id: visitor?.[0]?.id || uuidv4(),
+      email: lowerEmail,
+      name: `${nom} ${prenom}`,
+      role: profil,
+      avatar_url: avatarPath,
+    });
+
     if (onLoginSuccess) onLoginSuccess(lowerEmail);
   };
 

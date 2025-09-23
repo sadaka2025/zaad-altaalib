@@ -4,6 +4,7 @@ import { supabase } from '../../supabaseClient';
 import { v4 as uuidv4 } from 'uuid';
 import Picker from '@emoji-mart/react';
 import emojiData from '@emoji-mart/data';
+import { useNavigate } from 'react-router-dom';
 
 export default function ContactPage() {
   const [messages, setMessages] = useState([]);
@@ -13,6 +14,8 @@ export default function ContactPage() {
   const [showEmoji, setShowEmoji] = useState(false);
   const messagesEndRef = useRef(null);
   const textareaRef = useRef(null);
+
+  const navigate = useNavigate();
 
   // Récupérer utilisateur
   useEffect(() => {
@@ -172,11 +175,21 @@ export default function ContactPage() {
 
   // --- UI Messenger-like ---
   return (
-    <div className="flex flex-col h-screen items-center justify-center bg-gradient-to-b from-purple-800 to-indigo-900">
+    <div className="flex flex-col h-screen items-center justify-center bg-gradient-to-b from-purple-800 to-indigo-900 relative">
+      {/* 🔙 Bouton retour en haut à droite */}
+      <button
+        onClick={() => navigate(-1)}
+        className="absolute top-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+        aria-label="رجوع"
+      >
+        🔙 رجوع
+      </button>
+
       <div className="flex flex-col w-[80%] h-[80%] bg-white rounded-xl shadow-lg overflow-hidden">
         {/* Barre du haut */}
         <div className="flex items-center justify-between px-4 py-3 bg-purple-900 text-white">
           <button className="text-lg">⬅️</button>
+
           <h2 className="font-bold">Contact</h2>
           <div className="flex space-x-4">
             <button onClick={() => window.open('tel:+21612345678')}>📞</button>

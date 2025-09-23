@@ -17,19 +17,18 @@ import {
   CalendarDays,
   Landmark,
   Timer,
-  UserCircle,
 } from 'lucide-react';
 
 import LanguageSwitcher from '../../components/global/Translation/LanguageSwitcher';
 import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
+import AvatarUploader from '../../context/AvatarUploader'; // ✅ avatar uploader
 import { useAuth } from '../../context/AuthContext';
-import { supabase } from '../../supabaseClient';
 
 export default function Navbar() {
   const { lang = 'ar' } = useParams();
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { isAuthenticated, login, logout, user } = useAuth();
+  const { isAuthenticated, login, logout } = useAuth();
 
   const isRTL = lang === 'ar' || lang === 'ar-TN' || lang === 'ar-MA';
 
@@ -37,24 +36,6 @@ export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [studentMenuOpen, setStudentMenuOpen] = useState(false);
   const [activeSubject, setActiveSubject] = useState(null);
-
-  // === Avatar ===
-  const [avatarUrl, setAvatarUrl] = useState(null);
-
-  useEffect(() => {
-    const fetchAvatar = async () => {
-      if (user?.id) {
-        // chemin: avatars/user.id.png (par ex)
-        const { data } = supabase.storage
-          .from('avatars')
-          .getPublicUrl(`${user.id}.png`);
-        if (data?.publicUrl) {
-          setAvatarUrl(data.publicUrl);
-        }
-      }
-    };
-    fetchAvatar();
-  }, [user]);
 
   const link = (path) => `/${lang}${path.startsWith('/') ? path : '/' + path}`;
 
@@ -65,11 +46,6 @@ export default function Navbar() {
       navigate(link(path));
       setMobileOpen(false);
     }
-  };
-
-  const handleLoginSuccess = () => {
-    login();
-    setShowModal(false);
   };
 
   // === MATIÈRES ===
@@ -92,6 +68,8 @@ export default function Navbar() {
     icon: BookMarked,
     items: t('student_board.bonus.items', { returnObjects: true }),
   };
+
+  const years = [1, 2, 3, 4, 5];
 
   const pop = {
     hidden: { opacity: 0, y: 8, filter: 'blur(2px)' },
@@ -120,8 +98,6 @@ export default function Navbar() {
     document.addEventListener('mousedown', onClickOutside);
     return () => document.removeEventListener('mousedown', onClickOutside);
   }, []);
-
-  const years = [1, 2, 3, 4, 5];
 
   return (
     <header
@@ -306,16 +282,9 @@ export default function Navbar() {
             </button>
           ) : (
             <div className="flex items-center gap-3 ml-2">
-              {/* Avatar utilisateur */}
-              {avatarUrl ? (
-                <img
-                  src={avatarUrl}
-                  alt="avatar"
-                  className="w-10 h-10 rounded-full border-2 border-yellow-500 shadow-md"
-                />
-              ) : (
-                <UserCircle className="w-10 h-10 text-yellow-400" />
-              )}
+              {/* ✅ AvatarUploader à la place de l’ancien fetchAvatar */}
+              <AvatarUploader />
+
               <button
                 onClick={() => {
                   logout();
@@ -410,7 +379,10 @@ export default function Navbar() {
       {/* Modal Login */}
       {showModal && (
         <ModalWithLogin
-          onLoginSuccess={handleLoginSuccess}
+          onLoginSuccess={() => {
+            login();
+            setShowModal(false);
+          }}
           forceOpen={showModal}
           onClose={() => setShowModal(false)}
         />

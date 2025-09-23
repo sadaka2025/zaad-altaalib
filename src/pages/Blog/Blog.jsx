@@ -1,11 +1,12 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import articles from '../../datablog/blog.json';
 import ArticleCard from './ArticleCard';
 
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
   const articlesPerPage = 5;
+  const navigate = useNavigate();
 
   // Pagination logique
   const indexOfLast = currentPage * articlesPerPage;
@@ -15,16 +16,18 @@ export default function Blog() {
   const totalPages = Math.ceil(articles.length / articlesPerPage);
 
   return (
-    <div className="p-5">
-      {/* En-tête avec titre et lien retour */}
-      <div className="flex items-center justify-between mb-6">
-        <Link to="/" className="text-blue-600 hover:underline font-semibold">
-          ← الرجوع إلى الصفحة الرئيسية
-        </Link>
-      </div>
+    <div className="p-5 relative">
+      {/* 🔙 Bouton retour en haut à droite */}
+      <button
+        onClick={() => navigate(-1)}
+        className="absolute top-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+        aria-label="رجوع"
+      >
+        🔙 رجوع
+      </button>
 
       {/* Liste des articles */}
-      <div className="space-y-6">
+      <div className="space-y-6 mt-10">
         {currentArticles.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
