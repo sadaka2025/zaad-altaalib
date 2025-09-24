@@ -23,6 +23,7 @@ export default function HomePage() {
   const { t, i18n } = useTranslation();
   const { lang } = useParams();
   const isRTL = i18n.language === 'ar';
+  const [mounted, setMounted] = useState(false);
 
   // Gestion RTL
   useEffect(() => {
@@ -30,7 +31,14 @@ export default function HomePage() {
   }, [isRTL]);
 
   // Vérifie l'email et ouvre le modal si nécessaire
+
   useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  useEffect(() => {
+    if (!mounted) return; // on attend le client
+
     const email = localStorage.getItem('userEmail');
     if (!email) {
       console.log('Aucun email trouvé → ouverture modal après 2s');
@@ -42,7 +50,7 @@ export default function HomePage() {
       console.log('Email trouvé :', email, '→ modal fermée');
       setModalOpen(false);
     }
-  }, []);
+  }, [mounted]);
 
   const handleLoginSuccess = (email) => {
     console.log('Connexion réussie → fermeture modal');
