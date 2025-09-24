@@ -1,8 +1,11 @@
+// src/pages/Home/HomePage.jsx
 import React, { useEffect, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
+
+import ModalWithLogin from '../../components/global/Modal/ModalWithLogin'; // adapte le chemin
 
 import HeroSection from './HeroSection';
 import BenefitsSection from './BenefitsSection';
@@ -21,10 +24,12 @@ export default function HomePage() {
   const { lang } = useParams();
   const isRTL = i18n.language === 'ar';
 
+  // Gestion RTL
   useEffect(() => {
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
   }, [isRTL]);
 
+  // Vérifie l'email et ouvre le modal si nécessaire
   useEffect(() => {
     const email = localStorage.getItem('userEmail');
     if (!email) {
@@ -52,7 +57,9 @@ export default function HomePage() {
 
   return (
     <div
-      className={`min-h-screen bg-sky-100 text-gray-800 ${isRTL ? 'font-arabic' : ''}`}
+      className={`min-h-screen bg-sky-100 text-gray-800 ${
+        isRTL ? 'font-arabic' : ''
+      }`}
     >
       <Helmet>
         <html lang={i18n.language} />
@@ -119,6 +126,15 @@ export default function HomePage() {
       >
         <StatsSection statsJson={merge_stats_5years} />
       </motion.section>
+
+      {/* Rendu du modal */}
+      {modalOpen && (
+        <ModalWithLogin
+          forceOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          onLoginSuccess={handleLoginSuccess}
+        />
+      )}
 
       <ScrollToTopButton />
       <ScrollDownButton />

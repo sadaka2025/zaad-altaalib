@@ -229,7 +229,7 @@ export default function LoginForm({ onLoginSuccess }) {
             value={email}
             onChange={(e) => handleEmailChange(e.target.value)}
             required
-            className="w-full p-3 rounded-md border border-gray-300"
+            className="w-full p-3 rounded-md border bg-blue-50"
           />
           <datalist id="pastEmails">
             {pastEmails.map((mail, i) => (
@@ -264,7 +264,7 @@ export default function LoginForm({ onLoginSuccess }) {
       {step === 'signup' && (
         <form
           onSubmit={handleSignupSubmit}
-          className="flex flex-col w-full gap-3 mt-4"
+          className="flex flex-col w-full gap-3 mt-4 "
         >
           <input
             type="text"
@@ -272,7 +272,7 @@ export default function LoginForm({ onLoginSuccess }) {
             value={nom}
             onChange={(e) => setNom(e.target.value)}
             required
-            className="w-full p-3 rounded-md border border-gray-300"
+            className="w-full p-3 rounded-md border bg-blue-50"
           />
           <input
             type="text"
@@ -280,7 +280,7 @@ export default function LoginForm({ onLoginSuccess }) {
             value={prenom}
             onChange={(e) => setPrenom(e.target.value)}
             required
-            className="w-full p-3 rounded-md border border-gray-300"
+            className="w-full p-3 rounded-md border bg-blue-50"
           />
           <input
             type="email"

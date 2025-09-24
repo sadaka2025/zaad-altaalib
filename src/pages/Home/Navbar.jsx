@@ -281,20 +281,15 @@ export default function Navbar() {
               {t('signIn')}
             </button>
           ) : (
-            <div className="flex items-center gap-3 ml-2">
-              {/* ✅ AvatarUploader à la place de l’ancien fetchAvatar */}
-              <AvatarUploader />
-
-              <button
-                onClick={() => {
-                  logout();
-                  navigate(link('/'));
-                }}
-                className="border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900"
-              >
-                {t('logout')}
-              </button>
-            </div>
+            <button
+              onClick={() => {
+                logout();
+                navigate(link('/'));
+              }}
+              className="border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl hover:bg-yellow-500 hover:text-slate-900 ml-2"
+            >
+              {t('logout')}
+            </button>
           )}
 
           {/* Mobile Toggle */}
