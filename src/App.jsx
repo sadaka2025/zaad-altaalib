@@ -54,10 +54,14 @@ import LoginForm from './pages/Visitors/LoginForm';
 
 // --- RequireAuth corrigé ---
 function RequireAuth({ children }) {
-  const { user } = useAuth();
-  if (!user) {
-    return <Navigate to="/" replace />;
-  }
+  const { user, loading } = useAuth();
+
+  // 🔹 Tant que le contexte charge (Vercel), on n'affiche rien
+  if (loading) return null; // ou un spinner : <div>Loading...</div>
+
+  // 🔹 Si non authentifié, redirige vers la page d'accueil ou login
+  if (!user) return <Navigate to="/login" replace />;
+
   return children;
 }
 
