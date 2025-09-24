@@ -21,7 +21,6 @@ import {
 
 import LanguageSwitcher from '../../components/global/Translation/LanguageSwitcher';
 import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
-import AvatarUploader from '../../context/AvatarUploader'; // ✅ avatar uploader
 import { useAuth } from '../../context/AuthContext';
 
 export default function Navbar() {
@@ -30,7 +29,7 @@ export default function Navbar() {
   const navigate = useNavigate();
   const { isAuthenticated, login, logout } = useAuth();
 
-  const isRTL = lang === 'ar' || lang === 'ar-TN' || lang === 'ar-MA';
+  const isRTL = lang.startsWith('ar');
 
   const [showModal, setShowModal] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -48,7 +47,6 @@ export default function Navbar() {
     }
   };
 
-  // === MATIÈRES ===
   const subjects = useMemo(
     () => [
       { key: 'fiqh', label: '⚖️ فقه', icon: GraduationCap },
@@ -72,19 +70,13 @@ export default function Navbar() {
   const years = [1, 2, 3, 4, 5];
 
   const pop = {
-    hidden: { opacity: 0, y: 8, filter: 'blur(2px)' },
+    hidden: { opacity: 0, y: 8 },
     visible: {
       opacity: 1,
       y: 0,
-      filter: 'blur(0px)',
       transition: { type: 'spring', stiffness: 260, damping: 20 },
     },
-    exit: {
-      opacity: 0,
-      y: 6,
-      filter: 'blur(2px)',
-      transition: { duration: 0.15 },
-    },
+    exit: { opacity: 0, y: 6, transition: { duration: 0.15 } },
   };
 
   const rootRef = useRef(null);
@@ -107,7 +99,6 @@ export default function Navbar() {
       dir={isRTL ? 'rtl' : 'ltr'}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        {/* Logo */}
         <h1
           className="text-3xl font-extrabold flex items-center gap-2 cursor-pointer select-none text-yellow-400 drop-shadow-lg"
           onClick={() => navigate(link('/'))}
@@ -117,7 +108,6 @@ export default function Navbar() {
 
         {/* NAV Desktop */}
         <nav className="hidden md:flex gap-3 items-center" ref={rootRef}>
-          {/* === Accueil === */}
           <button
             onClick={() => handleNavClick('/')}
             className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition"
@@ -125,7 +115,7 @@ export default function Navbar() {
             {t('home')}
           </button>
 
-          {/* ==== Student Board ==== */}
+          {/* Student Board */}
           <div
             className="relative"
             onMouseEnter={() => setStudentMenuOpen(true)}
@@ -135,20 +125,15 @@ export default function Navbar() {
             }}
           >
             <button
-              className="group border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl 
-              bg-gradient-to-r from-slate-800 to-slate-700 hover:from-yellow-500 hover:to-yellow-400 
-              hover:text-slate-900 transition-all shadow-lg flex items-center gap-2"
+              className="group border border-yellow-500 text-yellow-400 font-bold px-4 py-2 rounded-xl bg-gradient-to-r from-slate-800 to-slate-700 hover:from-yellow-500 hover:to-yellow-400 hover:text-slate-900 transition-all shadow-lg flex items-center gap-2"
               onClick={() => setStudentMenuOpen((v) => !v)}
             >
               {t('student_board.title')}
               <ChevronDown
-                className={`size-4 transition-transform ${
-                  studentMenuOpen ? (isRTL ? 'rotate-90' : '-rotate-90') : ''
-                }`}
+                className={`size-4 transition-transform ${studentMenuOpen ? (isRTL ? 'rotate-90' : '-rotate-90') : ''}`}
               />
             </button>
 
-            {/* === Sous-menu DESKTOP === */}
             <AnimatePresence>
               {studentMenuOpen && (
                 <motion.div
@@ -157,15 +142,11 @@ export default function Navbar() {
                   initial="hidden"
                   animate="visible"
                   exit="exit"
-                  className={`absolute ${
-                    isRTL ? 'right-0' : 'left-0'
-                  } mt-2 bg-white/90 backdrop-blur-xl text-slate-900 rounded-2xl 
-                  shadow-2xl ring-1 ring-black/10 p-4 grid grid-cols-2 gap-3 w-[520px]`}
+                  className={`absolute ${isRTL ? 'right-0' : 'left-0'} mt-2 bg-white/90 backdrop-blur-xl text-slate-900 rounded-2xl shadow-2xl ring-1 ring-black/10 p-4 grid grid-cols-2 gap-3 w-[520px]`}
                 >
                   {[...subjects, bonus].map((s) => {
                     const Icon = s.icon;
                     const isActive = activeSubject === s.key;
-
                     return (
                       <div key={s.key} className="relative">
                         <button
@@ -183,61 +164,50 @@ export default function Navbar() {
                           <span className="font-semibold">{s.label}</span>
                         </button>
 
-                        {/* Sous-menu latéral */}
-                        <AnimatePresence>
-                          {isActive && (
-                            <motion.ul
-                              initial={{ opacity: 0, x: isRTL ? -15 : 15 }}
-                              animate={{ opacity: 1, x: 0 }}
-                              exit={{ opacity: 0, x: isRTL ? -15 : 15 }}
-                              className={`absolute top-0 ${
-                                isRTL ? 'right-full mr-2' : 'left-full ml-2'
-                              } 
-                              bg-white/95 backdrop-blur-xl text-gray-900 rounded-xl shadow-xl p-3 min-w-[240px] z-50`}
-                            >
-                              {s.key !== 'bonus'
-                                ? years.map((y) => (
-                                    <li
-                                      key={y}
-                                      className="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100 cursor-pointer rounded-md whitespace-nowrap"
-                                      onClick={() =>
-                                        handleNavClick(
-                                          `/annee/${y}/matiere/${s.key}`
-                                        )
-                                      }
-                                    >
-                                      <CalendarDays className="size-4 text-blue-500" />
-                                      {t(
-                                        `student_board.subjects.${s.key}.years.year${y}`
-                                      )}
-                                    </li>
-                                  ))
-                                : s.items.map((item, idx) => (
-                                    <li
-                                      key={idx}
-                                      className="px-4 py-2 hover:bg-yellow-100 cursor-pointer rounded-md whitespace-nowrap"
-                                    >
-                                      {item}
-                                    </li>
-                                  ))}
-                            </motion.ul>
-                          )}
-                        </AnimatePresence>
+                        {isActive && (
+                          <motion.ul
+                            initial={{ opacity: 0, x: isRTL ? -15 : 15 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            exit={{ opacity: 0, x: isRTL ? -15 : 15 }}
+                            className={`absolute top-0 ${isRTL ? 'right-full mr-2' : 'left-full ml-2'} bg-white/95 backdrop-blur-xl text-gray-900 rounded-xl shadow-xl p-3 min-w-[240px] z-50`}
+                          >
+                            {s.key !== 'bonus'
+                              ? years.map((y) => (
+                                  <li
+                                    key={y}
+                                    className="flex items-center gap-2 px-4 py-2 hover:bg-yellow-100 cursor-pointer rounded-md whitespace-nowrap"
+                                    onClick={() =>
+                                      handleNavClick(
+                                        `/annee/${y}/matiere/${s.key}`
+                                      )
+                                    }
+                                  >
+                                    <CalendarDays className="size-4 text-blue-500" />
+                                    {t(
+                                      `student_board.subjects.${s.key}.years.year${y}`
+                                    )}
+                                  </li>
+                                ))
+                              : s.items.map((item, idx) => (
+                                  <li
+                                    key={idx}
+                                    className="px-4 py-2 hover:bg-yellow-100 cursor-pointer rounded-md whitespace-nowrap"
+                                  >
+                                    {item}
+                                  </li>
+                                ))}
+                          </motion.ul>
+                        )}
                       </div>
                     );
                   })}
 
-                  {/* 🚀 Bouton QuizChrono (Desktop) */}
                   <div className="col-span-2">
                     <button
                       onClick={() => handleNavClick('/quizchrono')}
-                      className="w-full flex items-center gap-3 px-3 py-3 rounded-xl border 
-                      bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg 
-                      hover:from-red-600 hover:to-orange-500 transition-all"
+                      className="w-full flex items-center gap-3 px-3 py-3 rounded-xl border bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg hover:from-red-600 hover:to-orange-500 transition-all"
                     >
-                      <span className="shrink-0 inline-flex items-center justify-center rounded-xl p-2 bg-white/20">
-                        <Timer className="size-5" />
-                      </span>
+                      <Timer className="size-5" />
                       <span className="font-semibold">⏳ QuizChrono</span>
                     </button>
                   </div>
@@ -246,7 +216,6 @@ export default function Navbar() {
             </AnimatePresence>
           </div>
 
-          {/* Autres liens */}
           <button
             onClick={() => handleNavClick('/formations')}
             className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition"
@@ -292,7 +261,6 @@ export default function Navbar() {
             </button>
           )}
 
-          {/* Mobile Toggle */}
           <button
             className="md:hidden inline-flex items-center justify-center rounded-xl border border-yellow-500 p-2 text-yellow-400 hover:bg-yellow-500 hover:text-slate-900 ml-2"
             onClick={() => setMobileOpen((v) => !v)}
@@ -306,7 +274,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* === MENU MOBILE === */}
+      {/* MOBILE MENU */}
       <AnimatePresence>
         {mobileOpen && (
           <motion.div
@@ -339,12 +307,9 @@ export default function Navbar() {
                 </ul>
               </div>
             ))}
-            {/* 🚀 QuizChrono mobile */}
             <button
               onClick={() => handleNavClick('/quizchrono')}
-              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl border 
-              bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg 
-              hover:from-red-600 hover:to-orange-500 transition-all"
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl border bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg hover:from-red-600 hover:to-orange-500 transition-all"
             >
               <Timer className="size-5" />
               <span>⏳ QuizChrono</span>

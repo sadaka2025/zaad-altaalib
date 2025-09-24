@@ -17,15 +17,16 @@ export default function ModalWithLogin({
 
   const handleClose = () => {
     setIsOpen(false);
-    if (onClose) onClose();
+    onClose();
   };
 
   const handleLoginSuccess = (email, name) => {
-    login(email, name); // ⚡ met à jour le contexte Auth
+    // ⚡ simple login via context, plus aucun lien avec avatars ou visitors
+    login(email, name);
     setIsOpen(false);
   };
 
-  const modalContent = isOpen && (
+  const modalContent = (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center">
       <div className="absolute inset-0 bg-black/40" onClick={handleClose}></div>
 
@@ -59,11 +60,7 @@ export default function ModalWithLogin({
           muted
           playsInline
           className="mb-6"
-          style={{
-            width: '80%',
-            height: '20%',
-            objectFit: 'contain',
-          }}
+          style={{ width: '80%', height: '20%', objectFit: 'contain' }}
         >
           <source
             src="https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/videos/logo.mp4"
