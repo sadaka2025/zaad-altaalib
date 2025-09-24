@@ -5,7 +5,8 @@ import { useTranslation } from 'react-i18next';
 import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
-import ModalWithLogin from '../../components/global/Modal/ModalWithLogin'; // adapte le chemin
+import { useAuth } from '../../context/AuthContext';
+import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
 
 import HeroSection from './HeroSection';
 import BenefitsSection from './BenefitsSection';
@@ -23,38 +24,26 @@ export default function HomePage() {
   const { t, i18n } = useTranslation();
   const { lang } = useParams();
   const isRTL = i18n.language === 'ar';
-  const [mounted, setMounted] = useState(false);
 
-  // Gestion RTL
+  const { isAuthenticated, loading } = useAuth();
+
+  // ✅ Gérer RTL
   useEffect(() => {
     document.documentElement.dir = isRTL ? 'rtl' : 'ltr';
   }, [isRTL]);
 
-  // Vérifie l'email et ouvre le modal si nécessaire
-
+  // ✅ Hybride : ouvrir modal uniquement au premier passage
   useEffect(() => {
-    setMounted(true);
-  }, []);
+    if (loading) return;
 
-  useEffect(() => {
-    if (!mounted) return; // on attend le client
-
-    const email = localStorage.getItem('userEmail');
-    if (!email) {
-      console.log('Aucun email trouvé → ouverture modal après 2s');
-      const timer = setTimeout(() => {
-        setModalOpen(true);
-      }, 2000);
-      return () => clearTimeout(timer);
-    } else {
-      console.log('Email trouvé :', email, '→ modal fermée');
-      setModalOpen(false);
+    const alreadyVisited = localStorage.getItem('alreadyVisited');
+    if (!isAuthenticated && !alreadyVisited) {
+      setModalOpen(true); // ouvre une seule fois
+      localStorage.setItem('alreadyVisited', 'true');
     }
-  }, [mounted]);
+  }, [isAuthenticated, loading]);
 
-  const handleLoginSuccess = (email) => {
-    console.log('Connexion réussie → fermeture modal');
-    localStorage.setItem('userEmail', email);
+  const handleLoginSuccess = () => {
     setModalOpen(false);
   };
 
@@ -135,7 +124,19 @@ export default function HomePage() {
         <StatsSection statsJson={merge_stats_5years} />
       </motion.section>
 
-      {/* Rendu du modal */}
+      {/* ✅ Bouton manuel toujours dispo si pas connecté */}
+      {!isAuthenticated && (
+        <div className="flex justify-center my-6">
+          <button
+            onClick={() => setModalOpen(true)}
+            className="px-4 py-2 bg-blue-600 text-white rounded-lg shadow"
+          >
+            {t('login_button', 'Se connecter')}
+          </button>
+        </div>
+      )}
+
+      {/* ✅ Modal */}
       {modalOpen && (
         <ModalWithLogin
           forceOpen={modalOpen}
@@ -146,7 +147,6 @@ export default function HomePage() {
 
       <ScrollToTopButton />
       <ScrollDownButton />
-
       <Footer />
     </div>
   );
