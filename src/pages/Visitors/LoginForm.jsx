@@ -3,7 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { supabase } from '../../supabaseClient';
 import { v4 as uuidv4 } from 'uuid';
-
+import Scene from './Scene'; // ✅ importer Scene
 export default function LoginForm({ onLoginSuccess }) {
   const { login } = useAuth();
 
@@ -177,6 +177,10 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             {canSignIn ? 'Sign In' : 'Sign Up'}
           </button>
+          {/* ⚡ Scene animée */}
+          <div className="w-full mt-6">
+            <Scene text="صلو على النبي ﷺ ❤️" />
+          </div>
         </form>
       )}
 
@@ -224,10 +228,14 @@ export default function LoginForm({ onLoginSuccess }) {
           {error && <p className="text-red-600">{error}</p>}
           <button
             type="submit"
-            className="w-full py-3 bg-green-600 text-white rounded-md"
+            className="w-full py-3 bg-blue-600 text-white rounded-md"
           >
             Sign Up
           </button>
+          {/* ⚡ Scene animée */}
+          <div className="w-full mt-6">
+            <Scene text="مرحبا بكم جميعا 🙌" />
+          </div>
         </form>
       )}
     </div>
