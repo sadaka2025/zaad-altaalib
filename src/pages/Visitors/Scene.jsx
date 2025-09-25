@@ -2,110 +2,97 @@
 // @ts-nocheck
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(ScrollTrigger);
-
-export default function Scene({ text, extraTexts = [], fontSize = '15px' }) {
+export default function Scene({ text, extraTexts = [], className = '' }) {
   const sceneRef = useRef(null);
 
   useEffect(() => {
-    const scene = sceneRef.current;
-    if (!scene) return;
+    if (!sceneRef.current) return;
 
-    const texts = scene.querySelectorAll('.text'); // tous les textes dynamiques
-    const dis = scene.querySelectorAll('.dis'); // les textes .dis
+    const ctx = gsap.context(() => {
+      const texts = sceneRef.current.querySelectorAll('.text');
+      const dis = sceneRef.current.querySelectorAll('.dis');
+      const gear = sceneRef.current.querySelector('.gear');
 
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: scene,
-        start: 'top top',
-        end: '+=7000',
-        scrub: 1,
-        pin: true,
-      },
-    });
+      const tl = gsap.timeline();
 
-    // Animer les .dis
-    if (dis.length) {
-      tl.to(dis, {
-        opacity: 0,
-        y: -50,
-        rotation: -50,
-        stagger: 0.5,
-        duration: 2,
-        ease: 'power2.out',
-      });
-    }
+      if (dis.length) {
+        tl.fromTo(
+          dis,
+          { opacity: 0, y: -30 },
+          { opacity: 1, y: 0, duration: 1.5, ease: 'power2.out' }
+        );
+      }
 
-    // Animer les .text
-    if (texts.length) {
-      tl.to(texts, {
-        x: '-200%',
-        stagger: 0.5,
-        duration: 2,
-        ease: 'power2.out',
-      });
-    }
+      if (texts.length) {
+        tl.fromTo(
+          texts,
+          { opacity: 0, x: 50 },
+          { opacity: 1, x: 0, stagger: 0.3, duration: 1.2, ease: 'power2.out' }
+        );
+      }
 
-    // Si tu veux une animation pour la gear
-    const gear = scene.querySelector('.gear');
-    if (gear) {
-      tl.to(gear, {
-        x: '-1000%',
-        rotation: 1480,
-        duration: 3,
-        ease: 'power2.out',
-      });
-    }
+      if (gear) {
+        tl.to(gear, {
+          rotation: 360,
+          repeat: -1,
+          duration: 6,
+          ease: 'linear',
+        });
+      }
+    }, sceneRef);
 
-    return () => {
-      tl.kill();
-    };
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div className="scene" ref={sceneRef}>
-      <h1 className="animated-text" style={{ fontSize }}>
-        {text}
-      </h1>
+    <div ref={sceneRef} className="scene-simple">
+      <h1 className={`animated-text ${className}`}>{text}</h1>
 
-      <span className="dis"></span>
-      {extraTexts.map((t, i) => (
+      {extraTexts.length > 0 && (
+        <span className="dis">{extraTexts[0] || ' '}</span>
+      )}
+      {extraTexts.slice(1).map((t, i) => (
         <span key={i} className="text">
           {t}
         </span>
       ))}
 
-      <img src="/gear.png" alt="gear" className="gear" />
+      <img src="/images/logo.png" alt="gear" className="gear" />
 
       <style>{`
-        .animated-text {
+        .scene-simple {
+          width: 100%;
           text-align: center;
-          font-size: 40px;
+          margin-top: 10px;
+          position: relative;
+        }
+
+        .animated-text {
           font-weight: bold;
           animation: blink-blue 1.5s infinite;
+          font-size: 18px;
         }
 
         @keyframes blink-blue {
-               0% { color: #1500ffff; transform: scale(1.2);}
-               25% { color: #2f4588ff; transform: scale(1);}
-               50% { color: #668aff8c; transform: scale(1.2);}
-               75% { color: rgba(28, 44, 169, 1); transform: scale(1);}
-               100% { color: #0000ffff; transform: scale(1.2);}
-             }
+          0% { color: #1500ff; transform: scale(1.1);}
+          25% { color: #2f4588; transform: scale(1);}
+          50% { color: #668aff; transform: scale(1.1);}
+          75% { color: #1c2ca9; transform: scale(1);}
+          100% { color: #0000ff; transform: scale(1.1);}
+        }
 
         .dis, .text {
-          font-size: 35px;
+          font-size: 16px;
           display: inline-block;
           margin: 0 5px;
         }
 
         .gear {
-          width: 100px;
-          position: fixed;
-          right: -150px;
-          top: 60%;
+          width: 60px;
+          position: relative;
+          margin-left: 10px;
+          display: inline-block;
         }
       `}</style>
     </div>

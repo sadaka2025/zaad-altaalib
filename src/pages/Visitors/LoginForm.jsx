@@ -179,7 +179,7 @@ export default function LoginForm({ onLoginSuccess }) {
           </button>
           {/* ⚡ Scene animée */}
           <div className="w-full mt-6">
-            <Scene text="صلو على النبي ﷺ ❤️" />
+            <Scene text="صلو على النبي ﷺ ❤️" className="text-[15px]" />
           </div>
         </form>
       )}
@@ -232,10 +232,6 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             Sign Up
           </button>
-          {/* ⚡ Scene animée */}
-          <div className="w-full mt-6">
-            <Scene text="مرحبا بكم جميعا 🙌" />
-          </div>
         </form>
       )}
     </div>
