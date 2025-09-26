@@ -1,6 +1,7 @@
 // src/pages/QuizChrono.jsx
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Scene from '../Visitors/Scene'; // ✅ importer Scene
 
 // === Import des fichiers leçons ===
 import lessonsFiqh from '@/dataIntro/years/year1/dataLesson/lessonListfiqh.json';
@@ -114,7 +115,6 @@ export default function QuizChrono() {
               </button>
             ))}
           </div>
-
           {/* Matières */}
           <div className="flex flex-wrap justify-center gap-2">
             {Object.keys(SUBJECTS).map((subj) => (
@@ -131,7 +131,6 @@ export default function QuizChrono() {
               </button>
             ))}
           </div>
-
           {/* Semestres */}
           <div className="flex justify-center gap-2">
             {['1', '2'].map((sem) => (
@@ -148,6 +147,15 @@ export default function QuizChrono() {
               </button>
             ))}
           </div>
+          <span className="text-6xl">👈</span>
+          {/* ⚡ Texte animé */}
+          <div className="flex justify-center">
+            <Scene
+              text="صلوا على النبي محمد ﷺ ❤️"
+              className="text-[18px] font-amiri font-bold text-right"
+            />{' '}
+          </div>{' '}
+          <span className="text-6xl">👉</span>
         </div>
 
         {/* Recherche + Progression globale */}
@@ -238,9 +246,22 @@ export default function QuizChrono() {
               exit={{ scale: 0.8 }}
             >
               <div className="flex justify-between items-center p-4 border-b border-gray-700">
-                <h2 className="text-lg font-bold">
-                  {selectedLesson?.title || 'Quiz'}
-                </h2>
+                {/* Bloc gauche : titre + Scene animé */}
+                <div className="flex items-center gap-4">
+                  <h2 className="text-lg font-bold">
+                    {selectedLesson?.title || 'Quiz'}
+                  </h2>{' '}
+                  👈{/* ⚡ Texte animé */}
+                  <div className="flex justify-center">
+                    <Scene
+                      text="صلوا على النبي محمد ﷺ ❤️"
+                      className="text-[18px] font-amiri font-bold text-right"
+                    />{' '}
+                  </div>{' '}
+                  👉
+                </div>
+
+                {/* Bouton fermer */}
                 <button
                   onClick={() => setIsModalOpen(false)}
                   className="px-3 py-1 rounded-lg bg-red-600 hover:bg-red-700"
@@ -248,6 +269,7 @@ export default function QuizChrono() {
                   ✖ Fermer
                 </button>
               </div>
+
               <iframe
                 src={selectedQuiz.url || selectedQuiz}
                 title="Quiz"

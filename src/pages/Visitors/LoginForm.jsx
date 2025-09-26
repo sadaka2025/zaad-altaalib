@@ -232,6 +232,10 @@ export default function LoginForm({ onLoginSuccess }) {
           >
             Sign Up
           </button>
+          {/* ⚡ Scene animée */}
+          <div className="w-full mt-6">
+            <Scene text="مرحبا بكم جميعا 🙌" className="text-[20px]" />
+          </div>
         </form>
       )}
     </div>

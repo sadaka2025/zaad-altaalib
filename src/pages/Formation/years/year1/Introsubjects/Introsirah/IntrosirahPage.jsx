@@ -4,6 +4,7 @@ import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
+import Scene from '../../../../../Visitors/Scene';
 
 import data from '../../../../../../datatext/years/year1/datatxtsirah.json';
 import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListsirah.json';
@@ -266,17 +267,28 @@ export default function IntroSirahPage() {
         >
           ❓ أرسل سؤالاً
         </button>
-        <button
-          onClick={() => navigate('/ar/annonces')}
-          className="px-4 py-2 rounded-lg font-bold shadow-md"
-          style={{
-            backgroundColor: '#fef3c7',
-            color: '#3b2f1b',
-            border: '1px solid #d6b370',
-          }}
-        >
-          📢 الإعلانات
-        </button>
+        {/* 👉 Texte animé au-dessus */}
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
+            👈
+            <Scene
+              text="صلوا على النبي محمد ﷺ ❤️"
+              className="text-[18px] font-amiri font-bold"
+            />
+            👉
+          </div>
+          <button
+            onClick={() => navigate('/ar/annonces')}
+            className="px-4 py-2 rounded-lg font-bold shadow-md"
+            style={{
+              backgroundColor: '#fef3c7',
+              color: '#3b2f1b',
+              border: '1px solid #d6b370',
+            }}
+          >
+            📢 الإعلانات
+          </button>
+        </div>
         <button
           onClick={() => navigate('/ar/profavis/sirah')}
           className="px-4 py-2 rounded-lg font-bold shadow-md"

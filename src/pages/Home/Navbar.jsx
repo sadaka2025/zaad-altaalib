@@ -1,5 +1,7 @@
 // @ts-nocheck
 import React, { useEffect, useMemo, useRef, useState } from 'react';
+import Scene from '../Visitors/Scene';
+import { gsap } from 'gsap';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -91,6 +93,18 @@ export default function Navbar() {
     return () => document.removeEventListener('mousedown', onClickOutside);
   }, []);
 
+  useEffect(() => {
+    // cibler l'image spécifique via la classe .logo-vertical
+    gsap.to('.logo-vertical', {
+      rotationY: 360,
+      repeat: -1,
+      duration: 4,
+      ease: 'linear',
+      transformOrigin: 'center center',
+      transformPerspective: 800,
+    });
+  }, []);
+
   return (
     <header
       className={`bg-gradient-to-r from-indigo-900 via-blue-900 to-slate-900 text-white py-4 shadow-xl font-sans sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 ${
@@ -103,7 +117,11 @@ export default function Navbar() {
           className="text-3xl font-extrabold flex items-center gap-2 cursor-pointer select-none text-yellow-400 drop-shadow-lg"
           onClick={() => navigate(link('/'))}
         >
-          🕌 زاد الطالب
+          <Scene
+            imageSrc="/images/logo.png"
+            imageClassName="logo-vertical w-8 h-8 rounded-full [transform-style:preserve-3d] [backface-visibility:hidden]"
+          />
+          زاد الطالب
         </h1>
 
         {/* NAV Desktop */}

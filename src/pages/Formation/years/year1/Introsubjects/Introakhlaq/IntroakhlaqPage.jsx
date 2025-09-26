@@ -4,6 +4,7 @@ import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
+import Scene from '../../../../../Visitors/Scene';
 
 import data from '../../../../../../datatext/years/year1/datatxtakhlaq.json';
 import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListakhlaq.json';
@@ -256,17 +257,31 @@ export default function IntroAkhlaqPage() {
         >
           ❓ أرسل سؤالاً
         </button>
-        <button
-          onClick={() => navigate('/ar/annonces')}
-          className="px-4 py-2 rounded-lg font-bold shadow-md"
-          style={{
-            backgroundColor: '#fef3c7',
-            color: '#3b2f1b',
-            border: '1px solid #d6b370',
-          }}
-        >
-          📢 الإعلانات
-        </button>
+
+        {/* 👉 Texte animé au-dessus */}
+        <div className="flex flex-col items-center gap-2">
+          <div className="flex justify-center items-center gap-2">
+            👈
+            <Scene
+              text="صلوا على النبي محمد ﷺ ❤️"
+              className="text-[18px] font-amiri font-bold"
+            />
+            👉
+          </div>
+
+          <button
+            onClick={() => navigate('/ar/annonces')}
+            className="px-4 py-2 rounded-lg font-bold shadow-md"
+            style={{
+              backgroundColor: '#fef3c7',
+              color: '#3b2f1b',
+              border: '1px solid #d6b370',
+            }}
+          >
+            📢 الإعلانات
+          </button>
+        </div>
+
         <button
           onClick={() => navigate('/ar/profavis/akhlaq')}
           className="px-4 py-2 rounded-lg font-bold shadow-md"
@@ -278,6 +293,7 @@ export default function IntroAkhlaqPage() {
         >
           🧑🏫 تقييم الأستاذ
         </button>
+
         <button
           onClick={() => navigate('/ar/niveau-debutant')}
           className="px-4 py-2 rounded-lg font-bold shadow-md"
@@ -320,7 +336,6 @@ export default function IntroAkhlaqPage() {
           📗 السداسي الثاني
         </button>
       </div>
-
       {/* === Boutons liés au semestre === */}
       <div className="flex flex-wrap justify-center gap-4 mb-4">
         <button
@@ -368,7 +383,6 @@ export default function IntroAkhlaqPage() {
           ▶️ CONTINUE COURSE <ChevronRight className="ml-2 inline" />
         </button>
       </div>
-
       {/* === TV Split: Gauche vidéo | Droite cadre + parchemin + plume === */}
       <section className="grid md:grid-cols-2 gap-6 items-stretch">
         {/* Colonne gauche : vidéo / audio */}
@@ -459,7 +473,6 @@ export default function IntroAkhlaqPage() {
           </div>
         </motion.div>
       </section>
-
       {/* === Résumé Année 1 === */}
       <section className="mt-12 bg-blue-50 p-6 rounded-xl shadow">
         <h2 className="text-center font-bold text-xl mb-4">
@@ -481,7 +494,6 @@ export default function IntroAkhlaqPage() {
           ))}
         </div>
       </section>
-
       {/* === Modals dynamiques === */}
       {/* Modal Statistiques (semestre) */}
       <Modal
@@ -514,7 +526,6 @@ export default function IntroAkhlaqPage() {
           </div>
         }
       />
-
       {/* Modal Programme (leçons) */}
       <Modal
         isOpen={isModalLessonsOpen}
@@ -522,7 +533,6 @@ export default function IntroAkhlaqPage() {
         title="📚 قائمة دروس الأخلاق"
         content={lessonContent}
       />
-
       {/* ✅ Nouveau : Modal CONTENU de section (s1/s2 -> section.modal du JSON) */}
       <Modal
         isOpen={isLessonModalOpen}

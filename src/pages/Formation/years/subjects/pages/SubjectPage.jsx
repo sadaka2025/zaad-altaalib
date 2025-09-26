@@ -1,4 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
+import Scene from '../../../../Visitors/Scene';
 import {
   Link,
   useParams,
@@ -283,7 +284,13 @@ export default function SubjectPage() {
           <div className="bg-white shadow rounded p-4 space-y-4 relative">
             <h2 className="font-bold text-right text-blue-700 border-b pb-2">
               {(selectedLesson?.tabLabels || tabLabels)?.[selectedTab] ||
-                selectedTab}
+                selectedTab}{' '}
+              👈&nbsp;
+              <Scene
+                text="صلوا على النبي محمد ﷺ ❤️"
+                className="text-[18px] font-amiri font-bold text-right"
+              />
+              &nbsp;👉
             </h2>
 
             <button
@@ -292,7 +299,6 @@ export default function SubjectPage() {
             >
               📺 Agrandir
             </button>
-
             <div className="w-full max-w-full h-[600px]">
               <iframe
                 src={

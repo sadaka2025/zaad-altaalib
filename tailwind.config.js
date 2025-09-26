@@ -13,9 +13,10 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
         arabic: ['"Cairo"', 'sans-serif'],
+        amiri: ['Amiri', 'serif'], // ✅ ajout de la police Amiri
       },
 
-      // Keyframes pour l'animation des spheres
+      // Keyframes pour l'animation des sphères
       keyframes: {
         float1: {
           '0%, 100%': { transform: 'translateY(0) rotate(0deg)' },

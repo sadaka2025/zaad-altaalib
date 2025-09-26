@@ -6,6 +6,7 @@ import Modal from '@components/global/Modal/Modal';
 import ScrollToTopButton from '@components/global/scroll/ScrollToTopButton';
 import ScrollDownButton from '@components/global/scroll/ScrollDownButton';
 import BooksModal from './BooksModal';
+import Scene from '../../../Visitors/Scene';
 
 export default function NiveauDebutant() {
   const [selectedSubjectKey, setSelectedSubjectKey] = useState(null);
@@ -77,15 +78,22 @@ export default function NiveauDebutant() {
                 title="كلمة افتتاحية"
                 allowFullScreen
               ></iframe>
-
               <button
                 onClick={() => setShowModal(true)}
                 className="absolute bottom-2 end-2 bg-green-700 hover:bg-green-800 text-white px-4 py-1 rounded shadow text-sm"
               >
                 ⛶ تكبير
               </button>
+              <div className="flex justify-center">
+                {' '}
+                👈&nbsp;
+                <Scene
+                  text="صلوا على النبي محمد ﷺ ❤️"
+                  className="text-[18px] font-amiri font-bold text-right"
+                />{' '}
+                &nbsp;👉
+              </div>{' '}
             </div>
-
             <Modal
               isOpen={showModal}
               onClose={() => setShowModal(false)}

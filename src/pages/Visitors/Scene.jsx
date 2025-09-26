@@ -3,7 +3,14 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 
-export default function Scene({ text, extraTexts = [], className = '' }) {
+export default function Scene({
+  text,
+  extraTexts = [],
+  className = '',
+  imageSrc = null,
+  imageClassName = '',
+  style = {}, // 👈 ajout
+}) {
   const sceneRef = useRef(null);
 
   useEffect(() => {
@@ -46,40 +53,48 @@ export default function Scene({ text, extraTexts = [], className = '' }) {
   }, []);
 
   return (
-    <div ref={sceneRef} className="scene-simple">
-      <h1 className={`animated-text ${className}`}>{text}</h1>
-
-      {extraTexts.length > 0 && (
-        <span className="dis">{extraTexts[0] || ' '}</span>
+    <div
+      ref={sceneRef}
+      style={style} // 👈 appliqué ici
+      className="scene-simple inline-flex items-center justify-center gap-2"
+    >
+      {/* Image dynamique */}
+      {imageSrc && (
+        <img
+          src={imageSrc}
+          alt="scene-image"
+          className={`gear ${imageClassName}`}
+        />
       )}
-      {extraTexts.slice(1).map((t, i) => (
-        <span key={i} className="text">
-          {t}
-        </span>
-      ))}
 
-      <img src="/images/logo.png" alt="gear" className="gear" />
+      {/* Texte animé */}
+      {text && <span className={`animated-text ${className}`}>{text}</span>}
+
+      {extraTexts.length > 0 &&
+        extraTexts.map((t, i) => (
+          <span key={i} className={i === 0 ? 'dis' : 'text'}>
+            {t}
+          </span>
+        ))}
 
       <style>{`
         .scene-simple {
-          width: 100%;
-          text-align: center;
-          margin-top: 10px;
           position: relative;
+          margin-top: 0; /* laisse le parent gérer l'espacement */
         }
 
         .animated-text {
           font-weight: bold;
           animation: blink-blue 1.5s infinite;
-          font-size: 18px;
+          // font-size: 18px;
         }
 
         @keyframes blink-blue {
-          0% { color: #1500ff; transform: scale(1.1);}
-          25% { color: #2f4588; transform: scale(1);}
-          50% { color: #668aff; transform: scale(1.1);}
-          75% { color: #1c2ca9; transform: scale(1);}
-          100% { color: #0000ff; transform: scale(1.1);}
+          0% { color: #df7093ff; transform: scale(1.1);}
+          25% { color: #60d691ff; transform: scale(1);}
+          50% { color: #a38b3dff; transform: scale(1.1);}
+          75% { color: #d6d7dfff; transform: scale(1);}
+          100% { color: #c9741aff; transform: scale(1.1);}
         }
 
         .dis, .text {
@@ -89,10 +104,9 @@ export default function Scene({ text, extraTexts = [], className = '' }) {
         }
 
         .gear {
-          width: 60px;
-          position: relative;
-          margin-left: 10px;
           display: inline-block;
+          object-fit: cover;
+          /* rotation animée via gsap */
         }
       `}</style>
     </div>

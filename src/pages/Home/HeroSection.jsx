@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { Carousel } from 'react-responsive-carousel';
 import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Scene from '../Visitors/Scene'; // ✅ importer Scene
 
 export default function HeroSection() {
   const { t } = useTranslation();
@@ -58,14 +59,32 @@ export default function HeroSection() {
       </div>
 
       {/* Overlay content */}
-      <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center">
-        <div className="container mx-auto px-4 text-white max-w-3xl text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-snug">
+      <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
+        <div
+          className="container mx-auto px-4 text-white max-w-3xl text-center 
+                  flex flex-col justify-between py-[10%] h-full space-y-8"
+        >
+          {/* 🔹 Texte animé avec flèches */}
+          <div className="flex justify-center items-center gap-6">
+            <span className="text-6xl">👈</span>
+            <Scene
+              text="صلوا على النبي محمد ﷺ ❤️"
+              className="text-4xl md:text-5xl font-amiri font-bold text-center"
+            />
+            <span className="text-6xl">👉</span>
+          </div>
+
+          {/* 🔹 Titre principal */}
+          <h1 className="text-4xl md:text-5xl font-bold leading-snug">
             🌟 {t('hero_title')}
           </h1>
-          <p className="text-lg mb-6">{t('hero_description')}</p>
+
+          {/* 🔹 Description */}
+          <p className="text-lg">{t('hero_description')}</p>
+
+          {/* 🔹 Bouton */}
           <Link to={link('/formations')}>
-            <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition">
+            <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition mt-4">
               📚 {t('explore_courses')}
             </button>
           </Link>
