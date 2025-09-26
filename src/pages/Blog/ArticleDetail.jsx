@@ -1,5 +1,6 @@
 // src/pages/Blog/ArticleDetail.jsx
 import { useParams, useNavigate } from 'react-router-dom';
+import Scene from '../Visitors/Scene';
 import articles from '../../datablog/blog.json';
 import {
   FacebookShareButton,
@@ -53,10 +54,17 @@ export default function ArticleDetail() {
       >
         🔙 رجوع
       </button>
+      <h1 className="text-3xl font-bold text-blue-600 mb-2">
+        {article.title} 👇&nbsp;
+        <div className="flex justify-center">
+          <Scene
+            text="صلوا على النبي محمد ﷺ ❤️"
+            className="text-[18px] font-amiri font-bold "
+          />{' '}
+        </div>{' '}
+      </h1>
 
-      <h1 className="text-3xl font-bold text-blue-600 mb-2">{article.title}</h1>
       <p className="text-gray-500 text-sm mb-4">{article.date}</p>
-
       {/* Vidéo principale ou image */}
       {article.video ? (
         <video
@@ -75,7 +83,6 @@ export default function ArticleDetail() {
           className="w-full aspect-video object-cover rounded mb-6"
         />
       ) : null}
-
       {/* Introduction */}
       {intro && (
         <div
@@ -88,7 +95,6 @@ export default function ArticleDetail() {
           dangerouslySetInnerHTML={{ __html: intro }}
         />
       )}
-
       {/* Deuxième paragraphe avec image */}
       {paragraph2 && article.image && (
         <div className="flex flex-col md:flex-row mb-6 items-start gap-4">
@@ -108,7 +114,6 @@ export default function ArticleDetail() {
           />
         </div>
       )}
-
       {/* Conclusion */}
       {conclusion && (
         <div
@@ -121,7 +126,6 @@ export default function ArticleDetail() {
           dangerouslySetInnerHTML={{ __html: conclusion }}
         />
       )}
-
       {/* Zone de partage social */}
       <div className="mt-8 text-center">
         <h2 className="text-lg font-semibold mb-3 text-gray-700">

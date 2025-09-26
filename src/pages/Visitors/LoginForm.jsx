@@ -3,29 +3,26 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { supabase } from '../../supabaseClient';
 import { v4 as uuidv4 } from 'uuid';
-import Scene from './Scene'; // ✅ importer Scene
+import { FaEnvelope, FaUser } from 'react-icons/fa';
+
 export default function LoginForm({ onLoginSuccess }) {
   const { login } = useAuth();
 
   const [email, setEmail] = useState('');
-  const [pastEmails, setPastEmails] = useState([]);
-  const [message, setMessage] = useState('');
-  const [step, setStep] = useState('email');
-  const [nom, setNom] = useState('');
-  const [prenom, setPrenom] = useState('');
+  const [username, setUsername] = useState('');
+  const [biographie, setBiographie] = useState('');
   const [profil, setProfil] = useState('student');
-  const [avatarFile, setAvatarFile] = useState(null);
+  const [message, setMessage] = useState('');
   const [error, setError] = useState('');
+  const [step, setStep] = useState('email'); // 'email' ou 'signup'
   const [canSignUp, setCanSignUp] = useState(false);
   const [canSignIn, setCanSignIn] = useState(false);
   const [allowedList, setAllowedList] = useState([]);
   const [blockedList, setBlockedList] = useState([]);
   const debounceTimer = useRef(null);
 
+  // Chargement des emails autorisés et bloqués
   useEffect(() => {
-    const savedEmails = JSON.parse(localStorage.getItem('pastEmails') || '[]');
-    setPastEmails(savedEmails);
-
     const loadEmailLists = async () => {
       try {
         const allowed = await fetch('/dataemail/allowedEmails.json').then(
@@ -40,19 +37,8 @@ export default function LoginForm({ onLoginSuccess }) {
         console.error('Erreur chargement listes emails:', err);
       }
     };
-
     loadEmailLists();
   }, []);
-
-  const saveEmailToHistory = (newEmail) => {
-    if (!newEmail) return;
-    const saved = JSON.parse(localStorage.getItem('pastEmails') || '[]');
-    if (!saved.includes(newEmail)) {
-      const updated = [...saved, newEmail];
-      localStorage.setItem('pastEmails', JSON.stringify(updated));
-      setPastEmails(updated);
-    }
-  };
 
   const verifyEmailFormat = (inputEmail) => {
     if (!inputEmail) return;
@@ -87,7 +73,6 @@ export default function LoginForm({ onLoginSuccess }) {
     setCanSignIn(false);
     setCanSignUp(false);
     setError('');
-
     if (debounceTimer.current) clearTimeout(debounceTimer.current);
     debounceTimer.current = setTimeout(() => {
       verifyEmailFormat(value);
@@ -99,16 +84,13 @@ export default function LoginForm({ onLoginSuccess }) {
     const lowerEmail = email.toLowerCase();
 
     if (canSignIn) {
-      saveEmailToHistory(lowerEmail);
-
       login({
         id: uuidv4(),
         email: lowerEmail,
-        name: 'Utilisateur',
+        name: username || 'Utilisateur',
         role: 'student',
         avatar_url: null,
       });
-
       onLoginSuccess?.(lowerEmail);
     } else if (canSignUp) {
       setStep('signup');
@@ -117,31 +99,20 @@ export default function LoginForm({ onLoginSuccess }) {
 
   const handleSignupSubmit = async (e) => {
     e.preventDefault();
-    if (!nom || !prenom) {
-      setError('Merci de remplir tous les champs.');
+    if (!username) {
+      setError('Merci de remplir le nom d’utilisateur.');
       return;
     }
 
     const lowerEmail = email.toLowerCase();
-    saveEmailToHistory(lowerEmail);
-
-    let avatarPath = null;
-    if (avatarFile) {
-      const fileExt = avatarFile.name.split('.').pop();
-      avatarPath = `${uuidv4()}.${fileExt}`;
-      const { error: uploadError } = await supabase.storage
-        .from('avatars')
-        .upload(avatarPath, avatarFile);
-      if (uploadError)
-        console.error('Erreur upload avatar:', uploadError.message);
-    }
 
     login({
       id: uuidv4(),
       email: lowerEmail,
-      name: `${nom} ${prenom}`,
+      name: username,
       role: profil,
-      avatar_url: avatarPath,
+      biographie,
+      avatar_url: null,
     });
 
     onLoginSuccess?.(lowerEmail);
@@ -150,92 +121,112 @@ export default function LoginForm({ onLoginSuccess }) {
   return (
     <div className="flex flex-col items-center w-full">
       {step === 'email' && (
-        <form
-          onSubmit={handleSubmitEmail}
-          className="flex flex-col w-full gap-3"
-        >
-          <input
-            type="email"
-            list="pastEmails"
-            placeholder="Email address"
-            value={email}
-            onChange={(e) => handleEmailChange(e.target.value)}
-            required
-            className="w-full p-3 rounded-md border bg-blue-50"
-          />
-          <datalist id="pastEmails">
-            {pastEmails.map((mail, i) => (
-              <option key={i} value={mail} />
-            ))}
-          </datalist>
-          {message && <p className="text-sm text-gray-500">{message}</p>}
+        <form onSubmit={handleSubmitEmail} className="space-y-6 w-full">
+          <div className="relative">
+            <div className="flex items-center mb-1 text-white opacity-80">
+              <FaEnvelope className="mr-2" />
+              <label htmlFor="email" className="text-sm">
+                Email Address
+              </label>
+            </div>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value={email}
+              onChange={(e) => handleEmailChange(e.target.value)}
+              placeholder="Enter your email"
+              required
+              className="w-full px-5 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:bg-white/15 focus:border-white/40 outline-none transition-all"
+            />
+          </div>
+
+          <div className="relative">
+            <div className="flex items-center mb-1 text-white opacity-80">
+              <FaUser className="mr-2" />
+              <label htmlFor="username" className="text-sm">
+                Username
+              </label>
+            </div>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Enter your username"
+              className="w-full px-5 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:bg-white/15 focus:border-white/40 outline-none transition-all"
+            />
+          </div>
+
+          {message && (
+            <p className="text-white text-sm opacity-80">{message}</p>
+          )}
           {error && <p className="text-red-600">{error}</p>}
+
           <button
             type="submit"
             disabled={!canSignIn && !canSignUp}
-            className="w-full py-3 bg-blue-600 text-white rounded-md"
+            className="w-full py-3 rounded-full bg-gradient-to-r from-[#9d00ff] to-[#ff00ff] text-white font-semibold tracking-wider hover:translate-y-[-2px] hover:shadow-lg transition-all"
           >
             {canSignIn ? 'Sign In' : 'Sign Up'}
           </button>
-          {/* ⚡ Scene animée */}
-          <div className="w-full mt-6">
-            <Scene text="صلو على النبي ﷺ ❤️" className="text-[15px]" />
-          </div>
         </form>
       )}
 
       {step === 'signup' && (
-        <form
-          onSubmit={handleSignupSubmit}
-          className="flex flex-col w-full gap-3 mt-4 bg-gray-50"
-        >
-          <input
-            type="text"
-            placeholder="Nom"
-            value={nom}
-            onChange={(e) => setNom(e.target.value)}
-            required
-            className="w-full p-3 rounded-md border border-gray-300"
-          />
-          <input
-            type="text"
-            placeholder="Prénom"
-            value={prenom}
-            onChange={(e) => setPrenom(e.target.value)}
-            required
-            className="w-full p-3 rounded-md border border-gray-300"
-          />
-          <input
-            type="email"
-            value={email}
-            readOnly
-            className="w-full p-3 rounded-md border border-gray-300"
-          />
-          <select
-            value={profil}
-            onChange={(e) => setProfil(e.target.value)}
-            className="w-full p-3 rounded-md border border-gray-300"
-          >
-            <option value="student">Student</option>
-            <option value="enseignant">Teacher</option>
-            <option value="autre">Other</option>
-          </select>
-          <input
-            type="file"
-            accept="image/*"
-            onChange={(e) => setAvatarFile(e.target.files[0])}
-          />
+        <form onSubmit={handleSignupSubmit} className="space-y-6 w-full mt-4">
+          <div className="relative">
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              required
+              className="w-full px-5 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:bg-white/15 focus:border-white/40 outline-none transition-all"
+            />
+          </div>
+
+          <div className="relative">
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              disabled
+              className="w-full px-5 py-3 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:bg-white/15 focus:border-white/40 outline-none transition-all opacity-60 cursor-not-allowed"
+            />
+          </div>
+
+          <div className="relative">
+            <textarea
+              placeholder="Biographie"
+              value={biographie}
+              onChange={(e) => setBiographie(e.target.value)}
+              className="w-full px-5 py-3 rounded-xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:bg-white/15 focus:border-white/40 outline-none transition-all resize-none h-24"
+            />
+          </div>
+
+          <div className="relative">
+            <select
+              value={profil}
+              onChange={(e) => setProfil(e.target.value)}
+              className="w-full px-5 py-3 rounded-full bg-gray-500/20 border border-white/20 text-white placeholder-white/50 focus:bg-sky-200/40 focus:border-white/40 outline-none transition-all"
+            >
+              <option value="student">Student</option>
+              <option value="enseignant">Teacher</option>
+              <option value="admin">Administrative Agent</option>
+              <option value="autre">Other</option>
+            </select>
+          </div>
+
           {error && <p className="text-red-600">{error}</p>}
+
           <button
             type="submit"
-            className="w-full py-3 bg-blue-600 text-white rounded-md"
+            className="w-full py-3 rounded-full bg-gradient-to-r from-[#9d00ff] to-[#ff00ff] text-white font-semibold tracking-wider hover:translate-y-[-2px] hover:shadow-lg transition-all"
           >
             Sign Up
           </button>
-          {/* ⚡ Scene animée */}
-          <div className="w-full mt-6">
-            <Scene text="مرحبا بكم جميعا 🙌" className="text-[20px]" />
-          </div>
         </form>
       )}
     </div>

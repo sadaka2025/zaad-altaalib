@@ -5,6 +5,7 @@ import { v4 as uuidv4 } from 'uuid';
 import Picker from '@emoji-mart/react';
 import emojiData from '@emoji-mart/data';
 import { useNavigate } from 'react-router-dom';
+import Scene from '../Visitors/Scene';
 
 export default function ContactPage() {
   const [messages, setMessages] = useState([]);
@@ -184,7 +185,14 @@ export default function ContactPage() {
       >
         🔙 رجوع
       </button>
-
+      <div className="flex justify-center">
+        👈&nbsp;{' '}
+        <Scene
+          text="صلوا على النبي محمد ﷺ ❤️"
+          className="text-[18px] font-amiri font-bold "
+        />{' '}
+        &nbsp;👉
+      </div>{' '}
       <div className="flex flex-col w-[80%] h-[80%] bg-white rounded-xl shadow-lg overflow-hidden">
         {/* Barre du haut */}
         <div className="flex items-center justify-between px-4 py-3 bg-purple-900 text-white">

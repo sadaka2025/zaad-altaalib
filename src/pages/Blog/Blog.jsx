@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import articles from '../../datablog/blog.json';
 import ArticleCard from './ArticleCard';
+import Scene from '../Visitors/Scene';
 
 export default function Blog() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -25,14 +26,20 @@ export default function Blog() {
       >
         🔙 رجوع
       </button>
-
+      <div className="flex justify-center">
+        👈&nbsp;{' '}
+        <Scene
+          text="صلوا على النبي محمد ﷺ ❤️"
+          className="text-[18px] font-amiri font-bold "
+        />{' '}
+        &nbsp;👉
+      </div>{' '}
       {/* Liste des articles */}
       <div className="space-y-6 mt-10">
         {currentArticles.map((article) => (
           <ArticleCard key={article.id} article={article} />
         ))}
       </div>
-
       {/* Pagination */}
       <div className="flex justify-center mt-6 space-x-2">
         {[...Array(totalPages)].map((_, index) => (
