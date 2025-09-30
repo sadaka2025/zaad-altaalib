@@ -210,7 +210,7 @@ export default function LoginForm({ onLoginSuccess }) {
             <select
               value={profil}
               onChange={(e) => setProfil(e.target.value)}
-              className="w-full px-5 py-3 rounded-full bg-gray-500/20 border border-white/20 text-white placeholder-white/50 focus:bg-sky-200/40 focus:border-white/40 outline-none transition-all"
+              className="w-full px-5 py-3 rounded-full bg-gray-500/20 border border-white/20 text-black placeholder-white/50 focus:bg-sky-200/40 focus:border-white/40 outline-none transition-all"
             >
               <option value="student">Student</option>
               <option value="enseignant">Teacher</option>

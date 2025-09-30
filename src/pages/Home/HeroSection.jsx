@@ -6,6 +6,8 @@ import { motion, useViewportScroll, useTransform } from 'framer-motion';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Scene from '../Visitors/Scene'; // ✅ importer Scene
 
+import FlowerConfettiButton from '../../components/button/FlowerConfettiButton';
+
 export default function HeroSection() {
   const { t } = useTranslation();
   const { lang } = useParams();
@@ -82,11 +84,12 @@ export default function HeroSection() {
           {/* 🔹 Description */}
           <p className="text-lg">{t('hero_description')}</p>
 
-          {/* 🔹 Bouton */}
+          {/* 🔹 Bouton avec effet fleurs */}
           <Link to={link('/formations')}>
-            <button className="bg-yellow-400 text-black px-6 py-3 rounded-lg text-lg font-semibold hover:bg-yellow-500 transition mt-4">
-              📚 {t('explore_courses')}
-            </button>
+            <FlowerConfettiButton
+              label={`📚 ${t('explore_courses')}`}
+              theme="بسم الله الرحمن الرحيم"
+            />
           </Link>
         </div>
       </div>

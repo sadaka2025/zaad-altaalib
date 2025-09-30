@@ -21,8 +21,8 @@ import {
   Timer,
 } from 'lucide-react';
 
-import LanguageSwitcher from '../../components/global/Translation/LanguageSwitcher';
-import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
+import LanguageSwitcher from '../../components/Translation/LanguageSwitcher';
+import ModalWithLogin from '../../components/Modal/ModalWithLogin';
 import { useAuth } from '../../context/AuthContext';
 
 export default function Navbar() {

@@ -95,22 +95,16 @@ function LangRoutesWrapper() {
               </RequireAuth>
             }
           />
+
           <Route
-            path="avis"
-            element={
-              <RequireAuth>
-                <AvisPage />
-              </RequireAuth>
-            }
-          />
-          <Route
-            path="qr"
+            path="qr/:subject"
             element={
               <RequireAuth>
                 <QRPage />
               </RequireAuth>
             }
           />
+
           <Route
             path="annonces"
             element={
@@ -287,6 +281,7 @@ export default function App() {
           <Route path="/pdf" element={<PdfsPage />} />
           <Route path="/pdf/manage" element={<PdfManager />} />
           <Route path="/probleme" element={<ProblemePage />} />
+          <Route path="/avis" element={<AvisPage />} />
         </Routes>
       </Router>
     </AuthProvider>

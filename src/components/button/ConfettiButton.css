@@ -1,0 +1,22 @@
+.flower-piece {
+  position: fixed; /* permet de sortir du bouton */
+  transform: translate(-50%, 0) rotate(var(--rot));
+  animation: fly-gravity 3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes fly-gravity {
+  0% {
+    transform: translate(-50%, 0) rotate(var(--rot));
+    opacity: 1;
+  }
+  50% {
+    transform: translate(calc(-50% + var(--dx) / 2), calc(var(--dy) / 2))
+      rotate(calc(var(--rot) + 180deg));
+    opacity: 1;
+  }
+  100% {
+    transform: translate(calc(-50% + var(--dx)), calc(var(--dy) + 150px))
+      rotate(calc(var(--rot) + 720deg));
+    opacity: 0;
+  }
+}

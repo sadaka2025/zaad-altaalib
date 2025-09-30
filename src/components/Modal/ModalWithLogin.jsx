@@ -1,8 +1,8 @@
-// src/components/global/Modal/ModalWithLogin.jsx
+// src/components/Modal/ModalWithLogin.jsx
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { useAuth } from '../../../context/AuthContext';
-import LoginForm from '../../../pages/Visitors/LoginForm';
+import { useAuth } from '../../context/AuthContext';
+import LoginForm from '../../pages/Visitors/LoginForm';
 import { FaFacebookF, FaGoogle, FaTwitter } from 'react-icons/fa';
 import { MdOutlineHighlightOff } from 'react-icons/md';
 
@@ -40,7 +40,7 @@ export default function ModalWithLogin({
         className="absolute inset-0 w-full h-full object-cover pointer-events-none"
       >
         <source
-          src="https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/videos/login.mp4"
+          src="https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/videos/vecteezy_animated-flying-through-the-stars-and-blue-and-red-in-space_8079146.mp4"
           type="video/mp4"
         />
       </video>

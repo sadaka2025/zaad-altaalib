@@ -1,6 +1,6 @@
-import React from "react";
-import { Link, useParams } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import React from 'react';
+import { Link, useParams } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
   const { t } = useTranslation();
@@ -10,11 +10,11 @@ export default function Footer() {
     <footer
       className="relative text-white py-12 mt-10 overflow-hidden"
       style={{
-        backgroundImage: `url("/images/arrierefooter.jpg")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundColor: "#5976c7ff",
+        backgroundImage: `url("/images/arrierefooterr.jpg")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundColor: '#5976c7ff',
       }}
     >
       {/* Overlay */}
@@ -25,7 +25,15 @@ export default function Footer() {
         <div className="mb-6">
           <Link to="/probleme">
             <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2 rounded">
-              📥 {t("report_issue")}
+              📥 شاركنا اقتراحك أو مشكلتك
+            </button>
+          </Link>
+        </div>
+        {/* Avis Button */}
+        <div className="mb-6">
+          <Link to="/avis">
+            <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2 rounded">
+              📥 رايكم في منصتنا
             </button>
           </Link>
         </div>
@@ -52,7 +60,7 @@ export default function Footer() {
 
         {/* Rights Text */}
         <p className="text-sm text-gray-200">
-          © 2025 زاد الطالب - {t("rights_reserved")}
+          © 2025 زاد الطالب - {t('rights_reserved')}
         </p>
       </div>
     </footer>

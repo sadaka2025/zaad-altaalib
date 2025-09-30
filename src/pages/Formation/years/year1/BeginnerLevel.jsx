@@ -2,11 +2,14 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
-import Modal from '@components/global/Modal/Modal';
-import ScrollToTopButton from '@components/global/scroll/ScrollToTopButton';
-import ScrollDownButton from '@components/global/scroll/ScrollDownButton';
+import Modal from '@components/Modal/Modal';
+import ScrollToTopButton from '@components/scroll/ScrollToTopButton';
+import ScrollDownButton from '@components/scroll/ScrollDownButton';
 import BooksModal from './BooksModal';
 import Scene from '../../../Visitors/Scene';
+import ConfettiButton from '../../../../components/button/ConfettiButton';
+import FlowerConfettiButton from '../../../../components/button/FlowerConfettiButton';
+import ConfettiDhikrTasbih from '../../../../components/button/ConfettiDhikrTasbih';
 
 export default function NiveauDebutant() {
   const [selectedSubjectKey, setSelectedSubjectKey] = useState(null);
@@ -52,15 +55,16 @@ export default function NiveauDebutant() {
           <h1 className="text-3xl md:text-4xl font-bold text-yellow-300 text-center">
             السنة الأولى التعليم الزيتوني عن بعد
           </h1>
-          <button
+          <ConfettiButton
+            theme="stars"
             onClick={() => setShowBooksModal(true)}
             className="min-w-[220px] backdrop-blur-md bg-gradient-to-r from-amber-500 via-orange-600 to-rose-600
-                       hover:from-amber-400 hover:via-orange-500 hover:to-rose-500
-                       text-white px-6 py-2 rounded-2xl shadow-lg border border-white/30 transition
-                       font-bold text-lg ring-2 ring-white/20 hover:ring-white/40"
+             hover:from-amber-400 hover:via-orange-500 hover:to-rose-500
+             text-white px-6 py-2 rounded-2xl shadow-lg border border-white/30 transition
+             font-bold text-lg ring-2 ring-white/20 hover:ring-white/40"
           >
             📚 عرض مقررات الكتب
-          </button>
+          </ConfettiButton>
         </div>
 
         {/* ===== Bloc principal : Vidéo + Semestres ===== */}
@@ -78,12 +82,6 @@ export default function NiveauDebutant() {
                 title="كلمة افتتاحية"
                 allowFullScreen
               ></iframe>
-              <button
-                onClick={() => setShowModal(true)}
-                className="absolute bottom-2 end-2 bg-green-700 hover:bg-green-800 text-white px-4 py-1 rounded shadow text-sm"
-              >
-                ⛶ تكبير
-              </button>
               <div className="flex justify-center">
                 {' '}
                 👈&nbsp;
@@ -174,21 +172,25 @@ function SectionSemester({ title, subjects, subjectKeys, semesterNumber }) {
   if (!Array.isArray(subjects)) return null;
 
   return (
-    <div className="bg-black/30 p-4 rounded-xl shadow-lg">
-      <h2 className="text-xl font-bold text-center text-yellow-300 mb-4">
-        📘 {title}
-      </h2>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-        {subjects.map((subject, idx) => (
-          <button
-            key={idx}
-            onClick={() => handleClick(subjectKeys[idx])}
-            className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded-xl shadow-md transition"
-          >
-            {subject}
-          </button>
-        ))}
+    <>
+      <ConfettiDhikrTasbih duration={8000} />
+      <div className="bg-black/30 p-4 rounded-xl shadow-lg">
+        <h2 className="text-xl font-bold text-center text-yellow-300 mb-4">
+          📘 {title}
+        </h2>
+        <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          {subjects.map((subject, idx) => (
+            <FlowerConfettiButton
+              key={idx}
+              theme="flowers"
+              onClick={() => handleClick(subjectKeys[idx])}
+              className="bg-yellow-500 hover:bg-yellow-600 text-black font-semibold py-2 px-4 rounded-xl shadow-md transition"
+            >
+              {subject}
+            </FlowerConfettiButton>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

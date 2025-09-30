@@ -1,0 +1,27 @@
+.prob-btn {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0), #f6e58d);
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.prob-btn:hover {
+  background: #f9ca24;
+}
+
+.avis-btn {
+  background: #f1c40f;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.avis-btn:hover {
+  background: #f39c12;
+}

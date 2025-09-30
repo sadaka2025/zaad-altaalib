@@ -1,15 +1,15 @@
-import React, { useEffect, useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import useSafeTranslateArray from "../../utils/useSafeTranslateArray";
+import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import useSafeTranslateArray from '../../ConfettiTools/useSafeTranslateArray';
 
 export default function InstructorsSection() {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+  const isRTL = i18n.language === 'ar';
 
   const [swiperKey, setSwiperKey] = useState(0);
   const [selectedInstructor, setSelectedInstructor] = useState(null);
@@ -26,17 +26,17 @@ export default function InstructorsSection() {
   }, []);
 
   // Sécurisation : récupère la liste ou un tableau vide
-  const instructors = useSafeTranslateArray("instructors");
+  const instructors = useSafeTranslateArray('instructors');
 
   if (!isClient) return null;
 
   const closeModal = () => setSelectedInstructor(null);
 
   return (
-    <section className="py-16 bg-white" dir={isRTL ? "rtl" : "ltr"}>
+    <section className="py-16 bg-white" dir={isRTL ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-10 text-center text-gray-800">
-          {t("our_instructors")}
+          {t('our_instructors')}
         </h2>
 
         {instructors.length > 0 ? (
@@ -49,7 +49,7 @@ export default function InstructorsSection() {
             autoplay={{ delay: 4000 }}
             pagination={{ clickable: true }}
             navigation
-            dir={isRTL ? "rtl" : "ltr"}
+            dir={isRTL ? 'rtl' : 'ltr'}
             breakpoints={{
               640: { slidesPerView: 1 },
               768: { slidesPerView: 2 },
@@ -73,7 +73,7 @@ export default function InstructorsSection() {
                       className="mt-4 text-blue-600 underline text-sm"
                       onClick={() => setSelectedInstructor(inst)}
                     >
-                      {t("view_cv")}
+                      {t('view_cv')}
                     </button>
                   )}
                 </div>
@@ -82,7 +82,7 @@ export default function InstructorsSection() {
           </Swiper>
         ) : (
           <p className="text-center text-gray-500">
-            {t("no_instructors_available")}
+            {t('no_instructors_available')}
           </p>
         )}
 
@@ -94,14 +94,14 @@ export default function InstructorsSection() {
                 {selectedInstructor.name}
               </h3>
               <p className="whitespace-pre-wrap text-sm text-gray-700 mb-6">
-                {selectedInstructor.cv || t("no_cv_available")}
+                {selectedInstructor.cv || t('no_cv_available')}
               </p>
               <div className="text-center">
                 <button
                   onClick={closeModal}
                   className="px-6 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition"
                 >
-                  {t("close")}
+                  {t('close')}
                 </button>
               </div>
             </div>

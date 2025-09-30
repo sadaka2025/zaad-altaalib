@@ -2,8 +2,9 @@ import React from 'react';
 import { Link, useParams, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 
-import ScrollToTopButton from '@components/global/scroll/ScrollToTopButton';
-import ScrollDownButton from '@components/global/scroll/ScrollDownButton';
+import ScrollToTopButton from '@components/scroll/ScrollToTopButton';
+import ScrollDownButton from '@components/scroll/ScrollDownButton';
+import ConfettiDhikrAien from '../../components/button/ConfettiDhikrAien';
 
 export default function Formations() {
   const { lang } = useParams();
@@ -14,65 +15,68 @@ export default function Formations() {
   const link = (path) => `/${lang}${path.startsWith('/') ? path : '/' + path}`;
 
   return (
-    <div
-      className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 text-gray-800"
-      dir={isRTL ? 'rtl' : 'ltr'}
-    >
-      <div className="max-w-7xl mx-auto px-4 py-10 relative">
-        {/* 🔹 Bouton retour en haut à droite */}
-        <button
-          onClick={() => navigate(-1)}
-          className="absolute top-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
-          aria-label="رجوع"
-        >
-          🔙 رجوع
-        </button>
+    <>
+        <ConfettiDhikrAien />
+      <div
+        className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 text-gray-800"
+        dir={isRTL ? 'rtl' : 'ltr'}
+      >
+        <div className="max-w-7xl mx-auto px-4 py-10 relative">
+          {/* 🔹 Bouton retour en haut à droite */}
+          <button
+            onClick={() => navigate(-1)}
+            className="absolute top-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+            aria-label="رجوع"
+          >
+            🔙 رجوع
+          </button>
 
-        {/* 🔹 En-tête */}
-        <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold text-blue-800 mb-6">
-            📚 {t('courses')}
-          </h1>
-          <p className="text-lg text-gray-600 mb-4">{t('choose_level')}</p>
-        </div>
+          {/* 🔹 En-tête */}
+          <div className="text-center mb-10">
+            <h1 className="text-4xl font-bold text-blue-800 mb-6">
+              📚 {t('courses')}
+            </h1>
+            <p className="text-lg text-gray-600 mb-4">{t('choose_level')}</p>
+          </div>
 
-        {/* 🔹 Grille des formations */}
-        <div className={`grid grid-cols-1 md:grid-cols-3 gap-6`}>
-          <FormationCard
-            image="/images/debutant.jpg"
-            title={t('level1_title')}
-            desc={t('level1_desc')}
-            to={link('/niveau-debutant')}
-          />
-          <FormationCard
-            image="/images/niveau2.jpg"
-            title={t('level2_title')}
-            desc={t('level2_desc')}
-            to={link('/niveau-2')}
-          />
-          <FormationCard
-            image="/images/intermediate.jpg"
-            title={t('level3_title')}
-            desc={t('level3_desc')}
-            to={link('/niveau-moyen')}
-          />
-          <FormationCard
-            image="/images/niveau4.jpg"
-            title={t('level4_title')}
-            desc={t('level4_desc')}
-            to={link('/niveau-4')}
-          />
-          <FormationCard
-            image="/images/avance.jpg"
-            title={t('level5_title')}
-            desc={t('level5_desc')}
-            to={link('/niveau-avance')}
-          />
+          {/* 🔹 Grille des formations */}
+          <div className={`grid grid-cols-1 md:grid-cols-3 gap-6`}>
+            <FormationCard
+              image="/images/debutant.jpg"
+              title={t('level1_title')}
+              desc={t('level1_desc')}
+              to={link('/niveau-debutant')}
+            />
+            <FormationCard
+              image="/images/niveau2.jpg"
+              title={t('level2_title')}
+              desc={t('level2_desc')}
+              to={link('/niveau-2')}
+            />
+            <FormationCard
+              image="/images/intermediate.jpg"
+              title={t('level3_title')}
+              desc={t('level3_desc')}
+              to={link('/niveau-moyen')}
+            />
+            <FormationCard
+              image="/images/niveau4.jpg"
+              title={t('level4_title')}
+              desc={t('level4_desc')}
+              to={link('/niveau-4')}
+            />
+            <FormationCard
+              image="/images/avance.jpg"
+              title={t('level5_title')}
+              desc={t('level5_desc')}
+              to={link('/niveau-avance')}
+            />
+          </div>
         </div>
+        <ScrollToTopButton />
+        <ScrollDownButton />
       </div>
-      <ScrollToTopButton />
-      <ScrollDownButton />
-    </div>
+    </>
   );
 }
 

@@ -1,6 +1,6 @@
 // src/pages/Formation/years/year1/BooksModal.jsx
 import React, { useState, useRef, useEffect } from 'react';
-import Modal from '@components/global/Modal/Modal';
+import Modal from '@components/Modal/Modal';
 import ColorThief from 'colorthief';
 
 // === Map globale des livres par clé ===

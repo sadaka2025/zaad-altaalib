@@ -1,26 +1,26 @@
-import React, { useState } from "react";
-import { useTranslation } from "react-i18next";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import useSafeTranslateArray from "../../utils/useSafeTranslateArray";
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import useSafeTranslateArray from '../../ConfettiTools/useSafeTranslateArray';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 export default function DiplomaSection() {
   const { t, i18n } = useTranslation();
-  const isRTL = i18n.language === "ar";
+  const isRTL = i18n.language === 'ar';
   const [modalSubject, setModalSubject] = useState(null);
 
   // Sécurisation de la récupération du tableau subjects
-  const subjects = useSafeTranslateArray("diploma.subjects");
+  const subjects = useSafeTranslateArray('diploma.subjects');
 
   // Si vide ou mal formé
   const hasSubjects = Array.isArray(subjects) && subjects.length > 0;
   if (!hasSubjects) {
     console.warn(
-      "⚠️ Subjects is empty or malformed for language:",
+      '⚠️ Subjects is empty or malformed for language:',
       i18n.language
     );
   }
@@ -32,30 +32,30 @@ export default function DiplomaSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <div className="bg-green-100 p-6 rounded-2xl shadow">
             <h3 className="text-xl font-semibold mb-4 text-green-900">
-              {t("diploma.title1")}
+              {t('diploma.title1')}
             </h3>
             <p className="text-gray-700 leading-relaxed text-justify">
-              {t("diploma.desc1")}
+              {t('diploma.desc1')}
             </p>
           </div>
           <div className="bg-blue-100 p-6 rounded-2xl shadow">
             <h3 className="text-xl font-semibold mb-4 text-blue-900">
-              {t("diploma.title2")}
+              {t('diploma.title2')}
             </h3>
             <p className="text-gray-700 leading-relaxed text-justify">
-              {t("diploma.desc2")}
+              {t('diploma.desc2')}
             </p>
           </div>
         </div>
 
         {/* Phrase de motivation */}
         <div className="text-center text-lg font-semibold mb-8 text-gray-600">
-          {t("diploma.motivational")}
+          {t('diploma.motivational')}
         </div>
 
         {/* Carrousel des matières */}
         <h2 className="text-2xl font-bold mb-6 text-center">
-          {t("diploma.heading")}
+          {t('diploma.heading')}
         </h2>
 
         {hasSubjects ? (
@@ -71,7 +71,7 @@ export default function DiplomaSection() {
             pagination={{ clickable: true }}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             modules={[Navigation, Pagination, Autoplay]}
-            dir={isRTL ? "rtl" : "ltr"}
+            dir={isRTL ? 'rtl' : 'ltr'}
           >
             {subjects.map((subject, idx) => (
               <SwiperSlide key={idx}>
@@ -88,8 +88,8 @@ export default function DiplomaSection() {
         ) : (
           <div className="text-center text-gray-500 italic">
             {t(
-              "diploma.no_subjects",
-              "⚠️ Aucune matière disponible pour le moment."
+              'diploma.no_subjects',
+              '⚠️ Aucune matière disponible pour le moment.'
             )}
           </div>
         )}
@@ -110,7 +110,7 @@ export default function DiplomaSection() {
                 onClick={() => setModalSubject(null)}
                 className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
               >
-                {t("diploma.close")}
+                {t('diploma.close')}
               </button>
             </div>
           </div>

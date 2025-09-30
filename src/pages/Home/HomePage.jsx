@@ -6,14 +6,14 @@ import { useParams } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { useAuth } from '../../context/AuthContext';
-import ModalWithLogin from '../../components/global/Modal/ModalWithLogin';
+import ModalWithLogin from '../../components/Modal/ModalWithLogin';
 
 import HeroSection from './HeroSection';
 import BenefitsSection from './BenefitsSection';
 import InstructorsSection from './InstructorsSection';
 import TestimonialsSection from './TestimonialsSection';
-import ScrollToTopButton from '@components/global/scroll/ScrollToTopButton';
-import ScrollDownButton from '@components/global/scroll/ScrollDownButton';
+import ScrollToTopButton from '@components/scroll/ScrollToTopButton';
+import ScrollDownButton from '@components/scroll/ScrollDownButton';
 import DiplomaSection from './DiplomaSection';
 import Footer from './Footer';
 import StatsSection from './StatsSection';

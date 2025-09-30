@@ -2,6 +2,7 @@
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Scene from '../Visitors/Scene'; // ✅ importer Scene
+import ConfettiBouquet from '../../components/button/ConfettiBouquet';
 
 // === Import des fichiers leçons ===
 import lessonsFiqh from '@/dataIntro/years/year1/dataLesson/lessonListfiqh.json';
@@ -11,6 +12,8 @@ import lessonsAkhlaq from '@/dataIntro/years/year1/dataLesson/lessonListakhlaq.j
 import lessonsNahw from '@/dataIntro/years/year1/dataLesson/lessonListnahw.json';
 import lessonsSirah from '@/dataIntro/years/year1/dataLesson/lessonListsirah.json';
 import lessonsTajwid from '@/dataIntro/years/year1/dataLesson/lessonListtajwid.json';
+import ConfettiDhikrTawakol from '../../components/button/ConfettiDhikrTawakol';
+import ConfettiDhikrAien from '../../components/button/ConfettiDhikrAien';
 
 // === Import des fichiers QUIZZES ===
 import { QUIZZES_YEAR1 } from '@/dataquizzes/years/year1/quizzesYear1';
@@ -95,7 +98,6 @@ export default function QuizChrono() {
       </video>
       {/* Overlay sombre */}
       <div className="absolute inset-0 bg-black/70 z-0"></div>
-
       <div className="relative z-10 flex flex-col flex-1">
         {/* Ligne supérieure : filtres */}
         <div className="p-4 grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
@@ -185,8 +187,9 @@ export default function QuizChrono() {
           {/* Colonne gauche : liste des cours */}
           <div className="w-2/3 bg-black/40 backdrop-blur-lg rounded-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-4">
             {filteredLessons.map((lesson, i) => (
-              <motion.button
+              <ConfettiBouquet
                 key={lesson.id}
+                lesson={lesson} // ✅ ici on passe la prop
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 onClick={() => handleLessonClick(lesson, i)}
@@ -198,7 +201,7 @@ export default function QuizChrono() {
               >
                 <h3 className="font-bold">Cours {lesson.id}</h3>
                 <p>{lesson.title}</p>
-              </motion.button>
+              </ConfettiBouquet>
             ))}
           </div>
 
@@ -229,57 +232,64 @@ export default function QuizChrono() {
           </div>
         </div>
       </div>
-
-      {/* Modale Quiz */}
-      <AnimatePresence>
-        {isModalOpen && selectedQuiz && (
-          <motion.div
-            className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-          >
+      {/* Modale Quiz */} 
+      <>
+          <ConfettiDhikrTawakol />
+        <AnimatePresence>
+          {isModalOpen && selectedQuiz && (
             <motion.div
-              className="bg-gray-900 rounded-2xl shadow-2xl w-[90%] h-[90%] relative flex flex-col"
-              initial={{ scale: 0.8 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.8 }}
+              className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
             >
-              <div className="flex justify-between items-center p-4 border-b border-gray-700">
-                {/* Bloc gauche : titre + Scene animé */}
-                <div className="flex items-center gap-4">
-                  <h2 className="text-lg font-bold">
-                    {selectedLesson?.title || 'Quiz'}
-                  </h2>{' '}
-                  👈{/* ⚡ Texte animé */}
-                  <div className="flex justify-center">
-                    <Scene
-                      text="صلوا على النبي محمد ﷺ ❤️"
-                      className="text-[18px] font-amiri font-bold text-right"
-                    />{' '}
-                  </div>{' '}
-                  👉
+              <motion.div
+                className="bg-gray-900 rounded-2xl shadow-2xl w-[90%] h-[90%] relative flex flex-col"
+                initial={{ scale: 0.8 }}
+                animate={{ scale: 1 }}
+                exit={{ scale: 0.8 }}
+              >
+                <div className="flex justify-between items-center p-4 border-b border-gray-700">
+                  {/* Bloc gauche : titre + Scene animé */}
+                  <div className="flex items-center gap-4">
+                    <h2 className="text-lg font-bold">
+                      {selectedLesson?.title || 'Quiz'}
+                    </h2>{' '}
+                    👈{/* ⚡ Texte animé */}
+                    <div className="flex justify-center">
+                      <Scene
+                        text="صلوا على النبي محمد ﷺ ❤️"
+                        className="text-[18px] font-amiri font-bold text-right"
+                      />{' '}
+                    </div>{' '}
+                    👉
+                  </div>
+
+                  {/* Bouton fermer */}
+                  <button
+                    onClick={() => setIsModalOpen(false)}
+                    className="px-3 py-1 rounded-lg bg-red-600 hover:bg-red-700"
+                  >
+                    ✖ Fermer
+                  </button>
                 </div>
 
-                {/* Bouton fermer */}
-                <button
-                  onClick={() => setIsModalOpen(false)}
-                  className="px-3 py-1 rounded-lg bg-red-600 hover:bg-red-700"
-                >
-                  ✖ Fermer
-                </button>
-              </div>
-
-              <iframe
-                src={selectedQuiz.url || selectedQuiz}
-                title="Quiz"
-                className="flex-1 rounded-b-2xl"
-                allowFullScreen
-              ></iframe>
+                <iframe
+                  src={selectedQuiz.url || selectedQuiz}
+                  title="Quiz"
+                  className="flex-1 rounded-b-2xl"
+                  allowFullScreen
+                ></iframe>
+              </motion.div>
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>
+      </>
+      {/* Conteneur global pour confettis */}
+      <div
+        id="confetti-container"
+        className="fixed top-0 left-0 w-full h-full pointer-events-none z-50"
+      />
     </div>
   );
 }

@@ -6,6 +6,7 @@ import Picker from '@emoji-mart/react';
 import emojiData from '@emoji-mart/data';
 import { useNavigate } from 'react-router-dom';
 import Scene from '../Visitors/Scene';
+import ConfettiDhikrTasbih from '../../components/button/ConfettiDhikrTasbih';
 
 export default function ContactPage() {
   const [messages, setMessages] = useState([]);
@@ -176,160 +177,165 @@ export default function ContactPage() {
 
   // --- UI Messenger-like ---
   return (
-    <div className="flex flex-col h-screen items-center justify-center bg-gradient-to-b from-purple-800 to-indigo-900 relative">
-      {/* 🔙 Bouton retour en haut à droite */}
-      <button
-        onClick={() => navigate(-1)}
-        className="absolute top-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
-        aria-label="رجوع"
-      >
-        🔙 رجوع
-      </button>
-      <div className="flex justify-center">
-        👈&nbsp;{' '}
-        <Scene
-          text="صلوا على النبي محمد ﷺ ❤️"
-          className="text-[18px] font-amiri font-bold "
-        />{' '}
-        &nbsp;👉
-      </div>{' '}
-      <div className="flex flex-col w-[80%] h-[80%] bg-white rounded-xl shadow-lg overflow-hidden">
-        {/* Barre du haut */}
-        <div className="flex items-center justify-between px-4 py-3 bg-purple-900 text-white">
-          <button className="text-lg">⬅️</button>
+    <>
+      <ConfettiDhikrTasbih />
+      <div className="flex flex-col h-screen items-center justify-center bg-gradient-to-b from-purple-800 to-indigo-900 relative">
+        <button
+          onClick={() => navigate(-1)}
+          className="absolute top-4 right-4 bg-yellow-600 hover:bg-yellow-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+          aria-label="رجوع"
+        >
+          🔙 رجوع
+        </button>
+        <div className="flex justify-center">
+          👈&nbsp;{' '}
+          <Scene
+            text="صلوا على النبي محمد ﷺ ❤️"
+            className="text-[18px] font-amiri font-bold "
+          />{' '}
+          &nbsp;👉
+        </div>{' '}
+        <div className="flex flex-col w-[80%] h-[80%] bg-white rounded-xl shadow-lg overflow-hidden">
+          {/* Barre du haut */}
 
-          <h2 className="font-bold">Contact</h2>
-          <div className="flex space-x-4">
-            <button onClick={() => window.open('tel:+21612345678')}>📞</button>
-            <button
-              onClick={() =>
-                window.open('https://wa.me/21612345678?call', '_blank')
-              }
-            >
-              🎥
-            </button>
-            <button onClick={() => alert('Infos du contact')}>ℹ️</button>
-          </div>
-        </div>
+          <div className="flex items-center justify-between px-4 py-3 bg-purple-900 text-white">
+            <button className="text-lg">⬅️</button>
 
-        {/* Messages */}
-        <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-gray-50">
-          {messages.map((msg) => {
-            const isUser = msg.user_id === user?.id;
-            return (
-              <div
-                key={msg.id}
-                className={`flex items-end ${
-                  isUser ? 'justify-end' : 'justify-start'
-                }`}
+            <h2 className="font-bold">Contact</h2>
+            <div className="flex space-x-4">
+              <button onClick={() => window.open('tel:+21612345678')}>
+                📞
+              </button>
+              <button
+                onClick={() =>
+                  window.open('https://wa.me/21612345678?call', '_blank')
+                }
               >
-                {!isUser && (
-                  <div className="mr-2">
-                    {getAvatarElement(msg.avatar_url, msg.user_id)}
-                  </div>
-                )}
+                🎥
+              </button>
+              <button onClick={() => alert('Infos du contact')}>ℹ️</button>
+            </div>
+          </div>
+
+          {/* Messages */}
+          <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-gray-50">
+            {messages.map((msg) => {
+              const isUser = msg.user_id === user?.id;
+              return (
                 <div
-                  className={`p-3 rounded-2xl max-w-xs shadow ${
-                    isUser
-                      ? 'bg-blue-500 text-white rounded-br-none'
-                      : 'bg-gray-200 text-gray-800 rounded-bl-none'
-                  } ${msg.pending ? 'italic opacity-70' : ''} ${
-                    msg.error ? 'bg-red-200 text-red-800' : ''
+                  key={msg.id}
+                  className={`flex items-end ${
+                    isUser ? 'justify-end' : 'justify-start'
                   }`}
                 >
-                  <div>{msg.content}</div>
-                  <div className="text-[10px] text-gray-500 mt-1 text-right">
-                    {new Date(msg.created_at).toLocaleTimeString()}
-                    {msg.pending && ' (Envoi...)'}
-                    {msg.error && ' (Erreur)'}
+                  {!isUser && (
+                    <div className="mr-2">
+                      {getAvatarElement(msg.avatar_url, msg.user_id)}
+                    </div>
+                  )}
+                  <div
+                    className={`p-3 rounded-2xl max-w-xs shadow ${
+                      isUser
+                        ? 'bg-blue-500 text-white rounded-br-none'
+                        : 'bg-gray-200 text-gray-800 rounded-bl-none'
+                    } ${msg.pending ? 'italic opacity-70' : ''} ${
+                      msg.error ? 'bg-red-200 text-red-800' : ''
+                    }`}
+                  >
+                    <div>{msg.content}</div>
+                    <div className="text-[10px] text-gray-500 mt-1 text-right">
+                      {new Date(msg.created_at).toLocaleTimeString()}
+                      {msg.pending && ' (Envoi...)'}
+                      {msg.error && ' (Erreur)'}
+                    </div>
                   </div>
+                  {isUser && (
+                    <div className="ml-2">
+                      {getAvatarElement(userAvatar, user?.id)}
+                    </div>
+                  )}
                 </div>
-                {isUser && (
-                  <div className="ml-2">
-                    {getAvatarElement(userAvatar, user?.id)}
-                  </div>
-                )}
-              </div>
-            );
-          })}
-          <div ref={messagesEndRef}></div>
-        </div>
-
-        {/* Barre de saisie */}
-        <div className="flex flex-col p-2 bg-white border-t relative">
-          {showEmoji && (
-            <div
-              className="absolute bottom-16 left-2 z-10"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Picker data={emojiData} onEmojiSelect={handleSelectEmoji} />
-            </div>
-          )}
-
-          <div className="flex items-center space-x-2">
-            <label>
-              ➕
-              <input
-                type="file"
-                accept="image/*"
-                onChange={handleAvatarUpload}
-                className="hidden"
-              />
-            </label>
-            <button onClick={() => textareaRef.current.focus()}>📷</button>
-            <button onClick={() => setShowEmoji((prev) => !prev)}>😊</button>
-            <textarea
-              ref={textareaRef}
-              value={newMessage}
-              onChange={(e) => setNewMessage(e.target.value)}
-              onKeyDown={handleKeyPress}
-              placeholder="Écrire un message..."
-              rows={1}
-              className="flex-1 px-4 py-2 border rounded-full resize-none"
-            />
-            <button
-              onClick={handleSend}
-              className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600"
-            >
-              ➤
-            </button>
+              );
+            })}
+            <div ref={messagesEndRef}></div>
           </div>
 
-          {/* Partage */}
-          <div className="flex justify-around bg-purple-900 text-white py-2 mt-2 rounded-b-lg">
-            <button
-              onClick={() =>
-                window.open(
-                  'https://wa.me/?text=Hello depuis Messenger Clone',
-                  '_blank'
-                )
-              }
-            >
-              WhatsApp
-            </button>
-            <button
-              onClick={() =>
-                window.open(
-                  'https://t.me/share/url?url=https://zaad-altaalib.com&text=Partage test',
-                  '_blank'
-                )
-              }
-            >
-              Telegram
-            </button>
-            <button
-              onClick={() =>
-                window.open(
-                  'mailto:test@example.com?subject=Partage&body=Message depuis app',
-                  '_blank'
-                )
-              }
-            >
-              Email
-            </button>
+          {/* Barre de saisie */}
+          <div className="flex flex-col p-2 bg-white border-t relative">
+            {showEmoji && (
+              <div
+                className="absolute bottom-16 left-2 z-10"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <Picker data={emojiData} onEmojiSelect={handleSelectEmoji} />
+              </div>
+            )}
+
+            <div className="flex items-center space-x-2">
+              <label>
+                ➕
+                <input
+                  type="file"
+                  accept="image/*"
+                  onChange={handleAvatarUpload}
+                  className="hidden"
+                />
+              </label>
+              <button onClick={() => textareaRef.current.focus()}>📷</button>
+              <button onClick={() => setShowEmoji((prev) => !prev)}>😊</button>
+              <textarea
+                ref={textareaRef}
+                value={newMessage}
+                onChange={(e) => setNewMessage(e.target.value)}
+                onKeyDown={handleKeyPress}
+                placeholder="Écrire un message..."
+                rows={1}
+                className="flex-1 px-4 py-2 border rounded-full resize-none"
+              />
+              <button
+                onClick={handleSend}
+                className="bg-blue-500 text-white px-4 py-2 rounded-full hover:bg-blue-600"
+              >
+                ➤
+              </button>
+            </div>
+
+            {/* Partage */}
+            <div className="flex justify-around bg-purple-900 text-white py-2 mt-2 rounded-b-lg">
+              <button
+                onClick={() =>
+                  window.open(
+                    'https://wa.me/?text=Hello depuis Messenger Clone',
+                    '_blank'
+                  )
+                }
+              >
+                WhatsApp
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    'https://t.me/share/url?url=https://zaad-altaalib.com&text=Partage test',
+                    '_blank'
+                  )
+                }
+              >
+                Telegram
+              </button>
+              <button
+                onClick={() =>
+                  window.open(
+                    'mailto:test@example.com?subject=Partage&body=Message depuis app',
+                    '_blank'
+                  )
+                }
+              >
+                Email
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

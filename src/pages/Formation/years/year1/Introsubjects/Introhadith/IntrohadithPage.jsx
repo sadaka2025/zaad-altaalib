@@ -5,12 +5,13 @@ import { ChevronRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import CountUp from 'react-countup';
 import Scene from '../../../../../Visitors/Scene';
-
+import confetti from 'canvas-confetti';
+import { launchFlowers } from '../../../../../../ConfettiTools/launchFlowers'; // adapte le chemin
 import data from '../../../../../../datatext/years/year1/datatxthadith.json';
 import courseDataJSON from '../../../../../../dataIntro/years/year1/dataLesson/lessonListhadith.json';
 import hadithStats from '../../../../../../datastat/years/year1/hadith_stats.json';
 
-import Modal from '@components/global/Modal/Modal';
+import Modal from '@components/Modal/Modal';
 import BooksModal from '../../BooksModal';
 
 /* ---------------------------------------------
@@ -247,7 +248,7 @@ export default function IntroHadithPage() {
         />
 
         <button
-          onClick={() => navigate('/ar/avis')}
+          onClick={() => navigate(`/ar/qr/hadith`)}
           className="px-4 py-2 rounded-lg font-bold shadow-md"
           style={{
             backgroundColor: '#fef3c7',
@@ -313,6 +314,7 @@ export default function IntroHadithPage() {
           }`}
           onClick={() => {
             setSelectedSemester('semester1');
+            launchFlowers(); // 🎉 déclenche confetti
             navigate(`/${lang}/introhadith?semestre=1`);
           }}
         >
@@ -326,6 +328,7 @@ export default function IntroHadithPage() {
           }`}
           onClick={() => {
             setSelectedSemester('semester2');
+            launchFlowers(); // 🎉 déclenche confetti
             navigate(`/${lang}/introhadith?semestre=2`);
           }}
         >
@@ -336,7 +339,10 @@ export default function IntroHadithPage() {
       {/* === Boutons liés au semestre === */}
       <div className="flex flex-wrap justify-center gap-4 mb-4">
         <button
-          onClick={() => setIsModalLessonsOpen(true)}
+          onClick={() => {
+            setIsModalLessonsOpen(true);
+            launchFlowers(); // 🎉 effet fleurs
+          }}
           className="px-6 py-3 rounded-lg font-bold hover:brightness-110 shadow-md"
           style={{
             backgroundImage: "url('/images/parchment.png')",
@@ -353,7 +359,10 @@ export default function IntroHadithPage() {
         </button>
 
         <button
-          onClick={() => setIsStatsModalOpen(true)}
+          onClick={() => {
+            setIsStatsModalOpen(true);
+            launchFlowers(); // 🎉 effet fleurs
+          }}
           className="px-6 py-3 rounded-lg font-bold hover:brightness-110 shadow-md"
           style={{
             backgroundImage: "url('/images/parchment.png')",
