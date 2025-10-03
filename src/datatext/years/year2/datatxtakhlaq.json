@@ -1,0 +1,59 @@
+{
+  "year2": {
+    "akhlaq": {
+      "s1": {
+        "introVideo": "https://drive.google.com/file/d/1H04Q-bWlWOVxtLFyS7YsKh65Te8vRSfI/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "فضل العلم",
+            "desc": "ماهي مبادئه؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "أدب العالم في نفسه",
+            "desc": "ماهي فروعه"
+          },
+          {
+            "id": "٠٣",
+            "title": "أدب العالم في درسه",
+            "desc": "ماهي مميزاته"
+          },
+          {
+            "id": "٠٤",
+            "title": "أدب العالم مع طلبته",
+            "desc": "ماهي خاصياته"
+          }
+        ]
+      },
+
+      "s2": {
+        "introVideo": "https://drive.google.com/file/d/1xLCuvpPfF0YZfgPDlAFxkeR2iqb9bD3u/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "آداب المتعلم في نفسه",
+            "desc": "كيفية تهذيب النفس؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "آداب المتعلم مع شيخه",
+            "desc": "ماهي حدود الطاعة"
+          },
+          {
+            "id": "٠٣",
+            "title": "آداب المتعلم في دروسه",
+            "desc": "حيوية التعلم"
+          },
+          {
+            "id": "٠٤",
+            "title": "الأدب مع الكتب وآداب السكنى",
+            "desc": "أثر البيئة"
+          }
+        ]
+      }
+    }
+  }
+}

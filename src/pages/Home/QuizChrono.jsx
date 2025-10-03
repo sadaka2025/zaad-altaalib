@@ -1,35 +1,58 @@
 // src/pages/QuizChrono.jsx
 import React, { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Scene from '../Visitors/Scene'; // ✅ importer Scene
+import Scene from '../Visitors/Scene';
 import ConfettiBouquet from '../../components/button/ConfettiBouquet';
-
-// === Import des fichiers leçons ===
-import lessonsFiqh from '@/dataIntro/years/year1/dataLesson/lessonListfiqh.json';
-import lessonsHadith from '@/dataIntro/years/year1/dataLesson/lessonListhadith.json';
-import lessonsAqida from '@/dataIntro/years/year1/dataLesson/lessonListaqida.json';
-import lessonsAkhlaq from '@/dataIntro/years/year1/dataLesson/lessonListakhlaq.json';
-import lessonsNahw from '@/dataIntro/years/year1/dataLesson/lessonListnahw.json';
-import lessonsSirah from '@/dataIntro/years/year1/dataLesson/lessonListsirah.json';
-import lessonsTajwid from '@/dataIntro/years/year1/dataLesson/lessonListtajwid.json';
 import ConfettiDhikrTawakol from '../../components/button/ConfettiDhikrTawakol';
-import ConfettiDhikrAien from '../../components/button/ConfettiDhikrAien';
+import { useNavigate } from 'react-router-dom';
+
+// === Import Year 1 Lessons ===
+import lessonsFiqhY1 from '@/dataIntro/years/year1/dataLesson/lessonListfiqh.json';
+import lessonsHadithY1 from '@/dataIntro/years/year1/dataLesson/lessonListhadith.json';
+import lessonsAqidaY1 from '@/dataIntro/years/year1/dataLesson/lessonListaqida.json';
+import lessonsAkhlaqY1 from '@/dataIntro/years/year1/dataLesson/lessonListakhlaq.json';
+import lessonsNahwY1 from '@/dataIntro/years/year1/dataLesson/lessonListnahw.json';
+import lessonsSirahY1 from '@/dataIntro/years/year1/dataLesson/lessonListsirah.json';
+import lessonsTajwidY1 from '@/dataIntro/years/year1/dataLesson/lessonListtajwid.json';
+
+// === Import Year 2 Lessons ===
+import lessonsFiqhY2 from '@/dataIntro/years/year2/dataLesson/lessonListfiqh.json';
+import lessonsHadithY2 from '@/dataIntro/years/year2/dataLesson/lessonListhadith.json';
+import lessonsAqidaY2 from '@/dataIntro/years/year2/dataLesson/lessonListaqida.json';
+import lessonsAkhlaqY2 from '@/dataIntro/years/year2/dataLesson/lessonListakhlaq.json';
+import lessonsNahwY2 from '@/dataIntro/years/year2/dataLesson/lessonListnahw.json';
+import lessonsSirahY2 from '@/dataIntro/years/year2/dataLesson/lessonListsirah.json';
+import lessonsTajwidY2 from '@/dataIntro/years/year2/dataLesson/lessonListtajwid.json';
+
+// === Mapping SUBJECTS par année ===
+const SUBJECTS_BY_YEAR = {
+  year1: {
+    Fiqh: lessonsFiqhY1,
+    Hadith: lessonsHadithY1,
+    Aqida: lessonsAqidaY1,
+    Akhlaq: lessonsAkhlaqY1,
+    Nahw: lessonsNahwY1,
+    Sirah: lessonsSirahY1,
+    Tajwid: lessonsTajwidY1,
+  },
+  year2: {
+    Fiqh: lessonsFiqhY2,
+    Hadith: lessonsHadithY2,
+    Aqida: lessonsAqidaY2,
+    Akhlaq: lessonsAkhlaqY2,
+    Nahw: lessonsNahwY2,
+    Sirah: lessonsSirahY2,
+    Tajwid: lessonsTajwidY2,
+  },
+  // Ajouter year3, year4, year5 si nécessaire
+};
 
 // === Import des fichiers QUIZZES ===
 import { QUIZZES_YEAR1 } from '@/dataquizzes/years/year1/quizzesYear1';
 
-const SUBJECTS = {
-  Fiqh: lessonsFiqh,
-  Hadith: lessonsHadith,
-  Aqida: lessonsAqida,
-  Akhlaq: lessonsAkhlaq,
-  Nahw: lessonsNahw,
-  Sirah: lessonsSirah,
-  Tajwid: lessonsTajwid,
-};
-
 const QUIZZES_BY_YEAR = {
   year1: QUIZZES_YEAR1,
+  // Ajouter year2, etc.
 };
 
 export default function QuizChrono() {
@@ -40,6 +63,10 @@ export default function QuizChrono() {
   const [selectedLesson, setSelectedLesson] = useState(null);
   const [selectedQuiz, setSelectedQuiz] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const navigate = useNavigate();
+
+  // ✅ Récupérer les matières pour l'année sélectionnée
+  const SUBJECTS = SUBJECTS_BY_YEAR[selectedYear] || {};
 
   // --- Récupérer les cours ---
   const lessons =
@@ -57,7 +84,7 @@ export default function QuizChrono() {
 
   const handleLessonClick = (lesson, index) => {
     setSelectedLesson(lesson);
-    setSelectedQuiz(quizzes[index]); // associer quiz au même index
+    setSelectedQuiz(quizzes[index]);
   };
 
   // === Gestion progression ===
@@ -162,6 +189,14 @@ export default function QuizChrono() {
 
         {/* Recherche + Progression globale */}
         <div className="flex flex-col items-center p-4 gap-4">
+          {/* 🔙 Bouton retour en haut à droite */}
+          <button
+            onClick={() => navigate(-1)}
+            className="absolute  right-4 bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded shadow text-sm z-50"
+            aria-label="رجوع"
+          >
+            🔙 رجوع
+          </button>
           <input
             type="text"
             placeholder="Rechercher un cours..."

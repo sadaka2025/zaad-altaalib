@@ -1,0 +1,39 @@
+{
+  "year2": {
+    "akhlaq": {
+      "s1": {
+        "videos": 16,
+        "summaryPDF": 16,
+        "textExtraction": 16,
+        "quizCourse": 16,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 18,
+        "lives": 3,
+        "livesPDF": 3
+      },
+      "s2": {
+        "videos": 0,
+        "summaryPDF": 0,
+        "textExtraction": 0,
+        "quizCourse": 0,
+        "quizSemester": 1,
+        "finalExam": 1,
+        "totalQuiz": 2,
+        "lives": 3,
+        "livesPDF": 3
+      },
+      "yearStats": {
+        "videos": 16,
+        "summaryPDF": 16,
+        "textExtraction": 16,
+        "quizCourse": 16,
+        "quizSemester": 2,
+        "finalExam": 2,
+        "lives": 6,
+        "livesPDF": 6,
+        "totalQuiz": 20
+      }
+    }
+  }
+}

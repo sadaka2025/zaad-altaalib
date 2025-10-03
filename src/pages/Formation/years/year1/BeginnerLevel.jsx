@@ -11,7 +11,7 @@ import ConfettiButton from '../../../../components/button/ConfettiButton';
 import FlowerConfettiButton from '../../../../components/button/FlowerConfettiButton';
 import ConfettiDhikrTasbih from '../../../../components/button/ConfettiDhikrTasbih';
 
-export default function NiveauDebutant() {
+export default function BeginnerLevel() {
   const [selectedSubjectKey, setSelectedSubjectKey] = useState(null);
   const [showModal, setShowModal] = useState(false);
   const [showBooksModal, setShowBooksModal] = useState(false);
@@ -161,7 +161,7 @@ function SectionSemester({ title, subjects, subjectKeys, semesterNumber }) {
 
   const handleClick = (subjectKey) => {
     if (introSubjects.includes(subjectKey)) {
-      navigate(`/${lang}/intro${subjectKey}?semestre=${semesterNumber}`);
+      navigate(`/${lang}/intro/1/${subjectKey}?semestre=${semesterNumber}`);
     } else {
       navigate(
         `/${lang}/annee/1/matiere/${subjectKey}?semestre=${semesterNumber}`

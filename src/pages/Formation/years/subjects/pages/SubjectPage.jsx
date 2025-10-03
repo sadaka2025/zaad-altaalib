@@ -173,11 +173,11 @@ export default function SubjectPage() {
                 to={`/${lang}/formations`}
                 className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
               >
-                ← Année 1
+                ← Année {year}
               </Link>
 
               <Link
-                to={`/${lang}/intro${subjectSlug}?semestre=${sem}`}
+                to={`/${lang}/intro/${year}/${subjectSlug}?semestre=${sem}`}
                 className="bg-white text-blue-700 px-3 py-2 rounded shadow hover:bg-blue-200"
               >
                 🎯 أهداف السداسي {sem === '1' ? 'الأول' : 'الثاني'}

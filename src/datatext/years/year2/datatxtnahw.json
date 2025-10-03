@@ -1,0 +1,59 @@
+{
+  "year2": {
+    "nahw": {
+      "s1": {
+        "introVideo": "https://drive.google.com/file/d/1YFg0zVQkffZJdW8Ola3wAnLsQa0iZLMR/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "التمهيد والتعريف ",
+            "desc": "أهمية المقدمة ؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "الأفعال وتقسيماتها",
+            "desc": "تنوع الأفعال "
+          },
+          {
+            "id": "٠٣",
+            "title": "الأسماء وأنواعها",
+            "desc": "خصائص الأسماء"
+          },
+          {
+            "id": "٠٤",
+            "title": "الحروف ودورها",
+            "desc": "وظيفة الحروف"
+          }
+        ]
+      },
+
+      "s2": {
+        "introVideo": "https://drive.google.com/file/d/1Jl1Pxv5FJ7DA5GhPFQet33jgc4wHxH8n/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "مدخل إلى الإعراب",
+            "desc": "قواعد البناء؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "المرفوعات",
+            "desc": "أساس الجملة ؟ "
+          },
+          {
+            "id": "٠٣",
+            "title": "المنصوبات",
+            "desc": "تنوع المعاني"
+          },
+          {
+            "id": "٠٤",
+            "title": "التوابع وما يلحق بها",
+            "desc": "ترابط الكلمات"
+          }
+        ]
+      }
+    }
+  }
+}

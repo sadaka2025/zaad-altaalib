@@ -1,0 +1,74 @@
+{
+  "subjects": [
+    {
+      "slug": "akhlaq",
+      "title": "📘 الأخلاق",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    },
+    {
+      "slug": "aqida",
+      "title": "📘 العقيدة",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    },
+    {
+      "slug": "fiqh",
+      "title": "📘 الفقه",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    },
+    {
+      "slug": "hadith",
+      "title": "📘 الحديث",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    },
+    {
+      "slug": "nahw",
+      "title": "📘 النحو",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    },
+    {
+      "slug": "sirah",
+      "title": "📘 السيرة",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    },
+    {
+      "slug": "tajwid",
+      "title": "📘 التجويد",
+      "semesters": {
+        "1": { "lessons": [] },
+        "2": {
+          "lessons": []
+        }
+      }
+    }
+  ]
+}

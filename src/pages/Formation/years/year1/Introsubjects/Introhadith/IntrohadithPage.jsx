@@ -88,9 +88,7 @@ export default function IntroHadithPage() {
   const semestreParam = searchParams.get('semestre') || '1';
 
   // ✅ initialiser selon l’URL
-  const [selectedSemester, setSelectedSemester] = useState(
-    semestreParam === '1' ? 'semester1' : 'semester2'
-  );
+  const selectedSemester = semestreParam === '1' ? 'semester1' : 'semester2';
 
   const [open, setOpen] = useState(false);
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false);
@@ -313,13 +311,13 @@ export default function IntroHadithPage() {
               : 'bg-[#fef3c7] text-[#3b2f1b] border-[#d6b370]'
           }`}
           onClick={() => {
-            setSelectedSemester('semester1');
-            launchFlowers(); // 🎉 déclenche confetti
-            navigate(`/${lang}/introhadith?semestre=1`);
+            launchFlowers();
+            navigate(`/${lang}/intro/1/hadith?semestre=1`);
           }}
         >
           📘 السداسي الأول
         </button>
+
         <button
           className={`px-4 py-2 rounded-lg border font-bold ${
             selectedSemester === 'semester2'
@@ -327,9 +325,8 @@ export default function IntroHadithPage() {
               : 'bg-[#fef3c7] text-[#3b2f1b] border-[#d6b370]'
           }`}
           onClick={() => {
-            setSelectedSemester('semester2');
-            launchFlowers(); // 🎉 déclenche confetti
-            navigate(`/${lang}/introhadith?semestre=2`);
+            launchFlowers();
+            navigate(`/${lang}/intro/1/hadith?semestre=2`);
           }}
         >
           📗 السداسي الثاني

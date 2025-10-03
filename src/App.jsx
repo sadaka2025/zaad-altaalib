@@ -11,18 +11,21 @@ import { useTranslation } from 'react-i18next';
 
 import LayoutConfigurable from './pages/Home/LayoutConfigurable';
 import HomePage from './pages/Home/HomePage';
+import QuizPage from './pages/Home/QuizPage';
 import ChatWidget from './components/ChatWidget';
 
 // Pages Formation
 import Formations from './pages/Formation/Formations';
-import NiveauDebutant from './pages/Formation/years/year1/BeginnerLevel';
-import Niveau2 from './pages/Formation/years/year2/LevelTwo';
+import BeginnerLevel from './pages/Formation/years/year1/BeginnerLevel';
+import LevelTwo from './pages/Formation/years/year2/LevelTwo';
 import NiveauMoyen from './pages/Formation/years/year3/MediumLevel';
 import Niveau4 from './pages/Formation/years/year4/LevelFour';
 import NiveauAvance from './pages/Formation/years/year5/AdvancedLevel';
 import SubjectPage from './pages/Formation/years/subjects/pages/SubjectPage';
 
 // Pages utils
+import QuizLibre from './pages/Home/QuizLibre';
+import QuizCourse from './pages/Home/QuizCourse';
 import QuizChrono from './pages/Home/QuizChrono';
 import AvisPage from './pages/Formation/utils/AvisPage';
 import QRPage from './pages/Formation/utils/QRPage';
@@ -30,15 +33,16 @@ import ProffAvisPage from './pages/Formation/utils/ProffAvisPage';
 import AnnoncesPage from './pages/Formation/utils/AnnoncesPage';
 import ProblemePage from './pages/Home/ProblemePage';
 import ContactPage from './pages/Home/ContactPage';
+import IntroChooser from './pages/Formation/years/IntroChooser';
 
-// Intros
-import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
-import IntrosirahPage from './pages/Formation/years/year1/Introsubjects/Introsirah/IntrosirahPage';
-import IntroakhlaqPage from './pages/Formation/years/year1/Introsubjects/Introakhlaq/IntroakhlaqPage';
-import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaqida/IntroaqidaPage';
-import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
-import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
-import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
+// // Intros
+// import IntroFikhPage from './pages/Formation/years/year1/Introsubjects/Introfiqh/IntroFikhPage';
+// import IntrosirahPage from './pages/Formation/years/year1/Introsubjects/Introsirah/IntrosirahPage';
+// import IntroakhlaqPage from './pages/Formation/years/year1/Introsubjects/Introakhlaq/IntroakhlaqPage';
+// import IntroaqidaPage from './pages/Formation/years/year1/Introsubjects/Introaqida/IntroaqidaPage';
+// import IntrohadithPage from './pages/Formation/years/year1/Introsubjects/Introhadith/IntrohadithPage';
+// import IntronahwPage from './pages/Formation/years/year1/Introsubjects/Intronahw/IntronahwPage';
+// import IntrotajwidPage from './pages/Formation/years/year1/Introsubjects/Introtajwid/IntrotajwidPage';
 
 // Divers
 import i18n from './i18n';
@@ -125,7 +129,7 @@ function LangRoutesWrapper() {
             path="niveau-2"
             element={
               <RequireAuth>
-                <Niveau2 />
+                <LevelTwo />
               </RequireAuth>
             }
           />
@@ -153,7 +157,8 @@ function LangRoutesWrapper() {
               </RequireAuth>
             }
           />
-          <Route
+
+          {/* <Route
             path="introfiqh"
             element={
               <RequireAuth>
@@ -161,6 +166,7 @@ function LangRoutesWrapper() {
               </RequireAuth>
             }
           />
+
           <Route
             path="introsirah"
             element={
@@ -208,7 +214,28 @@ function LangRoutesWrapper() {
                 <IntrotajwidPage />
               </RequireAuth>
             }
+          /> */}
+          <Route
+            path="intro/:year/:subjectSlug"
+            element={
+              <RequireAuth>
+                <IntroChooser />
+              </RequireAuth>
+            }
           />
+          <Route path="/quizpage" element={<QuizPage />} />
+          <Route path="/quiz-libre" element={<QuizLibre />} />
+
+          <Route path="/quiz-course" element={<QuizCourse />} />
+          <Route
+            path="annee/:year/matiere/:subjectSlug/course/:number"
+            element={
+              <RequireAuth>
+                <QuizCourse />
+              </RequireAuth>
+            }
+          />
+
           <Route
             path="quizchrono"
             element={
@@ -224,7 +251,15 @@ function LangRoutesWrapper() {
             path="niveau-debutant"
             element={
               <RequireAuth>
-                <NiveauDebutant />
+                <BeginnerLevel />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="niveau-2"
+            element={
+              <RequireAuth>
+                <LevelTwo />
               </RequireAuth>
             }
           />
@@ -282,6 +317,7 @@ export default function App() {
           <Route path="/pdf/manage" element={<PdfManager />} />
           <Route path="/probleme" element={<ProblemePage />} />
           <Route path="/avis" element={<AvisPage />} />
+          <Route path="quiz-course" element={<QuizCourse />} />
         </Routes>
       </Router>
     </AuthProvider>

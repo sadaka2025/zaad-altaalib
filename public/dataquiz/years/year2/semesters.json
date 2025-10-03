@@ -1,0 +1,362 @@
+[
+  {
+    "name": "Semester 1",
+    "matieres": [
+      {
+        "name": "fiqh",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/fiqh/pccfiqhs1.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting1fiqhs1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting2fiqhs1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/fiqh/meeting3fiqhs1.pdf"
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/fiqh/booksfiqhs1.pdf"
+          }
+        ]
+      },
+      {
+        "name": "tajwid",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/tajwid/pcctajwids1.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/tajwid/meeting1tajwids1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/tajwid/meeting2tajwids1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/tajwid/meeting3tajwids1.pdf"
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/tajwid/bookstajwids1.pdf"
+          }
+        ]
+      },
+      {
+        "name": "sirah",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": ""
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting1sirahs1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/sirah/meeting2sirahs1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/sirah/bookssirahs1.pdf"
+          }
+        ]
+      },
+      {
+        "name": "aqida",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/aqida/pccaqidas1.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting1aqidas1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting2aqidas1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/aqida/meeting3aqidas1.pdf"
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/aqida/booksaqidas1.pdf"
+          }
+        ]
+      },
+      {
+        "name": "akhlaq",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/akhlaq/pccakhlaqs1.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting1akhlaqs1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting2akhlaqs1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/akhlaq/meeting3akhlaqs1.pdf"
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/akhlaq/booksakhlaqs1.pdf"
+          }
+        ]
+      },
+      {
+        "name": "nahw",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/nahw/pccnahws1.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/nahw/meeting1nahws1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/nahw/meeting2nahws1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/nahw/booksnahws1.pdf"
+          }
+        ]
+      },
+      {
+        "name": "hadith",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s1/hadith/pcchadiths1.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/hadith/meeting1hadiths1.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s1/hadith/meeting2hadiths1.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s1/hadith/bookshadiths1.pdf"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Semester 2",
+    "matieres": [
+      {
+        "name": "fiqh",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/fiqh/pccfiqhs2.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting1fiqhs2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/fiqh/meeting2fiqhs2.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/fiqh/booksfiqhs2.pdf"
+          }
+        ]
+      },
+      {
+        "name": "tajwid",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/tajwid/pcctajwids2.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/tajwid/meeting1tajwids2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": ""
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/tajwid/bookstajwids2.pdf"
+          }
+        ]
+      },
+      {
+        "name": "sirah",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": ""
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting1sirahs2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/sirah/meeting2sirahs2.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/sirah/bookssirahs2.pdf"
+          }
+        ]
+      },
+      {
+        "name": "aqida",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/aqida/pccaqidas2.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/aqida/meeting1aqidas2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": ""
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/aqida/booksaqidas2.pdf"
+          }
+        ]
+      },
+      {
+        "name": "akhlaq",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/akhlaq/pccakhlaqs2.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting1akhlaqs2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting2akhlaqs2.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/akhlaq/meeting3akhlaqs2.pdf"
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/akhlak/booksakhlaqs2.pdf"
+          }
+        ]
+      },
+      {
+        "name": "nahw",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/nahw/pccnahws2.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/nahw/meeting1nahws2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/nahw/meeting2nahws2.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/nahw/booksnahws2.pdf"
+          }
+        ]
+      },
+      {
+        "name": "hadith",
+        "sources": [
+          {
+            "source": "مجمع دروس",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfCombinedCourse/s2/hadith/pcchadiths2.pdf"
+          },
+          {
+            "source": "الملتقى الأول",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/hadith/meeting1hadiths2.pdf"
+          },
+          {
+            "source": "الملتقى الثاني",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfInfoChat/pdfMeeting/s2/hadith/meeting2hadiths2.pdf"
+          },
+          {
+            "source": "الملتقى الثالث",
+            "url": ""
+          },
+          {
+            "source": "الكتاب المصاحب",
+            "url": "https://ariqdghgxknuvowhgftt.supabase.co/storage/v1/object/public/pdf/year1/pdfStudyBooks/s2/hadith/bookshadiths2.pdf"
+          }
+        ]
+      }
+    ]
+  }
+]

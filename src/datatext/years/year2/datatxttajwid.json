@@ -1,0 +1,59 @@
+{
+  "year2": {
+    "tajwid": {
+      "s1": {
+        "introVideo": "https://drive.google.com/file/d/1UVDSf9lS9oii3F1u4HbFdBkSHe0niq1p/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "التمهيد والتعريف ",
+            "desc": "أهمية البداية ؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "النون الساكنة والتنوين",
+            "desc": " دقة النطق "
+          },
+          {
+            "id": "٠٣",
+            "title": "أحكام الميم الساكنة والمشددة",
+            "desc": " صفاء المخرج"
+          },
+          {
+            "id": "٠٤",
+            "title": "أحكام اللام والإدغام",
+            "desc": " انسجام الحروف"
+          }
+        ]
+      },
+
+      "s2": {
+        "introVideo": "https://drive.google.com/file/d/1aRhjMbIBDvxkdXcrrcs2kX0o_T1Q-lJ5/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "المد وأصوله",
+            "desc": "أساس المد؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "تفصيل الأحكام",
+            "desc": " أنواع المد ؟ "
+          },
+          {
+            "id": "٠٣",
+            "title": "المد اللازم ",
+            "desc": " تمام العلم"
+          },
+          {
+            "id": "٠٤",
+            "title": "الخاتمة",
+            "desc": "العبرة بالخواتيم"
+          }
+        ]
+      }
+    }
+  }
+}

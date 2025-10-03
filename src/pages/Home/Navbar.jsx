@@ -219,16 +219,6 @@ export default function Navbar() {
                       </div>
                     );
                   })}
-
-                  <div className="col-span-2">
-                    <button
-                      onClick={() => handleNavClick('/quizchrono')}
-                      className="w-full flex items-center gap-3 px-3 py-3 rounded-xl border bg-gradient-to-r from-red-500 to-orange-400 text-white font-bold shadow-lg hover:from-red-600 hover:to-orange-500 transition-all"
-                    >
-                      <Timer className="size-5" />
-                      <span className="font-semibold">⏳ QuizChrono</span>
-                    </button>
-                  </div>
                 </motion.div>
               )}
             </AnimatePresence>
@@ -251,6 +241,16 @@ export default function Navbar() {
             className="px-4 py-2 rounded-xl font-bold text-yellow-400 border border-yellow-500 hover:bg-yellow-500 hover:text-slate-900 shadow-lg transition flex items-center gap-2"
           >
             📰 مقالات
+          </button>
+          {/* زر Quiz */}
+          <button
+            onClick={() => handleNavClick('/quizpage')}
+            className="px-4 py-2 rounded-xl font-bold text-white border border-red-500 
+               bg-gradient-to-r from-red-500 to-orange-400 
+               hover:from-red-600 hover:to-orange-500 
+               shadow-lg transition flex items-center gap-2"
+          >
+            🎯 اختبر نفسك Quiz
           </button>
         </nav>
 

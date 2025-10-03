@@ -1,0 +1,58 @@
+/* Boutons style CodePen */
+.btn-yellow {
+  background: rgba(0, 0, 0, 0.5);
+  border: 3px solid #edbc1f;
+  text-transform: uppercase;
+  color: #fff;
+  transition: all 0.15s ease-in-out;
+  text-align: center;
+  font-weight: bold;
+}
+
+.btn-yellow:hover {
+  background: rgba(237, 188, 31, 0.5);
+  color: #000;
+  border: 3px solid rgba(237, 188, 31, 0.75);
+  text-shadow: none;
+}
+
+/* Carrousel */
+.carousel-inner .carousel-item {
+  min-height: 100vh; /* prendre tout l'écran */
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+/* Contenu du slide */
+.carousel-inner .carousel-item .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  inset: 0;
+  padding: 2rem;
+}
+
+/* Contrôles */
+.carousel-control-prev,
+.carousel-control-next {
+  background-image: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  font-size: 30px;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+/* Texte animé */
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}

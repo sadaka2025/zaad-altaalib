@@ -1,1 +1,498 @@
-[]
+{
+  "meta": {
+    "year": 2,
+    "slug": "aqida",
+    "code": "AQIDA201",
+    "title": {
+      "ar": "العقيدة",
+      "fr": "Aqida",
+      "en": "Aqida"
+    },
+    "instructors": [
+      {
+        "name": "Dr. Y"
+      }
+    ],
+    "tabs": ["video", "summaryPDF", "textExtraction", "qna"],
+    "tabLabels": {
+      "video": "🎥 فيديو الدرس",
+      "summaryPDF": "📝 مختصر الدرس",
+      "textExtraction": "📄 استخراج النصوص من الفيديو",
+      "qna": "📘 تلخيص الدرس في شكل سؤال و جواب (QCM)"
+    }
+  },
+  "semesters": {
+    "1": {
+      "lessons": [
+        { "id": "1", "title": "الدرس عدد 1: مقدمة في العقيدة" },
+        { "id": "2", "title": "الدرس عدد 2: مقدمة الكتاب 1" },
+        { "id": "3", "title": "الدرس عدد 3: مقدمة الكتاب 2" },
+        { "id": "4", "title": "الدرس عدد 4: الحكم وأقسامه" },
+        { "id": "5", "title": "الدرس عدد 5: أقسام الحكم العقلي" },
+        { "id": "6", "title": "الدرس عدد 6: مبادئ علم العقيدة" },
+        {
+          "id": "7",
+          "title": "الدرس عدد 7: وجوب معرفة الله تعالى ومعرفة الرسل"
+        },
+        {
+          "id": "8",
+          "title": "الدرس عدد 8: إيمان المقلد وأول واجب على المكلَّف"
+        },
+        {
+          "id": "9",
+          "title": "الدرس عدد 9: أقسام الصفات الواجبة لله تعالى وصفة الوجود"
+        },
+        { "id": "10", "title": "الدرس عدد 10: صفة القدم والبقاء" },
+        {
+          "id": "11",
+          "title": "الدرس عدد 11: صفة المخالفة للحوادث وصفة القيام بالنفس"
+        },
+        { "id": "12", "title": "الدرس عدد 12: صفة الوحدانية" },
+        { "id": "13", "title": "الدرس عدد 13: صفة القدرة والإرادة" },
+        { "id": "14", "title": "الدرس عدد 14: تتمة صفة الإرادة، صفة العلم" },
+        { "id": "15", "title": "الدرس عدد 15: صفة الحياة والسمع والكلام" },
+        {
+          "id": "16",
+          "title": "الدرس عدد 16: تتمة لصفة الكلام، الصفات المعنوية"
+        }
+      ],
+      "contentLinks": {
+        "1": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "2": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "3": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "4": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "5": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "6": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "7": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "8": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "9": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "10": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "11": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "12": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "13": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "14": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "15": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "16": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        }
+      },
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "الملتقى الاول",
+                "label": "الملتقى الأول",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "",
+                  "summaryPDF": "",
+                  "videoDownload": "",
+                  "meeting": "",
+                  "summaryDownload": ""
+                }
+              },
+              {
+                "id": "الملتقى الثاني",
+                "label": "الملتقى الثاني",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "",
+                  "summaryPDF": "",
+                  "videoDownload": "",
+                  "meeting": "",
+                  "summaryDownload": ""
+                }
+              },
+              {
+                "id": "الملتقى الثالث",
+                "label": "الملتقى الثالث",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "",
+                  "summaryPDF": "",
+                  "videoDownload": "",
+                  "meeting": "",
+                  "summaryDownload": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": {
+                  "qna": "",
+                  "quizSemester": "",
+                  "summaryPDF": "",
+                  "summaryDownload": ""
+                }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": {
+                  "qna": "",
+                  "quizExam": "",
+                  "summaryPDF": "",
+                  "summaryDownload": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "2": {
+      "lessons": [],
+      "contentLinks": {
+        "1": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "2": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "3": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "4": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "5": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "6": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "7": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "8": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "9": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "10": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "11": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "12": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "13": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "14": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "15": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        },
+        "16": {
+          "video": "",
+          "videoDownload": "",
+          "summaryPDF": "",
+          "summaryDownload": "",
+          "textExtraction": "",
+          "qna": ""
+        }
+      },
+      "conclusion": {
+        "title": "📚 الخاتمة",
+        "sections": [
+          {
+            "title": "اللقاءات المباشرة",
+            "items": [
+              {
+                "id": "الملتقى الاول",
+                "label": "الملتقى الأول",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "",
+                  "summaryPDF": "",
+                  "videoDownload": "",
+                  "meeting": "",
+                  "summaryDownload": ""
+                }
+              },
+              {
+                "id": "الملتقى الثاني",
+                "label": "الملتقى الثاني",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "",
+                  "summaryPDF": "",
+                  "videoDownload": "",
+                  "meeting": "",
+                  "summaryDownload": ""
+                }
+              },
+              {
+                "id": "الملتقى الثالث",
+                "label": "الملتقى الثالث",
+                "tabs": ["video", "summaryPDF"],
+                "tabLabels": {
+                  "video": "🎥 تسجيل اللقاء",
+                  "summaryPDF": "📝 ملخص اللقاء"
+                },
+                "links": {
+                  "video": "",
+                  "summaryPDF": "",
+                  "videoDownload": "",
+                  "meeting": "",
+                  "summaryDownload": ""
+                }
+              }
+            ]
+          },
+          {
+            "title": "Quiz Fin Semestre",
+            "items": [
+              {
+                "id": "quiz-general",
+                "label": "Quiz général sur les cours",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Quiz général (QCM)" },
+                "links": {
+                  "qna": "",
+                  "quizSemester": "",
+                  "summaryPDF": "",
+                  "summaryDownload": ""
+                }
+              },
+              {
+                "id": "final-exam",
+                "label": "Examen final",
+                "tabs": ["qna"],
+                "tabLabels": { "qna": "📝 Sujet d'examen" },
+                "links": {
+                  "qna": "",
+                  "quizExam": "",
+                  "summaryPDF": "",
+                  "summaryDownload": ""
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

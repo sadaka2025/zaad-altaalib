@@ -63,7 +63,7 @@ export default function HeroSection() {
       {/* Overlay content */}
       <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
         <div
-          className="container mx-auto px-4 text-white max-w-3xl text-center 
+          className="container  mx-auto px-4 text-white max-w-3xl text-center 
                   flex flex-col justify-between py-[10%] h-full space-y-8"
         >
           {/* 🔹 Texte animé avec flèches */}
@@ -85,10 +85,11 @@ export default function HeroSection() {
           <p className="text-lg">{t('hero_description')}</p>
 
           {/* 🔹 Bouton avec effet fleurs */}
-          <Link to={link('/formations')}>
+          <Link to={link('/formations')} className="mx-auto">
             <FlowerConfettiButton
               label={`📚 ${t('explore_courses')}`}
               theme="بسم الله الرحمن الرحيم"
+              className="w-full md:w-auto"
             />
           </Link>
         </div>

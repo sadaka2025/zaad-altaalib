@@ -1,0 +1,59 @@
+{
+  "year2": {
+    "hadith": {
+      "s1": {
+        "introVideo": "https://drive.google.com/file/d/11xYtiPgHW14KYYD96zRqX3XLK8V-bUEt/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "المقدمات وأصول الدين ",
+            "desc": "أساس الإيمان ؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "البدع والشبهات",
+            "desc": "صفاء العقيدة "
+          },
+          {
+            "id": "٠٣",
+            "title": "النصيحة وحقوق المسلم",
+            "desc": "وحدة المجتمع"
+          },
+          {
+            "id": "٠٤",
+            "title": "الورع وكمال الإيمان",
+            "desc": "جمال السلوك"
+          }
+        ]
+      },
+
+      "s2": {
+        "introVideo": "https://drive.google.com/file/d/1oGGHJjh4yDC61BhsqdHpXvrsjBXgFqHv/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "عبادة وإخلاص",
+            "desc": "جوهر العبادة؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "معاملات وضوابط",
+            "desc": "ضبط المعاملات ؟ "
+          },
+          {
+            "id": "٠٣",
+            "title": "أخلاق وسلوك",
+            "desc": "قوة الأخلاق"
+          },
+          {
+            "id": "٠٤",
+            "title": "كمال وإيمان",
+            "desc": "تمام الإيمان"
+          }
+        ]
+      }
+    }
+  }
+}

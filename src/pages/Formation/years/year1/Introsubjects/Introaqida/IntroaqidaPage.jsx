@@ -89,9 +89,7 @@ export default function IntroAqidaPage() {
   const semestreParam = searchParams.get('semestre') || '1';
 
   // ✅ initialiser selon l’URL
-  const [selectedSemester, setSelectedSemester] = useState(
-    semestreParam === '1' ? 'semester1' : 'semester2'
-  );
+  const selectedSemester = semestreParam === '1' ? 'semester1' : 'semester2';
 
   const [open, setOpen] = useState(false);
   const [isStatsModalOpen, setIsStatsModalOpen] = useState(false);
@@ -314,13 +312,13 @@ export default function IntroAqidaPage() {
               : 'bg-[#fef3c7] text-[#3b2f1b] border-[#d6b370]'
           }`}
           onClick={() => {
-            setSelectedSemester('semester1');
-            launchFlowers(); // 🎉 effet fleurs
-            navigate(`/${lang}/introaqida?semestre=1`);
+            launchFlowers();
+            navigate(`/${lang}/intro/1/aqida?semestre=1`);
           }}
         >
           📘 السداسي الأول
         </button>
+
         <button
           className={`px-4 py-2 rounded-lg border font-bold ${
             selectedSemester === 'semester2'
@@ -328,9 +326,8 @@ export default function IntroAqidaPage() {
               : 'bg-[#fef3c7] text-[#3b2f1b] border-[#d6b370]'
           }`}
           onClick={() => {
-            setSelectedSemester('semester2');
-            launchFlowers(); // 🎉 effet fleurs
-            navigate(`/${lang}/introaqida?semestre=2`);
+            launchFlowers();
+            navigate(`/${lang}/intro/1/aqida?semestre=2`);
           }}
         >
           📗 السداسي الثاني
@@ -341,7 +338,7 @@ export default function IntroAqidaPage() {
       <div className="flex flex-wrap justify-center gap-4 mb-4">
         <button
           onClick={() => {
-            setIsStatsModalOpen(true);
+            setIsModalLessonsOpen(true);
             launchFlowers(); // 🎉 effet fleurs
           }}
           className="px-6 py-3 rounded-lg font-bold hover:brightness-110 shadow-md"

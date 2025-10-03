@@ -17,28 +17,25 @@ export default function Footer() {
         backgroundColor: '#5976c7ff',
       }}
     >
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/60 z-0" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
-        {/* Contact Button */}
         <div className="mb-6">
-          <Link to="/probleme">
+          <Link to={`/${lang}/probleme`}>
             <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2 rounded">
               📥 شاركنا اقتراحك أو مشكلتك
             </button>
           </Link>
         </div>
-        {/* Avis Button */}
+
         <div className="mb-6">
-          <Link to="/avis">
+          <Link to={`/${lang}/avis`}>
             <button className="bg-yellow-600 hover:bg-yellow-700 text-white px-5 py-2 mt-2 rounded">
               📥 رايكم في منصتنا
             </button>
           </Link>
         </div>
 
-        {/* Social Links */}
         <div className="flex justify-center items-center flex-wrap gap-4 mb-6 text-lg">
           <a
             href="https://facebook.com/yourgroup"
@@ -58,7 +55,6 @@ export default function Footer() {
           </a>
         </div>
 
-        {/* Rights Text */}
         <p className="text-sm text-gray-200">
           © 2025 زاد الطالب - {t('rights_reserved')}
         </p>

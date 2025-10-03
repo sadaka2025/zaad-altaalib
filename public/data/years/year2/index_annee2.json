@@ -1,0 +1,55 @@
+{
+  "year2": 2,
+  "semesters": ["1", "2"],
+  "subjects_s1s2": [
+    {
+      "slug": "fiqh",
+      "code": "FIQH101",
+      "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/fiqh_data_s1s2.json"
+    },
+    {
+      "slug": "aqida",
+      "code": "AQD101",
+      "title": { "ar": "العقيدة", "fr": "Aqîda", "en": "Aqidah" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/aqida_data_s1s2.json"
+    },
+    {
+      "slug": "nahw",
+      "code": "NAHW101",
+      "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/ nahw_data_s1s2.json"
+    },
+    {
+      "slug": "sira",
+      "code": "SIRA101",
+      "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/ sira_data_s1s2.json"
+    },
+    {
+      "slug": "akhlak",
+      "code": "AKHLAK101",
+      "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/ akhlak_data_s1s2.json"
+    },
+    {
+      "slug": "tajwid",
+      "code": "TAJWID101",
+      "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/ tajwid_data_s1s2.json"
+    },
+    {
+      "slug": "hadith",
+      "code": "HADITH101",
+      "title": { "ar": "الفقه", "fr": "Fiqh", "en": "Fiqh" },
+      "semesters": ["1", "2"],
+      "path": "/data/years/1/subjects/ hadith_data_s1s2.json"
+    }
+  ]
+}

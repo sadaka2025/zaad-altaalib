@@ -1,0 +1,59 @@
+{
+  "year2": {
+    "aqida": {
+      "s1": {
+        "introVideo": "https://drive.google.com/file/d/1ED3-Li1pstD5lnITfmiGfURtThb4Fxgm/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "المقدمات ",
+            "desc": "أهمية المدخل ؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "الإلهيات والصفات الذاتية",
+            "desc": "حقيقة الصفات "
+          },
+          {
+            "id": "٠٣",
+            "title": "صفات المعاني",
+            "desc": "دور الصفات"
+          },
+          {
+            "id": "٠٤",
+            "title": "الصفات المعنوية والمستحيلات",
+            "desc": "حدود الممكن"
+          }
+        ]
+      },
+
+      "s2": {
+        "introVideo": "https://drive.google.com/file/d/1Iv0ywlGVLLF-yENPi-m9BtFkbLSM2wLK/preview",
+
+        "lessons": [
+          {
+            "id": "٠١",
+            "title": "النبوّات",
+            "desc": "حقيقة الوحي؟"
+          },
+          {
+            "id": "٠٢",
+            "title": "صفات الرسل وخصائص النبي ﷺ",
+            "desc": "مكانة الرسل ؟ "
+          },
+          {
+            "id": "٠٣",
+            "title": "السمعيات",
+            "desc": "عالم الغيب"
+          },
+          {
+            "id": "٠٤",
+            "title": "الأنبياء والخاتمة",
+            "desc": "رسالة العقيدة"
+          }
+        ]
+      }
+    }
+  }
+}
